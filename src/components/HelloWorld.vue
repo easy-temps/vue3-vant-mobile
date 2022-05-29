@@ -7,7 +7,7 @@ const count = ref(0)
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h1 class="title">{{ msg }}</h1>
   <van-button type="primary" @click="count++">count is: {{ count }}</van-button>
 </template>
 
@@ -19,6 +19,10 @@ a {
 label {
   margin: 0 0.5em;
   font-weight: bold;
+}
+
+.title {
+  user-select: none;
 }
 
 code {
