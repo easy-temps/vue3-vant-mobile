@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'
 import { createPinia } from 'pinia'
 
 // Vant 桌面端适配
@@ -16,7 +17,11 @@ const vConsole = new VConsole({ theme: 'dark' })
 // vite-plugin-vconsole 社区版
 // https://github.com/vadxq/vite-plugin-vconsole
 
-createApp(App)
+const app = createApp(App)
+
+app
+  .use(router)
   .use(createPinia())
   .use(Button)
-  .mount('#app')
+
+app.mount('#app')
