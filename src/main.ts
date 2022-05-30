@@ -6,6 +6,16 @@ import { createPinia } from 'pinia'
 import '@vant/touch-emulator'
 import { Button } from 'vant'
 
+// debugger board
+import VConsole from 'vconsole'
+const vConsole = new VConsole({ theme: 'dark' })
+
+// 结束调试后，可移除掉
+// vConsole.destroy()
+
+// vite-plugin-vconsole 社区版
+// https://github.com/vadxq/vite-plugin-vconsole
+
 createApp(App)
   .use(createPinia())
   .use(Button)
