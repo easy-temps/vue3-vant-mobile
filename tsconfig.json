@@ -10,6 +10,7 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "types": ["webpack-env"],
     "paths": {
       "@/*": ["src/*"]
     },
@@ -23,11 +24,9 @@
     "importsNotUsedAsValues": "preserve"
   },
   "include": [
+    "src/App.vue",
     "src/**/*.ts",
-    "src/**/*.d.ts",
     "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "src/**/*.vue"
   ]
 }
