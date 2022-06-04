@@ -6,6 +6,11 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue'
+import { Notify } from 'vant'
+onMounted(() => {
+  Notify({type: 'success' , message: '这是工作区'})
+})
 </script>
 
 <style lang="less" scoped>

@@ -9,7 +9,7 @@ import { Button } from 'vant'
 
 // debugger board
 import VConsole from 'vconsole'
-const vConsole = new VConsole({ theme: 'dark' })
+new VConsole({ theme: 'light' })
 
 // 结束调试后，可移除掉
 // vConsole.destroy()

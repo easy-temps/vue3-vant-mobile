@@ -1,10 +1,29 @@
 <template>
   <div class="container">
-    工作区
+    <span>{{ projects.dataSource.name }}</span>
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
+import { defineComponent } from 'vue'
+import { useFetchData } from '@/utils/hooks/useFetchData'
+import { queryProjectNotice } from '@/api/dashboard/workplace'
+export default defineComponent({
+  setup() {
+    const { context: projects } = useFetchData(() => {
+      return queryProjectNotice().then(res => {
+        return {
+          data: res
+        }
+      })
+    })
+
+    return {
+      projects
+    }
+  }
+})
+
 </script>
 
 <style lang="less" scoped>
