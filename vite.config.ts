@@ -2,7 +2,7 @@ import type { ConfigEnv, UserConfig } from 'vite'
 import { loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
-import styleImport, { VantResolve } from 'vite-plugin-style-import'
+import { createStyleImportPlugin } from 'vite-plugin-style-import'
 import createMockServer from './build/mockServer'
 
 // https://vitejs.dev/config/
@@ -17,8 +17,15 @@ export default ({ mode }: ConfigEnv): UserConfig => {
     },
     plugins: [
       vue(),
-      styleImport({
-        resolves: [VantResolve()]
+      createStyleImportPlugin({
+        resolves:[],
+        libs: [{
+          libraryName: 'vant',
+          esModule: false,
+          resolveStyle: (name) => {
+            return `vant/es/${name}/style/less`
+          }
+        }]
       })
     ],
     resolve: {
