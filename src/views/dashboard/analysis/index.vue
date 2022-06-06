@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img class="logo" src="../../../assets/logo.png" alt="logo" />
+    <img class="logo" src="@/assets/logo.png" alt="logo" />
     <router-link to="/workplace">进入工作区</router-link>
   </div>
 </template>
