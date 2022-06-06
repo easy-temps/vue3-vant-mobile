@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "cross-env MOCK_SERVER_PORT=8086 vite",
     "build": "vue-tsc --noEmit && vite build",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "preview": "vite preview"
   },
   "dependencies": {
