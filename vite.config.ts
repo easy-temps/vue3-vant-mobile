@@ -2,7 +2,6 @@ import type { ConfigEnv, UserConfig } from 'vite'
 import { loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
-import { createStyleImportPlugin } from 'vite-plugin-style-import'
 import createMockServer from './build/mockServer'
 
 // https://vitejs.dev/config/
@@ -16,17 +15,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       'process.env.VUE_APP_PUBLIC_PATH': JSON.stringify(env.VITE_APP_PUBLIC_PATH),
     },
     plugins: [
-      vue(),
-      createStyleImportPlugin({
-        resolves:[],
-        libs: [{
-          libraryName: 'vant',
-          esModule: false,
-          resolveStyle: (name) => {
-            return `vant/es/${name}/style/less`
-          }
-        }]
-      })
+      vue()
     ],
     resolve: {
       alias: {
