@@ -1,17 +1,11 @@
 <template>
   <div class="container">
     <img class="logo" src="@/assets/logo.png" alt="logo" />
-    <router-link to="/workplace">进入工作区</router-link>
+    <van-button type="primary" size="small" plain to="/workplace">进入工作区</van-button>
   </div>
 </template>
 
-<script setup lang="ts">
-import { onMounted } from 'vue'
-import { Notify } from 'vant'
-onMounted(() => {
-  Notify({type: 'success' , message: '这是工作区'})
-})
-</script>
+<script setup lang="ts"></script>
 
 <style lang="less" scoped>
 .container {
