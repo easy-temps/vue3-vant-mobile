@@ -20,8 +20,8 @@ module.exports = {
     'import/no-named-as-default': 'off',
     'import/namespace': [2, { allowComputed: true }],
     'import/no-named-as-default-member': 'off',
-    'import/no-unresolved': [2, { ignore: ['^@'] }],
-    '@typescript-eslint/consistent-type-imports': 'error',
+    'import/no-unresolved': 'off',
+    '@typescript-eslint/consistent-type-imports': 'off',
     // enUS: all rules docs https://eslint.org/docs/rules/
     // zhCN: 所有规则文档 https://eslint.bootcss.com/docs/rules/
     // 基础规则 全部 ES 项目通用
