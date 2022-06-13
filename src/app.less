@@ -1,0 +1,21 @@
+body {
+  overflow: hidden;
+}
+#app {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[data-theme='data-theme-dark'] {
+  &,
+  * {
+    color-scheme: dark !important;
+  }
+}
