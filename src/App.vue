@@ -7,19 +7,21 @@
 
 <script lang="ts">
 import { defineComponent, ref, watch } from 'vue'
+import type { ConfigProviderTheme } from 'vant'
 export default defineComponent({
   setup() {
-    const theme = ref('dark')
-    const checked = ref(true)
+    const theme = ref<ConfigProviderTheme>('light')
+    const checked = ref<boolean>(false)
 
-    watch(
-      checked,() => {
-        if(checked.value) {
-          document.getElementsByTagName('html')[0].setAttribute('data-theme', 'data-theme-dark')
-        } else {
-          document.getElementsByTagName('html')[0].setAttribute('data-theme', 'data-theme-light')
-        }
-    }, { immediate: true })
+    watch(checked,() => {
+      if(checked.value) {
+        theme.value = 'dark'
+        document.getElementsByTagName('html')[0].setAttribute('data-theme', 'data-theme-dark')
+      } else {
+        theme.value = 'light'
+        document.getElementsByTagName('html')[0].setAttribute('data-theme', 'data-theme-light')
+      }
+    })
     
     return {
       theme,
