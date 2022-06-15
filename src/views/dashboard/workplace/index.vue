@@ -4,24 +4,16 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
 import { useFetchData } from '@/utils/hooks/useFetchData'
 import { queryProjectNotice } from '@/api/dashboard/workplace'
-export default defineComponent({
-  setup() {
-    const { context: projects } = useFetchData(() => {
-      return queryProjectNotice().then(res => {
-        return {
-          data: res
-        }
-      })
-    })
 
+const { context: projects } = useFetchData(() => {
+  return queryProjectNotice().then(res => {
     return {
-      projects
+      data: res
     }
-  }
+  })
 })
 
 </script>

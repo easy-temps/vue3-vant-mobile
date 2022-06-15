@@ -17,7 +17,11 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       'process.env.VUE_APP_PUBLIC_PATH': JSON.stringify(env.VITE_APP_PUBLIC_PATH),
     },
     plugins: [
-      vue(),
+      vue({
+        // Reactivity transform is an experimental feature.
+        // https://github.com/vuejs/rfcs/discussions/369.
+        // reactivityTransform: true
+      }),
       Components({
         dts: true,
         resolvers: [VantResolver()],

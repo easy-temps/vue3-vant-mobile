@@ -22,6 +22,7 @@ module.exports = {
     'import/no-named-as-default-member': 'off',
     'import/no-unresolved': 'off',
     '@typescript-eslint/consistent-type-imports': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
     // enUS: all rules docs https://eslint.org/docs/rules/
     // zhCN: 所有规则文档 https://eslint.bootcss.com/docs/rules/
     // 基础规则 全部 ES 项目通用
