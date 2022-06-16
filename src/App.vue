@@ -1,26 +1,30 @@
 <template>
   <van-config-provider :theme="theme">
-    <van-switch v-model="checked" />
     <router-view />
   </van-config-provider>
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue'
+import { ref, computed, watch } from 'vue'
 import type { ConfigProviderTheme } from 'vant'
+import { localStorage } from '@/utils/local-storage'
+import { useStore } from '@/stores'
 
-const theme = ref<ConfigProviderTheme>('light')
-const checked = ref<boolean>(false)
+const store = useStore()
+const res = localStorage.get('theme')
+const theme = ref<ConfigProviderTheme>(res)
+const mode = computed(() => store.mode)
 
-watch(checked,() => {
-  if(checked.value) {
+watch(mode, (val) => {
+  if(val === 'dark') {
     theme.value = 'dark'
     document.querySelector('html')
-    .setAttribute('data-theme', 'data-theme-dark')
+    .setAttribute('data-theme', 'dark')
   } else {
     theme.value = 'light'
     document.querySelector('html')
-    .setAttribute('data-theme', 'data-theme-light')
+    .setAttribute('data-theme', 'light')
   }
-})
+}, { immediate: true })
+
 </script>

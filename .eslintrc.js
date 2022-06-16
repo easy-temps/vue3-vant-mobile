@@ -21,8 +21,6 @@ module.exports = {
     'import/namespace': [2, { allowComputed: true }],
     'import/no-named-as-default-member': 'off',
     'import/no-unresolved': 'off',
-    '@typescript-eslint/consistent-type-imports': 'off',
-    '@typescript-eslint/no-unused-vars': 'off',
     // enUS: all rules docs https://eslint.org/docs/rules/
     // zhCN: 所有规则文档 https://eslint.bootcss.com/docs/rules/
     // 基础规则 全部 ES 项目通用
@@ -35,6 +33,12 @@ module.exports = {
     'no-unused-vars': ['off'],
     // 强制在代码块中开括号前和闭括号后有空格
     'block-spacing': ['error', 'always'],
-    'object-curly-spacing': ['error', 'always']
+    'object-curly-spacing': ['error', 'always'],
+    /* typescript */
+    '@typescript-eslint/ban-ts-ignore': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/consistent-type-imports': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
   },
 }

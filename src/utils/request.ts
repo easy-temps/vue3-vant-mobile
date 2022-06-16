@@ -2,7 +2,7 @@ import type { AxiosRequestConfig, AxiosError } from 'axios'
 import axios, { AxiosResponse } from 'axios'
 import type { ResponseBody } from '@/api/typing'
 import { localStorage } from '@/utils/local-storage'
-import { STORAGE_TOKEN_KEY } from '@/store/mutation-type'
+import { STORAGE_TOKEN_KEY } from '@/stores/mutation-type'
 import { Notify } from 'vant'
 
 // 这里是用于设定请求后端时，所用的 Token KEY
