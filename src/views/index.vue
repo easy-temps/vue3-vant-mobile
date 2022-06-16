@@ -3,7 +3,7 @@
     <van-cell-group inset>
       <van-cell center title="暗黑模式">
         <template #right-icon>
-          <van-switch v-model="checked" size="20px" />
+          <van-switch v-model="checked" size="18px" />
         </template>
       </van-cell>
 
