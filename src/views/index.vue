@@ -25,23 +25,18 @@ import { useStore } from '@/stores'
 import { localStorage } from '@/utils/local-storage'
 
 const store = useStore()
-const res = localStorage.get('theme')
-const tem = res === 'dark' ? true: false
-const checked = ref<boolean>(tem)
+const themeStore = localStorage.get('theme')
+const checked = ref<boolean>(themeStore === 'dark' ? true: false)
 
-watch(checked,() => {
-  if(checked.value) {
+watch(checked,(val) => {
+  if(val) {
     store.mode = 'dark'
-    document.querySelector('html')
-    .setAttribute('data-theme', 'dark')
-    localStorage.set('theme', store.mode)
+    localStorage.set('theme', 'dark')
   } else {
     store.mode = 'light'
-    document.querySelector('html')
-    .setAttribute('data-theme', 'light')
-    localStorage.set('theme', store.mode)
+    localStorage.set('theme', 'light')
   }
-}, { immediate: true })
+})
 </script>
 
 <style lang="less" scoped>

@@ -11,12 +11,11 @@ import { localStorage } from '@/utils/local-storage'
 import { useStore } from '@/stores'
 
 const store = useStore()
-const res = localStorage.get('theme')
-const theme = ref<ConfigProviderTheme>(res)
+const theme = ref<ConfigProviderTheme>('light')
 const mode = computed(() => store.mode)
 
 watch(mode, (val) => {
-  if(val === 'dark') {
+  if(val === 'dark' || localStorage.get('theme') === 'dark') {
     theme.value = 'dark'
     document.querySelector('html')
     .setAttribute('data-theme', 'dark')
