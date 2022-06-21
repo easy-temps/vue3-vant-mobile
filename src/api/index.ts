@@ -1,5 +1,5 @@
 import request from '@/utils/request'
 
-export async function queryProjectNotice(): Promise<any> {
-  return request('/project/notice')
+export async function queryProse(): Promise<any> {
+  return request('/project/prose')
 }

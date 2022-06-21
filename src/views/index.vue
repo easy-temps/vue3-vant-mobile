@@ -1,17 +1,17 @@
 <template>
   <div class="container">
-    <van-cell-group inset>
-      <van-cell center title="暗黑模式">
+    <van-cell-group title="Do more difficult things" inset>
+      <van-cell center title="🌗 暗黑模式">
         <template #right-icon>
           <van-switch v-model="checked" size="18px" />
         </template>
       </van-cell>
 
-      <van-cell title="mock 指南" to="mock" is-link />
+      <van-cell title="💿 mock 指南" to="mock" is-link />
       
       <van-cell center>
         <template #title>
-          <span class="custom-title">小游戏</span>
+          <span class="custom-title">🎨 小游戏</span>
           <van-tag type="primary">敬请期待</van-tag>
         </template>
       </van-cell>
@@ -50,7 +50,6 @@ watch(checked,() => {
   height: 100vh;
   padding-top: 80px;
   position: relative;
-  // background: #eff2f5;
 
   .custom-title {
     margin-right: 4px;

@@ -1,5 +1,5 @@
-const dashboardWorkplace = require('./dashboard/workplace.js')
+const prose = require('./modules/prose')
 
 module.exports = {
-  ...dashboardWorkplace
+  ...prose
 }

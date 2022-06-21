@@ -1,24 +1,35 @@
 <template>
-  <van-nav-bar title="mock 指南" left-arrow @click-left="onClickLeft"/>
+  <van-nav-bar title="💿 mock 指南" left-arrow @click-left="onClickLeft"/>
+
   <div class="container">
-    <span style="margin-bottom: 10px;">这是请求的数据</span>
-    <span>{{ projects.dataSource.name }}</span>
+    <div class="data-label"> 来自异步请求的数据 </div>
+    <div class="data-content">
+      <div v-if="messages">{{ messages }}</div>
+      <van-empty v-else description="暂无数据" />
+    </div>
+
+    <van-button round block type="primary" @click="pull">请求</van-button>
+    <van-button round block type="default" @click="reset">清空</van-button>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useFetchData } from '@/utils/hooks/useFetchData'
-import { queryProjectNotice } from '@/api'
+import { ref } from 'vue'
+import { queryProse } from '@/api'
 
-const onClickLeft = () => history.back()
+const messages = ref<string>('')
 
-const { context: projects } = useFetchData(() => {
-  return queryProjectNotice().then(res => {
-    return {
-      data: res
-    }
+const pull = () => {
+  queryProse().then(res => {
+    messages.value = res.prose
   })
-})
+}
+
+// reset data
+const reset = () => messages.value = ''
+
+// back
+const onClickLeft = () => history.back()
 
 </script>
 
@@ -26,10 +37,37 @@ const { context: projects } = useFetchData(() => {
 .container {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  overflow: hidden;
+  padding: 30px;
+
+  .data-label {
+    color: #969799;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .data-content {
+    height: 300px;
+    padding: 20px;
+    line-height: 30px;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+[data-theme='dark'] {
+  .data-content {
+    background: #222;
+    color: #fff;
+  }
+}
+
+.van-button--block {
+  margin-top: 15px;
 }
 </style>

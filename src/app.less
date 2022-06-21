@@ -1,6 +1,7 @@
 body {
   overflow: hidden;
 }
+
 #app {
   height: 100%;
   overflow-x: hidden;
@@ -17,5 +18,18 @@ body {
   &,
   * {
     color-scheme: dark !important;
+    transition: background-color 300ms;
+  }
+}
+
+[data-theme='light'] {
+  &,
+  * {
+    color-scheme: light !important;
+    transition: background-color 300ms;
+  }
+  
+  body {
+    background-color: #eff2f5;
   }
 }
