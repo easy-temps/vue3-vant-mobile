@@ -4,12 +4,13 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import type { ConfigEnv, UserConfig } from 'vite'
 import { visualizer } from 'rollup-plugin-visualizer'
 import Components from 'unplugin-vue-components/vite'
+import { viteVConsole } from 'vite-plugin-vconsole'
 import { VantResolver } from 'unplugin-vue-components/resolvers'
 import createMockServer from './build/mockServer'
 import path from 'path'
 
 // https://vitejs.dev/config/
-export default ({ mode }: ConfigEnv): UserConfig => {
+export default ({ command, mode }: ConfigEnv): UserConfig => {
   const root = process.cwd()
   const env = loadEnv(mode, root)
   return {
@@ -19,11 +20,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       'process.env.VUE_APP_PUBLIC_PATH': JSON.stringify(env.VITE_APP_PUBLIC_PATH),
     },
     plugins: [
-      vue({
-        // Reactivity transform is an experimental feature.
-        // https://github.com/vuejs/rfcs/discussions/369.
-        // reactivityTransform: true
-      }),
+      vue(),
       vueJsx(),
       visualizer(),
       Components({
@@ -31,6 +28,15 @@ export default ({ mode }: ConfigEnv): UserConfig => {
         resolvers: [VantResolver()],
         types: [],
       }),
+      viteVConsole({
+        entry: [path.resolve('src/main.ts')],
+        localEnabled: command === 'serve',
+        enabled: false,
+        config: {
+          maxLogNumber: 1000,
+          theme: 'light'
+        }
+      })
     ],
     resolve: {
       alias: {

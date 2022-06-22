@@ -1282,9 +1282,9 @@ copy-text-to-clipboard@^3.0.1:
   integrity sha512-rvVsHrpFcL4F2P8ihsoLdFHmd404+CMg71S756oRSeQgqk51U3kicGdnvfkrxva0xXH92SjGS62B0XIJsbh+9Q==
 
 core-js@^3.11.0:
-  version "3.22.8"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.22.8.tgz#23f860b1fe60797cc4f704d76c93fea8a2f60631"
-  integrity sha512-UoGQ/cfzGYIuiq6Z7vWL1HfkE9U9IZ4Ub+0XSiJTCzvbZzgPA69oDF2f+lgJ6dFFLEdjW5O6svvoKzXX23xFkA==
+  version "3.23.2"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.23.2.tgz#e07a60ca8b14dd129cabdc3d2551baf5a01c76f0"
+  integrity sha512-ELJOWxNrJfOH/WK4VJ3Qd+fOqZuOuDNDJz0xG6Bt4mGg2eO/UT9CljCrbqDGovjLKUrGajEEBcoTOc0w+yBYeQ==
 
 cross-env@^7.0.3:
   version "7.0.3"
@@ -3967,6 +3967,11 @@ vconsole@^3.14.6:
     copy-text-to-clipboard "^3.0.1"
     core-js "^3.11.0"
     mutation-observer "^1.0.3"
+
+vite-plugin-vconsole@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/vite-plugin-vconsole/-/vite-plugin-vconsole-1.2.2.tgz#58d96835bf75aa034094febc57798f48fa1b9709"
+  integrity sha512-eB0uyQzEQAijpxxcgnE9h/k0y6Lr5wiYeq+OW/4hPT7sNwd4KVqMKQXArTn5S6zy8Uo7ae7ulAU3atczekAGAw==
 
 vite@^2.9.9:
   version "2.9.12"

@@ -48,6 +48,7 @@
     "umi-mock-middleware2": "^1.0.2",
     "unplugin-vue-components": "^0.19.6",
     "vite": "^2.9.9",
+    "vite-plugin-vconsole": "^1.2.2",
     "vue-tsc": "^0.34.7"
   }
 }
