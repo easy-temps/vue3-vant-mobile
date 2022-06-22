@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <div class="logo"></div>
     <van-cell-group title="Do more difficult things" inset>
       <van-cell center title="🌗 暗黑模式">
         <template #right-icon>
@@ -43,8 +44,17 @@ watch(checked,(val) => {
 .container {
   width: 100vw;
   height: 100vh;
-  padding-top: 80px;
+  padding-top: 30px;
   position: relative;
+
+  .logo {
+    width: 150px;
+    height: 150px;
+    background-image: url('@/assets/logo.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+  }
 
   .custom-title {
     margin-right: 4px;
