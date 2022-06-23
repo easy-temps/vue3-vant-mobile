@@ -47,6 +47,11 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
         }
       })
     ],
+
+    build: {
+      cssCodeSplit: false,
+      chunkSizeWarningLimit: 2048
+    },
     
     resolve: {
       alias: {
