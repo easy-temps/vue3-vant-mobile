@@ -64,7 +64,6 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
     server: {
       host: true,
       port: 3000,
-      open: true,
       proxy: {
         '/api': {
           // backend url

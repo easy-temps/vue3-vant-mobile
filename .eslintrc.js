@@ -41,4 +41,13 @@ module.exports = {
     '@typescript-eslint/consistent-type-imports': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
   },
+  overrides: [
+    {
+      files: ["*.html"],
+      rules: {
+        // https://github.com/vuejs/eslint-plugin-vue/issues/1355
+        "vue/comment-directive": "off",
+      },
+    },
+  ],
 }
