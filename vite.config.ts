@@ -6,6 +6,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import type { ConfigEnv, UserConfig } from 'vite'
 import { visualizer } from 'rollup-plugin-visualizer'
 import Components from 'unplugin-vue-components/vite'
+import AutoImport from 'unplugin-auto-import/vite'
 import { viteVConsole } from 'vite-plugin-vconsole'
 import { VantResolver } from 'unplugin-vue-components/resolvers'
 import createMockServer from './build/mockServer'
@@ -35,6 +36,22 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
         dts: true,
         resolvers: [VantResolver()],
         types: []
+      }),
+
+      AutoImport({
+        include: [
+          /\.[tj]sx?$/,
+          /\.vue$/,
+          /\.vue\?vue/,
+        ],
+        imports: [
+          'vue',
+          'vue-router',
+        ],
+        dts: true,
+        eslintrc: {
+          enabled: true
+        }
       }),
 
       viteVConsole({

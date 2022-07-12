@@ -30,6 +30,7 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx",
-    "components.d.ts"
+    "components.d.ts",
+    "auto-imports.d.ts"
   ]
 }

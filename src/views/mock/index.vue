@@ -14,7 +14,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
 import { queryProse } from '@/api'
 
 const messages = ref<string>('')

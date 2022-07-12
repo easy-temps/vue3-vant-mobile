@@ -10,6 +10,7 @@ module.exports = {
     '@vue/eslint-config-typescript',
     'plugin:import/recommended',
     'plugin:import/typescript',
+    './.eslintrc-auto-import.json',
   ],
   plugins: ['import'],
   parserOptions: {

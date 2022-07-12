@@ -21,7 +21,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue'
 import { useStore } from '@/stores'
 import { localStorage } from '@/utils/local-storage'
 

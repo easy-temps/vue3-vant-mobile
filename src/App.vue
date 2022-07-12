@@ -5,7 +5,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, watch } from 'vue'
 import type { ConfigProviderTheme } from 'vant'
 import { localStorage } from '@/utils/local-storage'
 import { useStore } from '@/stores'
