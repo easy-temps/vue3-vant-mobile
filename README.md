@@ -18,6 +18,9 @@
 
 🔥🔥🔥 Vue3 Vant Mobile based on `Vue3`, `Vant4`, `Vite2`, `Pinia2`, `TypeScript`; 🚀🚀🚀 Integrate `Plop` to generate any type of code block, integrate `Dark Mode` (Dark) configuration, integrate `Mock` data, and other handy extensions. 💖💖💖 In short, clean, simple, easy to use, reference, can save you a week of development time, hope you like it.
 
+## Achievement
+
+🎉🎉🎉 Added to the [Awesome Vite.Js](https://github.com/vitejs/awesome-vite#vue-3)
 
 ## Preparation
 
