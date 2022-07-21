@@ -4056,10 +4056,10 @@ v8flags@^4.0.0:
   resolved "https://registry.yarnpkg.com/v8flags/-/v8flags-4.0.0.tgz#dcacd1e0b20a7919cc48022b1bf2d95adb175e83"
   integrity sha512-83N0OkTbn6gOjJ2awNuzuK4czeGxwEwBoTqlhBZhnp8o0IJ72mXRQKphj/azwRf3acbDJZYZhbOPEJHd884ELg==
 
-vant@4.0.0-alpha.4:
-  version "4.0.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/vant/-/vant-4.0.0-alpha.4.tgz#6ed39998e74fbb92515324c340d5e888c2a4afcc"
-  integrity sha512-bgZU5aLjTRfU6egt9PX1DM6HTICKs4ca8sRnbzWvLsogudvqa+zmGicq/104c4JH9bnSMc71cWhioxN4jTbaZA==
+vant@4.0.0-beta.0:
+  version "4.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/vant/-/vant-4.0.0-beta.0.tgz#c85ac9b8fd24f494f9ce0c0dfc06d21b167083a5"
+  integrity sha512-Y418/RCxmnijsKpl+heEN1qpf2L6V0GrtvhQYjFDZEumX+nTzqjIRpStAxZRODI3TbQk3BzwvloU5EVJs+X7Zg==
   dependencies:
     "@vant/icons" "^1.8.0"
     "@vant/popperjs" "^1.2.1"
