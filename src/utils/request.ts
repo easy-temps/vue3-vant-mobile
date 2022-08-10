@@ -3,7 +3,7 @@ import axios, { AxiosResponse } from 'axios'
 import type { ResponseBody } from '@/api/typing'
 import { localStorage } from '@/utils/local-storage'
 import { STORAGE_TOKEN_KEY } from '@/stores/mutation-type'
-import { Notify } from 'vant'
+import { showNotify } from 'vant'
 
 // 这里是用于设定请求后端时，所用的 Token KEY
 // 可以根据自己的需要修改，常见的如 Access-Token，Authorization
@@ -30,14 +30,14 @@ const errorHandler = (error: RequestError): Promise<any> => {
     const { data = {}, status, statusText } = error.response
     // 403 无权限
     if (status === 403) {
-      Notify({
+      showNotify({
         type: 'danger',
         message: (data && data.message) || statusText
       })
     }
     // 401 未登录/未授权
     if (status === 401 && data.result && data.result.isLogin) {
-      Notify({
+      showNotify({
         type: 'danger',
         message: 'Authorization verification failed'
       })
