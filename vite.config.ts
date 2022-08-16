@@ -1,14 +1,17 @@
 import path from 'path'
 import { loadEnv } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import legacy from '@vitejs/plugin-legacy'
-import vueJsx from '@vitejs/plugin-vue-jsx'
 import type { ConfigEnv, UserConfig } from 'vite'
+
 import { visualizer } from 'rollup-plugin-visualizer'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import { viteVConsole } from 'vite-plugin-vconsole'
 import { VantResolver } from 'unplugin-vue-components/resolvers'
+
+import vue from '@vitejs/plugin-vue'
+import legacy from '@vitejs/plugin-legacy'
+import vueJsx from '@vitejs/plugin-vue-jsx'
+
+import { viteVConsole } from 'vite-plugin-vconsole'
 import createMockServer from './build/mockServer'
 
 export default ({ command, mode }: ConfigEnv): UserConfig => {
@@ -47,6 +50,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
         imports: [
           'vue',
           'vue-router',
+          'vitest'
         ],
         dts: true,
         eslintrc: {

@@ -8,6 +8,7 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "lint": "eslint --fix --ext .js,vue src/",
     "preview": "vite preview",
+    "test": "vitest",
     "plop": "plop"
   },
   "dependencies": {
@@ -54,6 +55,7 @@
     "unplugin-vue-components": "^0.19.6",
     "vite": "^3.0.0",
     "vite-plugin-vconsole": "^1.2.2",
+    "vitest": "^0.22.0",
     "vue-tsc": "^0.39.5"
   }
 }
