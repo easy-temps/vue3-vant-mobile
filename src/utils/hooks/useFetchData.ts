@@ -1,6 +1,7 @@
-import type { UnwrapRef } from 'vue'
-import { isReactive, isRef, ref, watch, unref, reactive } from 'vue'
-import type { MaybeRef } from '@/typing'
+import type { UnwrapRef } from 'vue';
+import { isReactive, isRef, ref, watch, unref, reactive } from 'vue';
+import type { MaybeRef } from '@/typing';
+import { isEqual } from 'lodash-es';
 
 export interface PageInfo {
   current: number;
@@ -25,6 +26,7 @@ export type RequestParams =
   | undefined;
 
 export interface UseFetchDataAction<T extends ReponseData<any>> {
+  stripe: (record: any, index: number) => string | undefined;
   cancel: () => void;
   reload: () => Promise<void>;
   resetPageIndex: () => void;
@@ -46,6 +48,7 @@ export interface Context<T extends ReponseData<any>> {
 }
 
 export const defaultContext: Context<any> = {
+  stripe: false,
   loading: false,
   current: 1,
   pageSize: 20,
@@ -80,6 +83,7 @@ const filterNoValidValue = (obj: Record<string, any> = {}) => {
 export const useFetchData = <T extends ReponseData<any>>(
   getData: (params?: RequestParams) => Promise<T>,
   context: MaybeRef<{
+    stripe?: boolean;
     current?: number;
     pageSize?: number;
     dataSource?: T['data'];
@@ -88,7 +92,7 @@ export const useFetchData = <T extends ReponseData<any>>(
       [key: string]: any;
     }>;
     [key: string]: any;
-  }> = reactive(defaultContext),
+  }> = reactive({ ...defaultContext }),
   options?: {
     current?: number;
     pageSize?: number;
@@ -97,12 +101,12 @@ export const useFetchData = <T extends ReponseData<any>>(
     pagination?: boolean;
   },
 ): UseFetchDataAction<T> => {
-  const state = reactive({} as Context<T>);
+  const state = reactive({ ...defaultContext } as Context<T>);
   const mergeContext = isReactive(context) || isRef(context) ? context : ref(context);
   watch(
     mergeContext,
     () => {
-      Object.assign(state, defaultContext, unref(context));
+      Object.assign(state, unref(context));
     },
     { immediate: true },
   );
@@ -129,7 +133,7 @@ export const useFetchData = <T extends ReponseData<any>>(
         state.dataSource = data as UnwrapRef<T['data']>;
         state.total = dataTotal;
       }
-    } catch (e) {
+    } catch (e: any) {
       state.loading = false;
       // 如果没有传递这个方法的话，需要把错误抛出去，以免吞掉错误
       if (options?.onRequestError === undefined) {
@@ -161,16 +165,22 @@ export const useFetchData = <T extends ReponseData<any>>(
     // state.current = 1;
   };
   watch(
-    [() => state.current, () => state.pageSize, () => unref(mergeContext).requestParams],
-    () => {
-      fetchList().catch(e => {
-        throw new Error(e);
-      });
+    [() => state.current, () => state.pageSize, () => ({ ...state.requestParams })],
+    (nextValue, preValue) => {
+      if (!isEqual(nextValue, preValue)) {
+        fetchList().catch(e => {
+          throw new Error(e);
+        });
+      }
     },
     { immediate: true, deep: true },
   );
 
+  const stripe = (_: any, index: number) =>
+    index % 2 === 1 && state.stripe && 'ant-pro-table-row-striped';
+
   return {
+    stripe,
     cancel,
     reset,
     reload,

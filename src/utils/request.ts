@@ -1,6 +1,5 @@
 import type { AxiosRequestConfig, AxiosError } from 'axios'
 import axios, { AxiosResponse } from 'axios'
-import type { ResponseBody } from '@/api/typing'
 import { localStorage } from '@/utils/local-storage'
 import { STORAGE_TOKEN_KEY } from '@/stores/mutation-type'
 import { showNotify } from 'vant'
@@ -65,9 +64,7 @@ const requestHandler = (
 request.interceptors.request.use(requestHandler, errorHandler)
 
 // 响应拦截器
-const responseHandler = (
-  response: AxiosResponse,
-): ResponseBody<any> | AxiosResponse<any> | Promise<any> | any => {
+const responseHandler = (response: AxiosResponse<any>) => {
   return response.data
 }
 

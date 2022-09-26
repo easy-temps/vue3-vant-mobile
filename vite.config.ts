@@ -12,12 +12,12 @@ import legacy from '@vitejs/plugin-legacy'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
 import { viteVConsole } from 'vite-plugin-vconsole'
-import createMockServer from './build/mockServer'
+import mock from './build/mock/createMockServer'
 
 export default ({ command, mode }: ConfigEnv): UserConfig => {
   const root = process.cwd()
   const env = loadEnv(mode, root)
-
+  
   return {
     base: env.VITE_APP_PUBLIC_PATH,
 
@@ -66,6 +66,13 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
           maxLogNumber: 1000,
           theme: 'light'
         }
+      }),
+
+      mock({
+        watch: true,
+        mockUrlList: [/api/],
+        cwd: process.cwd(),
+        enable: env.VITE_HTTP_MOCK && env.VITE_MOCK && process.env.NODE_ENV !== 'production',
       })
     ],
 
@@ -85,12 +92,12 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
     server: {
       host: true,
       port: 3000,
-      proxy: {
+      proxy: env.VITE_HTTP_MOCK && env.VITE_MOCK && process.env.NODE_ENV !== 'production' ? undefined : {
         '/api': {
           // backend url
-          target: env.VITE_HTTP_MOCK && env.VITE_MOCK ? createMockServer() : '',
+          target: '',
           ws: false,
-          changeOrigin: true
+          changeOrigin: true,
         }
       }
     }
