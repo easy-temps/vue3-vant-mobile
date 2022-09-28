@@ -7,6 +7,7 @@ NProgress.configure({ showSpinner: true })
 // 导入路由组件
 import mian from '@/views/index.vue'
 import mock from '@/views/mock/index.vue'
+import charts from '@/views/charts/index.vue'
 
 // 定义路由，每个路由都需要映射到一个组件
 const routes = [
@@ -18,6 +19,10 @@ const routes = [
     path: '/mock',
     name: 'mock',
     component: mock
+  }, {
+    path: '/charts',
+    name: 'charts',
+    component: charts
   }
 ]
 
