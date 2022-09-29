@@ -176,8 +176,7 @@ export const useFetchData = <T extends ReponseData<any>>(
     { immediate: true, deep: true },
   );
 
-  const stripe = (_: any, index: number) =>
-    index % 2 === 1 && state.stripe && 'ant-pro-table-row-striped';
+  const stripe = (_: any, index: number) => index % 2 === 1 && state.stripe && 'ant-pro-table-row-striped';
 
   return {
     stripe,

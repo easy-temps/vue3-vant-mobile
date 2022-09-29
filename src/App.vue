@@ -5,26 +5,26 @@
 </template>
 
 <script setup lang="ts">
-import type { ConfigProviderTheme } from 'vant'
-import { localStorage } from '@/utils/local-storage'
-import { useStore } from '@/stores'
+import type { ConfigProviderTheme } from 'vant';
+import { localStorage } from '@/utils/local-storage';
+import { useStore } from '@/stores';
 
-const store = useStore()
-const theme = ref<ConfigProviderTheme>('light')
-const mode = computed(() => store.mode)
+const store = useStore();
+const theme = ref<ConfigProviderTheme>('light');
+const mode = computed(() => store.mode);
 
 watch(mode, (val) => {
   if(val === 'dark' || localStorage.get('theme') === 'dark') {
-    theme.value = 'dark'
+    theme.value = 'dark';
     document.querySelector('html')
-    .setAttribute('data-theme', 'dark')
+    .setAttribute('data-theme', 'dark');
   } else {
-    theme.value = 'light'
+    theme.value = 'light';
     document.querySelector('html')
-    .setAttribute('data-theme', 'light')
+    .setAttribute('data-theme', 'light');
   }
-}, { immediate: true })
+}, { immediate: true });
 
-provide('isRealDark', computed(() => theme.value === 'dark'))
+provide('isRealDark', computed(() => theme.value === 'dark'));
 
 </script>

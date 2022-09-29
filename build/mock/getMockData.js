@@ -76,10 +76,7 @@ function getMatchMock(url) {
       } else {
         return url.indexOf(whiteUrl) != -1;
       }
-    }) != -1 &&
-    mockList
-      .filter(item => url.indexOf(item.path) != -1)
-      .sort((a, b) => b.path.length - a.path.length)[0]
+    }) != -1 && mockList.filter(item => url.indexOf(item.path) != -1).sort((a, b) => b.path.length - a.path.length)[0]
   );
 }
 function mockHandle(handler) {

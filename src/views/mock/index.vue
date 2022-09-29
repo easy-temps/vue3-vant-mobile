@@ -14,21 +14,21 @@
 </template>
 
 <script setup lang="ts">
-import { queryProse } from '@/api'
+import { queryProse } from '@/api';
 
-const messages = ref<string>('')
+const messages = ref<string>('');
 
 const pull = () => {
   queryProse().then(res => {
-    messages.value = res.prose
-  })
-}
+    messages.value = res.prose;
+  });
+};
 
 // reset data
-const reset = () => messages.value = ''
+const reset = () => messages.value = '';
 
 // back
-const onClickLeft = () => history.back()
+const onClickLeft = () => history.back();
 
 </script>
 

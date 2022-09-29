@@ -23,22 +23,22 @@
 </template>
 
 <script setup lang="ts">
-import { useStore } from '@/stores'
-import { localStorage } from '@/utils/local-storage'
+import { useStore } from '@/stores';
+import { localStorage } from '@/utils/local-storage';
 
-const store = useStore()
-const themeStore = localStorage.get('theme')
-const checked = ref<boolean>(themeStore === 'dark' ? true: false)
+const store = useStore();
+const themeStore = localStorage.get('theme');
+const checked = ref<boolean>(themeStore === 'dark' ? true: false);
 
 watch(checked,(val) => {
   if(val) {
-    store.mode = 'dark'
-    localStorage.set('theme', 'dark')
+    store.mode = 'dark';
+    localStorage.set('theme', 'dark');
   } else {
-    store.mode = 'light'
-    localStorage.set('theme', 'light')
+    store.mode = 'light';
+    localStorage.set('theme', 'light');
   }
-})
+});
 </script>
 
 <style lang="less" scoped>

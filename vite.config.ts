@@ -1,29 +1,29 @@
-import path from 'path'
-import { loadEnv } from 'vite'
-import type { ConfigEnv, UserConfig } from 'vite'
+import path from 'path';
+import { loadEnv } from 'vite';
+import type { ConfigEnv, UserConfig } from 'vite';
 
-import { visualizer } from 'rollup-plugin-visualizer'
-import Components from 'unplugin-vue-components/vite'
-import AutoImport from 'unplugin-auto-import/vite'
-import { VantResolver } from 'unplugin-vue-components/resolvers'
+import { visualizer } from 'rollup-plugin-visualizer';
+import Components from 'unplugin-vue-components/vite';
+import AutoImport from 'unplugin-auto-import/vite';
+import { VantResolver } from 'unplugin-vue-components/resolvers';
 
-import vue from '@vitejs/plugin-vue'
-import legacy from '@vitejs/plugin-legacy'
-import vueJsx from '@vitejs/plugin-vue-jsx'
+import vue from '@vitejs/plugin-vue';
+import legacy from '@vitejs/plugin-legacy';
+import vueJsx from '@vitejs/plugin-vue-jsx';
 
-import { viteVConsole } from 'vite-plugin-vconsole'
-import mock from './build/mock/createMockServer'
+import { viteVConsole } from 'vite-plugin-vconsole';
+import mock from './build/mock/createMockServer';
 
 export default ({ command, mode }: ConfigEnv): UserConfig => {
-  const root = process.cwd()
-  const env = loadEnv(mode, root)
+  const root = process.cwd();
+  const env = loadEnv(mode, root);
   
   return {
     base: env.VITE_APP_PUBLIC_PATH,
 
     define: {
       'process.env.VUE_APP_API_BASE_URL': JSON.stringify(env.VITE_APP_API_BASE_URL),
-      'process.env.VUE_APP_PUBLIC_PATH': JSON.stringify(env.VITE_APP_PUBLIC_PATH)
+      'process.env.VUE_APP_PUBLIC_PATH': JSON.stringify(env.VITE_APP_PUBLIC_PATH),
     },
 
     plugins: [
@@ -32,13 +32,13 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
       visualizer(),
 
       legacy({
-        targets: ['defaults', 'not IE 11']
+        targets: ['defaults', 'not IE 11'],
       }),
 
       Components({
         dts: true,
         resolvers: [VantResolver()],
-        types: []
+        types: [],
       }),
 
       AutoImport({
@@ -50,12 +50,12 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
         imports: [
           'vue',
           'vue-router',
-          'vitest'
+          'vitest',
         ],
         dts: true,
         eslintrc: {
-          enabled: true
-        }
+          enabled: true,
+        },
       }),
 
       viteVConsole({
@@ -64,8 +64,8 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
         enabled: false,
         config: {
           maxLogNumber: 1000,
-          theme: 'light'
-        }
+          theme: 'light',
+        },
       }),
 
       mock({
@@ -73,20 +73,20 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
         mockUrlList: [/api/],
         cwd: process.cwd(),
         enable: env.VITE_HTTP_MOCK && env.VITE_MOCK && process.env.NODE_ENV !== 'production',
-      })
+      }),
     ],
 
     build: {
       cssCodeSplit: false,
-      chunkSizeWarningLimit: 2048
+      chunkSizeWarningLimit: 2048,
     },
     
     resolve: {
       alias: {
         '~@': path.join(__dirname, './src'),
         '@': path.join(__dirname, './src'),
-        '~': path.join(__dirname, './src/assets')
-      }
+        '~': path.join(__dirname, './src/assets'),
+      },
     },
 
     server: {
@@ -98,8 +98,8 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
           target: '',
           ws: false,
           changeOrigin: true,
-        }
-      }
-    }
-  }
-}
+        },
+      },
+    },
+  };
+};

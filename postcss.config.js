@@ -1,9 +1,9 @@
 // postcss.config.js
 module.exports = {
   plugins: {
-    "autoprefixer": {},
+    'autoprefixer': {},
     'postcss-px-to-viewport-8-plugin': {
-      viewportWidth: 375
-    }
-  }
-}
+      viewportWidth: 375,
+    },
+  },
+};

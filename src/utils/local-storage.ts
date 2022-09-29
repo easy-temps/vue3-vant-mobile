@@ -1,9 +1,9 @@
-import store from 'store'
-import expirePlugin from 'store/plugins/expire'
+import store from 'store';
+import expirePlugin from 'store/plugins/expire';
 
 // plugin usage:
-store.addPlugin(expirePlugin)
+store.addPlugin(expirePlugin);
 
-export { store as localStorage }
+export { store as localStorage };
 
-export default store
+export default store;
