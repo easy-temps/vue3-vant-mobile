@@ -1,5 +1,5 @@
 <template>
-  <van-nav-bar title="💿 mock 指南" left-arrow @click-left="onClickLeft"/>
+  <van-nav-bar title="💿 mock 指南" @click-left="onClickLeft" left-arrow fixed/>
 
   <div class="container">
     <div class="data-label"> 来自异步请求的数据 </div>
@@ -37,7 +37,7 @@ const onClickLeft = () => history.back()
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  padding: 30px;
+  padding: 74px 30px;
 
   .data-label {
     color: #969799;

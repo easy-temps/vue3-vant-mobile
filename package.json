@@ -21,6 +21,7 @@
     "nprogress": "^0.2.0",
     "pinia": "^2.0.14",
     "pinia-plugin-persistedstate": "^2.2.0",
+    "resize-detector": "^0.3.0",
     "store": "^2.0.12",
     "vant": "4.0.0-beta.0",
     "vconsole": "^3.14.6",

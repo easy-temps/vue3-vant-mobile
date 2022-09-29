@@ -25,4 +25,6 @@ watch(mode, (val) => {
   }
 }, { immediate: true })
 
+provide('isRealDark', computed(() => theme.value === 'dark'))
+
 </script>

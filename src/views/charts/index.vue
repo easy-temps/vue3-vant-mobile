@@ -1,51 +1,107 @@
 <template>
-  <van-nav-bar title="📊 charts" left-arrow @click-left="onClickLeft"/>
+  <van-nav-bar title="📊 charts" @click-left="onClickLeft" left-arrow fixed/>
   
   <div class="container">
-    <div id="chart" class="card"></div>
+    <div class="chart">
+      <chart :option="refBarOption" :style="{ height: '330px' }" />
+    </div>
+
+    <div class="chart item">
+      <chart :option="refLineOption" :style="{ height: '330px' }" />
+    </div>
+
+    <div class="chart item">
+      <chart :option="refScoreOption" :style="{ height: '330px' }" />
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import * as echarts from 'echarts'
+import { Chart } from '@/components'
 
-onMounted(() => {
-  const myChart = echarts.init(document.getElementById('chart'))
+const barOption = {
+  title: {},
+  tooltip: {},
+  xAxis: {
+    data: ['1月', '2月', '3月', '4月', '5月', '6月']
+  },
+  yAxis: {},
+  series: [
+    {
+      name: 'sales',
+      type: 'bar',
+      data: [5, 20, 36, 10, 10, 20]
+    }
+  ]
+}
 
-  myChart.setOption({
-    title: {
-      text: ''
-    },
-    tooltip: {},
-    xAxis: {
-      data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
-    },
-    yAxis: {},
-    series: [
-      {
-        name: '销量',
-        type: 'bar',
-        data: [5, 20, 36, 10, 10, 20]
-      }
-    ]
-  })
-})
+const lineOption = {
+  xAxis: {
+    type: 'category',
+    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      data: [150, 230, 224, 218, 135, 147, 260],
+      type: 'line'
+    }
+  ]
+}
+
+const scoreOption = {
+  tooltip: {
+    formatter: '{a} <br/>{b} : {c}%'
+  },
+  series: [
+    {
+      name: 'Pressure',
+      type: 'gauge',
+      detail: {
+        formatter: '{value}'
+      },
+      data: [
+        {
+          value: 50,
+          name: 'SCORE'
+        }
+      ]
+    }
+  ]
+}
+
+const refBarOption = ref(barOption)
+const refLineOption = ref(lineOption)
+const refScoreOption = ref(scoreOption)
 
 // back
 const onClickLeft = () => history.back()
 </script>
 
 <style lang="less" scoped>
-.card {
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 60px 16px;
+  position: relative;
+}
+
+.chart {
   width: 100%;
   height: 300px;
   background: #fff;
 }
 
+.chart.item {
+  margin-top: 15px;
+}
+
 [data-theme='dark'] {
-  .card {
-    background: #222;
+  .chart {
     color: #fff;
+    background: #222;
   }
 }
 </style>
