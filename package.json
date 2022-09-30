@@ -84,7 +84,7 @@
       "yarn run lint:script",
       "git add ."
     ],
-    "**/*.{scss}": [
+    "**/*.{css,less}": [
       "yarn run lint:style",
       "git add ."
     ]
