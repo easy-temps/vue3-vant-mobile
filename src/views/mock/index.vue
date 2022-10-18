@@ -34,9 +34,8 @@ const onClickLeft = () => history.back();
 
 <style lang="less" scoped>
 .container {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
   padding: 74px 30px;
 
   .data-label {
