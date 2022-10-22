@@ -1,9 +1,9 @@
-const slash = require('slash2');
+const slash = require('slash2')
 
 const winPath = function (path) {
-  return slash(path);
-};
+  return slash(path)
+}
 
 module.exports = {
   winPath,
-};
+}

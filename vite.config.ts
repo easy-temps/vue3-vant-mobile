@@ -1,23 +1,23 @@
-import path from 'path';
-import { loadEnv } from 'vite';
-import type { ConfigEnv, UserConfig } from 'vite';
+import path from 'path'
+import { loadEnv } from 'vite'
+import type { ConfigEnv, UserConfig } from 'vite'
 
-import { visualizer } from 'rollup-plugin-visualizer';
-import Components from 'unplugin-vue-components/vite';
-import AutoImport from 'unplugin-auto-import/vite';
-import { VantResolver } from 'unplugin-vue-components/resolvers';
+import { visualizer } from 'rollup-plugin-visualizer'
+import Components from 'unplugin-vue-components/vite'
+import AutoImport from 'unplugin-auto-import/vite'
+import { VantResolver } from 'unplugin-vue-components/resolvers'
 
-import vue from '@vitejs/plugin-vue';
-import legacy from '@vitejs/plugin-legacy';
-import vueJsx from '@vitejs/plugin-vue-jsx';
+import vue from '@vitejs/plugin-vue'
+import legacy from '@vitejs/plugin-legacy'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 
-import { viteVConsole } from 'vite-plugin-vconsole';
-import mock from './build/mock/createMockServer';
+import { viteVConsole } from 'vite-plugin-vconsole'
+import mock from './build/mock/createMockServer'
 
 export default ({ command, mode }: ConfigEnv): UserConfig => {
-  const root = process.cwd();
-  const env = loadEnv(mode, root);
-  
+  const root = process.cwd()
+  const env = loadEnv(mode, root)
+
   return {
     base: env.VITE_APP_PUBLIC_PATH,
 
@@ -80,7 +80,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
       cssCodeSplit: false,
       chunkSizeWarningLimit: 2048,
     },
-    
+
     resolve: {
       alias: {
         '~@': path.join(__dirname, './src'),
@@ -92,14 +92,16 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
     server: {
       host: true,
       port: 3000,
-      proxy: env.VITE_HTTP_MOCK && env.VITE_MOCK && process.env.NODE_ENV !== 'production' ? undefined : {
-        '/api': {
-          // backend url
-          target: '',
-          ws: false,
-          changeOrigin: true,
-        },
-      },
+      proxy: env.VITE_HTTP_MOCK && env.VITE_MOCK && process.env.NODE_ENV !== 'production'
+        ? undefined
+        : {
+            '/api': {
+              // backend url
+              target: '',
+              ws: false,
+              changeOrigin: true,
+            },
+          },
     },
-  };
-};
+  }
+}

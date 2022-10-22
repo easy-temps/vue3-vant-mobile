@@ -1,5 +1,5 @@
-const contrastColor = 'rgba(255, 255, 255, 0.65)';
-const backgroundColor = 'transparent';
+const contrastColor = 'rgba(255, 255, 255, 0.65)'
+const backgroundColor = 'transparent'
 const axisCommon = function () {
   return {
     axisLine: {
@@ -22,8 +22,8 @@ const axisCommon = function () {
         color: '#20203B',
       },
     },
-  };
-};
+  }
+}
 
 const colorPalette = [
   '#4992ff',
@@ -35,10 +35,10 @@ const colorPalette = [
   '#ff8a45',
   '#8d48e3',
   '#dd79ff',
-];
+]
 const theme: any = {
   color: colorPalette,
-  backgroundColor: backgroundColor,
+  backgroundColor,
   axisPointer: {
     lineStyle: {
       color: '#817f91',
@@ -172,8 +172,8 @@ const theme: any = {
       borderColor0: '#0CF49B',
     },
   },
-};
+}
 
-theme.categoryAxis.splitLine.show = false;
+theme.categoryAxis.splitLine.show = false
 
-export default theme;
+export default theme

@@ -1,20 +1,20 @@
-import { createApp } from 'vue';
-import App from './App.vue';
-import router from './router';
-import { createPinia } from 'pinia';
-import piniaPluginPersistedstate from 'pinia-plugin-persistedstate';
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
+import App from './App.vue'
+import router from './router'
 
-import './app.less';
+import './app.less'
 
 // Vant 桌面端适配
-import '@vant/touch-emulator';
+import '@vant/touch-emulator'
 
-const app = createApp(App);
-const pinia = createPinia();
-pinia.use(piniaPluginPersistedstate);
+const app = createApp(App)
+const pinia = createPinia()
+pinia.use(piniaPluginPersistedstate)
 
 app
   .use(router)
-  .use(pinia);
+  .use(pinia)
 
-app.mount('#app');
+app.mount('#app')

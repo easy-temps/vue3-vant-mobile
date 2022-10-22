@@ -1,5 +1,5 @@
-const prose = require('./modules/prose');
+const prose = require('./modules/prose')
 
 module.exports = {
   ...prose,
-};
+}

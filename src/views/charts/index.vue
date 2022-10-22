@@ -1,23 +1,5 @@
-<template>
-  <van-nav-bar title="📊 charts" @click-left="onClickLeft" left-arrow fixed/>
-  
-  <div class="container">
-    <div class="chart">
-      <chart :option="refBarOption" :style="{ height: '330px' }" />
-    </div>
-
-    <div class="chart item">
-      <chart :option="refLineOption" :style="{ height: '330px' }" />
-    </div>
-
-    <div class="chart item">
-      <chart :option="refScoreOption" :style="{ height: '330px' }" />
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
-import { Chart } from '@/components';
+import { Chart } from '@/components'
 
 const barOption = {
   title: {},
@@ -33,7 +15,7 @@ const barOption = {
       data: [5, 20, 36, 10, 10, 20],
     },
   ],
-};
+}
 
 const lineOption = {
   xAxis: {
@@ -49,7 +31,7 @@ const lineOption = {
       type: 'line',
     },
   ],
-};
+}
 
 const scoreOption = {
   tooltip: {
@@ -70,15 +52,33 @@ const scoreOption = {
       ],
     },
   ],
-};
+}
 
-const refBarOption = ref(barOption);
-const refLineOption = ref(lineOption);
-const refScoreOption = ref(scoreOption);
+const refBarOption = ref(barOption)
+const refLineOption = ref(lineOption)
+const refScoreOption = ref(scoreOption)
 
 // back
-const onClickLeft = () => history.back();
+const onClickLeft = () => history.back()
 </script>
+
+<template>
+  <van-nav-bar title="📊 charts" left-arrow fixed @click-left="onClickLeft" />
+
+  <div class="container">
+    <div class="chart">
+      <Chart :option="refBarOption" :style="{ height: '330px' }" />
+    </div>
+
+    <div class="chart item">
+      <Chart :option="refLineOption" :style="{ height: '330px' }" />
+    </div>
+
+    <div class="chart item">
+      <Chart :option="refScoreOption" :style="{ height: '330px' }" />
+    </div>
+  </div>
+</template>
 
 <style lang="less" scoped>
 .container {

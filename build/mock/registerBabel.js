@@ -1,47 +1,39 @@
-// import { join, isAbsolute } from 'path';
-// import { existsSync } from 'fs';
-// import registerBabel from 'af-webpack/registerBabel';
-// import { winPath } from 'umi-utils';
-// import { getConfigPaths } from 'umi-core/lib/getUserConfig';
-const { join, isAbsolute } = require('path');
-const { existsSync } = require('fs');
-const { winPath } = require('./utils');
-// const { getConfigPaths } = require('umi-core/lib/getUserConfig');
-let files = null;
+const { join, isAbsolute } = require('path')
+const { existsSync } = require('fs')
+const { winPath } = require('./utils')
+let files = null
 
 function initFiles(cwd) {
-  if (files) return;
-  files = getConfigPaths(cwd);
+  if (files)
+    return
+  files = getConfigPaths(cwd)
 }
 function getConfigPaths(cwd) {
-  const env = process.env.UMI_ENV;
+  const env = process.env.UMI_ENV
   return [
     join(cwd, 'config/'),
-    // join(cwd, 'mock/'),
     join(cwd, '.umirc.js'),
     join(cwd, '.umirc.ts'),
-    // join(cwd, '.umirc.mock.ts'),
     join(cwd, '.umirc.local.js'),
     join(cwd, '.umirc.local.ts'),
     ...(env ? [join(cwd, `.umirc.${env}.js`), join(cwd, `.umirc.${env}.ts`)] : []),
-  ];
+  ]
 }
 
 function addBabelRegisterFiles(extraFiles, { cwd }) {
-  initFiles(cwd);
-  files = files.concat(...extraFiles);
+  initFiles(cwd)
+  files = files.concat(...extraFiles)
 }
 function addBabelRegister({ cwd }) {
-  initFiles(cwd);
-  const only = files.map(f => {
-    const fullPath = isAbsolute(f) ? f : join(cwd, f);
-    return winPath(fullPath);
-  });
+  initFiles(cwd)
+  const only = files.map((f) => {
+    const fullPath = isAbsolute(f) ? f : join(cwd, f)
+    return winPath(fullPath)
+  })
 
-  let absSrcPath = join(cwd, 'src');
-  if (!existsSync(absSrcPath)) {
-    absSrcPath = cwd;
-  }
+  let absSrcPath = join(cwd, 'src')
+  if (!existsSync(absSrcPath))
+    absSrcPath = cwd
 
   registerBabel({
     // only suport glob
@@ -75,18 +67,18 @@ function addBabelRegister({ cwd }) {
         },
       ],
     ],
-  });
+  })
 }
 function configBabelRegister(files, { cwd }) {
   addBabelRegisterFiles(files, {
     cwd,
-  });
+  })
   addBabelRegister({
     cwd,
-  });
+  })
 }
 function registerBabel(opts = {}) {
-  const { only, ignore, babelPreset, babelPlugins } = opts;
+  const { only, ignore, babelPreset, babelPlugins } = opts
   if (!process.env.IS_FROM_UMI_TEST) {
     require('@babel/register')({
       presets: [require.resolve('@babel/preset-typescript'), babelPreset],
@@ -96,8 +88,8 @@ function registerBabel(opts = {}) {
       extensions: ['.es6', '.es', '.jsx', '.js', '.mjs', '.ts', '.tsx'],
       babelrc: false,
       cache: false,
-    });
+    })
   }
 }
 
-module.exports = { addBabelRegisterFiles, addBabelRegister, configBabelRegister };
+module.exports = { addBabelRegisterFiles, addBabelRegister, configBabelRegister }
