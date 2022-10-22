@@ -94,6 +94,12 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-emoji-chinese"
+    },
+    "cz-emoji-chinese": {
+      "skipQuestions": [
+        "body",
+        "scope"
+      ]
     }
   }
 }
