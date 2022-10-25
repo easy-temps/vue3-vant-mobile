@@ -45,21 +45,21 @@ git clone https://github.com/CharleeWa/vue3-vant-mobile.git
 ```bash
 cd vue3-vant-mobile
 
-# with yarn
-yarn install
+# with pnpm
+pnpm install
 
 ```
 
 - run
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 - build
 
 ```bash
-yarn build
+pnpm build
 ```
 
 ## Preview
