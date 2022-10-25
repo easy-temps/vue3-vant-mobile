@@ -22,15 +22,18 @@
 
 🎉🎉🎉 Added to the [Awesome Vite.Js](https://github.com/vitejs/awesome-vite#vue-3)
 
-## Preparation
+## Features
 
-- [Vite](https://cn.vitejs.dev/) - Familiar with vite features
-- [Vue3](https://v3.vuejs.org/) - Familiar with Vue3 basic syntax
-- [Vant4](https://youzan.github.io/vant/v4/#/zh-CN) - Familiar with the basic use of `Vant4`
-- [Pinia](https://pinia.vuejs.org/) - Familiar with the basic use of `Pinia`
-- [Vitest](https://vitest.dev/) - Familiar with the basic use of `Vitest`
-- [TypeScript](https://www.typescriptlang.org/) - Familiar with the basic syntax of `TypeScript`
-- [Vue-Router](https://router.vuejs.org/) - Familiar with the basic use of `Vue-Router`
+- 🌓 Support Dark Mode
+- 💪 Written in TypeScript
+- 🚀 Support Vue 3 out-of-the-box
+- 🤖 Auto Importing components
+- 📄 Easy to create files (plop)
+- 📦 Using pnpm package manager
+- 💾 Support Mock server
+- 🌈 Support Git hooks (lint and commit)
+- 💖 Mobile UI Components (Vant4)
+- 🍍 Pinia, Store for Vue
 
 ## Install and use
 
