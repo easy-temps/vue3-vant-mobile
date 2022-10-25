@@ -1,6 +1,9 @@
 {
   "name": "vue3-vant-mobile",
   "version": "1.0.0",
+  "packageManager": "pnpm@7.14.0",
+  "description": "template for Vue3 Vant Mobile",
+  "license": "MIT",
   "scripts": {
     "dev": "cross-env MOCK_SERVER_PORT=8086 vite",
     "build": "vue-tsc --noEmit && vite build",
