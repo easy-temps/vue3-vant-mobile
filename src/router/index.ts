@@ -30,7 +30,7 @@ const routes = [
 
 // 创建路由实例并传递 `routes` 配置
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(process.env.VUE_APP_PUBLIC_PATH),
   routes,
   scrollBehavior() {
     // 始终滚动到顶部
