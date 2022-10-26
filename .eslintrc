@@ -1,6 +1,5 @@
 {
   "extends": [
-    "@antfu",
-    "./.eslintrc-auto-import.json"
+    "@antfu"
   ]
 }

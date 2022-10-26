@@ -53,9 +53,6 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
           'vitest',
         ],
         dts: true,
-        eslintrc: {
-          enabled: true,
-        },
       }),
 
       viteVConsole({
