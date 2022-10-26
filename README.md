@@ -79,9 +79,11 @@ Support modern browsers and Chrome >= 51、iOS >= 10.0 (same as Vue 3)
 | :-: | :-: | :-: | :-: | :-: |
 | not support | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
 
-## Maintainer
+## Contributors
 
-[@CharleeWa](https://github.com/CharleeWa)
+<a href="https://github.com/CharleeWa/vue3-vant-mobile/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=CharleeWa/vue3-vant-mobile" />
+</a>
 
 ## LICENSE
 
