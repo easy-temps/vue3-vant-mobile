@@ -116,4 +116,4 @@ Support modern browsers and Chrome >= 51、iOS >= 10.0 (same as Vue 3)
 
 ## LICENSE
 
-[MIT](https://en.wikipedia.org/wiki/MIT_License)
+♥️ [MIT](https://en.wikipedia.org/wiki/MIT_License)
