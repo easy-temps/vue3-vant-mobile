@@ -81,9 +81,38 @@ Support modern browsers and Chrome >= 51、iOS >= 10.0 (same as Vue 3)
 
 ## Contributors
 
-<a href="https://github.com/CharleeWa/vue3-vant-mobile/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=CharleeWa/vue3-vant-mobile" />
-</a>
+<table>
+<tr>
+  <td align="center">
+    <a href="https://github.com/CharleeWa">
+      <img src="https://avatars.githubusercontent.com/u/22477554?s=96&v=4" width="90;" alt="CharleeWa"/>
+      <br />
+      <sub><b>Charlie Wang</b></sub>
+    </a>
+  </td>
+  <td align="center">
+    <a href="https://github.com/weiq">
+      <img src="https://avatars.githubusercontent.com/u/1697158?v=4" width="90;" alt="weiq"/>
+      <br />
+      <sub><b>魏小雨</b></sub>
+    </a>
+  </td>
+  <td align="center">
+    <a href="https://github.com/AlphaYoung111">
+      <img src="https://avatars.githubusercontent.com/u/54132313?v=4" width="90;" alt="AlphaYoung"/>
+      <br />
+      <sub><b>AlphaYoung</b></sub>
+    </a>
+  </td>
+  <td align="center">
+    <a href="https://github.com/Leezon">
+      <img src="https://avatars.githubusercontent.com/u/38120280?v=4" width="90;" alt="Leezon"/>
+      <br />
+      <sub><b>Leezon</b></sub>
+    </a>
+  </td>
+</tr>
+</table>
 
 ## LICENSE
 
