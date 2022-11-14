@@ -16,7 +16,7 @@ const list = [
   { prose: '🔖 很久找你，一直没有找到，微风吹过的时候，我深深的呼吸，才感觉到你也在陪伴着我呼吸。' },
 ]
 
-module.exports = {
+export default {
   'GET /api/project/prose': (req, res) => {
     res.json(list[Math.floor(Math.random() * 8)])
   },

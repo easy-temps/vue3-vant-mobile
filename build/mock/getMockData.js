@@ -2,7 +2,6 @@ const path = require('path')
 const glob = require('glob')
 const { pathToRegexp } = require('path-to-regexp')
 const signale = require('signale')
-
 const { winPath } = require('./utils')
 let _mockconfig = {}
 const cwd = process.cwd()

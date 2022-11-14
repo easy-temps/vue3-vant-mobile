@@ -1,5 +1,5 @@
-const prose = require('./modules/prose')
+import prose from './modules/prose'
 
-module.exports = {
+export default {
   ...prose,
 }
