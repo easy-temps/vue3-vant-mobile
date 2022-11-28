@@ -1,5 +1,5 @@
 import type { AxiosError, AxiosRequestConfig } from 'axios'
-import axios, { AxiosResponse } from 'axios'
+import axios from 'axios'
 import { showNotify } from 'vant'
 import { localStorage } from '@/utils/local-storage'
 import { STORAGE_TOKEN_KEY } from '@/stores/mutation-type'
@@ -62,13 +62,11 @@ const requestHandler = (config: AxiosRequestConfig): AxiosRequestConfig | Promis
 request.interceptors.request.use(requestHandler, errorHandler)
 
 // 响应拦截器
-const responseHandler = (response: AxiosResponse<any>) => {
+const responseHandler = (response: { data: any }) => {
   return response.data
 }
 
 // Add a response interceptor
 request.interceptors.response.use(responseHandler, errorHandler)
-
-export { AxiosResponse }
 
 export default request
