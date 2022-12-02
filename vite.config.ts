@@ -11,6 +11,9 @@ import vue from '@vitejs/plugin-vue'
 import legacy from '@vitejs/plugin-legacy'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
+import px2vw from '@yuo/postcss-px2vw'
+import autoprefixer from 'autoprefixer'
+
 import { viteVConsole } from 'vite-plugin-vconsole'
 import mock from './build/mock/createMockServer'
 
@@ -72,6 +75,17 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
         enable: env.VITE_HTTP_MOCK && env.VITE_MOCK && process.env.NODE_ENV !== 'production',
       }),
     ],
+
+    css: {
+      postcss: {
+        plugins: [
+          autoprefixer(),
+          px2vw({
+            viewportWidth: 375,
+          }),
+        ],
+      },
+    },
 
     build: {
       cssCodeSplit: false,

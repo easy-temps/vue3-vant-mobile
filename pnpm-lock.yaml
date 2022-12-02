@@ -15,6 +15,7 @@ specifiers:
   '@vitejs/plugin-legacy': ^2.3.1
   '@vitejs/plugin-vue': ^3.2.0
   '@vitejs/plugin-vue-jsx': ^2.1.1
+  '@yuo/postcss-px2vw': ^1.0.5
   autoprefixer: ^10.4.13
   axios: ^1.2.0
   babel-plugin-module-resolver: ^4.1.0
@@ -33,8 +34,6 @@ specifiers:
   pinia: ^2.0.27
   pinia-plugin-persistedstate: ^3.0.1
   plop: ^3.1.1
-  postcss: ^8.4.19
-  postcss-px-to-viewport-8-plugin: ^1.1.5
   resize-detector: ^0.3.0
   rollup: ^3.5.0
   rollup-plugin-visualizer: ^5.8.3
@@ -55,7 +54,6 @@ specifiers:
   vue-tsc: ^1.0.9
 
 dependencies:
-  '@types/lodash-es': 4.17.6
   '@vant/touch-emulator': 1.4.0
   '@vant/use': 1.4.3
   axios: 1.2.0
@@ -77,13 +75,15 @@ devDependencies:
   '@babel/preset-env': 7.20.2_@babel+core@7.20.2
   '@babel/preset-typescript': 7.18.6_@babel+core@7.20.2
   '@babel/register': 7.18.9_@babel+core@7.20.2
+  '@types/lodash-es': 4.17.6
   '@types/node': 18.11.9
   '@types/nprogress': 0.2.0
   '@types/store': 2.0.2
   '@vitejs/plugin-legacy': 2.3.1_terser@5.16.0+vite@3.2.4
   '@vitejs/plugin-vue': 3.2.0_vite@3.2.4+vue@3.2.45
   '@vitejs/plugin-vue-jsx': 2.1.1_vite@3.2.4+vue@3.2.45
-  autoprefixer: 10.4.13_postcss@8.4.19
+  '@yuo/postcss-px2vw': 1.0.5
+  autoprefixer: 10.4.13
   babel-plugin-module-resolver: 4.1.0
   commitizen: 4.2.5
   consola: 2.15.3
@@ -95,8 +95,6 @@ devDependencies:
   mockjs: 1.1.0
   path-to-regexp: 6.2.1
   plop: 3.1.1
-  postcss: 8.4.19
-  postcss-px-to-viewport-8-plugin: 1.1.5
   rollup: 3.5.0
   rollup-plugin-visualizer: 5.8.3_rollup@3.5.0
   signale: 1.4.0
@@ -1687,12 +1685,12 @@ packages:
   /@types/lodash-es/4.17.6:
     resolution: {integrity: sha512-R+zTeVUKDdfoRxpAryaQNRKk3105Rrgx2CFRClIgRGaqDTdjsm8h6IYA8ir584W3ePzkZfst5xIgDwYrlh9HLg==}
     dependencies:
-      '@types/lodash': 4.14.190
-    dev: false
+      '@types/lodash': 4.14.191
+    dev: true
 
-  /@types/lodash/4.14.190:
-    resolution: {integrity: sha512-5iJ3FBJBvQHQ8sFhEhJfjUP+G+LalhavTkYyrAYqz5MEJG+erSv0k9KJLb6q7++17Lafk1scaTIFXcMJlwK8Mw==}
-    dev: false
+  /@types/lodash/4.14.191:
+    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
+    dev: true
 
   /@types/mdast/3.0.10:
     resolution: {integrity: sha512-W864tg/Osz1+9f4lrGTZpCSO5/z4608eUp19tbozkq2HJK6i3z1kT0H9tlADXuYIb1YYOBByU4Jsqkk75q48qA==}
@@ -2062,6 +2060,12 @@ packages:
   /@vue/shared/3.2.45:
     resolution: {integrity: sha512-Ewzq5Yhimg7pSztDV+RH1UDKBzmtqieXQlpTVm2AwraoRL/Rks96mvd8Vgi7Lj+h+TH8dv7mXD3FRZR3TUvbSg==}
 
+  /@yuo/postcss-px2vw/1.0.5:
+    resolution: {integrity: sha512-fj2OIh6uN85AoA2rwSZroon7fCVVfOK7WvpD83ArGQrk5e0qiftYc8QxsvSAcqmb4/6VrN1Dm3G/yo3FASeZeQ==}
+    dependencies:
+      postcss: 8.4.19
+    dev: true
+
   /acorn-jsx/5.3.2_acorn@8.8.1:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
@@ -2220,19 +2224,21 @@ packages:
     engines: {node: '>= 4.0.0'}
     dev: true
 
-  /autoprefixer/10.4.13_postcss@8.4.19:
+  /autoprefixer/10.4.13:
     resolution: {integrity: sha512-49vKpMqcZYsJjwotvt4+h/BCjJVnhGwcLpDt5xkcaOG3eLrG/HUYLagrihYsQ+qrIBgIzX1Rw7a6L8I/ZA1Atg==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
       postcss: ^8.1.0
+    peerDependenciesMeta:
+      postcss:
+        optional: true
     dependencies:
       browserslist: 4.21.4
       caniuse-lite: 1.0.30001434
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
-      postcss: 8.4.19
       postcss-value-parser: 4.2.0
     dev: true
 
@@ -5111,11 +5117,6 @@ packages:
       boolbase: 1.0.0
     dev: true
 
-  /object-assign/4.1.1:
-    resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
-    engines: {node: '>=0.10.0'}
-    dev: true
-
   /object-inspect/1.12.2:
     resolution: {integrity: sha512-z+cPxW0QGUp0mcqcsgQyLVRDoXFQbXOwBaqyF7VIgI4TWNQsDHrBpUQslRmIfAoYWdYzs6UlKJtB2XJpTaNSpQ==}
     dev: true
@@ -5563,12 +5564,6 @@ packages:
   /pluralize/8.0.0:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
-    dev: true
-
-  /postcss-px-to-viewport-8-plugin/1.1.5:
-    resolution: {integrity: sha512-qM6x2NyGbRj8R15o/LCbw5hacU+XK1s80zTvWgLjHsOP8B9P1KbDZbNS11BG6/WPut8LR8DvEU5iKw8JnQn9MQ==}
-    dependencies:
-      object-assign: 4.1.1
     dev: true
 
   /postcss-selector-parser/6.0.11:
