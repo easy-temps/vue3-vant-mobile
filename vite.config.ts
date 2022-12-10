@@ -21,9 +21,6 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
   const root = process.cwd()
   const env = loadEnv(mode, root)
 
-  const isHttpMock = env.VITE_HTTP_MOCK === 'true'
-  const isViteMock = env.VITE_MOCK === 'true'
-
   return {
     base: env.VITE_APP_PUBLIC_PATH,
 
@@ -75,7 +72,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
         watch: true,
         mockUrlList: [/api/],
         cwd: process.cwd(),
-        enable: isHttpMock && isViteMock && process.env.NODE_ENV !== 'production',
+        enable: env.VITE_HTTP_MOCK === 'true' && process.env.NODE_ENV !== 'production',
       }),
     ],
 
@@ -106,11 +103,10 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
     server: {
       host: true,
       port: 3000,
-      proxy: isHttpMock && isViteMock && process.env.NODE_ENV !== 'production'
+      proxy: env.VITE_HTTP_MOCK === 'true'
         ? undefined
         : {
             '/api': {
-              // backend url
               target: '',
               ws: false,
               changeOrigin: true,
