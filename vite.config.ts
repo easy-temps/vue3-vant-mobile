@@ -20,8 +20,10 @@ import mock from './build/mock/createMockServer'
 export default ({ command, mode }: ConfigEnv): UserConfig => {
   const root = process.cwd()
   const env = loadEnv(mode, root)
+
   const isHttpMock = env.VITE_HTTP_MOCK === 'true'
   const isViteMock = env.VITE_MOCK === 'true'
+
   return {
     base: env.VITE_APP_PUBLIC_PATH,
 

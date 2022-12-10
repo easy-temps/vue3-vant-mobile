@@ -4,7 +4,7 @@
 
 <h1 align="center">Vue3-Vant-Mobile</h1>
 
-<p align="center">Mobile Template built on Vue3、Vite3、Vant4、Pinia2、Vitest、TypeScript </p>
+<p align="center">Mobile Template built on Vue3、Vite4、Vant4、Pinia2、Vitest、TypeScript </p>
 
 <p align="center">
   <img src="https://img.shields.io/github/license/CharleeWa/vue3-vant-mobile" alt="license" />
@@ -16,7 +16,7 @@
 
 ## Introduction
 
-🔥🔥🔥 Vue3 Vant Mobile based on `Vue3`, `Vite3`, `Vant4`, `Pinia2`, `Vitest`, `TypeScript`; 🚀🚀🚀 Integrate `Plop` to generate any type of code block, integrate `Dark Mode` (Dark) configuration, integrate `Mock` data, and other handy extensions. 💖💖💖 In short, clean, simple, easy to use, reference, can save you a week of development time, hope you like it.
+🔥🔥🔥 Vue3 Vant Mobile based on `Vue3`, `Vite4`, `Vant4`, `Pinia2`, `Vitest`, `TypeScript`; 🚀🚀🚀 Integrate `Plop` to generate any type of code block, integrate `Dark Mode` (Dark) configuration, integrate `Mock` data, and other handy extensions. 💖💖💖 In short, clean, simple, easy to use, reference, can save you a week of development time, hope you like it.
 
 ## Achievement
 
