@@ -65,12 +65,6 @@ pnpm dev
 pnpm build
 ```
 
-## Preview
-
-You can scan the following QR code to access the demo：
-
-<img src="https://opens-1308879050.cos.ap-beijing.myqcloud.com/vvm/preview-qrcode.png" width="220" height="220" >
-
 ## Browser Support
 
 Support modern browsers and Chrome >= 51、iOS >= 10.0 (same as Vue 3)
