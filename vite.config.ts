@@ -11,7 +11,7 @@ import vue from '@vitejs/plugin-vue'
 import legacy from '@vitejs/plugin-legacy'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
-import px2vw from '@yuo/postcss-px2vw'
+import viewport from 'postcss-mobile-forever'
 import autoprefixer from 'autoprefixer'
 
 import { viteVConsole } from 'vite-plugin-vconsole'
@@ -80,8 +80,12 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
       postcss: {
         plugins: [
           autoprefixer(),
-          px2vw({
+          viewport({
+            rootSelector: '#app',
             viewportWidth: 375,
+            border: false,
+            disableDesktop: false,
+            disableLandscape: false,
           }),
         ],
       },

@@ -7,7 +7,7 @@ import 'nprogress/nprogress.css'
 import mian from '@/views/index.vue'
 import mock from '@/views/mock/index.vue'
 import charts from '@/views/charts/index.vue'
-NProgress.configure({ showSpinner: true })
+NProgress.configure({ showSpinner: true, parent: '#app' })
 
 // 定义路由，每个路由都需要映射到一个组件
 const routes = [
