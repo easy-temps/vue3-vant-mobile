@@ -55,7 +55,7 @@
     "mockjs": "^1.1.0",
     "path-to-regexp": "^6.2.1",
     "plop": "^3.1.1",
-    "postcss-mobile-forever": "^2.2.2",
+    "postcss-mobile-forever": "^2.3.2",
     "rollup": "^3.7.2",
     "rollup-plugin-visualizer": "^5.8.3",
     "signale": "^1.4.0",
