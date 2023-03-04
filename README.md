@@ -112,6 +112,13 @@ Support modern browsers
       <sub><b>liuNing</b></sub>
     </a>
   </td>
+  <td align="center">
+    <a href="https://github.com/wswmsword">
+      <img src="https://avatars.githubusercontent.com/u/26893092?v=4" width="90;" alt="wswmsword"/>
+      <br />
+      <sub><b>wswmsword</b></sub>
+    </a>
+  </td>
 </tr>
 </table>
 
