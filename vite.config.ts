@@ -83,7 +83,9 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
           viewport({
             rootSelector: '#app',
             viewportWidth: 375,
+            maxDisplayWidth: undefined,
             border: false,
+            disableMobile: false,
             disableDesktop: false,
             disableLandscape: false,
           }),

@@ -33,7 +33,7 @@ specifiers:
   pinia: ^2.0.28
   pinia-plugin-persistedstate: ^3.0.1
   plop: ^3.1.1
-  postcss-mobile-forever: ^2.2.2
+  postcss-mobile-forever: ^2.3.2
   resize-detector: ^0.3.0
   rollup: ^3.7.2
   rollup-plugin-visualizer: ^5.8.3
@@ -94,7 +94,7 @@ devDependencies:
   mockjs: 1.1.0
   path-to-regexp: 6.2.1
   plop: 3.1.1
-  postcss-mobile-forever: 2.2.2
+  postcss-mobile-forever: 2.3.2
   rollup: 3.7.2
   rollup-plugin-visualizer: 5.8.3_rollup@3.7.2
   signale: 1.4.0
@@ -5820,8 +5820,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /postcss-mobile-forever/2.2.2:
-    resolution: {integrity: sha512-biAaA41V0eiabqZ6fAykhByK+rYADUYQLg6Wvf1FcvJSEE98XRrDykSKAgrK6/+5UhIMJHBjoUJIfEouI5bhHA==}
+  /postcss-mobile-forever/2.3.2:
+    resolution: {integrity: sha512-ac089WYPsExUCZQWcSnMMH3jMAYUAuSdiJVDk4axkA0t8/ks1ZHSCo9G/t/zwG62a/xK2PGfy2zQdrqa40/+iQ==}
     peerDependencies:
       postcss: ^8.0.0
     peerDependenciesMeta:
