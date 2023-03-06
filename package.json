@@ -12,7 +12,8 @@
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
     "test": "vitest",
-    "plop": "plop"
+    "plop": "plop",
+    "prepare": "npx husky install"
   },
   "dependencies": {
     "@vant/touch-emulator": "^1.4.0",
