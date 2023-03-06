@@ -119,6 +119,13 @@ Support modern browsers
       <sub><b>wswmsword</b></sub>
     </a>
   </td>
+  <td align="center">
+    <a href="https://github.com/Kysen777">
+      <img src="https://avatars.githubusercontent.com/u/63892082?v=4" width="90;" alt="Kysen"/>
+      <br />
+      <sub><b>Kysen</b></sub>
+    </a>
+  </td>
 </tr>
 </table>
 
