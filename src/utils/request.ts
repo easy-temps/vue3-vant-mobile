@@ -1,4 +1,4 @@
-import type { AxiosError, AxiosRequestConfig } from 'axios'
+import type { AxiosError, InternalAxiosRequestConfig } from 'axios'
 import axios from 'axios'
 import { showNotify } from 'vant'
 import { localStorage } from '@/utils/local-storage'
@@ -48,7 +48,7 @@ const errorHandler = (error: RequestError): Promise<any> => {
 }
 
 // 请求拦截器
-const requestHandler = (config: AxiosRequestConfig): AxiosRequestConfig | Promise<AxiosRequestConfig> => {
+const requestHandler = (config: InternalAxiosRequestConfig): InternalAxiosRequestConfig | Promise<InternalAxiosRequestConfig> => {
   const savedToken = localStorage.get(STORAGE_TOKEN_KEY)
   // 如果 token 存在
   // 让每个请求携带自定义 token, 请根据实际情况修改
