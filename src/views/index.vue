@@ -21,7 +21,7 @@ watch(checked, (val) => {
 <template>
   <div class="container">
     <div class="logo" />
-    <van-cell-group title="Do more difficult things" inset>
+    <van-cell-group title="一个集成最新技术栈、完整干净的移动端模板" inset>
       <van-cell center title="🌗 暗黑模式">
         <template #right-icon>
           <van-switch v-model="checked" size="18px" />
@@ -34,9 +34,9 @@ watch(checked, (val) => {
 
       <van-cell center>
         <template #title>
-          <span class="custom-title">🎨 小游戏</span>
+          <span class="custom-title">🎨 欢迎补充</span>
           <van-tag type="primary">
-            敬请期待
+            PR
           </van-tag>
         </template>
       </van-cell>
