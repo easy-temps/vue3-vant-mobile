@@ -4,7 +4,7 @@
 
 <h1 align="center">Vue3-Vant-Mobile</h1>
 
-<p align="center">Mobile Template built on Vue3、Vite4、Vant4、Pinia2、Vitest、TypeScript </p>
+<p align="center">一个集成 Vue3、Vite4、Vant4、Pinia2、Vitest、TypeScript 构建的移动端模板</p>
 
 <p align="center">
   <img src="https://img.shields.io/github/license/CharleeWa/vue3-vant-mobile" alt="license" />
@@ -14,38 +14,38 @@
   <img src="https://img.shields.io/github/issues-closed/CharleeWa/vue3-vant-mobile" alt="issues" />
 </p>
 
-English | [简体中文](./README-zh_CN.md)
+[English](./README.md) | 简体中文
 
-## Introduction
+## 介绍
 
-🔥🔥🔥 Vue3 Vant Mobile based on `Vue3`, `Vite4`, `Vant4`, `Pinia2`, `Vitest`, `TypeScript`; 🚀🚀🚀 Integrate `Plop` to generate any type of code block, integrate `Dark Mode` (Dark) configuration, integrate `Mock` data, and other handy extensions. 💖💖💖 In short, clean, simple, easy to use, reference, can save you a week of development time, hope you like it.
+🔥🔥🔥 这是一个基于 `Vue3`, `Vite4`, `Vant4`, `Pinia2`, `Vitest`, `TypeScript` 构建的移动端模板。 🚀🚀🚀 它集成了`Plop`用于生成各种类型的代码块，同时还提供了 `Dark Mode`（暗黑模式）配置以及 `Mock` 数据等其他方便的扩展功能。💖💖💖 简而言之，它简洁、简单、易用，可供参考，能够帮助您节省一周的开发时间，希望您会喜欢。
 
-## Achievement
+## 成就
 
-🎉🎉🎉 Added to the [Awesome Vite.Js](https://github.com/vitejs/awesome-vite#vue-3)
+🎉🎉🎉 被添加到 [Awesome Vite.Js](https://github.com/vitejs/awesome-vite#vue-3)
 
-## Features
+## 特性
 
-- 🌓 Support Dark Mode
-- 💪 Written in TypeScript
-- 🚀 Support Vue 3 out-of-the-box
-- 🤖 Auto Importing components
-- 📄 Easy to create files (plop)
-- 📦 Using pnpm package manager
-- 💾 Support Mock server
-- 🌈 Support Git hooks (lint and commit)
-- 💖 Mobile UI Components (Vant4)
-- 🍍 Pinia, Store for Vue
+- 🌓 支持暗黑模式
+- 💪 使用TypeScript编写
+- 🚀 Vue3 生态开箱即用
+- 🤖 自动导入组件
+- 📄 使用plop轻松创建文件
+- 📦 使用pnpm包管理器
+- 💾 支持Mock服务器
+- 🌈 支持Git hooks（lint和commit）
+- 💖 移动端UI组件（Vant4）
+- 🍍 Pinia，Vue的状态管理库
 
-## Install and use
+## 安装与使用
 
-- Get the project code
+- 获取项目代码
 
 ```bash
 git clone https://github.com/CharleeWa/vue3-vant-mobile.git
 ```
 
-- Installation dependencies
+- 安装依赖
 
 ```bash
 cd vue3-vant-mobile
@@ -55,27 +55,27 @@ pnpm install
 
 ```
 
-- run
+- 运行
 
 ```bash
 pnpm dev
 ```
 
-- build
+- 打包构建
 
 ```bash
 pnpm build
 ```
 
-## Browser Support
+## 浏览器支持
 
-Support modern browsers
+支持现代浏览器
 
 | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt=" Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt=" Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
 | :-: | :-: | :-: | :-: | :-: |
 | not support | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
 
-## Contributors
+## 贡献者
 
 <table>
 <tr>
@@ -131,6 +131,6 @@ Support modern browsers
 </tr>
 </table>
 
-## LICENSE
+## 许可证
 
 ♥️ [MIT](https://en.wikipedia.org/wiki/MIT_License)
