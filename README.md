@@ -14,7 +14,7 @@
   <img src="https://img.shields.io/github/issues-closed/CharleeWa/vue3-vant-mobile" alt="issues" />
 </p>
 
-English | [简体中文](./README-zh_CN.md)
+English / [简体中文](./README-zh_CN.md) , [使用指南](./Guide-zh_CN.md) / [English Guide](./Guide.md)
 
 ## Introduction
 
