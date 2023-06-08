@@ -29,7 +29,8 @@
     "vant": "^4.2.0",
     "vconsole": "^3.15.0",
     "vue": "^3.2.47",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "vue-router-better-scroller": "^0.0.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.33.1",

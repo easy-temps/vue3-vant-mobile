@@ -32,10 +32,6 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.VUE_APP_PUBLIC_PATH),
   routes,
-  scrollBehavior() {
-    // 始终滚动到顶部
-    return { top: 0 }
-  },
 })
 
 router.beforeEach((_to, _from, next) => {
