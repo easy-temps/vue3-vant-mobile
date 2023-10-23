@@ -1,7 +1,3 @@
-<p align="center">
-    <img alt="logo" src="https://opens-1308879050.cos.ap-beijing.myqcloud.com/vvm/logo.png" width="120" height="120" style="margin-bottom: 10px;">
-</p>
-
 <h1 align="center">Vue3-Vant-Mobile</h1>
 
 <p align="center">Mobile Template built on Vue3、Vite4、Vant4、Pinia2、Vitest、TypeScript </p>
