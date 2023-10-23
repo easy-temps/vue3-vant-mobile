@@ -14,13 +14,13 @@ echarts.registerTheme('dark-chart', dark)
 const chartDom = ref<HTMLDivElement>()
 let chart: ECharts | null = null
 const isRealDark = inject('isRealDark', ref(false))
-const resizeChart = () => {
+function resizeChart() {
   chart?.resize()
 }
 
 const resize = debounce(resizeChart, 300)
 
-const disposeChart = () => {
+function disposeChart() {
   if (chartDom.value)
     removeListener(chartDom.value, resize)
 
@@ -28,7 +28,7 @@ const disposeChart = () => {
   chart = null
 }
 
-const initChart = () => {
+function initChart() {
   disposeChart()
   if (chartDom.value) {
     // init echarts

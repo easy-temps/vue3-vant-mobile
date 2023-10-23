@@ -1,11 +1,13 @@
-const { join } = require('path')
-const url = require('url')
+/* eslint-disable node/prefer-global/process */
+const { join } = require('node:path')
+const url = require('node:url')
 const chokidar = require('chokidar')
 const signale = require('signale')
 const { match } = require('path-to-regexp')
 const { initMock, getMatchMock } = require('./getMockData')
 const { winPath } = require('./utils')
 const { configBabelRegister } = require('./registerBabel')
+
 let watcher
 function getPaths(cwd) {
   const winCwd = winPath(cwd)
@@ -95,7 +97,8 @@ module.exports = function (opts) {
           let queryParams = {}
 
           if (req.url)
-            // eslint-disable-next-line n/no-deprecated-api
+
+            // eslint-disable-next-line node/no-deprecated-api
             queryParams = url.parse(req.url, true)
 
           const reqUrl = queryParams.pathname

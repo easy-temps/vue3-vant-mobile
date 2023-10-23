@@ -13,6 +13,7 @@ export const REQUEST_TOKEN_KEY = 'Access-Token'
 // 创建 axios 实例
 const request = axios.create({
   // API 请求的默认前缀
+  // eslint-disable-next-line node/prefer-global/process
   baseURL: process.env.VUE_APP_API_BASE_URL,
   timeout: 6000, // 请求超时时间
 })
@@ -24,7 +25,7 @@ export type RequestError = AxiosError<{
 }>
 
 // 异常拦截处理器
-const errorHandler = (error: RequestError): Promise<any> => {
+function errorHandler(error: RequestError): Promise<any> {
   if (error.response) {
     const { data = {}, status, statusText } = error.response
     // 403 无权限
@@ -48,7 +49,7 @@ const errorHandler = (error: RequestError): Promise<any> => {
 }
 
 // 请求拦截器
-const requestHandler = (config: InternalAxiosRequestConfig): InternalAxiosRequestConfig | Promise<InternalAxiosRequestConfig> => {
+function requestHandler(config: InternalAxiosRequestConfig): InternalAxiosRequestConfig | Promise<InternalAxiosRequestConfig> {
   const savedToken = localStorage.get(STORAGE_TOKEN_KEY)
   // 如果 token 存在
   // 让每个请求携带自定义 token, 请根据实际情况修改
@@ -62,7 +63,7 @@ const requestHandler = (config: InternalAxiosRequestConfig): InternalAxiosReques
 request.interceptors.request.use(requestHandler, errorHandler)
 
 // 响应拦截器
-const responseHandler = (response: { data: any }) => {
+function responseHandler(response: { data: any }) {
   return response.data
 }
 
