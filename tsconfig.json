@@ -17,10 +17,10 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "importHelpers": true,
-    "importsNotUsedAsValues": "preserve",
     "sourceMap": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "verbatimModuleSyntax": true,
     "skipLibCheck": true
   },
   "include": [
