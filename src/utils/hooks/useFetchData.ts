@@ -57,7 +57,7 @@ export const defaultContext: Context<any> = {
 }
 
 // 如果请求数据中，没有分页，仅单列表数据，可以使用该方法进行包装，免去重复写请求方法
-export const wrap = (req: () => Promise<any[]>): (() => Promise<ReponseData<any>>) => {
+export function wrap(req: () => Promise<any[]>): (() => Promise<ReponseData<any>>) {
   return () =>
     req().then((res) => {
       const data = res
@@ -69,7 +69,7 @@ export const wrap = (req: () => Promise<any[]>): (() => Promise<ReponseData<any>
     })
 }
 
-const filterNoValidValue = (obj: Record<string, any> = {}) => {
+function filterNoValidValue(obj: Record<string, any> = {}) {
   const newObj = {}
   Object.keys(obj).forEach((k) => {
     if (obj[k] !== undefined && obj[k] !== '' && obj[k] !== null)
@@ -79,27 +79,23 @@ const filterNoValidValue = (obj: Record<string, any> = {}) => {
   return newObj
 }
 
-export const useFetchData = <T extends ReponseData<any>>(
-  getData: (params?: RequestParams) => Promise<T>,
-  context: MaybeRef<{
-    stripe?: boolean
-    current?: number
-    pageSize?: number
-    dataSource?: T['data']
-    loading?: boolean
-    requestParams?: MaybeRef<{
-      [key: string]: any
-    }>
+export function useFetchData<T extends ReponseData<any>>(getData: (params?: RequestParams) => Promise<T>, context: MaybeRef<{
+  stripe?: boolean
+  current?: number
+  pageSize?: number
+  dataSource?: T['data']
+  loading?: boolean
+  requestParams?: MaybeRef<{
     [key: string]: any
-  }> = reactive({ ...defaultContext }),
-  options?: {
-    current?: number
-    pageSize?: number
-    onLoad?: (dataSource: T['data']) => void
-    onRequestError?: (e: Error) => void
-    pagination?: boolean
-  },
-): UseFetchDataAction<T> => {
+  }>
+  [key: string]: any
+}> = reactive({ ...defaultContext }), options?: {
+  current?: number
+  pageSize?: number
+  onLoad?: (dataSource: T['data']) => void
+  onRequestError?: (e: Error) => void
+  pagination?: boolean
+}): UseFetchDataAction<T> {
   const state = reactive({ ...defaultContext } as Context<T>)
   const mergeContext = isReactive(context) || isRef(context) ? context : ref(context)
   watch(

@@ -1,6 +1,8 @@
-const { join, isAbsolute } = require('path')
-const { existsSync } = require('fs')
+/* eslint-disable node/prefer-global/process */
+const { join, isAbsolute } = require('node:path')
+const { existsSync } = require('node:fs')
 const { winPath } = require('./utils')
+
 let files = null
 
 function initFiles(cwd) {

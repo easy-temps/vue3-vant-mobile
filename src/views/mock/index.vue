@@ -3,7 +3,7 @@ import { queryProse } from '@/api'
 
 const messages = ref<string>('')
 
-const pull = () => {
+function pull() {
   queryProse().then((res) => {
     messages.value = res.prose
   })
@@ -17,7 +17,7 @@ const onClickLeft = () => history.back()
 </script>
 
 <template>
-  <van-nav-bar title="💿 mock 指南" left-arrow fixed @click-left="onClickLeft" />
+  <VanNavBar title="💿 mock 指南" left-arrow fixed @click-left="onClickLeft" />
 
   <div class="container">
     <div class="data-label">
@@ -27,15 +27,15 @@ const onClickLeft = () => history.back()
       <div v-if="messages">
         {{ messages }}
       </div>
-      <van-empty v-else description="暂无数据" />
+      <VanEmpty v-else description="暂无数据" />
     </div>
 
-    <van-button round block type="primary" @click="pull">
+    <VanButton round block type="primary" @click="pull">
       请求
-    </van-button>
-    <van-button round block type="default" @click="reset">
+    </VanButton>
+    <VanButton round block type="default" @click="reset">
       清空
-    </van-button>
+    </VanButton>
   </div>
 </template>
 

@@ -7,8 +7,7 @@ module.exports = {
     name: 'name',
     message: 'component name please',
     validate: notEmpty('name'),
-  },
-  {
+  }, {
     type: 'checkbox',
     name: 'blocks',
     message: 'Blocks:',
@@ -16,26 +15,22 @@ module.exports = {
       name: '<template>',
       value: 'template',
       checked: true,
-    },
-    {
+    }, {
       name: '<script>',
       value: 'script',
       checked: true,
-    },
-    {
+    }, {
       name: 'style',
       value: 'style',
       checked: true,
-    },
-    ],
+    }],
     validate(value) {
       if (!value.includes('script') && !value.includes('template'))
         return 'Components require at least a <script> or <template> tag.'
 
       return true
     },
-  },
-  ],
+  }],
   actions: (data) => {
     const name = '{{properCase name}}'
     const actions = [{

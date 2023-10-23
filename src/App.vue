@@ -24,7 +24,7 @@ provide('isRealDark', computed(() => theme.value === 'dark'))
 </script>
 
 <template>
-  <van-config-provider :theme="theme">
-    <router-view />
-  </van-config-provider>
+  <VanConfigProvider :theme="theme">
+    <RouterView />
+  </VanConfigProvider>
 </template>

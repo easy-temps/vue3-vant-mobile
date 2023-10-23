@@ -1,4 +1,5 @@
-import path from 'path'
+/* eslint-disable node/prefer-global/process */
+import path from 'node:path'
 import { loadEnv } from 'vite'
 import type { ConfigEnv, UserConfig } from 'vite'
 
@@ -81,13 +82,9 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
         plugins: [
           autoprefixer(),
           viewport({
-            rootSelector: '#app',
+            appSelector: '#app',
             viewportWidth: 375,
-            maxDisplayWidth: undefined,
-            border: false,
-            disableMobile: false,
-            disableDesktop: false,
-            disableLandscape: false,
+            maxDisplayWidth: 600,
           }),
         ],
       },

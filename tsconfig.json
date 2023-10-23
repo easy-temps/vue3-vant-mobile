@@ -1,27 +1,27 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "esnext",
     "jsx": "preserve",
-    "importHelpers": true,
-    "moduleResolution": "node",
-    "allowJs": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "experimentalDecorators": true,
     "baseUrl": ".",
-    "types": ["node"],
+    "module": "esnext",
+    "moduleResolution": "node",
     "paths": {
       "@/*": ["src/*"]
     },
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "types": ["node"],
+    "allowJs": true,
     "strictNullChecks": false,
-    "experimentalDecorators": true,
-    "noUnusedParameters": true,
-    "noUnusedLocals": true,
     "noImplicitAny": false,
-    "skipLibCheck": true,
-    "importsNotUsedAsValues": "preserve"
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "importHelpers": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true
   },
   "include": [
     "src/App.vue",

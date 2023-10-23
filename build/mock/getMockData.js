@@ -1,9 +1,11 @@
-const path = require('path')
+const path = require('node:path')
 const glob = require('glob')
 const { pathToRegexp } = require('path-to-regexp')
 const signale = require('signale')
 const { winPath } = require('./utils')
+
 let _mockconfig = {}
+// eslint-disable-next-line node/prefer-global/process
 const cwd = process.cwd()
 let mockList = []
 // 获取mock文件列表
