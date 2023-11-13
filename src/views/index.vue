@@ -21,16 +21,19 @@ watch(checked, (val) => {
 <template>
   <div class="container">
     <div class="logo" />
+
     <VanCellGroup title="一个集成最新技术栈、完整干净的移动端模板" inset>
       <VanCell center title="🌗 暗黑模式">
         <template #right-icon>
-          <VanSwitch v-model="checked" size="18px" />
+          <VanSwitch v-model="checked" size="23px" />
         </template>
       </VanCell>
 
-      <VanCell title="💿 mock 指南" to="mock" is-link />
+      <VanCell title="💿 Mock 指南" to="mock" is-link />
 
-      <VanCell title="📊 charts 演示" to="charts" is-link />
+      <VanCell title="📊 Echarts 演示" to="charts" is-link />
+
+      <VanCell title="🪶 Unocss 示例" to="unocss" is-link />
 
       <VanCell center>
         <template #title>

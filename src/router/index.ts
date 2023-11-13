@@ -7,6 +7,7 @@ import 'nprogress/nprogress.css'
 import mian from '@/views/index.vue'
 import mock from '@/views/mock/index.vue'
 import charts from '@/views/charts/index.vue'
+import unocss from '@/views/unocss/index.vue'
 
 NProgress.configure({ showSpinner: true, parent: '#app' })
 
@@ -26,6 +27,11 @@ const routes = [
     path: '/charts',
     name: 'charts',
     component: charts,
+  },
+  {
+    path: '/unocss',
+    name: 'unocss',
+    component: unocss,
   },
 ]
 

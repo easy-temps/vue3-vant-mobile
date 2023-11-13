@@ -63,7 +63,7 @@ const onClickLeft = () => history.back()
 </script>
 
 <template>
-  <VanNavBar title="📊 charts" left-arrow fixed @click-left="onClickLeft" />
+  <VanNavBar title="📊 Echarts" left-arrow fixed @click-left="onClickLeft" />
 
   <div class="container">
     <div class="chart">

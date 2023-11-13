@@ -5,6 +5,8 @@ import { createRouterScroller } from 'vue-router-better-scroller'
 import App from './App.vue'
 import router from './router'
 
+import 'virtual:uno.css'
+
 import './app.less'
 
 // Vant 桌面端适配

@@ -16,6 +16,7 @@ import viewport from 'postcss-mobile-forever'
 import autoprefixer from 'autoprefixer'
 
 import { viteVConsole } from 'vite-plugin-vconsole'
+import UnoCSS from 'unocss/vite'
 import mock from './build/mock/createMockServer'
 
 export default ({ command, mode }: ConfigEnv): UserConfig => {
@@ -25,6 +26,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
   return {
     base: env.VITE_APP_PUBLIC_PATH,
 
+    // 兼容 Cli
     define: {
       'process.env.VUE_APP_API_BASE_URL': JSON.stringify(env.VITE_APP_API_BASE_URL),
       'process.env.VUE_APP_PUBLIC_PATH': JSON.stringify(env.VITE_APP_PUBLIC_PATH),
@@ -34,6 +36,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
       vue(),
       vueJsx(),
       visualizer(),
+      UnoCSS(),
 
       legacy({
         targets: ['defaults', 'not IE 11'],

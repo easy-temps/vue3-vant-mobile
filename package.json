@@ -8,9 +8,9 @@
     "dev": "cross-env MOCK_SERVER_PORT=8086 vite",
     "build": "vue-tsc --noEmit && vite build",
     "build:dev": "vue-tsc --noEmit && vite build --mode=development",
+    "preview": "npm run build && vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "preview": "vite preview",
     "test": "vitest",
     "plop": "plop",
     "prepare": "npx husky install"
@@ -42,6 +42,7 @@
     "@types/node": "^20.9.0",
     "@types/nprogress": "^0.2.3",
     "@types/store": "^2.0.5",
+    "@unocss/preset-rem-to-px": "^0.57.3",
     "@vitejs/plugin-legacy": "^4.1.1",
     "@vitejs/plugin-vue": "^4.4.0",
     "@vitejs/plugin-vue-jsx": "^3.0.2",
@@ -64,6 +65,7 @@
     "slash2": "^2.0.0",
     "terser": "^5.24.0",
     "typescript": "^5.2.2",
+    "unocss": "^0.57.3",
     "unplugin-auto-import": "^0.16.7",
     "unplugin-vue-components": "^0.25.2",
     "vite": "^4.5.0",
@@ -75,7 +77,10 @@
     "peerDependencyRules": {
       "ignoreMissing": [
         "postcss"
-      ]
+      ],
+      "allowedVersions": {
+        "rollup": "^4.x"
+      }
     }
   },
   "config": {

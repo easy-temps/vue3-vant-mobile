@@ -32,6 +32,7 @@ English / [简体中文](./README-zh_CN.md) , [使用指南](./Guide-zh_CN.md) /
 - 🌈 Support Git hooks (lint and commit)
 - 💖 Mobile UI Components (Vant4)
 - 🍍 Pinia, Store for Vue
+- 🪶 Support Unocss and Less
 
 ## Install and use
 
