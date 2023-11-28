@@ -107,6 +107,8 @@ pnpm build
       <sub><b>Leezon</b></sub>
     </a>
   </td>
+</tr>
+<tr>
   <td align="center">
     <a href="https://github.com/leo4developer">
       <img src="https://avatars.githubusercontent.com/u/15160478?v=4" width="90;" alt="liuNing"/>
@@ -126,6 +128,13 @@ pnpm build
       <img src="https://avatars.githubusercontent.com/u/63892082?v=4" width="90;" alt="Kysen"/>
       <br />
       <sub><b>Kysen</b></sub>
+    </a>
+  </td>
+  <td align="center">
+    <a href="https://github.com/smartsf">
+      <img src="https://avatars.githubusercontent.com/u/19995400?v=4" width="90;" alt="smartsf"/>
+      <br />
+      <sub><b>阿峰</b></sub>
     </a>
   </td>
 </tr>
