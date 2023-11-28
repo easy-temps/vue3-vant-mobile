@@ -4,7 +4,7 @@ import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 
 // 导入路由组件
-import mian from '@/views/index.vue'
+import main from '@/views/index.vue'
 import mock from '@/views/mock/index.vue'
 import charts from '@/views/charts/index.vue'
 import unocss from '@/views/unocss/index.vue'
@@ -16,7 +16,7 @@ const routes = [
   {
     path: '/',
     name: 'main',
-    component: mian,
+    component: main,
   },
   {
     path: '/mock',
