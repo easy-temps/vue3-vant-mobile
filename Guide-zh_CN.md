@@ -35,11 +35,9 @@
 │   └── env.d.ts             # 全局公用 TypeScript 类型
 ├── build/mock               # mock 服务
 ├── mock                     # mock 数据
-├── plop-templates           # 代码块生成
 ├── public                   # 静态文件
 ├── scripts                  # 公共执行脚本
 ├── tests                    # 单元测试
-├── plopfile.js              # plop 入口
 ├── auto-imports.d.ts        # Vue3 组合式API 类型声明文件
 ├── components.d.ts          # 组件自注册类型声明文件
 ├── vite.config.ts           # Vite 配置文件
@@ -68,7 +66,7 @@ pnpm install
 
 ```
 
-> 如果网络状况不佳，可以设置 pnpm 的 npm 加载源，如 pnpm config set registry https://registry.npmmirror.com
+> 如果网络状况不佳，可以设置 pnpm 的 npm 加载源，如 pnpm config set registry <https://registry.npmmirror.com>
 
 完成前面的步骤以后，就可以启动项目，开始进行业务开发了。
 
@@ -80,16 +78,6 @@ pnpm dev
 
 这里的『页面』指配置了路由，能够通过链接直接访问的模块，要新建一个页面，通常只需要在脚手架的基础上进行简单的配置。
 
-脚手架除了手动创建以外，还集成了 `plop`，一种代码片段快速生成插件，避免重复拷贝粘贴工作。
-
-- 命令式创建
-
-这里已经为大家预置了两种：`view` 和 `component`，选择一个之后按回车键就可以在项目目录的左侧看到了。
-
-```bash
-pnpm plop
-```
-
 - 手动创建
 
 在 src/views 下新建页面的vue文件，如果相关页面有多个，可以新建一个文件夹来放置相关文件。
@@ -97,7 +85,6 @@ pnpm plop
 值得提醒的是，样式文件默认使用 `Less`，如果想要集成其它预处理器，如 `Sass` 和 `Stylus`，请自行安装。
 
 最后，记得将新建的文件加入路由 - router/index.ts
-
 
 ### 新增业务组件
 
@@ -119,13 +106,13 @@ pnpm plop
 
 ```
 <template>
-	<div class="image-wrapper">
-		<img class="img" :src="src" :alt="desc" />
+ <div class="image-wrapper">
+  <img class="img" :src="src" :alt="desc" />
     <!-- 如果使用该组件的使用者没用 slot，则默认 div.desc 来输出传递的 desc 属性 -->
-		<slot name="desc">
-			<div class="desc" v-if="desc">{{ desc }}</div>
-		</slot>
-	</div>
+  <slot name="desc">
+   <div class="desc" v-if="desc">{{ desc }}</div>
+  </slot>
+ </div>
 </template>
 
 <script setup lang="ts">
@@ -142,15 +129,15 @@ const props = defineProps({
 
 ```
 <template>
-	<!-- 普通使用方式 -->
-	<image-wrapper :src="state.imageSrc" :desc="state.context"></image-wrapper>
-	
-	<!-- 使用 slot 的 desc 方式 -->
-	<image-wrapper :src="state.imageSrc">
-		<template #desc>
+ <!-- 普通使用方式 -->
+ <image-wrapper :src="state.imageSrc" :desc="state.context"></image-wrapper>
+ 
+ <!-- 使用 slot 的 desc 方式 -->
+ <image-wrapper :src="state.imageSrc">
+  <template #desc>
       <span>{{ state.context }}</span>
-		</template>
-	</image-wrapper>
+  </template>
+ </image-wrapper>
 </template>
 
 <script setup lang="ts">
