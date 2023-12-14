@@ -1,6 +1,6 @@
 <h1 align="center">Vue3-Vant-Mobile</h1>
 
-<p align="center">Mobile Template built on Vue3、Vite4、Vant4、Pinia2、Vitest、TypeScript </p>
+<p align="center">Mobile Template built on Vue3、Vite5、Vant4、Pinia2、Vitest、TypeScript </p>
 
 <p align="center">
   <img src="https://img.shields.io/github/license/CharleeWa/vue3-vant-mobile" alt="license" />
@@ -14,7 +14,7 @@ English / [简体中文](./README-zh_CN.md) , [使用指南](./Guide-zh_CN.md) /
 
 ## Introduction
 
-🔥🔥🔥 Vue3 Vant Mobile based on `Vue3`, `Vite4`, `Vant4`, `Pinia2`, `Vitest`, `TypeScript`; 🚀🚀🚀 Integrate `Plop` to generate any type of code block, integrate `Dark Mode` (Dark) configuration, integrate `Mock` data, and other handy extensions. 💖💖💖 In short, clean, simple, easy to use, reference, can save you a week of development time, hope you like it.
+🔥 A streamlined mobile template with a complete and clean design, incorporating the latest technology stack. It's straightforward, easy to use, and can save you a week of development time. We hope you'll find it to your liking 💖.
 
 ## Achievement
 
@@ -26,7 +26,6 @@ English / [简体中文](./README-zh_CN.md) , [使用指南](./Guide-zh_CN.md) /
 - 💪 Written in TypeScript
 - 🚀 Support Vue 3 out-of-the-box
 - 🤖 Auto Importing components
-- 📄 Easy to create files (plop)
 - 📦 Using pnpm package manager
 - 💾 Support Mock server
 - 🌈 Support Git hooks (lint and commit)
@@ -104,8 +103,6 @@ Support modern browsers
       <sub><b>Leezon</b></sub>
     </a>
   </td>
-</tr>
-<tr>
   <td align="center">
     <a href="https://github.com/leo4developer">
       <img src="https://avatars.githubusercontent.com/u/15160478?v=4" width="90;" alt="liuNing"/>
@@ -137,6 +134,10 @@ Support modern browsers
 </tr>
 </table>
 
+## LICENSE
+
+♥️ [MIT](https://en.wikipedia.org/wiki/MIT_License)
+
 ## Star History
 
 <p align="center">
@@ -147,7 +148,3 @@ Support modern browsers
     </picture>
   </a>
 </p>
-
-## LICENSE
-
-♥️ [MIT](https://en.wikipedia.org/wiki/MIT_License)

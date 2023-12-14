@@ -1,10 +1,6 @@
-<p align="center">
-    <img alt="logo" src="https://opens-1308879050.cos.ap-beijing.myqcloud.com/vvm/logo.png" width="120" height="120" style="margin-bottom: 10px;">
-</p>
-
 <h1 align="center">Vue3-Vant-Mobile</h1>
 
-<p align="center">一个集成 Vue3、Vite4、Vant4、Pinia2、Vitest、TypeScript 构建的移动端模板</p>
+<p align="center">一个集成 Vue3、Vite5、Vant4、Pinia2、Vitest、TypeScript 构建的移动端模板</p>
 
 <p align="center">
   <img src="https://img.shields.io/github/license/CharleeWa/vue3-vant-mobile" alt="license" />
@@ -18,7 +14,7 @@
 
 ## 介绍
 
-🔥🔥🔥 这是一个基于 `Vue3`, `Vite4`, `Vant4`, `Pinia2`, `Vitest`, `TypeScript` 构建的移动端模板。 🚀🚀🚀 它集成了`Plop`用于生成各种类型的代码块，同时还提供了 `Dark Mode`（暗黑模式）配置以及 `Mock` 数据等其他方便的扩展功能。💖💖💖 简而言之，它简洁、简单、易用，可供参考，能够帮助您节省一周的开发时间，希望您会喜欢。
+🔥 一个集成最新技术栈、完整干净的移动端模板。它简洁、简单、易用，可供参考，能够帮助您节省一周的开发时间，希望您会喜欢 💖。
 
 ## 成就
 
@@ -30,7 +26,6 @@
 - 💪 使用TypeScript编写
 - 🚀 Vue3 生态开箱即用
 - 🤖 自动导入组件
-- 📄 使用plop轻松创建文件
 - 📦 使用pnpm包管理器
 - 💾 支持Mock服务器
 - 🌈 支持Git hooks（lint和commit）
@@ -107,8 +102,6 @@ pnpm build
       <sub><b>Leezon</b></sub>
     </a>
   </td>
-</tr>
-<tr>
   <td align="center">
     <a href="https://github.com/leo4developer">
       <img src="https://avatars.githubusercontent.com/u/15160478?v=4" width="90;" alt="liuNing"/>
@@ -143,3 +136,14 @@ pnpm build
 ## 许可证
 
 ♥️ [MIT](https://en.wikipedia.org/wiki/MIT_License)
+
+## 星星趋势
+
+<p align="center">
+  <a target="_blank" href="https://star-history.com/#CharleeWa/vue3-vant-mobile&Date">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=CharleeWa/vue3-vant-mobile&type=Date&theme=dark">
+      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=CharleeWa/vue3-vant-mobile&type=Date">
+    </picture>
+  </a>
+</p>
