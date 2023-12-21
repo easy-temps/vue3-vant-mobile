@@ -14,11 +14,11 @@ English / [简体中文](./README-zh_CN.md) , [使用指南](./Guide-zh_CN.md) /
 
 ## Introduction
 
-🔥 A streamlined mobile template with a complete and clean design, incorporating the latest technology stack. It's straightforward, easy to use, and can save you a week of development time. We hope you'll find it to your liking 💖.
+🔥 A streamlined mobile template with a complete and clean design, incorporating the latest technology stack. It's straightforward, easy to use, and can save you a week of development time. We hope you'll find it to your liking.
 
 ## Achievement
 
-🎉🎉🎉 Added to the [Awesome Vite.Js](https://github.com/vitejs/awesome-vite#vue-3)
+🎉 Added to the [Awesome Vite.Js](https://github.com/vitejs/awesome-vite#vue-3)
 
 ## Features
 
@@ -117,7 +117,9 @@ Support modern browsers
       <sub><b>wswmsword</b></sub>
     </a>
   </td>
-  <td align="center">
+</tr>
+<tr>
+<td align="center">
     <a href="https://github.com/Kysen777">
       <img src="https://avatars.githubusercontent.com/u/63892082?v=4" width="90;" alt="Kysen"/>
       <br />
@@ -134,17 +136,13 @@ Support modern browsers
 </tr>
 </table>
 
-## LICENSE
-
-♥️ [MIT](https://en.wikipedia.org/wiki/MIT_License)
-
 ## Star History
 
-<p align="center">
+<p align="left">
   <a target="_blank" href="https://star-history.com/#CharleeWa/vue3-vant-mobile&Date">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=CharleeWa/vue3-vant-mobile&type=Date&theme=dark">
-      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=CharleeWa/vue3-vant-mobile&type=Date">
+      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=CharleeWa/vue3-vant-mobile&type=Date" width="380" height="260">
     </picture>
   </a>
 </p>

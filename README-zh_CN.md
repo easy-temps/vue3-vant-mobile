@@ -14,11 +14,11 @@
 
 ## 介绍
 
-🔥 一个集成最新技术栈、完整干净的移动端模板。它简洁、简单、易用，可供参考，能够帮助您节省一周的开发时间，希望您会喜欢 💖。
+🔥 一个集成最新技术栈、完整干净的移动端模板。它简洁、简单、易用，可供参考，能够帮助您节省一周的开发时间，希望您会喜欢。
 
 ## 成就
 
-🎉🎉🎉 被添加到 [Awesome Vite.Js](https://github.com/vitejs/awesome-vite#vue-3)
+🎉 被添加到 [Awesome Vite.Js](https://github.com/vitejs/awesome-vite#vue-3)
 
 ## 特性
 
@@ -116,6 +116,8 @@ pnpm build
       <sub><b>wswmsword</b></sub>
     </a>
   </td>
+</tr>
+<tr>
   <td align="center">
     <a href="https://github.com/Kysen777">
       <img src="https://avatars.githubusercontent.com/u/63892082?v=4" width="90;" alt="Kysen"/>
@@ -133,17 +135,13 @@ pnpm build
 </tr>
 </table>
 
-## 许可证
-
-♥️ [MIT](https://en.wikipedia.org/wiki/MIT_License)
-
 ## 星星趋势
 
-<p align="center">
+<p align="left">
   <a target="_blank" href="https://star-history.com/#CharleeWa/vue3-vant-mobile&Date">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=CharleeWa/vue3-vant-mobile&type=Date&theme=dark">
-      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=CharleeWa/vue3-vant-mobile&type=Date">
+      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=CharleeWa/vue3-vant-mobile&type=Date" width="380" height="260">
     </picture>
   </a>
 </p>
