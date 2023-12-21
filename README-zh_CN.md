@@ -132,6 +132,13 @@ pnpm build
       <sub><b>阿峰</b></sub>
     </a>
   </td>
+  <td align="center">
+    <a href="https://github.com/ReginYuan">
+      <img src="https://avatars.githubusercontent.com/u/49477488?v=4" width="90;" alt="ReginYuan"/>
+      <br />
+      <sub><b>ReginYuan</b></sub>
+    </a>
+  </td>
 </tr>
 </table>
 

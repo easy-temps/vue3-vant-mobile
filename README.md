@@ -119,7 +119,7 @@ Support modern browsers
   </td>
 </tr>
 <tr>
-<td align="center">
+  <td align="center">
     <a href="https://github.com/Kysen777">
       <img src="https://avatars.githubusercontent.com/u/63892082?v=4" width="90;" alt="Kysen"/>
       <br />
@@ -131,6 +131,13 @@ Support modern browsers
       <img src="https://avatars.githubusercontent.com/u/19995400?v=4" width="90;" alt="smartsf"/>
       <br />
       <sub><b>阿峰</b></sub>
+    </a>
+  </td>
+  <td align="center">
+    <a href="https://github.com/ReginYuan">
+      <img src="https://avatars.githubusercontent.com/u/49477488?v=4" width="90;" alt="ReginYuan"/>
+      <br />
+      <sub><b>ReginYuan</b></sub>
     </a>
   </td>
 </tr>
