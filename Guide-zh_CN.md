@@ -131,7 +131,6 @@ const props = defineProps({
 <template>
  <!-- 普通使用方式 -->
  <image-wrapper :src="state.imageSrc" :desc="state.context"></image-wrapper>
- 
  <!-- 使用 slot 的 desc 方式 -->
  <image-wrapper :src="state.imageSrc">
   <template #desc>
