@@ -16,8 +16,9 @@ import viewport from 'postcss-mobile-forever'
 import autoprefixer from 'autoprefixer'
 
 import { viteVConsole } from 'vite-plugin-vconsole'
+import mockDevServerPlugin from 'vite-plugin-mock-dev-server'
+
 import UnoCSS from 'unocss/vite'
-import mock from './build/mock/createMockServer'
 
 export default ({ command, mode }: ConfigEnv): UserConfig => {
   const root = process.cwd()
@@ -26,17 +27,12 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
   return {
     base: env.VITE_APP_PUBLIC_PATH,
 
-    // 兼容 Cli
-    define: {
-      'process.env.VUE_APP_API_BASE_URL': JSON.stringify(env.VITE_APP_API_BASE_URL),
-      'process.env.VUE_APP_PUBLIC_PATH': JSON.stringify(env.VITE_APP_PUBLIC_PATH),
-    },
-
     plugins: [
       vue(),
       vueJsx(),
       visualizer(),
       UnoCSS(),
+      mockDevServerPlugin(),
 
       legacy({
         targets: ['defaults', 'not IE 11'],
@@ -71,13 +67,6 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
           theme: 'light',
         },
       }),
-
-      mock({
-        watch: true,
-        mockUrlList: [/api/],
-        cwd: process.cwd(),
-        enable: env.VITE_HTTP_MOCK === 'true' && process.env.NODE_ENV !== 'production',
-      }),
     ],
 
     css: {
@@ -109,15 +98,13 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
     server: {
       host: true,
       port: 3000,
-      proxy: env.VITE_HTTP_MOCK === 'true'
-        ? undefined
-        : {
-            '/api': {
-              target: '',
-              ws: false,
-              changeOrigin: true,
-            },
-          },
+      proxy: {
+        '/api': {
+          target: '',
+          ws: false,
+          changeOrigin: true,
+        },
+      },
     },
   }
 }

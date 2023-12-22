@@ -13,8 +13,7 @@ export const REQUEST_TOKEN_KEY = 'Access-Token'
 // 创建 axios 实例
 const request = axios.create({
   // API 请求的默认前缀
-  // eslint-disable-next-line node/prefer-global/process
-  baseURL: process.env.VUE_APP_API_BASE_URL,
+  baseURL: import.meta.env.VITE_APP_API_BASE_URL,
   timeout: 6000, // 请求超时时间
 })
 

@@ -5,7 +5,7 @@ const messages = ref<string>('')
 
 function pull() {
   queryProse().then((res) => {
-    messages.value = res.prose
+    messages.value = res.data.prose
   })
 }
 

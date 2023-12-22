@@ -1,4 +1,4 @@
-import prose from './modules/prose'
+import prose from './modules/prose.mock'
 
 export default {
   ...prose,
