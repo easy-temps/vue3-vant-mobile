@@ -1,4 +1,4 @@
-import { defineConfig, presetAttributify, presetUno } from 'unocss'
+import { defineConfig, presetAttributify, presetMini, presetUno } from 'unocss'
 import presetRemToPx from '@unocss/preset-rem-to-px'
 
 // 刚使用unocss的朋友，可以借助这个工具： https://to-unocss.netlify.app
@@ -15,5 +15,17 @@ export default defineConfig({
       // https://juejin.cn/post/7262975395620618298
       baseFontSize: 4,
     }),
+    presetMini({
+      dark: {
+        dark: '.van-theme-dark',
+        light: '.van-theme-light',
+      },
+    }),
   ],
+  shortcuts: {
+    // shortcuts to multiple utilities
+    'btn': 'py-2 px-4 font-semibold rounded-lg shadow-md',
+    'btn-green': 'text-white bg-green-500 hover:bg-green-700',
+    'btn-blue': 'text-white bg-blue-500 hover:bg-blue-700',
+  },
 })
