@@ -14,7 +14,6 @@ dist-ssr
 stats.html
 
 # Editor directories and files
-.vscode/extensions.json
 .idea
 *.suo
 *.ntvs*
