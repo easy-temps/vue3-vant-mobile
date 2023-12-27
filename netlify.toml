@@ -3,9 +3,6 @@ base = "/"
 publish = "dist"
 command = "npm run build"
 
-[build.environment]
-NODE_VERSION = "20"
-
 [[redirects]]
 from = "/*"
 to = "/index.html"
