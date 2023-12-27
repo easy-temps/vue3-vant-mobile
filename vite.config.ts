@@ -39,9 +39,10 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
       }),
 
       Components({
-        dts: true,
+        extensions: ['vue'],
         resolvers: [VantResolver()],
-        types: [],
+        include: [/\.vue$/, /\.vue\?vue/],
+        dts: 'src/components.d.ts',
       }),
 
       AutoImport({
@@ -55,7 +56,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
           'vue-router',
           'vitest',
         ],
-        dts: true,
+        dts: 'src/auto-imports.d.ts',
       }),
 
       viteVConsole({
