@@ -1,5 +1,5 @@
-/* eslint-disable node/prefer-global/process */
 import path from 'node:path'
+import process from 'node:process'
 import { loadEnv } from 'vite'
 import type { ConfigEnv, UserConfig } from 'vite'
 
@@ -60,8 +60,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
 
       viteVConsole({
         entry: [path.resolve('src/main.ts')],
-        localEnabled: command === 'serve',
-        enabled: false,
+        enabled: command === 'serve',
         config: {
           maxLogNumber: 1000,
           theme: 'light',
