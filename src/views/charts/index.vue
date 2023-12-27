@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { Chart } from '@/components'
-
 const barOption = {
   title: {},
   tooltip: {},
