@@ -1,6 +1,13 @@
 <h1 align="center">Vue3-Vant-Mobile</h1>
 
-<p align="center">Mobile Template built on Vue3、Vite5、Vant4、Pinia2、Vitest、TypeScript </p>
+<p align='center'>
+  <a href="https://vue3-vant-mobile.netlify.app">Live Demo</a>
+  <span></span>
+</p>
+
+<p align="center">
+  An mobile web apps template based on the Vue 3 ecosystem
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/github/license/CharleeWa/vue3-vant-mobile" alt="license" />
@@ -10,28 +17,83 @@
   <img src="https://img.shields.io/github/issues-closed/CharleeWa/vue3-vant-mobile" alt="issues" />
 </p>
 
-English / [简体中文](./README-zh_CN.md)
+<br>
 
-## Introduction
+<p align='center'>
+<b>English</b> / <a href="https://github.com/CharleeWa/vue3-vant-mobile/blob/main/README.zh-CN.md">简体中文</a>
+</p>
 
-🔥 A streamlined mobile template with a complete and clean design, incorporating the latest technology stack. It's straightforward, easy to use, and can save you a week of development time. We hope you'll find it to your liking.
-
-## Achievement
-
-🎉 Added to the [Awesome Vite.Js](https://github.com/vitejs/awesome-vite#vue-3)
+<br>
 
 ## Features
 
-- 🌓 Support Dark Mode
-- 💪 Written in TypeScript
-- 🚀 Support Vue 3 out-of-the-box
-- 🤖 Auto Importing components
-- 📦 Using pnpm package manager
-- 💾 Support Mock server
-- 🌈 Support Git hooks (lint and commit)
-- 💖 Mobile UI Components (Vant4)
-- 🍍 Pinia, Store for Vue
-- 🪶 Support Unocss and Less
+- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 5](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) - born with fastness
+
+- 📦 [Components auto importing](./src/components)
+
+- 🍍 [State Management via Pinia](https://pinia.vuejs.org)
+
+- 🎨 [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine
+
+- 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
+
+- 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
+
+- 💪 TypeScript, of course
+
+- ⚙️ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest)
+
+- 💾 [Mock](https://github.com/pengzhanbo/vite-plugin-mock-dev-server) server Support
+
+- 🌈 Git [hooks](./.husky) - lint and commit
+
+- 🪶 [Vant](https://github.com/youzan/vant) - Vue UI library for mobile web apps
+
+- 🔭 [vConsole](https://github.com/vadxq/vite-plugin-vconsole) - the developer tool for mobile web page
+
+- 📱 Browser adaptation - use viewport vw/vh units
+
+- 💻 [Desktop optimization](https://github.com/wswmsword/postcss-mobile-forever) - the mobile area
+
+- 🌓 Dark Mode Support
+
+- 🛡️ Configure [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) as default
+
+- ☁️ Deploy on [Netlify](https://www.netlify.com), zero-config
+
+<br>
+
+## Pre-packed
+
+### UI Frameworks
+
+- [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
+- [Vant](https://github.com/youzan/vant) - Vue UI library for mobile web apps.
+  - [`vant-touch-emulator`](https://github.com/youzan/vant/tree/main/packages/vant-touch-emulator) - Simulate mobile touch events on the desktop.
+  - [`vant-use`](https://github.com/youzan/vant/tree/main/packages/vant-use) - Built-in composition APIs of Vant.
+
+### Plugins
+
+- [Vue Router](https://github.com/vuejs/router)
+  - [`vue-router-better-scroller`](https://github.com/antfu/vue-router-better-scroller) - Enhanced scroll behavior for Vue Router.
+- [Pinia](https://pinia.vuejs.org) - Intuitive, type safe, light and flexible Store for Vue using the composition api.
+  - [`pinia-plugin-persistedstate`](https://github.com/prazdevs/pinia-plugin-persistedstate) -  Configurable persistence and rehydration of Pinia stores.
+- [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - components auto import
+- [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
+- [vite-plugin-vconsole](https://github.com/vadxq/vite-plugin-vconsole) - A lightweight, extendable front-end developer tool for mobile web page.
+- [vite-plugin-mock-dev-server](https://github.com/pengzhanbo/vite-plugin-mock-dev-server) - Vite Plugin for API mock dev server.
+- [postcss-mobile-forever](https://github.com/wswmsword/postcss-mobile-forever) - To adapt different displays by one mobile viewport.
+- [@antfu/eslint-config](https://github.com/antfu/eslint-config) - Anthony's ESLint config preset.
+  - [`eslint-plugin-unocss`](https://github.com/devunt/eslint-plugin-unocss) - ESLint plugin for UnoCSS.
+  - [`@unocss/preset-rem-to-px`](https://github.com/unocss/unocss/tree/main/packages/preset-rem-to-px) - Converts rem to px for all utilities.
+
+### Others
+
+- [nprogress](https://github.com/rstacruz/nprogress) - For slim progress bars like on YouTube, Medium, etc.
+- [axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js.
+- [echarts](https://github.com/apache/echarts) - Apache ECharts is a powerful, interactive charting and data visualization library for browser.
+- [lodash-es](https://github.com/lodash/lodash) - A modern JavaScript utility library delivering modularity, performance, & extras.
+- [resize-detector](https://github.com/Justineo/resize-detector) - Element resize detection.
 
 ## Install and use
 
@@ -62,14 +124,6 @@ pnpm dev
 ```bash
 pnpm build
 ```
-
-## Browser Support
-
-Support modern browsers
-
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt=" Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt=" Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
-| :-: | :-: | :-: | :-: | :-: |
-| not support | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
 
 ## Contributors
 
