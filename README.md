@@ -1,6 +1,12 @@
 <h1 align="center">Vue3-Vant-Mobile</h1>
 
-<p align="center">Mobile Template built on Vue3、Vite5、Vant4、Pinia2、Vitest、TypeScript </p>
+<p align='center'>
+  <a href="https://vue3-vant-mobile.netlify.app">Live Demo</a>
+</p>
+
+<p align="center">
+  An mobile web apps template based on the Vue 3 ecosystem
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/github/license/CharleeWa/vue3-vant-mobile" alt="license" />
@@ -10,66 +16,144 @@
   <img src="https://img.shields.io/github/issues-closed/CharleeWa/vue3-vant-mobile" alt="issues" />
 </p>
 
-English / [简体中文](./README-zh_CN.md) , [使用指南](./Guide-zh_CN.md) / [English Guide](./Guide.md)
+<br>
 
-## Introduction
+<p align='center'>
+<b>English</b> / <a href="https://github.com/CharleeWa/vue3-vant-mobile/blob/main/README.zh-CN.md">简体中文</a>
+</p>
 
-🔥 A streamlined mobile template with a complete and clean design, incorporating the latest technology stack. It's straightforward, easy to use, and can save you a week of development time. We hope you'll find it to your liking.
-
-## Achievement
-
-🎉 Added to the [Awesome Vite.Js](https://github.com/vitejs/awesome-vite#vue-3)
+<br>
 
 ## Features
 
-- 🌓 Support Dark Mode
-- 💪 Written in TypeScript
-- 🚀 Support Vue 3 out-of-the-box
-- 🤖 Auto Importing components
-- 📦 Using pnpm package manager
-- 💾 Support Mock server
-- 🌈 Support Git hooks (lint and commit)
-- 💖 Mobile UI Components (Vant4)
-- 🍍 Pinia, Store for Vue
-- 🪶 Support Unocss and Less
+- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 5](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) - born with fastness
 
-## Install and use
+- 📦 [Components auto importing](./src/components)
 
-- Get the project code
+- 🍍 [State Management via Pinia](https://pinia.vuejs.org)
+
+- 🎨 [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine
+
+- 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
+
+- 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
+
+- 💪 TypeScript, of course
+
+- ⚙️ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest)
+
+- 💾 [Mock](https://github.com/pengzhanbo/vite-plugin-mock-dev-server) server Support
+
+- 🌈 Git [hooks](./.husky) - lint and commit
+
+- 🪶 [Vant](https://github.com/youzan/vant) - Vue UI library for mobile web apps
+
+- 🔭 [vConsole](https://github.com/vadxq/vite-plugin-vconsole) - the developer tool for mobile web page
+
+- 📱 Browser adaptation - use viewport vw/vh units
+
+- 💻 [Desktop optimization](https://github.com/wswmsword/postcss-mobile-forever) - the mobile area
+
+- 🌓 Dark Mode Support
+
+- 🛡️ Configure [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) as default
+
+- ☁️ Deploy on [Netlify](https://www.netlify.com), zero-config
+
+<br>
+
+## Pre-packed
+
+### UI Frameworks
+
+- [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
+    - [`@unocss/preset-rem-to-px`](https://github.com/unocss/unocss/tree/main/packages/preset-rem-to-px) - Converts rem to px for all utilities.
+    - [`eslint-plugin-unocss`](https://github.com/devunt/eslint-plugin-unocss) - ESLint plugin for UnoCSS.
+- [Vant](https://github.com/youzan/vant) - Vue UI library for mobile web apps.
+  - [`vant-touch-emulator`](https://github.com/youzan/vant/tree/main/packages/vant-touch-emulator) - Simulate mobile touch events on the desktop.
+  - [`vant-use`](https://github.com/youzan/vant/tree/main/packages/vant-use) - Built-in composition APIs of Vant.
+
+### Plugins
+
+- [Vue Router](https://github.com/vuejs/router)
+  - [`vue-router-better-scroller`](https://github.com/antfu/vue-router-better-scroller) - Enhanced scroll behavior for Vue Router.
+- [Pinia](https://pinia.vuejs.org) - Intuitive, type safe, light and flexible Store for Vue using the composition api.
+  - [`pinia-plugin-persistedstate`](https://github.com/prazdevs/pinia-plugin-persistedstate) -  Configurable persistence and rehydration of Pinia stores.
+- [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - components auto import
+- [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
+- [vite-plugin-vconsole](https://github.com/vadxq/vite-plugin-vconsole) - A lightweight, extendable front-end developer tool for mobile web page.
+- [vite-plugin-mock-dev-server](https://github.com/pengzhanbo/vite-plugin-mock-dev-server) - Vite Plugin for API mock dev server.
+- [postcss-mobile-forever](https://github.com/wswmsword/postcss-mobile-forever) - To adapt different displays by one mobile viewport.
+
+### Coding Style
+
+- Use Composition API with [`<script setup>` SFC syntax](https://github.com/vuejs/rfcs/pull/227)
+- [ESLint](https://eslint.org/) with [@antfu/eslint-config](https://github.com/antfu/eslint-config), single quotes, no semi.
+
+### Dev tools
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vitest](https://github.com/vitest-dev/vitest) - Unit testing powered by Vite
+- [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
+- [Netlify](https://www.netlify.com/) - zero-config deployment
+- [VS Code Extensions](./.vscode/extensions.json)
+  - [Vite](https://marketplace.visualstudio.com/items?itemName=antfu.vite) - Fire up Vite server automatically
+  - [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) - Vue 3 `<script setup>` IDE support
+  - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Icon inline display and autocomplete
+  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+## Try it now!
+
+> Vue3-Vant-Mobile requires Node >= 16.16.0
+
+### GitHub Template
+
+[Create a repo from this template on GitHub](https://github.com/CharleeWa/vue3-vant-mobile/generate).
+
+### Clone to local
+
+If you prefer to do it manually with the cleaner git history
 
 ```bash
-git clone https://github.com/CharleeWa/vue3-vant-mobile.git
+npx degit CharleeWa/vue3-vant-mobile my-mobile-app
+cd my-mobile-app
+pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
 
-- Installation dependencies
+## Checklist
 
-```bash
-cd vue3-vant-mobile
+When you use this template, try follow the checklist to update your info properly
 
-# with pnpm
-pnpm install
+- [ ] Change the author name in `LICENSE`
+- [ ] Change the title in `index.html`
+- [ ] Change the hostname in `vite.config.ts`
+- [ ] Change the favicon in `public`
+- [ ] Clean up the READMEs and remove routes
 
-```
+And, enjoy :)
 
-- run
+## Usage
+
+### Development
+
+Just run and visit http://localhost:3000
 
 ```bash
 pnpm dev
 ```
 
-- build
+### Build
+
+To build the App, run
 
 ```bash
 pnpm build
 ```
+And you will see the generated file in `dist` that ready to be served.
 
-## Browser Support
+### Deploy on Netlify
 
-Support modern browsers
-
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt=" Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt=" Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
-| :-: | :-: | :-: | :-: | :-: |
-| not support | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
+Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way, and your App will be live in a minute.
 
 ## Contributors
 
