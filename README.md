@@ -2,7 +2,6 @@
 
 <p align='center'>
   <a href="https://vue3-vant-mobile.netlify.app">Live Demo</a>
-  <span></span>
 </p>
 
 <p align="center">
@@ -68,6 +67,8 @@
 ### UI Frameworks
 
 - [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
+    - [`@unocss/preset-rem-to-px`](https://github.com/unocss/unocss/tree/main/packages/preset-rem-to-px) - Converts rem to px for all utilities.
+    - [`eslint-plugin-unocss`](https://github.com/devunt/eslint-plugin-unocss) - ESLint plugin for UnoCSS.
 - [Vant](https://github.com/youzan/vant) - Vue UI library for mobile web apps.
   - [`vant-touch-emulator`](https://github.com/youzan/vant/tree/main/packages/vant-touch-emulator) - Simulate mobile touch events on the desktop.
   - [`vant-use`](https://github.com/youzan/vant/tree/main/packages/vant-use) - Built-in composition APIs of Vant.
@@ -83,47 +84,76 @@
 - [vite-plugin-vconsole](https://github.com/vadxq/vite-plugin-vconsole) - A lightweight, extendable front-end developer tool for mobile web page.
 - [vite-plugin-mock-dev-server](https://github.com/pengzhanbo/vite-plugin-mock-dev-server) - Vite Plugin for API mock dev server.
 - [postcss-mobile-forever](https://github.com/wswmsword/postcss-mobile-forever) - To adapt different displays by one mobile viewport.
-- [@antfu/eslint-config](https://github.com/antfu/eslint-config) - Anthony's ESLint config preset.
-  - [`eslint-plugin-unocss`](https://github.com/devunt/eslint-plugin-unocss) - ESLint plugin for UnoCSS.
-  - [`@unocss/preset-rem-to-px`](https://github.com/unocss/unocss/tree/main/packages/preset-rem-to-px) - Converts rem to px for all utilities.
 
-### Others
+### Coding Style
 
-- [nprogress](https://github.com/rstacruz/nprogress) - For slim progress bars like on YouTube, Medium, etc.
-- [axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js.
-- [echarts](https://github.com/apache/echarts) - Apache ECharts is a powerful, interactive charting and data visualization library for browser.
-- [lodash-es](https://github.com/lodash/lodash) - A modern JavaScript utility library delivering modularity, performance, & extras.
-- [resize-detector](https://github.com/Justineo/resize-detector) - Element resize detection.
+- Use Composition API with [`<script setup>` SFC syntax](https://github.com/vuejs/rfcs/pull/227)
+- [ESLint](https://eslint.org/) with [@antfu/eslint-config](https://github.com/antfu/eslint-config), single quotes, no semi.
 
-## Install and use
+### Dev tools
 
-- Get the project code
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vitest](https://github.com/vitest-dev/vitest) - Unit testing powered by Vite
+- [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
+- [Netlify](https://www.netlify.com/) - zero-config deployment
+- [VS Code Extensions](./.vscode/extensions.json)
+  - [Vite](https://marketplace.visualstudio.com/items?itemName=antfu.vite) - Fire up Vite server automatically
+  - [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) - Vue 3 `<script setup>` IDE support
+  - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Icon inline display and autocomplete
+  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+## Try it now!
+
+> Vue3-Vant-Mobile requires Node >= 16.16.0
+
+### GitHub Template
+
+[Create a repo from this template on GitHub](https://github.com/CharleeWa/vue3-vant-mobile/generate).
+
+### Clone to local
+
+If you prefer to do it manually with the cleaner git history
 
 ```bash
-git clone https://github.com/CharleeWa/vue3-vant-mobile.git
+npx degit CharleeWa/vue3-vant-mobile my-mobile-app
+cd my-mobile-app
+pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
 
-- Installation dependencies
+## Checklist
 
-```bash
-cd vue3-vant-mobile
+When you use this template, try follow the checklist to update your info properly
 
-# with pnpm
-pnpm install
+- [ ] Change the author name in `LICENSE`
+- [ ] Change the title in `index.html`
+- [ ] Change the hostname in `vite.config.ts`
+- [ ] Change the favicon in `public`
+- [ ] Clean up the READMEs and remove routes
 
-```
+And, enjoy :)
 
-- run
+## Usage
+
+### Development
+
+Just run and visit http://localhost:3000
 
 ```bash
 pnpm dev
 ```
 
-- build
+### Build
+
+To build the App, run
 
 ```bash
 pnpm build
 ```
+And you will see the generated file in `dist` that ready to be served.
+
+### Deploy on Netlify
+
+Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way, and your App will be live in a minute.
 
 ## Contributors
 
