@@ -66,29 +66,29 @@
 
 ### UI Frameworks
 
-- [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
-    - [`@unocss/preset-rem-to-px`](https://github.com/unocss/unocss/tree/main/packages/preset-rem-to-px) - Converts rem to px for all utilities.
-    - [`eslint-plugin-unocss`](https://github.com/devunt/eslint-plugin-unocss) - ESLint plugin for UnoCSS.
-- [Vant](https://github.com/youzan/vant) - Vue UI library for mobile web apps.
-  - [`vant-touch-emulator`](https://github.com/youzan/vant/tree/main/packages/vant-touch-emulator) - Simulate mobile touch events on the desktop.
-  - [`vant-use`](https://github.com/youzan/vant/tree/main/packages/vant-use) - Built-in composition APIs of Vant.
+- [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine
+  - [`@unocss/preset-rem-to-px`](https://github.com/unocss/unocss/tree/main/packages/preset-rem-to-px) - Converts rem to px for all utilities
+  - [`eslint-plugin-unocss`](https://github.com/devunt/eslint-plugin-unocss) - ESLint plugin for UnoCSS
+- [Vant](https://github.com/youzan/vant) - Vue UI library for mobile web apps
+  - [`vant-touch-emulator`](https://github.com/youzan/vant/tree/main/packages/vant-touch-emulator) - Simulate mobile touch events on the desktop
+  - [`vant-use`](https://github.com/youzan/vant/tree/main/packages/vant-use) - Built-in composition APIs of Vant
 
 ### Plugins
 
 - [Vue Router](https://github.com/vuejs/router)
-  - [`vue-router-better-scroller`](https://github.com/antfu/vue-router-better-scroller) - Enhanced scroll behavior for Vue Router.
-- [Pinia](https://pinia.vuejs.org) - Intuitive, type safe, light and flexible Store for Vue using the composition api.
-  - [`pinia-plugin-persistedstate`](https://github.com/prazdevs/pinia-plugin-persistedstate) -  Configurable persistence and rehydration of Pinia stores.
+  - [`vue-router-better-scroller`](https://github.com/antfu/vue-router-better-scroller) - Enhanced scroll behavior for Vue Router
+- [Pinia](https://pinia.vuejs.org) - Intuitive, type safe, light and flexible Store for Vue using the composition api
+  - [`pinia-plugin-persistedstate`](https://github.com/prazdevs/pinia-plugin-persistedstate) -  Configurable persistence and rehydration of Pinia stores
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - components auto import
 - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
-- [vite-plugin-vconsole](https://github.com/vadxq/vite-plugin-vconsole) - A lightweight, extendable front-end developer tool for mobile web page.
-- [vite-plugin-mock-dev-server](https://github.com/pengzhanbo/vite-plugin-mock-dev-server) - Vite Plugin for API mock dev server.
-- [postcss-mobile-forever](https://github.com/wswmsword/postcss-mobile-forever) - To adapt different displays by one mobile viewport.
+- [vite-plugin-vconsole](https://github.com/vadxq/vite-plugin-vconsole) - A lightweight, extendable front-end developer tool for mobile web page
+- [vite-plugin-mock-dev-server](https://github.com/pengzhanbo/vite-plugin-mock-dev-server) - Vite Plugin for API mock dev server
+- [postcss-mobile-forever](https://github.com/wswmsword/postcss-mobile-forever) - To adapt different displays by one mobile viewport
 
 ### Coding Style
 
 - Use Composition API with [`<script setup>` SFC syntax](https://github.com/vuejs/rfcs/pull/227)
-- [ESLint](https://eslint.org/) with [@antfu/eslint-config](https://github.com/antfu/eslint-config), single quotes, no semi.
+- [ESLint](https://eslint.org/) with [@antfu/eslint-config](https://github.com/antfu/eslint-config), single quotes, no semi
 
 ### Dev tools
 
@@ -102,13 +102,13 @@
   - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Icon inline display and autocomplete
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-## Try it now!
+## Try it now
 
-> Vue3-Vant-Mobile requires Node >= 16.16.0
+> Vue3-Vant-Mobile requires Node 18+
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/CharleeWa/vue3-vant-mobile/generate).
+[Create a repo from this template on GitHub](https://github.com/CharleeWa/vue3-vant-mobile/generate)
 
 ### Clone to local
 
@@ -136,7 +136,7 @@ And, enjoy :)
 
 ### Development
 
-Just run and visit http://localhost:3000
+Just run and visit <http://localhost:3000>
 
 ```bash
 pnpm dev
@@ -149,6 +149,7 @@ To build the App, run
 ```bash
 pnpm build
 ```
+
 And you will see the generated file in `dist` that ready to be served.
 
 ### Deploy on Netlify

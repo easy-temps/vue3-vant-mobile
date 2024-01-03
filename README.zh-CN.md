@@ -67,8 +67,8 @@
 ### UI 框架
 
 - [UnoCSS](https://github.com/antfu/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
-    - [`@unocss/preset-rem-to-px`](https://github.com/unocss/unocss/tree/main/packages/preset-rem-to-px) - 将所有实用程序的 rem 转换为 px
-    - [`eslint-plugin-unocss`](https://github.com/devunt/eslint-plugin-unocss) - Unocss 的 ESLint 插件
+  - [`@unocss/preset-rem-to-px`](https://github.com/unocss/unocss/tree/main/packages/preset-rem-to-px) - 将所有实用程序的 rem 转换为 px
+  - [`eslint-plugin-unocss`](https://github.com/devunt/eslint-plugin-unocss) - Unocss 的 ESLint 插件
 - [Vant](https://github.com/youzan/vant) - 移动端 Vue 组件库
   - [`vant-touch-emulator`](https://github.com/youzan/vant/tree/main/packages/vant-touch-emulator) - 在桌面端上模拟移动端 touch 事件
   - [`vant-use`](https://github.com/youzan/vant/tree/main/packages/vant-use) - Vant 内置的组合式 API
@@ -88,7 +88,7 @@
 ### 编码风格
 
 - 使用 Composition API 地 [`<script setup>` SFC 语法](https://github.com/vuejs/rfcs/pull/227)
-- [ESLint](https://eslint.org/) 配置为 [@antfu/eslint-config](https://github.com/antfu/eslint-config), 单引号, 无分号.
+- [ESLint](https://eslint.org/) 配置为 [@antfu/eslint-config](https://github.com/antfu/eslint-config), 单引号, 无分号
 
 ### 开发工具
 
@@ -102,13 +102,13 @@
   - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - 图标内联显示和自动补全
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-## 现在可以试试!
+## 现在可以试试
 
-> Vue3-Vant-Mobile 需要 Node 版本 >= 16.16.0
+> Vue3-Vant-Mobile 需要 Node 版本 18+
 
 ### GitHub 模板
 
-[使用这个模板创建仓库](https://github.com/CharleeWa/vue3-vant-mobile/generate).
+[使用这个模板创建仓库](https://github.com/CharleeWa/vue3-vant-mobile/generate)
 
 ### 克隆到本地
 
@@ -136,7 +136,7 @@ pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
 
 ### 开发
 
-只需要执行以下命令就可以在 http://localhost:3000 中看到
+只需要执行以下命令就可以在 <http://localhost:3000> 中看到
 
 ```bash
 pnpm dev
@@ -154,7 +154,7 @@ pnpm build
 
 ### 部署到 Netlify
 
-前往 [Netlify](https://app.netlify.com/start) 并选择你的仓库, 一路 `OK` 下去，稍等一下后，你的应用将被创建.
+前往 [Netlify](https://app.netlify.com/start) 并选择你的仓库, 一路 `OK` 下去，稍等一下后，你的应用将被创建。
 
 ## 贡献者
 
