@@ -28,6 +28,8 @@
 
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 5](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) - 就是快！
 
+- 🗂 [基于文件的路由](./src/router)
+
 - 📦 [组件自动化加载](./src/components)
 
 - 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org)
@@ -77,6 +79,7 @@
 
 - [Vue Router](https://github.com/vuejs/router)
   - [`vue-router-better-scroller`](https://github.com/antfu/vue-router-better-scroller) - 增强了 Vue Router 的滚动行为
+  - [`unplugin-vue-router`](https://github.com/posva/unplugin-vue-router) - 以文件系统为基础的路由
 - [Pinia](https://pinia.vuejs.org) - 直接的, 类型安全的, 使用 Composition API 的轻便灵活的 Vue 状态管理库
   - [`pinia-plugin-persistedstate`](https://github.com/prazdevs/pinia-plugin-persistedstate) -  适用于 Pinia 的持久化存储插件
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - 自动加载组件

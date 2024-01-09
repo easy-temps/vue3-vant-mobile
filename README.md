@@ -28,6 +28,8 @@
 
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 5](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) - born with fastness
 
+- 🗂 [File based routing](./src/router)
+
 - 📦 [Components auto importing](./src/components)
 
 - 🍍 [State Management via Pinia](https://pinia.vuejs.org)
@@ -77,6 +79,7 @@
 
 - [Vue Router](https://github.com/vuejs/router)
   - [`vue-router-better-scroller`](https://github.com/antfu/vue-router-better-scroller) - Enhanced scroll behavior for Vue Router
+  - [`unplugin-vue-router`](https://github.com/posva/unplugin-vue-router) - file system based routing
 - [Pinia](https://pinia.vuejs.org) - Intuitive, type safe, light and flexible Store for Vue using the composition api
   - [`pinia-plugin-persistedstate`](https://github.com/prazdevs/pinia-plugin-persistedstate) -  Configurable persistence and rehydration of Pinia stores
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - components auto import
