@@ -228,6 +228,13 @@ Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along
       <sub><b>ReginYuan</b></sub>
     </a>
   </td>
+  <td align="center">
+    <a href="https://github.com/InsHomePgup">
+      <img src="https://avatars.githubusercontent.com/u/47906083?v=4" width="90;" alt="Abraham K."/>
+      <br />
+      <sub><b>Abraham K.</b></sub>
+    </a>
+  </td>
 </tr>
 </table>
 
