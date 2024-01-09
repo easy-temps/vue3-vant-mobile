@@ -6,6 +6,8 @@ import type { ConfigEnv, UserConfig } from 'vite'
 import { visualizer } from 'rollup-plugin-visualizer'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import VueRouter from 'unplugin-vue-router/vite'
+import { VueRouterAutoImports } from 'unplugin-vue-router'
 import { VantResolver } from 'unplugin-vue-components/resolvers'
 
 import vue from '@vitejs/plugin-vue'
@@ -28,6 +30,11 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
     base: env.VITE_APP_PUBLIC_PATH,
 
     plugins: [
+      VueRouter({
+        routesFolder: 'src/views',
+        dts: 'src/typed-router.d.ts',
+      }),
+
       vue(),
       vueJsx(),
       visualizer(),
@@ -52,8 +59,11 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
           /\.vue\?vue/,
         ],
         imports: [
+          VueRouterAutoImports,
+          {
+            'vue-router/auto': ['useLink'],
+          },
           'vue',
-          'vue-router',
           'vitest',
         ],
         dts: 'src/auto-imports.d.ts',

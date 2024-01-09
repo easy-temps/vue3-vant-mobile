@@ -60,6 +60,7 @@
     "unocss": "^0.58.0",
     "unplugin-auto-import": "^0.17.2",
     "unplugin-vue-components": "^0.26.0",
+    "unplugin-vue-router": "^0.7.0",
     "vite": "^5.0.10",
     "vite-plugin-mock-dev-server": "^1.4.3",
     "vite-plugin-vconsole": "^2.0.1",
