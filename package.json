@@ -13,6 +13,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "vitest",
+    "release": "bumpp --commit --push --tag",
     "prepare": "npx husky install"
   },
   "dependencies": {
@@ -44,6 +45,7 @@
     "@vitejs/plugin-vue": "^5.0.3",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
     "autoprefixer": "^10.4.16",
+    "bumpp": "^9.2.1",
     "commitizen": "^4.3.0",
     "consola": "^3.2.3",
     "cross-env": "^7.0.3",
