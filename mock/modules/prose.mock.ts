@@ -4,7 +4,7 @@ import proses from '../data'
 
 export default defineMock({
   url: '/api/project/prose',
-  delay: 300,
+  delay: 100,
   body: () => {
     const prose = proses.value[Math.floor(Math.random() * 8)]
     return {
