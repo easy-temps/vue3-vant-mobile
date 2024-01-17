@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import { queryProse } from '@/api'
 
+definePage({
+  name: 'mock',
+  meta: {
+    level: 2,
+  },
+})
+
 const messages = ref<string>('')
 
 function pull() {
@@ -17,25 +24,27 @@ const onClickLeft = () => history.back()
 </script>
 
 <template>
-  <VanNavBar title="💿 Mock 指南" left-arrow fixed @click-left="onClickLeft" />
+  <div>
+    <VanNavBar title="💿 Mock 指南" left-arrow fixed @click-left="onClickLeft" />
 
-  <div class="container">
-    <div class="data-label">
-      来自异步请求的数据
-    </div>
-    <div class="data-content">
-      <div v-if="messages">
-        {{ messages }}
+    <div class="container">
+      <div class="data-label">
+        来自异步请求的数据
       </div>
-      <VanEmpty v-else description="暂无数据" />
-    </div>
+      <div class="data-content">
+        <div v-if="messages">
+          {{ messages }}
+        </div>
+        <VanEmpty v-else description="暂无数据" />
+      </div>
 
-    <VanButton round block type="primary" @click="pull">
-      请求
-    </VanButton>
-    <VanButton round block type="default" @click="reset">
-      清空
-    </VanButton>
+      <VanButton round block type="primary" @click="pull">
+        请求
+      </VanButton>
+      <VanButton round block type="default" @click="reset">
+        清空
+      </VanButton>
+    </div>
   </div>
 </template>
 

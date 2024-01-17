@@ -2,6 +2,13 @@
 import { useStore } from '@/stores'
 import { localStorage } from '@/utils/local-storage'
 
+definePage({
+  name: 'index',
+  meta: {
+    level: 1,
+  },
+})
+
 const store = useStore()
 const themeStore = localStorage.get('theme')
 const checked = ref<boolean>(themeStore === 'dark')
@@ -20,8 +27,6 @@ watch(checked, (val) => {
 
 <template>
   <div class="container">
-    <div class="logo" />
-
     <VanCellGroup title="一个集成最新技术栈、完整干净的移动端模板" inset>
       <VanCell center title="🌗 暗黑模式">
         <template #right-icon>
@@ -49,19 +54,9 @@ watch(checked, (val) => {
 
 <style lang="less" scoped>
 .container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding-top: 30px;
-  position: relative;
-
-  .logo {
-    width: 150px;
-    height: 150px;
-    background-image: url('@/assets/logo.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-  }
 
   .custom-title {
     margin-right: 4px;

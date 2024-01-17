@@ -1,4 +1,4 @@
-import { defineStore } from 'pinia'
+import { createPinia, defineStore } from 'pinia'
 
 export const useStore = defineStore({
   id: 'index',
@@ -8,3 +8,6 @@ export const useStore = defineStore({
     mode: '',
   }),
 })
+
+const store = createPinia()
+export { store }

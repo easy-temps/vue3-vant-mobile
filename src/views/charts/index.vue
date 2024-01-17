@@ -1,4 +1,11 @@
 <script setup lang="ts">
+definePage({
+  name: 'charts',
+  meta: {
+    level: 2,
+  },
+})
+
 const barOption = {
   title: {},
   tooltip: {},
@@ -61,19 +68,21 @@ const onClickLeft = () => history.back()
 </script>
 
 <template>
-  <VanNavBar title="📊 Echarts" left-arrow fixed @click-left="onClickLeft" />
+  <div>
+    <VanNavBar title="📊 Echarts" left-arrow fixed @click-left="onClickLeft" />
 
-  <div class="container">
-    <div class="chart">
-      <Chart :option="refBarOption" :style="{ height: '330px' }" />
-    </div>
+    <div class="container">
+      <div class="chart">
+        <Chart :option="refBarOption" :style="{ height: '330px' }" />
+      </div>
 
-    <div class="chart item">
-      <Chart :option="refLineOption" :style="{ height: '330px' }" />
-    </div>
+      <div class="chart item">
+        <Chart :option="refLineOption" :style="{ height: '330px' }" />
+      </div>
 
-    <div class="chart item">
-      <Chart :option="refScoreOption" :style="{ height: '330px' }" />
+      <div class="chart item">
+        <Chart :option="refScoreOption" :style="{ height: '330px' }" />
+      </div>
     </div>
   </div>
 </template>
@@ -83,7 +92,6 @@ const onClickLeft = () => history.back()
   width: 100%;
   height: 100%;
   padding: 60px 16px;
-  position: relative;
 }
 
 .chart {
