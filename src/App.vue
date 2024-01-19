@@ -27,7 +27,7 @@ provide('isRealDark', computed(() => theme.value === 'dark'))
 <template>
   <VanConfigProvider :theme="theme">
     <router-view v-slot="{ Component, route }">
-      <transition :name="useRouteTransitionNameHook().routeTransitionName" appear>
+      <transition :name="useRouteTransitionNameHook().routeTransitionName">
         <div :key="route.name" class="app-wrapper">
           <component :is="Component" v-if="Component" />
         </div>
