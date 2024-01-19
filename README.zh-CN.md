@@ -78,7 +78,6 @@
 ### 插件
 
 - [Vue Router](https://github.com/vuejs/router)
-  - [`vue-router-better-scroller`](https://github.com/antfu/vue-router-better-scroller) - 增强了 Vue Router 的滚动行为
   - [`unplugin-vue-router`](https://github.com/posva/unplugin-vue-router) - 以文件系统为基础的路由
 - [Pinia](https://pinia.vuejs.org) - 直接的, 类型安全的, 使用 Composition API 的轻便灵活的 Vue 状态管理库
   - [`pinia-plugin-persistedstate`](https://github.com/prazdevs/pinia-plugin-persistedstate) -  适用于 Pinia 的持久化存储插件

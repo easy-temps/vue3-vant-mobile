@@ -78,7 +78,6 @@
 ### Plugins
 
 - [Vue Router](https://github.com/vuejs/router)
-  - [`vue-router-better-scroller`](https://github.com/antfu/vue-router-better-scroller) - Enhanced scroll behavior for Vue Router
   - [`unplugin-vue-router`](https://github.com/posva/unplugin-vue-router) - file system based routing
 - [Pinia](https://pinia.vuejs.org) - Intuitive, type safe, light and flexible Store for Vue using the composition api
   - [`pinia-plugin-persistedstate`](https://github.com/prazdevs/pinia-plugin-persistedstate) -  Configurable persistence and rehydration of Pinia stores

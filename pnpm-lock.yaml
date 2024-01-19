@@ -47,9 +47,6 @@ dependencies:
   vue-router:
     specifier: ^4.2.5
     version: 4.2.5(vue@3.4.8)
-  vue-router-better-scroller:
-    specifier: ^0.0.0
-    version: 0.0.0(vue-router@4.2.5)(vue@3.4.8)
 
 devDependencies:
   '@antfu/eslint-config':
@@ -7110,16 +7107,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
-
-  /vue-router-better-scroller@0.0.0(vue-router@4.2.5)(vue@3.4.8):
-    resolution: {integrity: sha512-E+ovMBUOgr0TU6rYnc5X8h7rlu+QUkK2AMBXt2S6yMrAlW86cq6k5OExM4WnL4vfHbmJEtf+SbAtZ3H3bxYoBQ==}
-    peerDependencies:
-      vue: ^3.3.4
-      vue-router: ^4.2.2
-    dependencies:
-      vue: 3.4.8(typescript@5.3.3)
-      vue-router: 4.2.5(vue@3.4.8)
-    dev: false
 
   /vue-router@4.2.5(vue@3.4.8):
     resolution: {integrity: sha512-DIUpKcyg4+PTQKfFPX88UWhlagBEBEfJ5A8XDXRJLUnZOvcpMF8o/dnL90vpVkGaPbjvXazV/rC1qBKrZlFugw==}
