@@ -1,12 +1,12 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
-import App from './App.vue'
-import router from './router'
+import App from '@/App.vue'
+import router from '@/router'
 
 import 'virtual:uno.css'
 
-import './app.less'
+import '@/styles/app.less'
 
 // Vant 桌面端适配
 import '@vant/touch-emulator'

@@ -29,7 +29,7 @@ provide('isRealDark', computed(() => theme.value === 'dark'))
     <router-view v-slot="{ Component, route }">
       <transition :name="useRouteTransitionNameHook().routeTransitionName">
         <div :key="route.name" class="app-wrapper">
-          <component :is="Component" v-if="Component" />
+          <component :is="Component" />
         </div>
       </transition>
     </router-view>

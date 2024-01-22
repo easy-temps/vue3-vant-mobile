@@ -27,5 +27,6 @@ export default defineConfig({
     'btn': 'py-2 px-4 font-semibold rounded-lg shadow-md',
     'btn-green': 'text-white bg-green-500 hover:bg-green-700',
     'btn-blue': 'text-white bg-blue-500 hover:bg-blue-700',
+    'centered': 'absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2',
   },
 })
