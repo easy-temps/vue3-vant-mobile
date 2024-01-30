@@ -17,6 +17,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import viewport from 'postcss-mobile-forever'
 import autoprefixer from 'autoprefixer'
 
+import VueDevTools from 'vite-plugin-vue-devtools'
 import { viteVConsole } from 'vite-plugin-vconsole'
 import mockDevServerPlugin from 'vite-plugin-mock-dev-server'
 
@@ -35,6 +36,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
         dts: 'src/typed-router.d.ts',
       }),
 
+      VueDevTools(),
       vue(),
       vueJsx(),
       visualizer(),
