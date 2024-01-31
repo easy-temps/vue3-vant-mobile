@@ -24,6 +24,8 @@ const checked = ref<boolean>(false)
 
       <VanCell title="🪶 Unocss 示例" to="unocss" is-link />
 
+      <VanCell title="🍍 持久化 Pinia 状态" to="counter" is-link />
+
       <VanCell center>
         <template #title>
           <span class="custom-title">🎨 欢迎补充</span>
