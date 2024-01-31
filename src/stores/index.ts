@@ -1,13 +1,4 @@
-import { createPinia, defineStore } from 'pinia'
-
-export const useStore = defineStore({
-  id: 'index',
-  persist: true,
-  state: () => ({
-    // light || dark
-    mode: '',
-  }),
-})
+import { createPinia } from 'pinia'
 
 const store = createPinia()
 export { store }

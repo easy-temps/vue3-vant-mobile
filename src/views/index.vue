@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { useStore } from '@/stores'
-import { localStorage } from '@/utils/local-storage'
-
 definePage({
   name: 'index',
   meta: {
@@ -9,20 +6,7 @@ definePage({
   },
 })
 
-const store = useStore()
-const themeStore = localStorage.get('theme')
-const checked = ref<boolean>(themeStore === 'dark')
-
-watch(checked, (val) => {
-  if (val) {
-    store.mode = 'dark'
-    localStorage.set('theme', 'dark')
-  }
-  else {
-    store.mode = 'light'
-    localStorage.set('theme', 'light')
-  }
-})
+const checked = ref<boolean>(false)
 </script>
 
 <template>
@@ -30,7 +14,7 @@ watch(checked, (val) => {
     <VanCellGroup title="一个集成最新技术栈、完整干净的移动端模板" inset>
       <VanCell center title="🌗 暗黑模式">
         <template #right-icon>
-          <VanSwitch v-model="checked" size="23px" />
+          <VanSwitch v-model="checked" size="23px" disabled />
         </template>
       </VanCell>
 
