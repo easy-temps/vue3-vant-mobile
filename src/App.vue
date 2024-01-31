@@ -1,15 +1,19 @@
 <script setup lang="ts">
 import type { ConfigProviderTheme } from 'vant'
-import { useRouteTransitionNameHook } from '@/stores/modules/routeTransitionName'
+import { storeToRefs } from 'pinia'
+import useRouteTransitionNameStore from '@/stores/modules/routeTransitionName'
 
 const theme = ref<ConfigProviderTheme>('light')
 provide('isRealDark', computed(() => theme.value === 'dark'))
+
+const routeTransitionNameStore = useRouteTransitionNameStore()
+const { routeTransitionName } = storeToRefs(routeTransitionNameStore)
 </script>
 
 <template>
   <VanConfigProvider :theme="theme">
     <router-view v-slot="{ Component, route }">
-      <transition :name="useRouteTransitionNameHook().routeTransitionName">
+      <transition :name="routeTransitionName">
         <div :key="route.name" class="app-wrapper">
           <component :is="Component" />
         </div>

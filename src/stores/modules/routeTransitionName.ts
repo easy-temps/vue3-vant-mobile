@@ -1,19 +1,16 @@
 import { defineStore } from 'pinia'
-import { store } from '@/stores'
 
-export const useRouteTransitionNameStore = defineStore({
-  id: 'route-transition-name',
-  state: () => ({
-    // 过渡动画名称
-    routeTransitionName: '',
-  }),
-  actions: {
-    setName(name: string) {
-      this.routeTransitionName = name
-    },
-  },
+const useRouteTransitionNameStore = defineStore('route-transition-name', () => {
+  const routeTransitionName = ref('')
+
+  const setName = (name: string) => {
+    routeTransitionName.value = name
+  }
+
+  return {
+    routeTransitionName,
+    setName,
+  }
 })
 
-export function useRouteTransitionNameHook() {
-  return useRouteTransitionNameStore(store)
-}
+export default useRouteTransitionNameStore
