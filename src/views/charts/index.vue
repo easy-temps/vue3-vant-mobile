@@ -97,17 +97,9 @@ const onClickLeft = () => history.back()
 .chart {
   width: 100%;
   height: 300px;
-  background: #fff;
 }
 
 .chart.item {
   margin-top: 15px;
-}
-
-[data-theme='dark'] {
-  .chart {
-    color: #fff;
-    background: #222;
-  }
 }
 </style>

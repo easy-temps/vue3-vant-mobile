@@ -1,10 +1,9 @@
 import { createApp } from 'vue'
+import { createHead } from '@unhead/vue'
 import App from '@/App.vue'
 import router from '@/router'
 import pinia from '@/stores'
-
 import 'virtual:uno.css'
-
 import '@/styles/app.less'
 
 // Vant 桌面端适配
@@ -22,7 +21,9 @@ import 'vant/es/notify/style'
 import 'vant/es/image-preview/style'
 
 const app = createApp(App)
+const head = createHead()
 
+app.use(head)
 app.use(router)
 app.use(pinia)
 

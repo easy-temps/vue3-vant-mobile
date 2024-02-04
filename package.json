@@ -17,8 +17,10 @@
     "prepare": "npx husky install"
   },
   "dependencies": {
+    "@unhead/vue": "^1.8.10",
     "@vant/touch-emulator": "^1.4.0",
     "@vant/use": "^1.6.0",
+    "@vueuse/core": "^10.7.2",
     "axios": "^1.6.5",
     "echarts": "^5.4.3",
     "lodash-es": "^4.17.21",

@@ -9,6 +9,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import { VantResolver } from 'unplugin-vue-components/resolvers'
+import { unheadVueComposablesImports } from '@unhead/vue'
 
 import vue from '@vitejs/plugin-vue'
 import legacy from '@vitejs/plugin-legacy'
@@ -36,7 +37,6 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
         dts: 'src/typed-router.d.ts',
       }),
 
-      VueDevTools(),
       vue(),
       vueJsx(),
       visualizer(),
@@ -61,14 +61,19 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
           /\.vue\?vue/,
         ],
         imports: [
+          'vue',
+          'vitest',
+          '@vueuse/core',
           VueRouterAutoImports,
           {
             'vue-router/auto': ['useLink'],
           },
-          'vue',
-          'vitest',
+          unheadVueComposablesImports,
         ],
         dts: 'src/auto-imports.d.ts',
+        dirs: [
+          'src/composables',
+        ],
       }),
 
       viteVConsole({
@@ -79,6 +84,8 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
           theme: 'light',
         },
       }),
+
+      VueDevTools(),
     ],
 
     css: {

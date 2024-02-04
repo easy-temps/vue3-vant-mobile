@@ -1,17 +1,31 @@
 <script setup lang="ts">
-import type { ConfigProviderTheme } from 'vant'
 import { storeToRefs } from 'pinia'
+import useAppStore from '@/stores/modules/app'
 import useRouteTransitionNameStore from '@/stores/modules/routeTransitionName'
 
-const theme = ref<ConfigProviderTheme>('light')
-provide('isRealDark', computed(() => theme.value === 'dark'))
+useHead({
+  title: 'Vue3 Vant Mobile',
+  meta: [
+    {
+      name: 'description',
+      content: 'Vue + Vite H5 Starter Template',
+    },
+    {
+      name: 'theme-color',
+      content: () => isDark.value ? '#00aba9' : '#ffffff',
+    },
+  ],
+})
+
+const appStore = useAppStore()
+const { mode } = storeToRefs(appStore)
 
 const routeTransitionNameStore = useRouteTransitionNameStore()
 const { routeTransitionName } = storeToRefs(routeTransitionNameStore)
 </script>
 
 <template>
-  <VanConfigProvider :theme="theme">
+  <VanConfigProvider :theme="mode">
     <router-view v-slot="{ Component, route }">
       <transition :name="routeTransitionName">
         <div :key="route.name" class="app-wrapper">

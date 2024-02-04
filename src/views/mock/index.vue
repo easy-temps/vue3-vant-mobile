@@ -24,14 +24,14 @@ const onClickLeft = () => history.back()
 </script>
 
 <template>
-  <div>
+  <div class="h-full w-full">
     <VanNavBar title="💿 Mock 指南" left-arrow fixed @click-left="onClickLeft" />
 
-    <div class="container">
+    <div class="h-full w-full px-30 py-74 light:bg-[#eff2f5]">
       <div class="data-label">
         来自异步请求的数据
       </div>
-      <div class="data-content">
+      <div class="data-content dark:bg-[--van-background-2] light:bg-white">
         <div v-if="messages">
           {{ messages }}
         </div>
@@ -49,36 +49,22 @@ const onClickLeft = () => history.back()
 </template>
 
 <style lang="less" scoped>
-.container {
-  width: 100%;
-  height: 100%;
-  padding: 74px 30px;
-
-  .data-label {
-    color: #969799;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-  .data-content {
-    height: 300px;
-    padding: 20px;
-    line-height: 30px;
-    background: #fff;
-    margin-top: 20px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.data-label {
+  color: #969799;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }
 
-[data-theme='dark'] {
-  .data-content {
-    background: #222;
-    color: #fff;
-  }
+.data-content {
+  height: 300px;
+  padding: 20px;
+  line-height: 30px;
+  margin-top: 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .van-button--block {

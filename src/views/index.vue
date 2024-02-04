@@ -1,29 +1,33 @@
 <script setup lang="ts">
+import useAppStore from '@/stores/modules/app'
+
 definePage({
   name: 'index',
   meta: {
     level: 1,
   },
 })
+const appStore = useAppStore()
+const checked = ref<boolean>(isDark.value)
 
-const checked = ref<boolean>(false)
+function toggle() {
+  toggleDark()
+  appStore.swithMode(isDark.value ? 'dark' : 'light')
+}
 </script>
 
 <template>
-  <div class="container">
+  <div class="h-full w-full pt-30 light:bg-[#eff2f5]">
     <VanCellGroup title="一个集成最新技术栈、完整干净的移动端模板" inset>
       <VanCell center title="🌗 暗黑模式">
         <template #right-icon>
-          <VanSwitch v-model="checked" size="23px" disabled />
+          <VanSwitch v-model="checked" size="23px" @click="toggle()" />
         </template>
       </VanCell>
 
       <VanCell title="💿 Mock 指南" to="mock" is-link />
-
       <VanCell title="📊 Echarts 演示" to="charts" is-link />
-
       <VanCell title="🪶 Unocss 示例" to="unocss" is-link />
-
       <VanCell title="🍍 持久化 Pinia 状态" to="counter" is-link />
 
       <VanCell center>
@@ -39,14 +43,8 @@ const checked = ref<boolean>(false)
 </template>
 
 <style lang="less" scoped>
-.container {
-  width: 100%;
-  height: 100%;
-  padding-top: 30px;
-
-  .custom-title {
-    margin-right: 4px;
-    vertical-align: middle;
-  }
+.custom-title {
+  margin-right: 4px;
+  vertical-align: middle;
 }
 </style>
