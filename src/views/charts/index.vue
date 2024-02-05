@@ -71,29 +71,23 @@ const onClickLeft = () => history.back()
   <div>
     <VanNavBar title="📊 Echarts" left-arrow fixed @click-left="onClickLeft" />
 
-    <div class="container">
-      <div class="chart">
+    <Container>
+      <div class="chart light:bg-white">
         <Chart :option="refBarOption" :style="{ height: '330px' }" />
       </div>
 
-      <div class="chart item">
+      <div class="chart item light:bg-white">
         <Chart :option="refLineOption" :style="{ height: '330px' }" />
       </div>
 
-      <div class="chart item">
+      <div class="chart item light:bg-white">
         <Chart :option="refScoreOption" :style="{ height: '330px' }" />
       </div>
-    </div>
+    </Container>
   </div>
 </template>
 
 <style lang="less" scoped>
-.container {
-  width: 100%;
-  height: 100%;
-  padding: 60px 16px;
-}
-
 .chart {
   width: 100%;
   height: 300px;

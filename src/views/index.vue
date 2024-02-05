@@ -2,11 +2,12 @@
 import useAppStore from '@/stores/modules/app'
 
 definePage({
-  name: 'index',
+  name: 'main',
   meta: {
     level: 1,
   },
 })
+
 const appStore = useAppStore()
 const checked = ref<boolean>(isDark.value)
 
@@ -17,11 +18,11 @@ function toggle() {
 </script>
 
 <template>
-  <div class="h-full w-full pt-30 light:bg-[#eff2f5]">
-    <VanCellGroup title="一个集成最新技术栈、完整干净的移动端模板" inset>
+  <div class="h-full w-full py-60" light="bg-[--van-gray-1]">
+    <VanCellGroup inset title="一个集成最新技术栈、完整干净的移动端模板">
       <VanCell center title="🌗 暗黑模式">
         <template #right-icon>
-          <VanSwitch v-model="checked" size="23px" @click="toggle()" />
+          <VanSwitch v-model="checked" size="20px" @click="toggle()" />
         </template>
       </VanCell>
 
@@ -32,7 +33,7 @@ function toggle() {
 
       <VanCell center>
         <template #title>
-          <span class="custom-title">🎨 欢迎补充</span>
+          <span class="mr-4 v-middle">🎨 欢迎补充</span>
           <VanTag type="primary">
             PR
           </VanTag>
@@ -41,10 +42,3 @@ function toggle() {
     </VanCellGroup>
   </div>
 </template>
-
-<style lang="less" scoped>
-.custom-title {
-  margin-right: 4px;
-  vertical-align: middle;
-}
-</style>

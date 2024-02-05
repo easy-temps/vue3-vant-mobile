@@ -27,10 +27,11 @@ const onClickLeft = () => history.back()
   <div class="h-full w-full">
     <VanNavBar title="💿 Mock 指南" left-arrow fixed @click-left="onClickLeft" />
 
-    <div class="h-full w-full px-30 py-74 light:bg-[#eff2f5]">
+    <Container>
       <div class="data-label">
         来自异步请求的数据
       </div>
+
       <div class="data-content dark:bg-[--van-background-2] light:bg-white">
         <div v-if="messages">
           {{ messages }}
@@ -38,13 +39,15 @@ const onClickLeft = () => history.back()
         <VanEmpty v-else description="暂无数据" />
       </div>
 
-      <VanButton round block type="primary" @click="pull">
-        请求
-      </VanButton>
-      <VanButton round block type="default" @click="reset">
-        清空
-      </VanButton>
-    </div>
+      <van-space class="m-10" direction="vertical" fill>
+        <VanButton type="primary" round block @click="pull">
+          请求
+        </VanButton>
+        <VanButton type="default" round block @click="reset">
+          清空
+        </VanButton>
+      </van-space>
+    </Container>
   </div>
 </template>
 
@@ -65,9 +68,5 @@ const onClickLeft = () => history.back()
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.van-button--block {
-  margin-top: 15px;
 }
 </style>
