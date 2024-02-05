@@ -14,7 +14,7 @@
     "lint:fix": "eslint . --fix",
     "test": "vitest",
     "release": "bumpp --commit --push --tag",
-    "prepare": "npx husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "@unhead/vue": "^1.8.10",
