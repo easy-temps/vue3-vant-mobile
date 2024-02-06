@@ -18,7 +18,7 @@ function toggle() {
 </script>
 
 <template>
-  <div class="h-full w-full py-60" light="bg-[--van-gray-1]">
+  <main class="h-full w-full py-60">
     <VanCellGroup inset title="一个集成最新技术栈、完整干净的移动端模板">
       <VanCell center title="🌗 暗黑模式">
         <template #right-icon>
@@ -40,5 +40,5 @@ function toggle() {
         </template>
       </VanCell>
     </VanCellGroup>
-  </div>
+  </main>
 </template>

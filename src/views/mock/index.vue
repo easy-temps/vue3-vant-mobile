@@ -32,7 +32,7 @@ const onClickLeft = () => history.back()
         来自异步请求的数据
       </div>
 
-      <div class="data-content dark:bg-[--van-background-2] light:bg-white">
+      <div class="data-content bg-white dark:bg-[--van-background-2]">
         <div v-if="messages">
           {{ messages }}
         </div>
