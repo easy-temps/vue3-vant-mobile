@@ -18,8 +18,8 @@ function toggle() {
 </script>
 
 <template>
-  <main class="h-full w-full py-60">
-    <VanCellGroup inset title="一个集成最新技术栈、完整干净的移动端模板">
+  <main class="h-full w-full py-30">
+    <VanCellGroup inset>
       <VanCell center title="🌗 暗黑模式">
         <template #right-icon>
           <VanSwitch v-model="checked" size="20px" @click="toggle()" />
@@ -28,12 +28,12 @@ function toggle() {
 
       <VanCell title="💿 Mock 指南" to="mock" is-link />
       <VanCell title="📊 Echarts 演示" to="charts" is-link />
-      <VanCell title="🪶 Unocss 示例" to="unocss" is-link />
+      <VanCell title="🎨 Unocss 示例" to="unocss" is-link />
       <VanCell title="🍍 持久化 Pinia 状态" to="counter" is-link />
 
       <VanCell center>
         <template #title>
-          <span class="mr-4 v-middle">🎨 欢迎补充</span>
+          <span class="mr-4 v-middle">🚀 欢迎补充</span>
           <VanTag type="primary">
             PR
           </VanTag>

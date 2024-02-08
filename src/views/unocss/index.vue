@@ -12,7 +12,7 @@ const onClickLeft = () => history.back()
 
 <template>
   <div class="h-full w-full">
-    <VanNavBar title="🪶 Unocss" left-arrow fixed @click-left="onClickLeft" />
+    <VanNavBar title="🎨 Unocss" left-arrow fixed @click-left="onClickLeft" />
 
     <Container>
       <h1 class="text-6xl color-pink font-semibold">
