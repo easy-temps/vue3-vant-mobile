@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "Vue.volar",
-    "antfu.unocss"
+    "antfu.unocss",
+    "simonhe.common-intellisense"
   ]
 }

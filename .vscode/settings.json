@@ -43,5 +43,11 @@
     "json",
     "jsonc",
     "yaml"
+  ],
+
+  // Specify the UI library you need to prompt
+  "common-intellisense.showSlots": false,
+  "common-intellisense.ui": [
+    "vant4"
   ]
 }
