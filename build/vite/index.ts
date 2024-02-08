@@ -1,45 +1,66 @@
-import path from 'node:path'
-import { viteVConsole } from 'vite-plugin-vconsole'
+import vue from '@vitejs/plugin-vue'
+import legacy from '@vitejs/plugin-legacy'
+import vueJsx from '@vitejs/plugin-vue-jsx'
+import { visualizer } from 'rollup-plugin-visualizer'
+import Components from 'unplugin-vue-components/vite'
+import AutoImport from 'unplugin-auto-import/vite'
+import VueRouter from 'unplugin-vue-router/vite'
+import { VueRouterAutoImports } from 'unplugin-vue-router'
+import { VantResolver } from 'unplugin-vue-components/resolvers'
+import { unheadVueComposablesImports } from '@unhead/vue'
+import VueDevTools from 'vite-plugin-vue-devtools'
+import mockDevServerPlugin from 'vite-plugin-mock-dev-server'
+import UnoCSS from 'unocss/vite'
+import { createViteVConsole } from './vconsole'
 
-// https://github.com/vadxq/vite-plugin-vconsole/issues/21
+export function createVitePlugins() {
+  return [
+    VueRouter({
+      routesFolder: 'src/views',
+      dts: 'src/typed-router.d.ts',
+    }),
 
-export function createViteVConsole(command: 'serve' | 'build') {
-  return viteVConsole({
-    entry: [path.resolve('src/main.ts')],
-    enabled: command === 'serve',
-    config: {
-      maxLogNumber: 1000,
-      theme: 'light',
-    },
-    dynamicConfig: {
-      theme: `document.documentElement.classList.contains('dark') ? 'dark' : 'light'`,
-    },
-    eventListener: `
-      const targetElement = document.querySelector('html'); // 择要监听的元素
-      const observerOptions = {
-        attributes: true, // 监听属性变化
-        attributeFilter: ['class'] // 只监听class属性变化
-      };
+    vue(),
+    vueJsx(),
+    visualizer(),
+    UnoCSS(),
+    mockDevServerPlugin(),
 
-      // 定义回调函数来处理观察到的变化
-      function handleAttributeChange(mutationsList) {
-        for(let mutation of mutationsList) {
-          if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-            if (window && window.vConsole) {
-              window.vConsole.dynamicChange.value = new Date().getTime();
-            }
-          }
-        }
-      }
+    legacy({
+      targets: ['defaults', 'not IE 11'],
+    }),
 
-      // 创建观察者实例并传入回调函数
-      const observer = new MutationObserver(handleAttributeChange);
+    Components({
+      extensions: ['vue'],
+      resolvers: [VantResolver()],
+      include: [/\.vue$/, /\.vue\?vue/],
+      dts: 'src/components.d.ts',
+    }),
 
-      // 开始观察目标元素
-      observer.observe(targetElement, observerOptions);
+    AutoImport({
+      include: [
+        /\.[tj]sx?$/,
+        /\.vue$/,
+        /\.vue\?vue/,
+      ],
+      imports: [
+        'vue',
+        'vitest',
+        '@vueuse/core',
+        VueRouterAutoImports,
+        {
+          'vue-router/auto': ['useLink'],
+        },
+        unheadVueComposablesImports,
+      ],
+      dts: 'src/auto-imports.d.ts',
+      dirs: [
+        'src/composables',
+      ],
+    }),
 
-      // 当不再需要观察时，停止观察
-      // observer.disconnect();
-    `,
-  })
+    createViteVConsole(),
+
+    VueDevTools(),
+  ]
 }
