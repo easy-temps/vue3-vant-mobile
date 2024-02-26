@@ -21,7 +21,7 @@ const onClickLeft = () => history.back()
 </script>
 
 <template>
-  <div class="h-full w-full">
+  <div>
     <VanNavBar title="🍍 持久化 Pinia 状态" left-arrow fixed @click-left="onClickLeft" />
 
     <Container>
@@ -35,7 +35,7 @@ const onClickLeft = () => history.back()
       <p class="mt-4">
         number：<strong class="text-green-500"> {{ counter }} </strong>
       </p>
-      <button class="btn border-none btn-green" @click="add">
+      <button class="btn" @click="add">
         Add
       </button>
     </Container>

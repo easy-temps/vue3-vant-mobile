@@ -11,7 +11,7 @@ const onClickLeft = () => history.back()
 </script>
 
 <template>
-  <div class="h-full w-full">
+  <div>
     <VanNavBar title="🎨 Unocss" left-arrow fixed @click-left="onClickLeft" />
 
     <Container>
@@ -21,8 +21,8 @@ const onClickLeft = () => history.back()
       <p class="mt-4 text-gray-700 dark:text-white">
         This is a simple example of Unocss in action.
       </p>
-      <button class="btn border-none btn-green">
-        Click me
+      <button class="btn">
+        Button
       </button>
     </Container>
   </div>

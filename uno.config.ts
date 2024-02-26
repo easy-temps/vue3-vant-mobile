@@ -15,18 +15,10 @@ export default defineConfig({
       // https://juejin.cn/post/7262975395620618298
       baseFontSize: 4,
     }),
-    presetMini({
-      dark: {
-        dark: '.van-theme-dark',
-        light: '.van-theme-light',
-      },
-    }),
+    presetMini(),
   ],
-  shortcuts: {
+  shortcuts: [
     // shortcuts to multiple utilities
-    'btn': 'py-2 px-4 font-semibold rounded-lg shadow-md',
-    'btn-green': 'text-white bg-green-500 hover:bg-green-700',
-    'btn-blue': 'text-white bg-blue-500 hover:bg-blue-700',
-    'centered': 'absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2',
-  },
+    ['btn', 'px-6 py-3 rounded-3 border-none inline-block bg-green-400 text-white cursor-pointer !outline-none hover:bg-green-600 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
+  ],
 })

@@ -24,7 +24,7 @@ const onClickLeft = () => history.back()
 </script>
 
 <template>
-  <div class="h-full w-full">
+  <div>
     <VanNavBar title="💿 Mock 指南" left-arrow fixed @click-left="onClickLeft" />
 
     <Container>

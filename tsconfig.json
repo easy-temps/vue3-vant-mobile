@@ -10,7 +10,11 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "types": ["node"],
+    "types": [
+      "node",
+      "unplugin-vue-router/client",
+      "vite-plugin-vue-layouts/client"
+    ],
     "allowJs": true,
     "strictNullChecks": false,
     "noImplicitAny": false,
