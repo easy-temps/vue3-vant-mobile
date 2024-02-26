@@ -11,6 +11,14 @@ definePage({
 const appStore = useAppStore()
 const checked = ref<boolean>(isDark.value)
 
+watch(
+  () => isDark.value,
+  (newMode) => {
+    checked.value = newMode
+  },
+  { immediate: true },
+)
+
 function toggle() {
   toggleDark()
   appStore.swithMode(isDark.value ? 'dark' : 'light')

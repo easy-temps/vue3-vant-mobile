@@ -1,6 +1,10 @@
 import { defineStore } from 'pinia'
 import type { ConfigProviderTheme } from 'vant'
 
+export interface AppStore {
+  swithMode: (val: ConfigProviderTheme) => void
+}
+
 const prefersDark
 = window.matchMedia
 && window.matchMedia('(prefers-color-scheme: dark)').matches

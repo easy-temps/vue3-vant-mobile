@@ -2,6 +2,7 @@
 import { storeToRefs } from 'pinia'
 import useAppStore from '@/stores/modules/app'
 import useRouteTransitionNameStore from '@/stores/modules/routeTransitionName'
+import useAutoThemeSwitcher from '@/hooks/useAutoThemeSwitcher'
 
 useHead({
   title: 'Vue3 Vant Mobile',
@@ -22,6 +23,12 @@ const { mode } = storeToRefs(appStore)
 
 const routeTransitionNameStore = useRouteTransitionNameStore()
 const { routeTransitionName } = storeToRefs(routeTransitionNameStore)
+
+const { initializeThemeSwitcher } = useAutoThemeSwitcher(appStore)
+
+onMounted(() => {
+  initializeThemeSwitcher()
+})
 </script>
 
 <template>
