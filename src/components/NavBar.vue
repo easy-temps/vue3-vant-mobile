@@ -20,7 +20,7 @@ const title = computed(() => {
     v-show="title"
     :title="title"
     :fixed="true"
-    left-arrow clickable
+    clickable left-arrow
     @click-left="onBack"
   />
 </template>
