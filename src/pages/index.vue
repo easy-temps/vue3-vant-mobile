@@ -23,6 +23,14 @@ function toggle() {
   toggleDark()
   appStore.swithMode(isDark.value ? 'dark' : 'light')
 }
+
+const menuItems = [
+  { title: '💿 Mock 指南', route: 'mock' },
+  { title: '📊 Echarts 演示', route: 'charts' },
+  { title: '🎨 Unocss 示例', route: 'unocss' },
+  { title: '🍍 持久化 Pinia 状态', route: 'counter' },
+  { title: '🙅 404页 演示', route: 'unknown' },
+]
 </script>
 
 <template>
@@ -33,20 +41,9 @@ function toggle() {
       </template>
     </VanCell>
 
-    <VanCell title="💿 Mock 指南" to="mock" is-link />
-    <VanCell title="📊 Echarts 演示" to="charts" is-link />
-    <VanCell title="🎨 Unocss 示例" to="unocss" is-link />
-    <VanCell title="🍍 持久化 Pinia 状态" to="counter" is-link />
-    <VanCell title="🙅 404 演示" to="unknown" is-link />
-
-    <VanCell center>
-      <template #title>
-        <span class="mr-4 v-middle">🚀 欢迎补充</span>
-        <VanTag type="primary">
-          PR
-        </VanTag>
-      </template>
-    </VanCell>
+    <template v-for="item in menuItems" :key="item.route">
+      <VanCell :title="item.title" :to="item.route" is-link />
+    </template>
   </VanCellGroup>
 </template>
 

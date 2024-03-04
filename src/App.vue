@@ -33,6 +33,7 @@ onMounted(() => {
 
 <template>
   <VanConfigProvider :theme="mode">
+    <NavBar />
     <router-view v-slot="{ Component, route }">
       <transition :name="routeTransitionName">
         <div :key="route.name" class="app-wrapper">
@@ -45,11 +46,11 @@ onMounted(() => {
 
 <style scoped>
 .app-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 46px;
+  left: 0;
   overflow-y: auto;
 }
 </style>

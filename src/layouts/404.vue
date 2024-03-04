@@ -15,7 +15,3 @@ const router = useRouter()
     </div>
   </main>
 </template>
-
-<style scoped>
-
-</style>

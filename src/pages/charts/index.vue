@@ -3,6 +3,7 @@ definePage({
   name: 'charts',
   meta: {
     level: 2,
+    title: '📊 Echarts 演示',
   },
 })
 
@@ -62,38 +63,12 @@ const scoreOption = {
 const refBarOption = ref(barOption)
 const refLineOption = ref(lineOption)
 const refScoreOption = ref(scoreOption)
-
-// back
-const onClickLeft = () => history.back()
 </script>
 
 <template>
   <div>
-    <VanNavBar title="📊 Echarts" left-arrow fixed @click-left="onClickLeft" />
-
-    <Container>
-      <div class="chart">
-        <Chart :option="refBarOption" :style="{ height: '330px' }" />
-      </div>
-
-      <div class="chart item">
-        <Chart :option="refLineOption" :style="{ height: '330px' }" />
-      </div>
-
-      <div class="chart item">
-        <Chart :option="refScoreOption" :style="{ height: '330px' }" />
-      </div>
-    </Container>
+    <Chart :option="refBarOption" :style="{ height: '330px' }" />
+    <Chart :option="refLineOption" :style="{ height: '330px' }" />
+    <Chart :option="refScoreOption" :style="{ height: '330px' }" />
   </div>
 </template>
-
-<style lang="less" scoped>
-.chart {
-  width: 100%;
-  height: 300px;
-}
-
-.chart.item {
-  margin-top: 15px;
-}
-</style>

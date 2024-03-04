@@ -5,6 +5,7 @@ definePage({
   name: 'mock',
   meta: {
     level: 2,
+    title: '💿 Mock 指南',
   },
 })
 
@@ -18,36 +19,29 @@ function pull() {
 
 // reset data
 const reset = () => messages.value = ''
-
-// back
-const onClickLeft = () => history.back()
 </script>
 
 <template>
   <div>
-    <VanNavBar title="💿 Mock 指南" left-arrow fixed @click-left="onClickLeft" />
+    <div class="data-label">
+      来自异步请求的数据
+    </div>
 
-    <Container>
-      <div class="data-label">
-        来自异步请求的数据
+    <div class="data-content bg-white dark:bg-[--van-background-2]">
+      <div v-if="messages">
+        {{ messages }}
       </div>
+      <VanEmpty v-else description="暂无数据" />
+    </div>
 
-      <div class="data-content bg-white dark:bg-[--van-background-2]">
-        <div v-if="messages">
-          {{ messages }}
-        </div>
-        <VanEmpty v-else description="暂无数据" />
-      </div>
-
-      <van-space class="m-10" direction="vertical" fill>
-        <VanButton type="primary" round block @click="pull">
-          请求
-        </VanButton>
-        <VanButton type="default" round block @click="reset">
-          清空
-        </VanButton>
-      </van-space>
-    </Container>
+    <van-space class="m-10" direction="vertical" fill>
+      <VanButton type="primary" round block @click="pull">
+        请求
+      </VanButton>
+      <VanButton type="default" round block @click="reset">
+        清空
+      </VanButton>
+    </van-space>
   </div>
 </template>
 
@@ -64,6 +58,7 @@ const onClickLeft = () => history.back()
   padding: 20px;
   line-height: 30px;
   margin-top: 20px;
+  font-size: 16px;
   border-radius: 15px;
   display: flex;
   align-items: center;

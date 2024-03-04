@@ -3,27 +3,23 @@ definePage({
   name: 'unocss',
   meta: {
     level: 2,
+    title: '🎨 Unocss 示例',
   },
 })
-
-// back
-const onClickLeft = () => history.back()
 </script>
 
 <template>
   <div>
-    <VanNavBar title="🎨 Unocss" left-arrow fixed @click-left="onClickLeft" />
+    <h1 class="text-6xl color-pink font-semibold">
+      Hello, Unocss!
+    </h1>
 
-    <Container>
-      <h1 class="text-6xl color-pink font-semibold">
-        Hello, Unocss!
-      </h1>
-      <p class="mt-4 text-gray-700 dark:text-white">
-        This is a simple example of Unocss in action.
-      </p>
-      <button class="btn">
-        Button
-      </button>
-    </Container>
+    <p class="mt-4 text-gray-700 dark:text-white">
+      This is a simple example of Unocss in action.
+    </p>
+
+    <button class="btn">
+      Button
+    </button>
   </div>
 </template>
