@@ -37,7 +37,7 @@ const menuItems = [
   <VanCellGroup inset>
     <VanCell center title="🌗 暗黑模式">
       <template #right-icon>
-        <VanSwitch v-model="checked" size="20px" @click="toggle()" />
+        <VanSwitch v-model="checked" size="20px" aria-label="on/off Dark Mode" @click="toggle()" />
       </template>
     </VanCell>
 
