@@ -1,7 +1,5 @@
 import vue from '@vitejs/plugin-vue'
 import legacy from '@vitejs/plugin-legacy'
-import vueJsx from '@vitejs/plugin-vue-jsx'
-import { visualizer } from 'rollup-plugin-visualizer'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import VueRouter from 'unplugin-vue-router/vite'
@@ -63,6 +61,10 @@ export function createVitePlugins() {
       ],
     }),
 
+    legacy({
+      targets: ['defaults', 'not IE 11'],
+    }),
+
     // https://github.com/antfu/unocss
     // see uno.config.ts for config
     UnoCSS(),
@@ -100,13 +102,6 @@ export function createVitePlugins() {
           },
         ],
       },
-    }),
-
-    vueJsx(),
-    visualizer(),
-
-    legacy({
-      targets: ['defaults', 'not IE 11'],
     }),
   ]
 }

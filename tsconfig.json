@@ -6,7 +6,7 @@
     "experimentalDecorators": true,
     "baseUrl": ".",
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "Bundler",
     "paths": {
       "@/*": ["src/*"]
     },
