@@ -95,6 +95,7 @@
 - [vueuse](https://github.com/antfu/vueuse) - collection of useful composition APIs
 - [@unhead/vue](https://github.com/unjs/unhead) - manipulate document head reactively
 - [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) - PWA
+- [vite-plugin-sitemap](https://github.com/jbaubree/vite-plugin-sitemap) - sitemap and robots generator
 
 ### Coding Style
 

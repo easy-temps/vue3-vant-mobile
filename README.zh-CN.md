@@ -95,6 +95,7 @@
 - [vueuse](https://github.com/antfu/vueuse) - 实用的 Composition API 工具合集
 - [@unhead/vue](https://github.com/unjs/unhead) - 响应式地操作文档头信息
 - [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) - PWA
+- [vite-plugin-sitemap](https://github.com/jbaubree/vite-plugin-sitemap) - sitemap 和 robots 生成器
 
 ### 编码风格
 
