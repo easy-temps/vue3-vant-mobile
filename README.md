@@ -36,6 +36,8 @@
 
 - 📑 [Layout system](./src/layouts)
 
+- 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
+
 - 🎨 [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine
 
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
@@ -92,6 +94,7 @@
 - [vite-plugin-vue-devtools](https://github.com/vuejs/devtools-next) - Designed to enhance the Vue developer experience
 - [vueuse](https://github.com/antfu/vueuse) - collection of useful composition APIs
 - [@unhead/vue](https://github.com/unjs/unhead) - manipulate document head reactively
+- [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) - PWA
 
 ### Coding Style
 

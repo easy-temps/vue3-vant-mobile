@@ -12,6 +12,7 @@ import VueDevTools from 'vite-plugin-vue-devtools'
 import mockDevServerPlugin from 'vite-plugin-mock-dev-server'
 import Layouts from 'vite-plugin-vue-layouts'
 import UnoCSS from 'unocss/vite'
+import { VitePWA } from 'vite-plugin-pwa'
 import { createViteVConsole } from './vconsole'
 
 export function createVitePlugins() {
@@ -71,6 +72,35 @@ export function createVitePlugins() {
 
     // https://github.com/webfansplz/vite-plugin-vue-devtools
     VueDevTools(),
+
+    // https://github.com/antfu/vite-plugin-pwa
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
+      manifest: {
+        name: 'vue3-vant-mobile',
+        short_name: 'vue3-vant-mobile',
+        theme_color: '#ffffff',
+        icons: [
+          {
+            src: '/pwa-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: '/pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+          {
+            src: '/pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable',
+          },
+        ],
+      },
+    }),
 
     vueJsx(),
     visualizer(),

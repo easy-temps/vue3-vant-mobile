@@ -36,6 +36,8 @@
 
 - 📑 [布局系统](./src/layouts)
 
+- 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
+
 - 🎨 [UnoCSS](https://github.com/antfu/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
 
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
@@ -92,6 +94,7 @@
 - [vite-plugin-vue-devtools](https://github.com/vuejs/devtools-next) - 旨在增强Vue开发者体验的Vite插件
 - [vueuse](https://github.com/antfu/vueuse) - 实用的 Composition API 工具合集
 - [@unhead/vue](https://github.com/unjs/unhead) - 响应式地操作文档头信息
+- [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) - PWA
 
 ### 编码风格
 

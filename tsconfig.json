@@ -13,7 +13,8 @@
     "types": [
       "node",
       "unplugin-vue-router/client",
-      "vite-plugin-vue-layouts/client"
+      "vite-plugin-vue-layouts/client",
+      "vite-plugin-pwa/client"
     ],
     "allowJs": true,
     "strictNullChecks": false,
