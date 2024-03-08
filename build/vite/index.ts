@@ -11,6 +11,7 @@ import mockDevServerPlugin from 'vite-plugin-mock-dev-server'
 import Layouts from 'vite-plugin-vue-layouts'
 import UnoCSS from 'unocss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
+import Sitemap from 'vite-plugin-sitemap'
 import { createViteVConsole } from './vconsole'
 
 export function createVitePlugins() {
@@ -26,6 +27,9 @@ export function createVitePlugins() {
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
     Layouts(),
+
+    // https://github.com/jbaubree/vite-plugin-sitemap
+    Sitemap(),
 
     // https://github.com/pengzhanbo/vite-plugin-mock-dev-server
     mockDevServerPlugin(),

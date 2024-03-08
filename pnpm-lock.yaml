@@ -148,6 +148,9 @@ devDependencies:
   vite-plugin-pwa:
     specifier: ^0.19.2
     version: 0.19.2(vite@5.1.5)(workbox-build@7.0.0)(workbox-window@7.0.0)
+  vite-plugin-sitemap:
+    specifier: ^0.5.3
+    version: 0.5.3
   vite-plugin-vconsole:
     specifier: ^2.1.1
     version: 2.1.1
@@ -8151,6 +8154,10 @@ packages:
       workbox-window: 7.0.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /vite-plugin-sitemap@0.5.3:
+    resolution: {integrity: sha512-DSqZLAkXaNgoJLcaxjJHrfWjIIiZRSuZIseE7ihJYUvPFG4OsvXn/+Oujmzbs+6tV7yu1dn7uhWXpV7QuiH/1g==}
     dev: true
 
   /vite-plugin-vconsole@2.1.1:

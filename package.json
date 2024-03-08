@@ -66,6 +66,7 @@
     "vite": "^5.1.5",
     "vite-plugin-mock-dev-server": "^1.4.7",
     "vite-plugin-pwa": "^0.19.2",
+    "vite-plugin-sitemap": "^0.5.3",
     "vite-plugin-vconsole": "^2.1.1",
     "vite-plugin-vue-devtools": "^7.0.16",
     "vite-plugin-vue-layouts": "^0.11.0",
