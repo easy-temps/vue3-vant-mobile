@@ -1,17 +1,17 @@
-import vue from '@vitejs/plugin-vue'
-import legacy from '@vitejs/plugin-legacy'
-import Components from 'unplugin-vue-components/vite'
-import AutoImport from 'unplugin-auto-import/vite'
-import VueRouter from 'unplugin-vue-router/vite'
-import { VueRouterAutoImports } from 'unplugin-vue-router'
-import { VantResolver } from 'unplugin-vue-components/resolvers'
 import { unheadVueComposablesImports } from '@unhead/vue'
-import VueDevTools from 'vite-plugin-vue-devtools'
-import mockDevServerPlugin from 'vite-plugin-mock-dev-server'
-import Layouts from 'vite-plugin-vue-layouts'
+import legacy from '@vitejs/plugin-legacy'
+import vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
+import AutoImport from 'unplugin-auto-import/vite'
+import { VantResolver } from 'unplugin-vue-components/resolvers'
+import Components from 'unplugin-vue-components/vite'
+import { VueRouterAutoImports } from 'unplugin-vue-router'
+import VueRouter from 'unplugin-vue-router/vite'
+import mockDevServerPlugin from 'vite-plugin-mock-dev-server'
 import { VitePWA } from 'vite-plugin-pwa'
 import Sitemap from 'vite-plugin-sitemap'
+import VueDevTools from 'vite-plugin-vue-devtools'
+import Layouts from 'vite-plugin-vue-layouts'
 import { createViteVConsole } from './vconsole'
 
 export function createVitePlugins() {
@@ -76,7 +76,7 @@ export function createVitePlugins() {
     // https://github.com/vadxq/vite-plugin-vconsole
     createViteVConsole(),
 
-    // https://github.com/webfansplz/vite-plugin-vue-devtools
+    // https://github.com/vuejs/devtools-next
     VueDevTools(),
 
     // https://github.com/antfu/vite-plugin-pwa
