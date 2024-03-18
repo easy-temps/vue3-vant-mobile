@@ -244,6 +244,13 @@ pnpm build
       <sub><b>Abraham K.</b></sub>
     </a>
   </td>
+  <td align="center">
+    <a href="https://github.com/wowping">
+      <img src="https://avatars.githubusercontent.com/u/137802961?v=4" width="90;" alt="Mia Campbell"/>
+      <br />
+      <sub><b>Mia Campbell</b></sub>
+    </a>
+  </td>
 </tr>
 </table>
 
