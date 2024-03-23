@@ -37,12 +37,11 @@ onMounted(() => {
   initializeThemeSwitcher()
 })
 
-let appSrapperTop = ref('0px')
+const appSrapperTop = ref('0px')
 const router = useRouter()
-router.beforeEach(to => {
-  to.meta.title != undefined ? appSrapperTop.value = '46px' : appSrapperTop.value = '0px'
+router.beforeEach((to) => {
+  to.meta.title !== undefined ? appSrapperTop.value = '46px' : appSrapperTop.value = '0px'
 })
-
 </script>
 
 <template>
