@@ -36,6 +36,14 @@ const { initializeThemeSwitcher } = useAutoThemeSwitcher(appStore)
 onMounted(() => {
   initializeThemeSwitcher()
 })
+
+const appSrapperTop = ref('0px')
+const appSrapperHeight = ref('calc( 100% - 0px )')
+const router = useRouter()
+router.beforeEach((to) => {
+  to.meta.title !== undefined ? appSrapperTop.value = '46px' : appSrapperTop.value = '0px'
+  to.meta.title !== undefined ? appSrapperHeight.value = 'calc( 100% - 46px )' : appSrapperHeight.value = 'calc( 100% - 0px )'
+})
 </script>
 
 <template>
@@ -43,7 +51,7 @@ onMounted(() => {
     <NavBar />
     <router-view v-slot="{ Component, route }">
       <transition :name="routeTransitionName">
-        <div :key="route.name" class="app-wrapper">
+        <div :key="route.name" class="app-wrapper" :style="{ top: appSrapperTop, height: appSrapperHeight }">
           <component :is="Component" />
         </div>
       </transition>
@@ -54,9 +62,7 @@ onMounted(() => {
 <style scoped>
 .app-wrapper {
   width: 100%;
-  height: 100%;
   position: absolute;
-  top: 46px;
   left: 0;
   overflow-y: auto;
 }

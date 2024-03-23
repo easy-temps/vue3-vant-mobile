@@ -34,17 +34,19 @@ const menuItems = [
 </script>
 
 <template>
-  <VanCellGroup inset>
-    <VanCell center title="🌗 暗黑模式">
-      <template #right-icon>
-        <VanSwitch v-model="checked" size="20px" aria-label="on/off Dark Mode" @click="toggle()" />
-      </template>
-    </VanCell>
+  <div class="m-t-46">
+    <VanCellGroup inset>
+      <VanCell center title="🌗 暗黑模式">
+        <template #right-icon>
+          <VanSwitch v-model="checked" size="20px" aria-label="on/off Dark Mode" @click="toggle()" />
+        </template>
+      </VanCell>
 
-    <template v-for="item in menuItems" :key="item.route">
-      <VanCell :title="item.title" :to="item.route" is-link />
-    </template>
-  </VanCellGroup>
+      <template v-for="item in menuItems" :key="item.route">
+        <VanCell :title="item.title" :to="item.route" is-link />
+      </template>
+    </VanCellGroup>
+  </div>
 </template>
 
 <route lang="yaml">
