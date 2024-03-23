@@ -51,7 +51,7 @@ router.beforeEach((to) => {
     <NavBar />
     <router-view v-slot="{ Component, route }">
       <transition :name="routeTransitionName">
-        <div :key="route.name" class="app-wrapper" :style="{ top: appSrapperTop,height: appSrapperHeight }">
+        <div :key="route.name" class="app-wrapper" :style="{ top: appSrapperTop, height: appSrapperHeight }">
           <component :is="Component" />
         </div>
       </transition>
