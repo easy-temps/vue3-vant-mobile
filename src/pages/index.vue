@@ -34,6 +34,7 @@ const menuItems = [
 </script>
 
 <template>
+  <div class="m-t-46" />
   <VanCellGroup inset>
     <VanCell center title="🌗 暗黑模式">
       <template #right-icon>
@@ -45,6 +46,7 @@ const menuItems = [
       <VanCell :title="item.title" :to="item.route" is-link />
     </template>
   </VanCellGroup>
+
 </template>
 
 <route lang="yaml">
