@@ -54,7 +54,7 @@ onMounted(() => {
 <style scoped>
 .app-wrapper {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   position: absolute;
   top: 46px;
   left: 0;
