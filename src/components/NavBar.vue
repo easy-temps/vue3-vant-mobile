@@ -3,7 +3,7 @@ const route = useRoute()
 const router = useRouter()
 
 function onBack() {
-  if (history.length > 1)
+  if (window.history.state.back)
     history.back()
   else
     router.replace('/')
