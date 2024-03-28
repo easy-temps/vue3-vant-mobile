@@ -85,7 +85,7 @@ export function createVitePlugins() {
       includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
       manifest: {
         name: 'vue3-vant-mobile',
-        short_name: 'vue3-vant-mobile',
+        short_name: 'vvm',
         theme_color: '#ffffff',
         icons: [
           {

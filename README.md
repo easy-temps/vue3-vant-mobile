@@ -1,7 +1,7 @@
-<h1 align="center">Vue3-Vant-Mobile</h1>
+<h1 align="center">vvm</h1>
 
 <p align='center'>
-  <a href="https://vue3-vant-mobile.netlify.app">Live Demo</a>
+  <a href="https://vvmcsr.netlify.app">Live Demo</a>
 </p>
 
 <p align="center">
@@ -9,17 +9,17 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/CharleeWa/vue3-vant-mobile" alt="license" />
-  <img src="https://img.shields.io/github/package-json/v/CharleeWa/vue3-vant-mobile" alt="version" />
-  <img src="https://img.shields.io/github/repo-size/CharleeWa/vue3-vant-mobile" alt="repo-size" />
-  <img src="https://img.shields.io/github/languages/top/CharleeWa/vue3-vant-mobile" alt="languages" />
-  <img src="https://img.shields.io/github/issues-closed/CharleeWa/vue3-vant-mobile" alt="issues" />
+  <img src="https://img.shields.io/github/license/easy-temps/vvm" alt="license" />
+  <img src="https://img.shields.io/github/package-json/v/easy-temps/vvm" alt="version" />
+  <img src="https://img.shields.io/github/repo-size/easy-temps/vvm" alt="repo-size" />
+  <img src="https://img.shields.io/github/languages/top/easy-temps/vvm" alt="languages" />
+  <img src="https://img.shields.io/github/issues-closed/easy-temps/vvm" alt="issues" />
 </p>
 
 <br>
 
 <p align='center'>
-<b>English</b> / <a href="https://github.com/CharleeWa/vue3-vant-mobile/blob/main/README.zh-CN.md">简体中文</a>
+<b>English</b> / <a href="https://github.com/easy-temps/vvm/blob/main/README.zh-CN.md">简体中文</a>
 </p>
 
 <br>
@@ -116,18 +116,18 @@
 
 ## Try it now
 
-> Vue3-Vant-Mobile requires Node 18+
+> vvm requires Node 18+
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/CharleeWa/vue3-vant-mobile/generate)
+[Create a repo from this template on GitHub](https://github.com/easy-temps/vvm/generate)
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit CharleeWa/vue3-vant-mobile my-mobile-app
+npx degit easy-temps/vvm my-mobile-app
 cd my-mobile-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
@@ -264,10 +264,10 @@ Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along
 ## Star History
 
 <p align="left">
-  <a target="_blank" href="https://star-history.com/#CharleeWa/vue3-vant-mobile&Date">
+  <a target="_blank" href="https://star-history.com/#easy-temps/vvm&Date">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=CharleeWa/vue3-vant-mobile&type=Date&theme=dark">
-      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=CharleeWa/vue3-vant-mobile&type=Date">
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=easy-temps/vvm&type=Date&theme=dark">
+      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=easy-temps/vvm&type=Date">
     </picture>
   </a>
 </p>
