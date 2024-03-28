@@ -1,7 +1,7 @@
-<h1 align="center">vvm</h1>
+<h1 align="center">vue3-vant-mobile</h1>
 
 <p align='center'>
-  <a href="https://vvmcsr.netlify.app">在线 Demo</a>
+  <a href="https://vue3-vant-mobile.netlify.app">在线 Demo</a>
 </p>
 
 <p align="center">
@@ -9,17 +9,17 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/easy-temps/vvm" alt="license" />
-  <img src="https://img.shields.io/github/package-json/v/easy-temps/vvm" alt="version" />
-  <img src="https://img.shields.io/github/repo-size/easy-temps/vvm" alt="repo-size" />
-  <img src="https://img.shields.io/github/languages/top/easy-temps/vvm" alt="languages" />
-  <img src="https://img.shields.io/github/issues-closed/easy-temps/vvm" alt="issues" />
+  <img src="https://img.shields.io/github/license/easy-temps/vue3-vant-mobile" alt="license" />
+  <img src="https://img.shields.io/github/package-json/v/easy-temps/vue3-vant-mobile" alt="version" />
+  <img src="https://img.shields.io/github/repo-size/easy-temps/vue3-vant-mobile" alt="repo-size" />
+  <img src="https://img.shields.io/github/languages/top/easy-temps/vue3-vant-mobile" alt="languages" />
+  <img src="https://img.shields.io/github/issues-closed/easy-temps/vue3-vant-mobile" alt="issues" />
 </p>
 
 <br>
 
 <p align='center'>
-<a href="https://github.com/easy-temps/vvm/blob/main/README.md">English</a> / <b>简体中文</b>
+<a href="https://github.com/easy-temps/vue3-vant-mobile/blob/main/README.md">English</a> / <b>简体中文</b>
 </p>
 
 <br>
@@ -116,18 +116,18 @@
 
 ## 现在可以试试
 
-> vvm 需要 Node 版本 18+
+> vue3-vant-mobile 需要 Node 版本 18+
 
 ### GitHub 模板
 
-[使用这个模板创建仓库](https://github.com/easy-temps/vvm/generate)
+[使用这个模板创建仓库](https://github.com/easy-temps/vue3-vant-mobile/generate)
 
 ### 克隆到本地
 
 如果您更喜欢使用更干净的 git 历史记录手动执行此操作
 
 ```bash
-npx degit easy-temps/vvm my-mobile-app
+npx degit easy-temps/vue3-vant-mobile my-mobile-app
 cd my-mobile-app
 pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
 ```
@@ -264,10 +264,10 @@ pnpm build
 ## 星星趋势
 
 <p align="left">
-  <a target="_blank" href="https://star-history.com/#easy-temps/vvm&Date">
+  <a target="_blank" href="https://star-history.com/#easy-temps/vue3-vant-mobile&Date">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=easy-temps/vvm&type=Date&theme=dark">
-      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=easy-temps/vvm&type=Date">
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=easy-temps/vue3-vant-mobile&type=Date&theme=dark">
+      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=easy-temps/vue3-vant-mobile&type=Date">
     </picture>
   </a>
 </p>
