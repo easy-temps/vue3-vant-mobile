@@ -54,8 +54,10 @@ onMounted(() => {
 <style scoped>
 .app-wrapper {
   width: 100%;
+  height: calc(100vh - 46px);
   position: absolute;
   top: 46px;
   left: 0;
+  overflow-y: auto;
 }
 </style>
