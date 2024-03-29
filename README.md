@@ -40,6 +40,8 @@
 
 - 🎨 [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine
 
+- 🌍 [I18n ready](./src/locales)
+
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
 
 - 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
@@ -86,6 +88,8 @@
   - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts) - layouts for pages
 - [Pinia](https://pinia.vuejs.org) - Intuitive, type safe, light and flexible Store for Vue using the composition api
   - [`pinia-plugin-persistedstate`](https://github.com/prazdevs/pinia-plugin-persistedstate) -  Configurable persistence and rehydration of Pinia stores
+- [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization
+  - [`unplugin-vue-i18n`](https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n) - unplugin for Vue I18n
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - components auto import
 - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
 - [vite-plugin-vconsole](https://github.com/vadxq/vite-plugin-vconsole) - A lightweight, extendable front-end developer tool for mobile web page
@@ -112,6 +116,7 @@
   - [Vite](https://marketplace.visualstudio.com/items?itemName=antfu.vite) - Fire up Vite server automatically
   - [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) - Vue 3 `<script setup>` IDE support
   - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Icon inline display and autocomplete
+  - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - All in one i18n support
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ## Try it now
@@ -256,6 +261,15 @@ Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along
       <img src="https://avatars.githubusercontent.com/u/50509815?v=4" width="90;" alt="ljt990218"/>
       <br />
       <sub><b>ljt990218</b></sub>
+    </a>
+  </td>
+</tr>
+<tr>
+  <td align="center">
+    <a href="https://github.com/SublimeCT">
+      <img src="https://avatars.githubusercontent.com/u/20380890?v=4" width="90;" alt="sven"/>
+      <br />
+      <sub><b>sven</b></sub>
     </a>
   </td>
 </tr>
