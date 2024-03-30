@@ -14,14 +14,10 @@ html.dark {
   color-scheme: dark;
 }
 
-body {
-  overflow: hidden;
-}
-
 #app {
-  height: 100vh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   position: relative;
-  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -47,4 +43,3 @@ body {
   transform: translateX(-20px);
   opacity: 0;
 }
-
