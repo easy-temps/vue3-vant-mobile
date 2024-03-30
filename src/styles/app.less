@@ -16,8 +16,14 @@ html.dark {
 
 #app {
   min-height: 100vh;
-  min-height: -webkit-fill-available;
   position: relative;
+}
+
+/* 在 iOS Safari 中生效的样式 */
+@supports (-webkit-touch-callout: none) {
+  #app {
+    min-height: -webkit-fill-available;
+  }
 }
 
 ::-webkit-scrollbar {
