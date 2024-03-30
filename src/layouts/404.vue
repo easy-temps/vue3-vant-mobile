@@ -1,5 +1,12 @@
 <script setup lang="ts">
 const router = useRouter()
+
+function onBack() {
+  if (window.history.state.back)
+    history.back()
+  else
+    router.replace('/')
+}
 </script>
 
 <template>
@@ -9,7 +16,7 @@ const router = useRouter()
     <RouterView />
 
     <div class="mt-10">
-      <button van-haptics-feedback btn m="3 t8" @click="router.back()">
+      <button van-haptics-feedback btn m="3 t8" @click="onBack">
         Back
       </button>
     </div>
