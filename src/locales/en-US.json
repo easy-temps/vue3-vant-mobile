@@ -13,5 +13,13 @@
     "noData": "No data",
     "pull": "Pull",
     "reset": "Reset"
+  },
+  "charts": {
+    "January": "Jan",
+    "February": "Feb",
+    "March": "Mar",
+    "April": "Apr",
+    "May": "May",
+    "June": "Jun"
   }
 }
