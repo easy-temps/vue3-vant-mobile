@@ -42,6 +42,8 @@ export default ({ mode }: ConfigEnv): UserConfig => {
             appSelector: '#app',
             viewportWidth: 375,
             maxDisplayWidth: 600,
+            appContainingBlock: 'auto',
+            necessarySelectorWhenAuto: '.app-wrapper',
           }),
         ],
       },
