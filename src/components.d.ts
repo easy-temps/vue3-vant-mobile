@@ -11,6 +11,7 @@ declare module 'vue' {
     NavBar: typeof import('./components/NavBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TabBar: typeof import('./components/TabBar.vue')['default']
     VanButton: typeof import('vant/es')['Button']
     VanCell: typeof import('vant/es')['Cell']
     VanCellGroup: typeof import('vant/es')['CellGroup']
@@ -24,5 +25,7 @@ declare module 'vue' {
     VanRadio: typeof import('vant/es')['Radio']
     VanSpace: typeof import('vant/es')['Space']
     VanSwitch: typeof import('vant/es')['Switch']
+    VanTabbar: typeof import('vant/es')['Tabbar']
+    VanTabbarItem: typeof import('vant/es')['TabbarItem']
   }
 }

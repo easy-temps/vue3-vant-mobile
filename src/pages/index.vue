@@ -4,7 +4,7 @@ import useAppStore from '@/stores/modules/app'
 import { languageColumns, locale } from '@/utils/i18n'
 
 definePage({
-  name: 'main',
+  name: 'home',
   meta: {
     level: 1,
   },

@@ -21,5 +21,14 @@
     "April": "4月",
     "May": "5月",
     "June": "6月"
+  },
+  "layouts": {
+    "home": "首页",
+    "profile": "我的",
+    "homeLayout": "首页布局",
+    "defaultLayout": "默认布局"
+  },
+  "profile": {
+    "placeholder": "未完成"
   }
 }

@@ -21,5 +21,14 @@
     "April": "Apr",
     "May": "May",
     "June": "Jun"
+  },
+  "layouts": {
+    "home": "HOME",
+    "profile": "PROFILE",
+    "homeLayout": "Home Layout",
+    "defaultLayout": "Default Layout"
+  },
+  "profile": {
+    "placeholder": "WIP"
   }
 }
