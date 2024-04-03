@@ -61,6 +61,9 @@ devDependencies:
   '@antfu/eslint-config':
     specifier: 2.12.1
     version: 2.12.1(@unocss/eslint-plugin@0.59.0-beta.1)(@vue/compiler-sfc@3.4.21)(eslint-ts-patch@8.57.0-0)(typescript@5.4.3)(vitest@1.4.0)
+  '@iconify-json/carbon':
+    specifier: ^1.1.31
+    version: 1.1.31
   '@intlify/unplugin-vue-i18n':
     specifier: ^4.0.0
     version: 4.0.0(rollup@4.14.0)(vue-i18n@9.10.2)
@@ -1896,6 +1899,12 @@ packages:
 
   /@humanwhocodes/object-schema@2.0.3:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
+    dev: true
+
+  /@iconify-json/carbon@1.1.31:
+    resolution: {integrity: sha512-CAvECFfiwGyZmlcuM2JLMRDEN3VsIEZv6lml7Xf+3giQ5oXloADm0b5wiVPFZmONKM5jXERmx+E7YSvAtFJIbw==}
+    dependencies:
+      '@iconify/types': 2.0.0
     dev: true
 
   /@iconify/types@2.0.0:
