@@ -29,7 +29,9 @@ export function createVitePlugins() {
     vue(),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
-    Layouts(),
+    Layouts({
+      pagesDirs: 'src/pages/**',
+    }),
 
     // https://github.com/jbaubree/vite-plugin-sitemap
     Sitemap(),
