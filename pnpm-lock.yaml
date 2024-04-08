@@ -60,7 +60,7 @@ dependencies:
 devDependencies:
   '@antfu/eslint-config':
     specifier: 2.12.1
-    version: 2.12.1(@unocss/eslint-plugin@0.59.0-beta.1)(@vue/compiler-sfc@3.4.21)(eslint-ts-patch@8.57.0-0)(typescript@5.4.3)(vitest@1.4.0)
+    version: 2.12.1(@unocss/eslint-plugin@0.59.0-beta.1)(@vue/compiler-sfc@3.4.21)(eslint-plugin-format@0.1.0)(eslint-ts-patch@8.57.0-0)(typescript@5.4.3)(vitest@1.4.0)
   '@iconify-json/carbon':
     specifier: ^1.1.31
     version: 1.1.31
@@ -112,6 +112,9 @@ devDependencies:
   eslint:
     specifier: npm:eslint-ts-patch@8.57.0-0
     version: /eslint-ts-patch@8.57.0-0
+  eslint-plugin-format:
+    specifier: ^0.1.0
+    version: 0.1.0(eslint-ts-patch@8.57.0-0)
   eslint-ts-patch:
     specifier: 8.57.0-0
     version: 8.57.0-0
@@ -191,7 +194,7 @@ packages:
       '@jridgewell/trace-mapping': 0.3.25
     dev: true
 
-  /@antfu/eslint-config@2.12.1(@unocss/eslint-plugin@0.59.0-beta.1)(@vue/compiler-sfc@3.4.21)(eslint-ts-patch@8.57.0-0)(typescript@5.4.3)(vitest@1.4.0):
+  /@antfu/eslint-config@2.12.1(@unocss/eslint-plugin@0.59.0-beta.1)(@vue/compiler-sfc@3.4.21)(eslint-plugin-format@0.1.0)(eslint-ts-patch@8.57.0-0)(typescript@5.4.3)(vitest@1.4.0):
     resolution: {integrity: sha512-o0tTokP/qk7Hwsv14N+sr1DsF3bylZrJH9yWdY73A0wSHlomqy7W+v9lXjN23q3cwjLftNzujd6SXmWBgcpCLg==}
     hasBin: true
     peerDependencies:
@@ -243,6 +246,7 @@ packages:
       eslint-merge-processors: 0.1.0(eslint-ts-patch@8.57.0-0)
       eslint-plugin-antfu: 2.1.2(eslint-ts-patch@8.57.0-0)
       eslint-plugin-eslint-comments: 3.2.0(eslint-ts-patch@8.57.0-0)
+      eslint-plugin-format: 0.1.0(eslint-ts-patch@8.57.0-0)
       eslint-plugin-import-x: 0.5.0(eslint-ts-patch@8.57.0-0)(typescript@5.4.3)
       eslint-plugin-jsdoc: 48.2.2(eslint-ts-patch@8.57.0-0)
       eslint-plugin-jsonc: 2.15.0(eslint-ts-patch@8.57.0-0)
@@ -1617,6 +1621,18 @@ packages:
       chalk: 5.3.0
     dev: true
     optional: true
+
+  /@dprint/formatter@0.2.1:
+    resolution: {integrity: sha512-GCzgRt2o4mhZLy8L47k2A+q9EMG/jWhzZebE29EqKsxmjDrSfv2VisEj/Q+39OOf04jTkEfB/TRO+IZSyxHdYg==}
+    dev: true
+
+  /@dprint/markdown@0.16.4:
+    resolution: {integrity: sha512-WjsC4yLybR5/76+d/2s36nOBGjETe+jJR//ddFHohDXKdis+FTUv7dJ00kmd6g0AKQwDITayM1Nid10gFNG0Yg==}
+    dev: true
+
+  /@dprint/toml@0.5.4:
+    resolution: {integrity: sha512-d+5GwwzztZD0QixmOBhaO6nWVLsAeYsJ1HJYNxDoDRbASFCpza9BBVshG5ctBRXCkkIHhD9BO1SnbOoRQltUQw==}
+    dev: true
 
   /@es-joy/jsdoccomment@0.42.0:
     resolution: {integrity: sha512-R1w57YlVA6+YE01wch3GPYn6bCsrOV3YW/5oGGE2tmX6JcL9Nr+b5IikrjMPF+v9CV3ay+obImEdsDhovhJrzw==}
@@ -4442,6 +4458,15 @@ packages:
       pathe: 1.1.2
     dev: true
 
+  /eslint-formatting-reporter@0.0.0(eslint-ts-patch@8.57.0-0):
+    resolution: {integrity: sha512-k9RdyTqxqN/wNYVaTk/ds5B5rA8lgoAmvceYN7bcZMBwU7TuXx5ntewJv81eF3pIL/CiJE+pJZm36llG8yhyyw==}
+    peerDependencies:
+      eslint: '>=8.40.0'
+    dependencies:
+      eslint: /eslint-ts-patch@8.57.0-0
+      prettier-linter-helpers: 1.0.0
+    dev: true
+
   /eslint-import-resolver-node@0.3.9:
     resolution: {integrity: sha512-WFj2isz22JahUv+B788TlO3N6zL3nNJGU8CcZbPZvVEkBPaJdCV4vy5wyghty5ROFbCRnm132v8BScu5/1BQ8g==}
     dependencies:
@@ -4458,6 +4483,10 @@ packages:
       eslint: '*'
     dependencies:
       eslint: /eslint-ts-patch@8.57.0-0
+    dev: true
+
+  /eslint-parser-plain@0.1.0:
+    resolution: {integrity: sha512-oOeA6FWU0UJT/Rxc3XF5Cq0nbIZbylm7j8+plqq0CZoE6m4u32OXJrR+9iy4srGMmF6v6pmgvP1zPxSRIGh3sg==}
     dev: true
 
   /eslint-plugin-antfu@2.1.2(eslint-ts-patch@8.57.0-0):
@@ -4489,6 +4518,21 @@ packages:
       escape-string-regexp: 1.0.5
       eslint: /eslint-ts-patch@8.57.0-0
       ignore: 5.3.1
+    dev: true
+
+  /eslint-plugin-format@0.1.0(eslint-ts-patch@8.57.0-0):
+    resolution: {integrity: sha512-IgOu+GEH+PdKnpuPrFzY8q8QgnzAUijDZsNLhpp5jx0Lbu9u968/STcmEZGnIMVBw3zeTNN/FsU6d2Rdgcy6Aw==}
+    peerDependencies:
+      eslint: ^8.40.0
+    dependencies:
+      '@dprint/formatter': 0.2.1
+      '@dprint/markdown': 0.16.4
+      '@dprint/toml': 0.5.4
+      eslint: /eslint-ts-patch@8.57.0-0
+      eslint-formatting-reporter: 0.0.0(eslint-ts-patch@8.57.0-0)
+      eslint-parser-plain: 0.1.0
+      prettier: 3.2.5
+      synckit: 0.8.8
     dev: true
 
   /eslint-plugin-import-x@0.5.0(eslint-ts-patch@8.57.0-0)(typescript@5.4.3):
@@ -4921,6 +4965,10 @@ packages:
 
   /fast-deep-equal@3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
+    dev: true
+
+  /fast-diff@1.3.0:
+    resolution: {integrity: sha512-VxPP4NqbUjj6MaAOafWeUn2cXWLcCtljklUtZf0Ind4XQ+QPtmA0b18zZy0jIQx+ExRVCR/ZQpBmik5lXshNsw==}
     dev: true
 
   /fast-glob@3.3.2:
@@ -6905,9 +6953,22 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
+  /prettier-linter-helpers@1.0.0:
+    resolution: {integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==}
+    engines: {node: '>=6.0.0'}
+    dependencies:
+      fast-diff: 1.3.0
+    dev: true
+
   /prettier@1.19.1:
     resolution: {integrity: sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==}
     engines: {node: '>=4'}
+    hasBin: true
+    dev: true
+
+  /prettier@3.2.5:
+    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
@@ -7673,6 +7734,14 @@ packages:
     resolution: {integrity: sha512-Vhf+bUa//YSTYKseDiiEuQmhGCoIF3CVBhunm3r/DQnYiGT4JssmnKQc44BIyOZRK2pKjXXAgbhfmbeoC9CJpA==}
     engines: {node: '>=12.20'}
     dependencies:
+      tslib: 2.6.2
+    dev: true
+
+  /synckit@0.8.8:
+    resolution: {integrity: sha512-HwOKAP7Wc5aRGYdKH+dw0PRRpbO841v2DENBtjnR5HFWoiNByAl7vrx3p0G/rCyYXQsrxqtX48TImFtPcIHSpQ==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    dependencies:
+      '@pkgr/core': 0.1.1
       tslib: 2.6.2
     dev: true
 
@@ -8704,7 +8773,6 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
-    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0
