@@ -8,4 +8,7 @@ export default antfu({
   ignores: [
     '.github',
   ],
+  formatters: {
+    css: true,
+  },
 })
