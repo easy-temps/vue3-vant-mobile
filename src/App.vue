@@ -43,11 +43,12 @@ onMounted(() => {
     <NavBar />
     <router-view v-slot="{ Component, route }">
       <transition :name="routeTransitionName">
-        <div :key="route.name" class="app-wrapper">
-          <component :is="Component" />
-        </div>
+        <keep-alive>
+          <component :is="Component" :key="route.name" />
+        </keep-alive>
       </transition>
     </router-view>
+    <TabBar />
   </VanConfigProvider>
 </template>
 

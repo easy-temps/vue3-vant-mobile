@@ -14,8 +14,3 @@ const { t } = useI18n()
     {{ t('profile.placeholder') }}
   </div>
 </template>
-
-<route lang="yaml">
-  meta:
-    layout: home
-</route>

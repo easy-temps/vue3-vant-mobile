@@ -43,6 +43,7 @@ const menuItems = computed(() => ([
   { title: t('home.unocssExample'), route: 'unocss' },
   { title: t('home.persistPiniaState'), route: 'counter' },
   { title: t('home.404Demo'), route: 'unknown' },
+  { title: 'keepalive', route: 'keepalive' },
 ]))
 </script>
 
@@ -75,8 +76,3 @@ const menuItems = computed(() => ([
     </template>
   </VanCellGroup>
 </template>
-
-<route lang="yaml">
-  meta:
-    layout: home
-</route>

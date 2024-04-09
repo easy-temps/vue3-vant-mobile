@@ -24,9 +24,7 @@
   },
   "layouts": {
     "home": "HOME",
-    "profile": "PROFILE",
-    "homeLayout": "Home Layout",
-    "defaultLayout": "Default Layout"
+    "profile": "PROFILE"
   },
   "profile": {
     "placeholder": "WIP"

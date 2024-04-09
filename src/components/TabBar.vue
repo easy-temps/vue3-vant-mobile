@@ -1,10 +1,17 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const active = ref(0)
+const route = useRoute()
+
+const display = computed(() => {
+  if (route.meta.level && route.meta.level !== 2)
+    return true
+  return false
+})
 </script>
 
 <template>
-  <van-tabbar v-model="active" route>
+  <van-tabbar v-show="display" v-model="active" route>
     <van-tabbar-item replace to="/">
       {{ t('layouts.home') }}
       <template #icon>

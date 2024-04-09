@@ -73,7 +73,6 @@
     "vite-plugin-sitemap": "^0.5.3",
     "vite-plugin-vconsole": "^2.1.1",
     "vite-plugin-vue-devtools": "^7.0.25",
-    "vite-plugin-vue-layouts": "^0.11.0",
     "vitest": "^1.4.0",
     "vue-tsc": "^2.0.7"
   },
