@@ -43,36 +43,38 @@ const menuItems = computed(() => ([
   { title: t('home.unocssExample'), route: 'unocss' },
   { title: t('home.persistPiniaState'), route: 'counter' },
   { title: t('home.404Demo'), route: 'unknown' },
-  { title: 'keepalive', route: 'keepalive' },
+  { title: t('home.keepAlive'), route: 'keepalive' },
 ]))
 </script>
 
 <template>
-  <VanCellGroup inset>
-    <VanCell center :title="$t('home.darkMode')">
-      <template #right-icon>
-        <VanSwitch v-model="checked" size="20px" aria-label="on/off Dark Mode" @click="toggle()" />
-      </template>
-    </VanCell>
+  <Container :padding-x="0">
+    <VanCellGroup inset>
+      <VanCell center :title="$t('home.darkMode')">
+        <template #right-icon>
+          <VanSwitch v-model="checked" size="20px" aria-label="on/off Dark Mode" @click="toggle()" />
+        </template>
+      </VanCell>
 
-    <VanCell
-      is-link
-      :title="$t('home.language')"
-      :value="language"
-      @click="showLanguagePicker = true"
-    />
-
-    <van-popup v-model:show="showLanguagePicker" position="bottom">
-      <van-picker
-        v-model="languageValues"
-        :columns="languageColumns"
-        @confirm="onLanguageConfirm"
-        @cancel="showLanguagePicker = false"
+      <VanCell
+        is-link
+        :title="$t('home.language')"
+        :value="language"
+        @click="showLanguagePicker = true"
       />
-    </van-popup>
 
-    <template v-for="item in menuItems" :key="item.route">
-      <VanCell :title="item.title" :to="item.route" is-link />
-    </template>
-  </VanCellGroup>
+      <van-popup v-model:show="showLanguagePicker" position="bottom">
+        <van-picker
+          v-model="languageValues"
+          :columns="languageColumns"
+          @confirm="onLanguageConfirm"
+          @cancel="showLanguagePicker = false"
+        />
+      </van-popup>
+
+      <template v-for="item in menuItems" :key="item.route">
+        <VanCell :title="item.title" :to="item.route" is-link />
+      </template>
+    </VanCellGroup>
+  </Container>
 </template>

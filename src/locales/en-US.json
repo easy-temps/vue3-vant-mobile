@@ -6,7 +6,8 @@
     "404Demo": "🙅 Page 404 Demo",
     "echartsDemo": "📊 Echarts Demo",
     "persistPiniaState": "🍍 Persistent Pinia state",
-    "unocssExample": "🎨 Unocss example"
+    "unocssExample": "🎨 Unocss example",
+    "keepAlive": "🧡 KeepAlive Demo"
   },
   "mock": {
     "fromAsyncData": "Data from asynchronous requests",
@@ -28,5 +29,8 @@
   },
   "profile": {
     "placeholder": "WIP"
+  },
+  "keepAlive": {
+    "label": "The current component will be cached"
   }
 }

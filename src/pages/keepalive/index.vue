@@ -1,20 +1,24 @@
-<script setup>
-import { ref } from 'vue'
+<script setup lang="ts">
+defineOptions({
+  name: 'KeepAlive',
+})
 
 definePage({
-  name: 'keepalive',
+  name: 'KeepAlive',
   meta: {
     level: 2,
-    title: 'keepalive',
+    title: '🧡 KeepAlive',
+    i18n: 'home.keepAlive',
+    keepAlive: true,
   },
 })
-const msg = ref('')
+
+const value = ref(1)
 </script>
 
 <template>
-  <div>
-    <p>Current component: B</p>
-    <span>Message is: {{ msg }}</span>
-    <input v-model="msg">
-  </div>
+  <Container>
+    <p>{{ $t('keepAlive.label') }}</p>
+    <van-stepper v-model="value" />
+  </Container>
 </template>

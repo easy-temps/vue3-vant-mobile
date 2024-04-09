@@ -33,6 +33,12 @@ const { routeTransitionName } = storeToRefs(routeTransitionNameStore)
 
 const { initializeThemeSwitcher } = useAutoThemeSwitcher(appStore)
 
+const router = useRouter()
+const allRoutes = router.getRoutes()
+const keepAliveRouteNames = computed(() => {
+  return allRoutes.filter(route => route.meta?.keepAlive).map(route => route.name as string)
+})
+
 onMounted(() => {
   initializeThemeSwitcher()
 })
@@ -43,22 +49,11 @@ onMounted(() => {
     <NavBar />
     <router-view v-slot="{ Component, route }">
       <transition :name="routeTransitionName">
-        <keep-alive>
+        <KeepAlive :include="keepAliveRouteNames">
           <component :is="Component" :key="route.name" />
-        </keep-alive>
+        </KeepAlive>
       </transition>
     </router-view>
     <TabBar />
   </VanConfigProvider>
 </template>
-
-<style scoped>
-.app-wrapper {
-  width: 100%;
-  height: 100%;
-  padding-top: 46px;
-  overflow-y: auto;
-  position: absolute;
-  left: 0;
-}
-</style>
