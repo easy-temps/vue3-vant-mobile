@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
 import useAppStore from '@/stores/modules/app'
+import useRouteCache from '@/stores/modules/routeCache'
 import useRouteTransitionNameStore from '@/stores/modules/routeTransitionName'
 import useAutoThemeSwitcher from '@/hooks/useAutoThemeSwitcher'
 
@@ -30,13 +31,10 @@ const { mode } = storeToRefs(appStore)
 
 const routeTransitionNameStore = useRouteTransitionNameStore()
 const { routeTransitionName } = storeToRefs(routeTransitionNameStore)
-
 const { initializeThemeSwitcher } = useAutoThemeSwitcher(appStore)
 
-const router = useRouter()
-const allRoutes = router.getRoutes()
 const keepAliveRouteNames = computed(() => {
-  return allRoutes.filter(route => route.meta?.keepAlive).map(route => route.name as string)
+  return useRouteCache().routeCaches as string[]
 })
 
 onMounted(() => {
