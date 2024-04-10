@@ -23,7 +23,7 @@ const reset = () => messages.value = ''
 </script>
 
 <template>
-  <div>
+  <Container>
     <div class="data-label">
       {{ $t('mock.fromAsyncData') }}
     </div>
@@ -43,7 +43,7 @@ const reset = () => messages.value = ''
         {{ $t('mock.reset') }}
       </VanButton>
     </van-space>
-  </div>
+  </Container>
 </template>
 
 <style lang="less" scoped>
@@ -52,6 +52,7 @@ const reset = () => messages.value = ''
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  margin-top: 10px;
 }
 
 .data-content {

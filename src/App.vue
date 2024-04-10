@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
 import useAppStore from '@/stores/modules/app'
+import useRouteCache from '@/stores/modules/routeCache'
 import useRouteTransitionNameStore from '@/stores/modules/routeTransitionName'
 import useAutoThemeSwitcher from '@/hooks/useAutoThemeSwitcher'
 
@@ -30,8 +31,11 @@ const { mode } = storeToRefs(appStore)
 
 const routeTransitionNameStore = useRouteTransitionNameStore()
 const { routeTransitionName } = storeToRefs(routeTransitionNameStore)
-
 const { initializeThemeSwitcher } = useAutoThemeSwitcher(appStore)
+
+const keepAliveRouteNames = computed(() => {
+  return useRouteCache().routeCaches as string[]
+})
 
 onMounted(() => {
   initializeThemeSwitcher()
@@ -43,21 +47,11 @@ onMounted(() => {
     <NavBar />
     <router-view v-slot="{ Component, route }">
       <transition :name="routeTransitionName">
-        <div :key="route.name" class="app-wrapper">
-          <component :is="Component" />
-        </div>
+        <keep-alive :include="keepAliveRouteNames">
+          <component :is="Component" :key="route.name" />
+        </keep-alive>
       </transition>
     </router-view>
+    <TabBar />
   </VanConfigProvider>
 </template>
-
-<style scoped>
-.app-wrapper {
-  width: 100%;
-  height: 100%;
-  padding-top: 46px;
-  overflow-y: auto;
-  position: absolute;
-  left: 0;
-}
-</style>

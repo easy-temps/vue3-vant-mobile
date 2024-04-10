@@ -6,7 +6,8 @@
     "echartsDemo": "📊 Echarts 演示",
     "persistPiniaState": "🍍 持久化 Pinia 状态",
     "404Demo": "🙅 404页 演示",
-    "unocssExample": "🎨 Unocss 示例"
+    "unocssExample": "🎨 Unocss 示例",
+    "keepAlive": "🧡 KeepAlive 演示"
   },
   "mock": {
     "fromAsyncData": "来自异步请求的数据",
@@ -24,11 +25,12 @@
   },
   "layouts": {
     "home": "首页",
-    "profile": "我的",
-    "homeLayout": "首页布局",
-    "defaultLayout": "默认布局"
+    "profile": "我的"
   },
   "profile": {
     "placeholder": "未完成"
+  },
+  "keepAlive": {
+    "label": "当前组件将会被缓存"
   }
 }

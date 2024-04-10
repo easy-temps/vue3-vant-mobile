@@ -13,7 +13,6 @@ import mockDevServerPlugin from 'vite-plugin-mock-dev-server'
 import { VitePWA } from 'vite-plugin-pwa'
 import Sitemap from 'vite-plugin-sitemap'
 import VueDevTools from 'vite-plugin-vue-devtools'
-import Layouts from 'vite-plugin-vue-layouts'
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import { createViteVConsole } from './vconsole'
 
@@ -27,11 +26,6 @@ export function createVitePlugins() {
     }),
 
     vue(),
-
-    // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
-    Layouts({
-      pagesDirs: 'src/pages/**',
-    }),
 
     // https://github.com/jbaubree/vite-plugin-sitemap
     Sitemap(),

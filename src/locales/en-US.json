@@ -6,7 +6,8 @@
     "404Demo": "🙅 Page 404 Demo",
     "echartsDemo": "📊 Echarts Demo",
     "persistPiniaState": "🍍 Persistent Pinia state",
-    "unocssExample": "🎨 Unocss example"
+    "unocssExample": "🎨 Unocss example",
+    "keepAlive": "🧡 KeepAlive Demo"
   },
   "mock": {
     "fromAsyncData": "Data from asynchronous requests",
@@ -24,11 +25,12 @@
   },
   "layouts": {
     "home": "HOME",
-    "profile": "PROFILE",
-    "homeLayout": "Home Layout",
-    "defaultLayout": "Default Layout"
+    "profile": "PROFILE"
   },
   "profile": {
     "placeholder": "WIP"
+  },
+  "keepAlive": {
+    "label": "The current component will be cached"
   }
 }

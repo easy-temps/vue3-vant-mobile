@@ -4,6 +4,8 @@ declare module 'vue-router' {
     title?: string
     /** i18n key */
     i18n?: string
+    /** keepalive */
+    keepAlive?: boolean
   }
 }
 export {}

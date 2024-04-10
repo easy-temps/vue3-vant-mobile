@@ -69,9 +69,9 @@ const refScoreOption = ref(scoreOption)
 </script>
 
 <template>
-  <div>
+  <Container>
     <Chart :option="refBarOption" :style="{ height: '330px' }" />
     <Chart :option="refLineOption" :style="{ height: '330px' }" />
     <Chart :option="refScoreOption" :style="{ height: '330px' }" />
-  </div>
+  </Container>
 </template>

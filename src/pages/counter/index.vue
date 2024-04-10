@@ -20,7 +20,7 @@ function add() {
 </script>
 
 <template>
-  <div>
+  <Container>
     <h1 class="text-6xl color-pink font-semibold">
       Hello, Pinia!
     </h1>
@@ -37,5 +37,5 @@ function add() {
     <button class="btn" @click="add">
       Add
     </button>
-  </div>
+  </container>
 </template>
