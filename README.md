@@ -34,8 +34,6 @@
 
 - 🍍 [State Management via Pinia](https://pinia.vuejs.org)
 
-- 📑 [Layout system](./src/layouts)
-
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
 - 🎨 [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine
@@ -85,7 +83,6 @@
 
 - [Vue Router](https://github.com/vuejs/router)
   - [`unplugin-vue-router`](https://github.com/posva/unplugin-vue-router) - file system based routing
-  - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts) - layouts for pages
 - [Pinia](https://pinia.vuejs.org) - Intuitive, type safe, light and flexible Store for Vue using the composition api
   - [`pinia-plugin-persistedstate`](https://github.com/prazdevs/pinia-plugin-persistedstate) -  Configurable persistence and rehydration of Pinia stores
 - [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization

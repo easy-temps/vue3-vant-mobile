@@ -34,8 +34,6 @@
 
 - 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org)
 
-- 📑 [布局系统](./src/layouts)
-
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
 - 🎨 [UnoCSS](https://github.com/antfu/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
@@ -85,7 +83,6 @@
 
 - [Vue Router](https://github.com/vuejs/router)
   - [`unplugin-vue-router`](https://github.com/posva/unplugin-vue-router) - 以文件系统为基础的路由
-  - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts) - 页面布局系统
 - [Pinia](https://pinia.vuejs.org) - 直接的, 类型安全的, 使用 Composition API 的轻便灵活的 Vue 状态管理库
   - [`pinia-plugin-persistedstate`](https://github.com/prazdevs/pinia-plugin-persistedstate) -  适用于 Pinia 的持久化存储插件
 - [Vue I18n](https://github.com/intlify/vue-i18n-next) - 国际化
