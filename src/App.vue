@@ -47,9 +47,9 @@ onMounted(() => {
     <NavBar />
     <router-view v-slot="{ Component, route }">
       <transition :name="routeTransitionName">
-        <KeepAlive :include="keepAliveRouteNames">
+        <keep-alive :include="keepAliveRouteNames">
           <component :is="Component" :key="route.name" />
-        </KeepAlive>
+        </keep-alive>
       </transition>
     </router-view>
     <TabBar />
