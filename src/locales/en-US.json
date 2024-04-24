@@ -28,7 +28,9 @@
     "profile": "PROFILE"
   },
   "profile": {
-    "placeholder": "WIP"
+    "placeholder": "WIP",
+    "login": "Sign In",
+    "logout": "Sign Out"
   },
   "keepAlive": {
     "label": "The current component will be cached"

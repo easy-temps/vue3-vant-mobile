@@ -28,7 +28,9 @@
     "profile": "我的"
   },
   "profile": {
-    "placeholder": "未完成"
+    "placeholder": "未完成",
+    "login": "登陆",
+    "logout": "退出"
   },
   "keepAlive": {
     "label": "当前组件将会被缓存"
