@@ -282,6 +282,13 @@ pnpm build
       <sub><b>ChunyuPCY</b></sub>
     </a>
   </td>
+  <td align="center">
+    <a href="https://github.com/qiyue2015">
+      <img src="https://avatars.githubusercontent.com/u/11554433?v=4" width="90;" alt="qiyue2015"/>
+      <br />
+      <sub><b>qiyue2015</b></sub>
+    </a>
+  </td>
 </tr>
 </table>
 
