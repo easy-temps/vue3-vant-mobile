@@ -7,7 +7,8 @@
     "persistPiniaState": "🍍 持久化 Pinia 状态",
     "404Demo": "🙅 404页 演示",
     "unocssExample": "🎨 Unocss 示例",
-    "keepAlive": "🧡 KeepAlive 演示"
+    "keepAlive": "🧡 KeepAlive 演示",
+    "login": "🔒 用户登陆"
   },
   "mock": {
     "fromAsyncData": "来自异步请求的数据",
@@ -28,11 +29,17 @@
     "profile": "我的"
   },
   "profile": {
-    "placeholder": "未完成",
-    "login": "登陆",
-    "logout": "退出"
+    "placeholder": "未完成"
   },
   "keepAlive": {
     "label": "当前组件将会被缓存"
+  },
+  "login": {
+    "login": "登陆",
+    "logout": "退出",
+    "username": "请输入用户名",
+    "password": "请输入密码",
+    "pleaseEnterUsername": "请输入用户名",
+    "pleaseEnterPassword": "请输入密码"
   }
 }

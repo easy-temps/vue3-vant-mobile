@@ -38,12 +38,12 @@ function logout() {
           {{ userInfo.prose }}
         </div>
         <van-button class="w-xl" type="primary" @click="logout()">
-          {{ t('profile.logout') }}
+          {{ t('login.logout') }}
         </van-button>
       </template>
       <template v-else>
         <van-button class="w-xl" type="primary" @click="goLogin()">
-          {{ t('profile.login') }}
+          {{ t('login.login') }}
         </van-button>
       </template>
     </div>

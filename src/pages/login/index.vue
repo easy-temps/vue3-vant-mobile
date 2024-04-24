@@ -7,12 +7,12 @@ import defaultAvatar from '@/assets/images/default-avatar.svg'
 definePage({
   name: 'login',
   meta: {
-    title: '用户登录',
     level: 2,
+    i18n: 'home.login',
   },
 })
 
-// const route = useRoute()
+const { t } = useI18n()
 const router = useRouter()
 const userStore = useUserStore()
 
@@ -23,10 +23,10 @@ const postData = reactive({
 })
 const rules = reactive({
   username: [
-    { required: true, message: '请填写用户名' },
+    { required: true, message: t('login.pleaseEnterUsername') },
   ],
   password: [
-    { required: true, message: '请填写密码' },
+    { required: true, message: t('login.pleaseEnterPassword') },
   ],
 })
 
@@ -56,12 +56,12 @@ async function asyncLogin(values: any) {
       </div>
       <van-form :model="postData" :rules="rules" @submit="asyncLogin">
         <van-cell-group inset>
-          <van-field v-model="postData.username" :rules="rules.username" name="username" placeholder="用户名" left-icon="contact" />
-          <van-field v-model="postData.password" :rules="rules.password" name="password" placeholder="密码" left-icon="lock" type="password" />
+          <van-field v-model="postData.username" :rules="rules.username" name="username" :placeholder="t('login.username')" left-icon="contact" />
+          <van-field v-model="postData.password" :rules="rules.password" name="password" :placeholder="t('login.password')" left-icon="lock" type="password" />
         </van-cell-group>
         <div class="m-16">
           <van-button :loading="loading" round block type="primary" native-type="submit">
-            立即登录
+            {{ t('login.logout') }}
           </van-button>
         </div>
       </van-form>
