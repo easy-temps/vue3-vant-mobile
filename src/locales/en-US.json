@@ -7,7 +7,8 @@
     "echartsDemo": "📊 Echarts Demo",
     "persistPiniaState": "🍍 Persistent Pinia state",
     "unocssExample": "🎨 Unocss example",
-    "keepAlive": "🧡 KeepAlive Demo"
+    "keepAlive": "🧡 KeepAlive Demo",
+    "login": "🔒 Login"
   },
   "mock": {
     "fromAsyncData": "Data from asynchronous requests",
@@ -32,5 +33,13 @@
   },
   "keepAlive": {
     "label": "The current component will be cached"
+  },
+  "login": {
+    "login": "Sign In",
+    "logout": "Sign Out",
+    "username": "Username",
+    "password": "Password",
+    "pleaseEnterUsername": "Please enter username",
+    "pleaseEnterPassword": "Please enter password"
   }
 }

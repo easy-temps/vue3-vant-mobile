@@ -6,6 +6,8 @@ import 'nprogress/nprogress.css'
 import type { EnhancedRouteLocation } from './types'
 import useRouteTransitionNameStore from '@/stores/modules/routeTransitionName'
 import useRouteCacheStore from '@/stores/modules/routeCache'
+import { useUserStore } from '@/stores'
+import { isLogin } from '@/utils/auth'
 
 NProgress.configure({ showSpinner: true, parent: '#app' })
 
@@ -14,11 +16,12 @@ const router = createRouter({
   extendRoutes: routes => routes,
 })
 
-router.beforeEach((to: EnhancedRouteLocation, from, next) => {
+router.beforeEach(async (to: EnhancedRouteLocation, from, next) => {
   NProgress.start()
 
   const routeCacheStore = useRouteCacheStore()
   const routeTransitionNameStore = useRouteTransitionNameStore()
+  const userStore = useUserStore()
 
   // Route cache
   routeCacheStore.addRoute(to)
@@ -32,7 +35,19 @@ router.beforeEach((to: EnhancedRouteLocation, from, next) => {
   else
     routeTransitionNameStore.setName('')
 
-  next()
+  if (isLogin()) {
+    if (!userStore.userInfo?.uid) {
+      await userStore.info()
+      next()
+    }
+
+    else {
+      next()
+    }
+  }
+  else {
+    next()
+  }
 })
 
 router.afterEach(() => {
