@@ -49,10 +49,8 @@
     "@vitejs/plugin-vue": "^5.0.4",
     "autoprefixer": "^10.4.19",
     "bumpp": "^9.4.0",
-    "commitizen": "^4.3.0",
     "consola": "^3.2.3",
     "cross-env": "^7.0.3",
-    "cz-emoji-chinese": "^0.3.1",
     "eslint": "npm:eslint-ts-patch@8.57.0-0",
     "eslint-plugin-format": "^0.1.1",
     "eslint-ts-patch": "8.57.0-0",
@@ -85,17 +83,6 @@
       "allowedVersions": {
         "rollup": "^4.x"
       }
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-emoji-chinese"
-    },
-    "cz-emoji-chinese": {
-      "skipQuestions": [
-        "body",
-        "scope"
-      ]
     }
   }
 }
