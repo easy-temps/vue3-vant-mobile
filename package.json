@@ -1,7 +1,7 @@
 {
   "name": "vue3-vant-mobile",
   "type": "module",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "packageManager": "pnpm@9.0.6",
   "description": "Vue + Vite H5 Starter Template",
   "license": "MIT",
