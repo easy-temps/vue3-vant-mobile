@@ -174,7 +174,7 @@ Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along
 
 We recommend that [issue](https://github.com/easy-temps/vue3-vant-mobile/issues) be used for problem feedback, or Wechat group.
 
-<img style="width: 25%" src="https://cdn.jsdelivr.net/gh/CharleeWa/static/easy-temps.png" />
+<img style="width: 25%" src="https://cdn.jsdelivr.net/gh/CharleeWa/static/easy-temps.png" alt="community" />
 
 ## Contributors
 
@@ -287,6 +287,13 @@ We recommend that [issue](https://github.com/easy-temps/vue3-vant-mobile/issues)
       <img src="https://avatars.githubusercontent.com/u/11554433?v=4" width="90;" alt="qiyue2015"/>
       <br />
       <sub><b>qiyue2015</b></sub>
+    </a>
+  </td>
+  <td align="center">
+    <a href="https://github.com/pyQianYi">
+      <img src="https://avatars.githubusercontent.com/u/57526688?v=4" width="90;" alt="QianYi"/>
+      <br />
+      <sub><b>QianYi</b></sub>
     </a>
   </td>
 </tr>

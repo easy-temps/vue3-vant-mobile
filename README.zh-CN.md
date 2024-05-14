@@ -174,7 +174,7 @@ pnpm build
 
 我们推荐使用 [议题](https://github.com/easy-temps/vue3-vant-mobile/issues) 来反馈问题, 或者您也可以通过微信群联系我们。
 
-<img style="width: 25%" src="https://cdn.jsdelivr.net/gh/CharleeWa/static/easy-temps.png" />
+<img style="width: 25%" src="https://cdn.jsdelivr.net/gh/CharleeWa/static/easy-temps.png" alt="community" />
 
 ## 贡献者
 
@@ -287,6 +287,13 @@ pnpm build
       <img src="https://avatars.githubusercontent.com/u/11554433?v=4" width="90;" alt="qiyue2015"/>
       <br />
       <sub><b>qiyue2015</b></sub>
+    </a>
+  </td>
+  <td align="center">
+    <a href="https://github.com/pyQianYi">
+      <img src="https://avatars.githubusercontent.com/u/57526688?v=4" width="90;" alt="QianYi"/>
+      <br />
+      <sub><b>QianYi</b></sub>
     </a>
   </td>
 </tr>
