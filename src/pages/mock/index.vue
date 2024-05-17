@@ -13,13 +13,11 @@ definePage({
 const messages = ref<string>('')
 
 function pull() {
-  queryProse().then((res) => {
-    messages.value = res.data.prose
+  queryProse().then(({ code, result }) => {
+    if (code === 0)
+      messages.value = result
   })
 }
-
-// reset data
-const reset = () => messages.value = ''
 </script>
 
 <template>
@@ -39,7 +37,7 @@ const reset = () => messages.value = ''
       <VanButton type="primary" round block @click="pull">
         {{ $t('mock.pull') }}
       </VanButton>
-      <VanButton type="default" round block @click="reset">
+      <VanButton type="default" round block @click="messages = ''">
         {{ $t('mock.reset') }}
       </VanButton>
     </van-space>
