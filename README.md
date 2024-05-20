@@ -1,26 +1,28 @@
 <h1 align="center">vue3-vant-mobile</h1>
 
-<p align='center'>
-  <a href="https://vue3-vant-mobile.netlify.app">Live Demo</a>
+<div align="center">
+
+English / [简体中文](./README.zh-CN.md)
+
+An mobile web apps template based on the Vue 3 ecosystem.
+
+一个基于 Vue 3 生态系统的移动 web 应用模板，帮助你快速完成业务开发。
+
+<p>
+<img src="https://img.shields.io/github/license/easy-temps/vue3-vant-mobile" alt="license" />
+<img src="https://img.shields.io/github/package-json/v/easy-temps/vue3-vant-mobile" alt="version" />
+<img src="https://img.shields.io/github/repo-size/easy-temps/vue3-vant-mobile" alt="repo-size" />
+<img src="https://img.shields.io/github/languages/top/easy-temps/vue3-vant-mobile" alt="languages" />
+<img src="https://img.shields.io/github/issues-closed/easy-temps/vue3-vant-mobile" alt="issues" />
 </p>
 
-<p align="center">
-  An mobile web apps template based on the Vue 3 ecosystem
-</p>
+[文档](https://easy-temps.github.io/easy-docs/vue3-vant-mobile/) / [交流](https://github.com/easy-temps/vue3-vant-mobile/issues/56) / [反馈](https://github.com/easy-temps/vue3-vant-mobile/issues)
 
-<p align="center">
-  <img src="https://img.shields.io/github/license/easy-temps/vue3-vant-mobile" alt="license" />
-  <img src="https://img.shields.io/github/package-json/v/easy-temps/vue3-vant-mobile" alt="version" />
-  <img src="https://img.shields.io/github/repo-size/easy-temps/vue3-vant-mobile" alt="repo-size" />
-  <img src="https://img.shields.io/github/languages/top/easy-temps/vue3-vant-mobile" alt="languages" />
-  <img src="https://img.shields.io/github/issues-closed/easy-temps/vue3-vant-mobile" alt="issues" />
-</p>
+<a href="https://vue3-vant-mobile.netlify.app">Live Demo</a>
 
-<br>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e6828bd2-2904-4c3e-a67c-b97d32aa1275/deploy-status)](https://app.netlify.com/sites/vue3-vant-mobile/deploys)
 
-<p align='center'>
-<b>English</b> / <a href="https://github.com/easy-temps/vue3-vant-mobile/blob/main/README.zh-CN.md">简体中文</a>
-</p>
+</div>
 
 <br>
 
@@ -176,7 +178,17 @@ We recommend that [issue](https://github.com/easy-temps/vue3-vant-mobile/issues)
 
 <img style="width: 25%" src="https://cdn.jsdelivr.net/gh/CharleeWa/static/easy-temps.png" alt="community" />
 
-## Contributors
+## Donation
+
+[Buy Me a Coffee](https://github.com/CharleeWa/sponsor)
+
+## Special Thanks
+
+### Sponsors
+
+[@keyFeng](https://github.com/keyFeng)
+
+### Contributors
 
 <table>
 <tr>
