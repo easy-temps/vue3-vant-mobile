@@ -15,7 +15,8 @@
   // Disable the MD033 rule
   "markdownlint.config": {
     "default": true,
-    "MD033": false
+    "MD033": false,
+    "MD041": false
   },
 
   // Silent the stylistic rules in you IDE, but still auto fix them
