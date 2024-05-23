@@ -81,9 +81,11 @@
         "esbuild"
       ],
       "allowedVersions": {
-        "rollup": "^4.x",
-        "eslint": "^9.x"
-      }
+        "rollup": "^4.x"
+      },
+      "allowAny": [
+        "eslint"
+      ]
     }
   }
 }
