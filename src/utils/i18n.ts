@@ -33,17 +33,18 @@ function getI18nLocale() {
 
 export const i18n = createI18n({
   locale: getI18nLocale(),
+  legacy: false,
   messages,
 })
 
 /** 当前语言 */
 export const locale = computed({
   get() {
-    return (i18n.global.locale as unknown as Ref<string>).value
+    return i18n.global.locale.value
   },
   set(language: string) {
-    localStorage.setItem('language', language);
-    (i18n.global.locale as unknown as Ref<string>).value = language
+    localStorage.setItem('language', language)
+    i18n.global.locale.value = language
     Locale.use(language)
   },
 })

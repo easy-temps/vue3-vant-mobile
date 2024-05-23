@@ -191,8 +191,8 @@ Your sponsorship will help us continue to iterate on this exciting project! 🚀
 </p>
 
 <p align="center">
-<a href="https://github.com/keyFeng"><img src="https://github.com/keyFeng.png" width="60px" alt="keyFeng" /></a>
-<a href="https://github.com/ljt990218"><img src="https://github.com/ljt990218.png" width="60px" alt="ljt990218" /></a>
+<a href="https://github.com/keyFeng"><img src="https://avatars.githubusercontent.com/u/52267976?v=4" width="60px" alt="keyFeng" /></a>
+<a href="https://github.com/ljt990218"><img src="https://avatars.githubusercontent.com/u/50509815?v=4" width="60px" alt="ljt990218" /></a>
 </p>
 
 <h2 align="center">
@@ -204,20 +204,24 @@ Our contributors have made this project better. Thank you! 🙏
 </p>
 
 <p align="center">
-<a href="https://github.com/CharleeWa"><img src="https://github.com/CharleeWa.png" width="60px" alt="CharleeWa" /></a>
-<a href="https://github.com/ljt990218"><img src="https://github.com/ljt990218.png" width="60px" alt="ljt990218" /></a>
-<a href="https://github.com/wswmsword"><img src="https://github.com/wswmsword.png" width="60px" alt="wswmsword" /></a>
-<a href="https://github.com/weiq"><img src="https://github.com/weiq.png" width="60px" alt="weiq" /></a>
-<a href="https://github.com/SublimeCT"><img src="https://github.com/SublimeCT.png" width="60px" alt="SublimeCT" /></a>
-<a href="https://github.com/ReginYuan"><img src="https://github.com/ReginYuan.png" width="60px" alt="ReginYuan" /></a>
-<a href="https://github.com/smartsf"><img src="https://github.com/smartsf.png" width="60px" alt="smartsf" /></a>
-<a href="https://github.com/Kysen777"><img src="https://github.com/Kysen777.png" width="60px" alt="Kysen777" /></a>
-<a href="https://github.com/Leezon"><img src="https://github.com/Leezon.png" width="60px" alt="Leezon" /></a>
-<a href="https://github.com/AlphaYoung111"><img src="https://github.com/AlphaYoung111.png" width="60px" alt="AlphaYoung111" /></a>
-<a href="https://github.com/leo4developer"><img src="https://github.com/leo4developer.png" width="60px" alt="leo4developer" /></a>
-<a href="https://github.com/InsHomePgup"><img src="https://github.com/InsHomePgup.png" width="60px" alt="InsHomePgup" /></a>
-<a href="https://github.com/wowping"><img src="https://github.com/wowping.png" width="60px" alt="wowping" /></a>
-<a href="https://github.com/ChunyuPCY"><img src="https://github.com/ChunyuPCY.png" width="60px" alt="ChunyuPCY" /></a>
-<a href="https://github.com/qiyue2015"><img src="https://github.com/qiyue2015.png" width="60px" alt="qiyue2015" /></a>
-<a href="https://github.com/pyQianYi"><img src="https://github.com/pyQianYi.png" width="60px" alt="pyQianYi" /></a>
+<a href="https://github.com/CharleeWa"><img src="https://avatars.githubusercontent.com/u/22477554?v=4" width="60px" alt="CharleeWa" /></a>
+<a href="https://github.com/ljt990218"><img src="https://avatars.githubusercontent.com/u/50509815?v=4" width="60px" alt="ljt990218" /></a>
+<a href="https://github.com/wswmsword"><img src="https://avatars.githubusercontent.com/u/26893092?v=4" width="60px" alt="wswmsword" /></a>
+<a href="https://github.com/weiq"><img src="https://avatars.githubusercontent.com/u/1697158?v=4" width="60px" alt="weiq" /></a>
+<a href="https://github.com/SublimeCT"><img src="https://avatars.githubusercontent.com/u/20380890?v=4" width="60px" alt="SublimeCT" /></a>
+<a href="https://github.com/ReginYuan"><img src="https://avatars.githubusercontent.com/u/49477488?v=4" width="60px" alt="ReginYuan" /></a>
+<a href="https://github.com/smartsf"><img src="https://avatars.githubusercontent.com/u/19995400?v=4" width="60px" alt="smartsf" /></a>
+<a href="https://github.com/Kysen777"><img src="https://avatars.githubusercontent.com/u/63892082?v=4" width="60px" alt="Kysen777" /></a>
+<a href="https://github.com/Leezon"><img src="https://avatars.githubusercontent.com/u/38120280?v=4" width="60px" alt="Leezon" /></a>
+<a href="https://github.com/AlphaYoung111"><img src="https://avatars.githubusercontent.com/u/54132313?v=4" width="60px" alt="AlphaYoung111" /></a>
+<a href="https://github.com/leo4developer"><img src="https://avatars.githubusercontent.com/u/15160478?v=4" width="60px" alt="leo4developer" /></a>
+<a href="https://github.com/InsHomePgup"><img src="https://avatars.githubusercontent.com/u/47906083?v=4" width="60px" alt="InsHomePgup" /></a>
+<a href="https://github.com/wowping"><img src="https://avatars.githubusercontent.com/u/137802961?v=4" width="60px" alt="wowping" /></a>
+<a href="https://github.com/ChunyuPCY"><img src="https://avatars.githubusercontent.com/u/21986942?v=4" width="60px" alt="ChunyuPCY" /></a>
+<a href="https://github.com/qiyue2015"><img src="https://avatars.githubusercontent.com/u/11554433?v=4" width="60px" alt="qiyue2015" /></a>
+<a href="https://github.com/pyQianYi"><img src="https://avatars.githubusercontent.com/u/57526688?v=4" width="60px" alt="pyQianYi" /></a>
 </p>
+
+## License
+
+[MIT](./LICENSE) License
