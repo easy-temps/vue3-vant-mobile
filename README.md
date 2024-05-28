@@ -18,7 +18,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 <img src="https://img.shields.io/github/issues-closed/easy-temps/vue3-vant-mobile" alt="issues" />
 </p>
 
-[文档](https://easy-temps.github.io/easy-docs/vue3-vant-mobile/) / [交流](https://github.com/easy-temps/vue3-vant-mobile/issues/56) / [反馈](https://github.com/easy-temps/vue3-vant-mobile/issues)
+[Docs](https://easy-temps.github.io/easy-docs/vue3-vant-mobile/) / [Exchange](https://github.com/easy-temps/vue3-vant-mobile/issues/56) / [Feedback](https://github.com/easy-temps/vue3-vant-mobile/issues)
 
 <a href="https://vue3-vant-mobile.netlify.app">Live Demo</a>
 
