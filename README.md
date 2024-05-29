@@ -178,7 +178,7 @@ Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along
 
 We recommend that [issue](https://github.com/easy-temps/vue3-vant-mobile/issues) be used for problem feedback, or Wechat group.
 
-<img style="width: 25%" src="https://cdn.jsdelivr.net/gh/CharleeWa/static/easy-temps.png" alt="community" />
+<img style="width: 25%" src="https://cdn.jsdelivr.net/gh/easy-temps/easy-static/community.png" alt="community" />
 
 ## Donation ☕
 
