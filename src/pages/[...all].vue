@@ -1,4 +1,11 @@
 <script setup lang="ts">
+definePage({
+  name: '404',
+  meta: {
+    level: 2,
+  },
+})
+
 const router = useRouter()
 
 function onBack() {

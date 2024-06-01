@@ -50,7 +50,7 @@ const menuItems = computed(() => ([
 <template>
   <Container :padding-x="0">
     <VanCellGroup inset>
-      <VanCell center :title="$t('home.darkMode')">
+      <VanCell center :title="t('home.darkMode')">
         <template #right-icon>
           <VanSwitch v-model="checked" size="20px" aria-label="on/off Dark Mode" @click="toggle()" />
         </template>
@@ -58,7 +58,7 @@ const menuItems = computed(() => ([
 
       <VanCell
         is-link
-        :title="$t('home.language')"
+        :title="t('home.language')"
         :value="language"
         @click="showLanguagePicker = true"
       />

@@ -9,11 +9,8 @@ import zhCN from 'vant/es/locale/lang/zh-CN'
 import messages from '@intlify/unplugin-vue-i18n/messages'
 import { Locale, type PickerColumn } from 'vant'
 
-export const i18n = createI18n({
-  locale: localStorage.getItem('language') || navigator.language,
-  fallbackLocale: 'zhCN',
-  messages,
-})
+/** 默认语言包名称 */
+const FALLBACK_LOCALE = 'zh-CN'
 
 /** 多语言 picker columns */
 export const languageColumns: PickerColumn = [
@@ -21,14 +18,33 @@ export const languageColumns: PickerColumn = [
   { text: 'English', value: 'en-US' },
 ]
 
+/** 获取当前语言对应的语言包名称 */
+function getI18nLocale() {
+  const locale = localStorage.getItem('language') || navigator.language
+  for (const l of languageColumns) {
+    const value = l.value as string
+    if (value === locale)
+      return locale // 存在当前语言的语言包
+    else if (value.indexOf(locale) === 0)
+      return value // 存在当前语言的任意地区的语言包
+  }
+  return FALLBACK_LOCALE // 使用默认语言包
+}
+
+export const i18n = createI18n({
+  locale: getI18nLocale(),
+  legacy: false,
+  messages,
+})
+
 /** 当前语言 */
 export const locale = computed({
   get() {
-    return (i18n.global.locale as unknown as Ref<string>).value
+    return i18n.global.locale.value
   },
   set(language: string) {
-    localStorage.setItem('language', language);
-    (i18n.global.locale as unknown as Ref<string>).value = language
+    localStorage.setItem('language', language)
+    i18n.global.locale.value = language
     Locale.use(language)
   },
 })

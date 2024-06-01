@@ -1,26 +1,30 @@
+<div align="center">
+
+<img src="https://cdn.jsdelivr.net/gh/easy-temps/easy-static/cover.png" alt="cover" />
+
 <h1 align="center">vue3-vant-mobile</h1>
 
-<p align='center'>
-  <a href="https://vue3-vant-mobile.netlify.app">在线 Demo</a>
+[English](./README.md) / 简体中文
+
+An mobile web apps template based on the Vue 3 ecosystem.
+
+一个基于 Vue 3 生态系统的移动 web 应用模板，帮助你快速完成业务开发。
+
+<p>
+<img src="https://img.shields.io/github/license/easy-temps/vue3-vant-mobile" alt="license" />
+<img src="https://img.shields.io/github/package-json/v/easy-temps/vue3-vant-mobile" alt="version" />
+<img src="https://img.shields.io/github/repo-size/easy-temps/vue3-vant-mobile" alt="repo-size" />
+<img src="https://img.shields.io/github/languages/top/easy-temps/vue3-vant-mobile" alt="languages" />
+<img src="https://img.shields.io/github/issues-closed/easy-temps/vue3-vant-mobile" alt="issues" />
 </p>
 
-<p align="center">
-  一个基于 Vue 3 生态系统的移动 web 应用模板
-</p>
+[文档](https://easy-temps.github.io/easy-docs/vue3-vant-mobile/) / [交流](https://github.com/easy-temps/vue3-vant-mobile/issues/56) / [反馈](https://github.com/easy-temps/vue3-vant-mobile/issues)
 
-<p align="center">
-  <img src="https://img.shields.io/github/license/easy-temps/vue3-vant-mobile" alt="license" />
-  <img src="https://img.shields.io/github/package-json/v/easy-temps/vue3-vant-mobile" alt="version" />
-  <img src="https://img.shields.io/github/repo-size/easy-temps/vue3-vant-mobile" alt="repo-size" />
-  <img src="https://img.shields.io/github/languages/top/easy-temps/vue3-vant-mobile" alt="languages" />
-  <img src="https://img.shields.io/github/issues-closed/easy-temps/vue3-vant-mobile" alt="issues" />
-</p>
+<a href="https://vue3-vant-mobile.netlify.app">在线 Demo</a>
 
-<br>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e6828bd2-2904-4c3e-a67c-b97d32aa1275/deploy-status)](https://app.netlify.com/sites/vue3-vant-mobile/deploys)
 
-<p align='center'>
-<a href="https://github.com/easy-temps/vue3-vant-mobile/blob/main/README.md">English</a> / <b>简体中文</b>
-</p>
+</div>
 
 <br>
 
@@ -174,124 +178,50 @@ pnpm build
 
 我们推荐使用 [议题](https://github.com/easy-temps/vue3-vant-mobile/issues) 来反馈问题, 或者您也可以通过微信群联系我们。
 
-<img style="width: 25%" src="https://cdn.jsdelivr.net/gh/CharleeWa/static/easy-temps.png" />
+<img style="width: 25%" src="https://cdn.jsdelivr.net/gh/easy-temps/easy-static/community.png" alt="community" />
 
-## 贡献者
+## 捐赠 ☕
 
-<table>
-<tr>
-  <td align="center">
-    <a href="https://github.com/CharleeWa">
-      <img src="https://avatars.githubusercontent.com/u/22477554?s=96&v=4" width="90;" alt="CharleeWa"/>
-      <br />
-      <sub><b>Charlie Wang</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/weiq">
-      <img src="https://avatars.githubusercontent.com/u/1697158?v=4" width="90;" alt="weiq"/>
-      <br />
-      <sub><b>魏小雨</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/AlphaYoung111">
-      <img src="https://avatars.githubusercontent.com/u/54132313?v=4" width="90;" alt="AlphaYoung"/>
-      <br />
-      <sub><b>AlphaYoung</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/Leezon">
-      <img src="https://avatars.githubusercontent.com/u/38120280?v=4" width="90;" alt="Leezon"/>
-      <br />
-      <sub><b>Leezon</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/leo4developer">
-      <img src="https://avatars.githubusercontent.com/u/15160478?v=4" width="90;" alt="liuNing"/>
-      <br />
-      <sub><b>liuNing</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/wswmsword">
-      <img src="https://avatars.githubusercontent.com/u/26893092?v=4" width="90;" alt="wswmsword"/>
-      <br />
-      <sub><b>wswmsword</b></sub>
-    </a>
-  </td>
-</tr>
-<tr>
-  <td align="center">
-    <a href="https://github.com/Kysen777">
-      <img src="https://avatars.githubusercontent.com/u/63892082?v=4" width="90;" alt="Kysen"/>
-      <br />
-      <sub><b>Kysen</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/smartsf">
-      <img src="https://avatars.githubusercontent.com/u/19995400?v=4" width="90;" alt="smartsf"/>
-      <br />
-      <sub><b>阿峰</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/ReginYuan">
-      <img src="https://avatars.githubusercontent.com/u/49477488?v=4" width="90;" alt="ReginYuan"/>
-      <br />
-      <sub><b>ReginYuan</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/InsHomePgup">
-      <img src="https://avatars.githubusercontent.com/u/47906083?v=4" width="90;" alt="Abraham K."/>
-      <br />
-      <sub><b>Abraham K.</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/wowping">
-      <img src="https://avatars.githubusercontent.com/u/137802961?v=4" width="90;" alt="Mia Campbell"/>
-      <br />
-      <sub><b>Mia Campbell</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/ljt990218">
-      <img src="https://avatars.githubusercontent.com/u/50509815?v=4" width="90;" alt="ljt990218"/>
-      <br />
-      <sub><b>ljt990218</b></sub>
-    </a>
-  </td>
-</tr>
-<tr>
-  <td align="center">
-    <a href="https://github.com/SublimeCT">
-      <img src="https://avatars.githubusercontent.com/u/20380890?v=4" width="90;" alt="sven"/>
-      <br />
-      <sub><b>sven</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/ChunyuPCY">
-      <img src="https://avatars.githubusercontent.com/u/21986942?v=4" width="90;" alt="ChunyuPCY"/>
-      <br />
-      <sub><b>ChunyuPCY</b></sub>
-    </a>
-  </td>
-</tr>
-</table>
+[请我喝一杯咖啡](https://github.com/CharleeWa/sponsor)
 
-## 星星趋势
+<h2 align="center">💝 我们的赞助者 💝</h2>
 
-<p align="left">
-  <a target="_blank" href="https://star-history.com/#easy-temps/vue3-vant-mobile&Date">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=easy-temps/vue3-vant-mobile&type=Date&theme=dark">
-      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=easy-temps/vue3-vant-mobile&type=Date">
-    </picture>
-  </a>
+<p align="center">
+您的赞助将帮助我们继续迭代这个令人兴奋的项目! 🚀
 </p>
+
+<p align="center">
+<a href="https://github.com/keyFeng"><img src="https://avatars.githubusercontent.com/u/52267976?v=4" width="60px" alt="keyFeng" /></a>
+<a href="https://github.com/ljt990218"><img src="https://avatars.githubusercontent.com/u/50509815?v=4" width="60px" alt="ljt990218" /></a>
+</p>
+
+<h2 align="center">
+💪 贡献者 💪
+</h2>
+
+<p align="center">
+我们的贡献者使这个项目变得更好。谢谢你！ 🙏
+</p>
+
+<p align="center">
+<a href="https://github.com/CharleeWa"><img src="https://avatars.githubusercontent.com/u/22477554?v=4" width="60px" alt="CharleeWa" /></a>
+<a href="https://github.com/ljt990218"><img src="https://avatars.githubusercontent.com/u/50509815?v=4" width="60px" alt="ljt990218" /></a>
+<a href="https://github.com/wswmsword"><img src="https://avatars.githubusercontent.com/u/26893092?v=4" width="60px" alt="wswmsword" /></a>
+<a href="https://github.com/weiq"><img src="https://avatars.githubusercontent.com/u/1697158?v=4" width="60px" alt="weiq" /></a>
+<a href="https://github.com/SublimeCT"><img src="https://avatars.githubusercontent.com/u/20380890?v=4" width="60px" alt="SublimeCT" /></a>
+<a href="https://github.com/ReginYuan"><img src="https://avatars.githubusercontent.com/u/49477488?v=4" width="60px" alt="ReginYuan" /></a>
+<a href="https://github.com/smartsf"><img src="https://avatars.githubusercontent.com/u/19995400?v=4" width="60px" alt="smartsf" /></a>
+<a href="https://github.com/Kysen777"><img src="https://avatars.githubusercontent.com/u/63892082?v=4" width="60px" alt="Kysen777" /></a>
+<a href="https://github.com/Leezon"><img src="https://avatars.githubusercontent.com/u/38120280?v=4" width="60px" alt="Leezon" /></a>
+<a href="https://github.com/AlphaYoung111"><img src="https://avatars.githubusercontent.com/u/54132313?v=4" width="60px" alt="AlphaYoung111" /></a>
+<a href="https://github.com/leo4developer"><img src="https://avatars.githubusercontent.com/u/15160478?v=4" width="60px" alt="leo4developer" /></a>
+<a href="https://github.com/InsHomePgup"><img src="https://avatars.githubusercontent.com/u/47906083?v=4" width="60px" alt="InsHomePgup" /></a>
+<a href="https://github.com/wowping"><img src="https://avatars.githubusercontent.com/u/137802961?v=4" width="60px" alt="wowping" /></a>
+<a href="https://github.com/ChunyuPCY"><img src="https://avatars.githubusercontent.com/u/21986942?v=4" width="60px" alt="ChunyuPCY" /></a>
+<a href="https://github.com/qiyue2015"><img src="https://avatars.githubusercontent.com/u/11554433?v=4" width="60px" alt="qiyue2015" /></a>
+<a href="https://github.com/pyQianYi"><img src="https://avatars.githubusercontent.com/u/57526688?v=4" width="60px" alt="pyQianYi" /></a>
+</p>
+
+## License
+
+[MIT](./LICENSE) License

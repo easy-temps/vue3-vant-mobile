@@ -5,10 +5,12 @@ export default antfu({
   // https://unocss.dev/integrations/vscode
   unocss: true,
 
-  ignores: [
-    '.github',
-  ],
   formatters: {
     css: true,
   },
+
+  ignores: [
+    '.github/**',
+    'scripts/**',
+  ],
 })
