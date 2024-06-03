@@ -3,13 +3,6 @@ import type { PickerColumn } from 'vant'
 import useAppStore from '@/stores/modules/app'
 import { languageColumns, locale } from '@/utils/i18n'
 
-definePage({
-  name: 'home',
-  meta: {
-    level: 1,
-  },
-})
-
 const appStore = useAppStore()
 const checked = ref<boolean>(isDark.value)
 
@@ -78,3 +71,12 @@ const menuItems = computed(() => ([
     </VanCellGroup>
   </Container>
 </template>
+
+<route lang="json">
+{
+  "name": "home",
+  "meta": {
+    "level": 1
+  }
+}
+</route>

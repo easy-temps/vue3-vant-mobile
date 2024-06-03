@@ -1,11 +1,4 @@
 <script setup lang="ts">
-definePage({
-  name: '404',
-  meta: {
-    level: 2,
-  },
-})
-
 const router = useRouter()
 
 function onBack() {
@@ -30,3 +23,12 @@ function onBack() {
     </div>
   </Container>
 </template>
+
+<route lang="json">
+{
+  "name": "404",
+  "meta": {
+    "level": 2
+  }
+}
+</route>

@@ -2,15 +2,6 @@
 import { storeToRefs } from 'pinia'
 import useCounterStore from '@/stores/modules/counter'
 
-definePage({
-  name: 'counter',
-  meta: {
-    level: 2,
-    title: '🍍 持久化 Pinia 状态',
-    i18n: 'home.persistPiniaState',
-  },
-})
-
 const counterStore = useCounterStore()
 const { counter } = storeToRefs(counterStore)
 
@@ -39,3 +30,14 @@ function add() {
     </button>
   </container>
 </template>
+
+<route lang="json">
+{
+  "name": "counter",
+  "meta": {
+    "level": 2,
+    "title": "🍍 持久化 Pinia 状态",
+    "i18n": "home.persistPiniaState"
+  }
+}
+</route>

@@ -4,14 +4,6 @@ import { useUserStore } from '@/stores'
 
 import defaultAvatar from '@/assets/images/default-avatar.svg'
 
-definePage({
-  name: 'login',
-  meta: {
-    level: 2,
-    i18n: 'home.login',
-  },
-})
-
 const { t } = useI18n()
 const router = useRouter()
 const userStore = useUserStore()
@@ -68,3 +60,13 @@ async function asyncLogin(values: any) {
     </div>
   </Container>
 </template>
+
+<route lang="json">
+{
+  "name": "login",
+  "meta": {
+    "level": 2,
+    "i18n": "home.login"
+  }
+}
+</route>

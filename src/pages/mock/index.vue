@@ -1,15 +1,6 @@
 <script setup lang="ts">
 import { queryProse } from '@/api'
 
-definePage({
-  name: 'mock',
-  meta: {
-    level: 2,
-    title: '💿 Mock 指南',
-    i18n: 'home.mockGuide',
-  },
-})
-
 const messages = ref<string>('')
 
 function pull() {
@@ -43,6 +34,17 @@ function pull() {
     </van-space>
   </Container>
 </template>
+
+<route lang="json">
+{
+  "name": "mock",
+  "meta": {
+    "level": 2,
+    "title": "💿 Mock 指南",
+    "i18n": "home.mockGuide"
+  }
+}
+</route>
 
 <style lang="less" scoped>
 .data-label {

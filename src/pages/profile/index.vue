@@ -3,13 +3,6 @@ import router from '@/router'
 import { useUserStore } from '@/stores'
 import defaultAvatar from '@/assets/images/default-avatar.svg'
 
-definePage({
-  name: 'profile',
-  meta: {
-    level: 1,
-  },
-})
-
 const { t } = useI18n()
 const userStore = useUserStore()
 const userInfo = computed(() => userStore.userInfo)
@@ -49,3 +42,12 @@ function logout() {
     </div>
   </Container>
 </template>
+
+<route lang="json">
+{
+  "name": "profile",
+  "meta": {
+    "level": 1
+  }
+}
+</route>
