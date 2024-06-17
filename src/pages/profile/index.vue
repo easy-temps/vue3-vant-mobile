@@ -18,7 +18,7 @@ function logout() {
 </script>
 
 <template>
-  <Container>
+  <Container pb-60>
     <div mx-auto mb-60 pt-15 text-center text-16 text-dark dark:text-white>
       <template v-if="userInfo.uid">
         <div class="bg mb-32 mt-64">
