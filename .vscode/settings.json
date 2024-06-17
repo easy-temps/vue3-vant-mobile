@@ -1,6 +1,6 @@
 {
-  // Enable the ESlint flat config support
-  "eslint.experimental.useFlatConfig": true,
+  // For VS Code ESLint works
+  "eslint.runtime": "node",
 
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,
@@ -10,13 +10,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.organizeImports": "never"
-  },
-
-  // Disable the MD033 rule
-  "markdownlint.config": {
-    "default": true,
-    "MD033": false,
-    "MD041": false
   },
 
   // Silent the stylistic rules in you IDE, but still auto fix them
@@ -43,7 +36,17 @@
     "markdown",
     "json",
     "jsonc",
-    "yaml"
+    "yaml",
+    "toml",
+    "xml",
+    "gql",
+    "graphql",
+    "astro",
+    "css",
+    "less",
+    "scss",
+    "pcss",
+    "postcss"
   ],
 
   // Specify the UI library you need to prompt
@@ -58,5 +61,12 @@
   "i18n-ally.localesPaths": [
     "src/locales"
   ],
-  "i18n-ally.keystyle": "nested"
+  "i18n-ally.keystyle": "nested",
+
+  // Markdownlint rules
+  "markdownlint.config": {
+    "default": true,
+    "MD033": false,
+    "MD041": false
+  }
 }
