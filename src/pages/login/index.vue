@@ -41,31 +41,28 @@ async function asyncLogin(values: any) {
 </script>
 
 <template>
-  <Container :padding-x="0">
-    <div class="m-x-a w-7xl text-center">
-      <div class="mb-32 mt-64">
-        <van-image :src="defaultAvatar" round class="h-64 w-64" />
-      </div>
-      <van-form :model="postData" :rules="rules" @submit="asyncLogin">
-        <van-cell-group inset>
-          <van-field v-model="postData.username" :rules="rules.username" name="username" :placeholder="t('login.username')" left-icon="contact" />
-          <van-field v-model="postData.password" :rules="rules.password" name="password" :placeholder="t('login.password')" left-icon="lock" type="password" />
-        </van-cell-group>
-        <div class="m-16">
-          <van-button :loading="loading" round block type="primary" native-type="submit">
-            {{ t('login.logout') }}
-          </van-button>
-        </div>
-      </van-form>
+  <div class="m-x-a w-7xl text-center">
+    <div class="mb-32 mt-64">
+      <van-image :src="defaultAvatar" round class="h-64 w-64" />
     </div>
-  </Container>
+    <van-form :model="postData" :rules="rules" @submit="asyncLogin">
+      <van-cell-group inset>
+        <van-field v-model="postData.username" :rules="rules.username" name="username" :placeholder="t('login.username')" left-icon="contact" />
+        <van-field v-model="postData.password" :rules="rules.password" name="password" :placeholder="t('login.password')" left-icon="lock" type="password" />
+      </van-cell-group>
+      <div class="m-16">
+        <van-button :loading="loading" round block type="primary" native-type="submit">
+          {{ t('login.logout') }}
+        </van-button>
+      </div>
+    </van-form>
+  </div>
 </template>
 
 <route lang="json">
 {
   "name": "login",
   "meta": {
-    "level": 2,
     "i18n": "home.login"
   }
 }

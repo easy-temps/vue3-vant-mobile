@@ -11,31 +11,28 @@ function add() {
 </script>
 
 <template>
-  <Container>
-    <h1 class="text-6xl color-pink font-semibold">
-      Hello, Pinia!
-    </h1>
+  <h1 class="text-6xl color-pink font-semibold">
+    Hello, Pinia!
+  </h1>
 
-    <p class="mt-4 text-gray-700 dark:text-white">
-      This is a simple example of persisting Pinia state.
-      To verify its effectiveness, you can refresh the interface and observe it.
-    </p>
+  <p class="mt-4 text-gray-700 dark:text-white">
+    This is a simple example of persisting Pinia state.
+    To verify its effectiveness, you can refresh the interface and observe it.
+  </p>
 
-    <p class="mt-4">
-      number：<strong class="text-green-500"> {{ counter }} </strong>
-    </p>
+  <p class="mt-4">
+    number：<strong class="text-green-500"> {{ counter }} </strong>
+  </p>
 
-    <button class="btn" @click="add">
-      Add
-    </button>
-  </container>
+  <button class="btn" @click="add">
+    Add
+  </button>
 </template>
 
 <route lang="json">
 {
   "name": "counter",
   "meta": {
-    "level": 2,
     "title": "🍍 持久化 Pinia 状态",
     "i18n": "home.persistPiniaState"
   }

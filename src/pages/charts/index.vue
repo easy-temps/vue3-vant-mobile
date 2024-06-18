@@ -60,18 +60,15 @@ const refScoreOption = ref(scoreOption)
 </script>
 
 <template>
-  <Container>
-    <Chart :option="refBarOption" :style="{ height: '330px' }" />
-    <Chart :option="refLineOption" :style="{ height: '330px' }" />
-    <Chart :option="refScoreOption" :style="{ height: '330px' }" />
-  </Container>
+  <Chart :option="refBarOption" :style="{ height: '330px' }" />
+  <Chart :option="refLineOption" :style="{ height: '330px' }" />
+  <Chart :option="refScoreOption" :style="{ height: '330px' }" />
 </template>
 
 <route lang="json">
 {
   "name": "charts",
   "meta": {
-    "level": 2,
     "title": "📊 Echarts 演示",
     "i18n": "home.echartsDemo"
   }

@@ -18,36 +18,31 @@ function logout() {
 </script>
 
 <template>
-  <Container pb-60>
-    <div mx-auto mb-60 pt-15 text-center text-16 text-dark dark:text-white>
-      <template v-if="userInfo.uid">
-        <div class="bg mb-32 mt-64">
-          <van-image :src="userInfo.avatar || defaultAvatar" round class="h-64 w-64 border" />
-        </div>
-        <div class="mb-64">
-          {{ userInfo.name }}
-        </div>
-        <div class="mb-32">
-          {{ userInfo.prose }}
-        </div>
-        <van-button class="w-xl" type="primary" @click="logout()">
-          {{ t('login.logout') }}
-        </van-button>
-      </template>
-      <template v-else>
-        <van-button class="w-xl" type="primary" @click="goLogin()">
-          {{ t('login.login') }}
-        </van-button>
-      </template>
-    </div>
-  </Container>
+  <div mx-auto mb-60 pt-15 text-center text-16 text-dark dark:text-white>
+    <template v-if="userInfo.uid">
+      <div class="bg mb-32 mt-64">
+        <van-image :src="userInfo.avatar || defaultAvatar" round class="h-64 w-64 border" />
+      </div>
+      <div class="mb-64">
+        {{ userInfo.name }}
+      </div>
+      <div class="mb-32">
+        {{ userInfo.prose }}
+      </div>
+      <van-button class="w-xl" type="primary" @click="logout()">
+        {{ t('login.logout') }}
+      </van-button>
+    </template>
+    <template v-else>
+      <van-button class="w-xl" type="primary" @click="goLogin()">
+        {{ t('login.login') }}
+      </van-button>
+    </template>
+  </div>
 </template>
 
 <route lang="json">
 {
-  "name": "profile",
-  "meta": {
-    "level": 1
-  }
+  "name": "profile"
 }
 </route>

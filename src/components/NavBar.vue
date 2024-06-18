@@ -21,10 +21,12 @@ const title = computed(() => {
 
 <template>
   <VanNavBar
-    v-show="title"
+    v-if="title"
     :title="title"
     :fixed="true"
-    clickable left-arrow
+    clickable
+    left-arrow
+    placeholder
     @click-left="onBack"
   />
 </template>

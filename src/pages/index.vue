@@ -41,42 +41,39 @@ const menuItems = computed(() => ([
 </script>
 
 <template>
-  <Container :padding-x="0">
-    <VanCellGroup inset>
-      <VanCell center :title="t('home.darkMode')">
-        <template #right-icon>
-          <VanSwitch v-model="checked" size="20px" aria-label="on/off Dark Mode" @click="toggle()" />
-        </template>
-      </VanCell>
-
-      <VanCell
-        is-link
-        :title="t('home.language')"
-        :value="language"
-        @click="showLanguagePicker = true"
-      />
-
-      <van-popup v-model:show="showLanguagePicker" position="bottom">
-        <van-picker
-          v-model="languageValues"
-          :columns="languageColumns"
-          @confirm="onLanguageConfirm"
-          @cancel="showLanguagePicker = false"
-        />
-      </van-popup>
-
-      <template v-for="item in menuItems" :key="item.route">
-        <VanCell :title="item.title" :to="item.route" is-link />
+  <VanCellGroup title="基本设置">
+    <VanCell center :title="t('home.darkMode')">
+      <template #right-icon>
+        <VanSwitch v-model="checked" size="20px" aria-label="on/off Dark Mode" @click="toggle()" />
       </template>
-    </VanCellGroup>
-  </Container>
+    </VanCell>
+
+    <VanCell
+      is-link
+      :title="t('home.language')"
+      :value="language"
+      @click="showLanguagePicker = true"
+    />
+  </VanCellGroup>
+
+  <VanCellGroup title="示例组件">
+    <template v-for="item in menuItems" :key="item.route">
+      <VanCell :title="item.title" :to="item.route" is-link />
+    </template>
+  </VanCellGroup>
+
+  <van-popup v-model:show="showLanguagePicker" position="bottom">
+    <van-picker
+      v-model="languageValues"
+      :columns="languageColumns"
+      @confirm="onLanguageConfirm"
+      @cancel="showLanguagePicker = false"
+    />
+  </van-popup>
 </template>
 
 <route lang="json">
 {
-  "name": "home",
-  "meta": {
-    "level": 1
-  }
+  "name": "home"
 }
 </route>
