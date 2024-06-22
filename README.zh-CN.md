@@ -133,7 +133,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 如果您更喜欢使用更干净的 git 历史记录手动执行此操作
 
 ```bash
-npx degit easy-temps/vue3-vant-mobile my-mobile-app
+npx tiged easy-temps/vue3-vant-mobile my-mobile-app
 cd my-mobile-app
 pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
 ```
