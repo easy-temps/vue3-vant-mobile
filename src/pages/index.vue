@@ -23,7 +23,7 @@ watch(
 
 function toggle() {
   toggleDark()
-  appStore.swithMode(isDark.value ? 'dark' : 'light')
+  appStore.switchMode(isDark.value ? 'dark' : 'light')
 }
 
 const { t } = useI18n()
