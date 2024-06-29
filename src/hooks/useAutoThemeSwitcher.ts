@@ -4,9 +4,9 @@ export default function useAutoThemeSwitcher(appStore: AppStore) {
   const handleAttributeChange = () => {
     const rootElement = document.documentElement
     if (rootElement.classList.contains('dark'))
-      appStore.swithMode('dark')
+      appStore.switchMode('dark')
     else
-      appStore.swithMode('light')
+      appStore.switchMode('light')
   }
 
   const observerOptions = {

@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 import type { ConfigProviderTheme } from 'vant'
 
 export interface AppStore {
-  swithMode: (val: ConfigProviderTheme) => void
+  switchMode: (val: ConfigProviderTheme) => void
 }
 
 const prefersDark
@@ -13,13 +13,13 @@ const useAppStore = defineStore('app', () => {
   const theme = prefersDark ? 'dark' : 'light'
   const mode = ref<ConfigProviderTheme>(theme)
 
-  const swithMode = (val: ConfigProviderTheme) => {
+  const switchMode = (val: ConfigProviderTheme) => {
     mode.value = val
   }
 
   return {
     mode,
-    swithMode,
+    switchMode,
   }
 }, {
   persist: true,
