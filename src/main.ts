@@ -5,6 +5,7 @@ import router from '@/router'
 import pinia from '@/stores'
 import 'virtual:uno.css'
 import '@/styles/app.less'
+import '@/styles/var.less'
 import { i18n } from '@/utils/i18n'
 
 // Vant 桌面端适配

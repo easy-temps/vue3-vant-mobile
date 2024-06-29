@@ -41,7 +41,7 @@ const menuItems = computed(() => ([
 </script>
 
 <template>
-  <VanCellGroup title="基本设置">
+  <VanCellGroup title="基本设置" :border="false" :inset="true">
     <VanCell center :title="t('home.darkMode')">
       <template #right-icon>
         <VanSwitch v-model="checked" size="20px" aria-label="on/off Dark Mode" @click="toggle()" />
@@ -56,7 +56,7 @@ const menuItems = computed(() => ([
     />
   </VanCellGroup>
 
-  <VanCellGroup title="示例组件">
+  <VanCellGroup title="示例组件" :border="false" :inset="true">
     <template v-for="item in menuItems" :key="item.route">
       <VanCell :title="item.title" :to="item.route" is-link />
     </template>
