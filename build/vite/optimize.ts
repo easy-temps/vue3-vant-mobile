@@ -1,10 +1,8 @@
 const include = [
   'axios',
-  'store',
   'echarts',
   'lodash-es',
   'resize-detector',
-  'store/plugins/expire',
   'vant/es/cell-group/style/index',
   'vant/es/popup/style/index',
   'vant/es/picker/style/index',
