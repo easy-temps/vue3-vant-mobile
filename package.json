@@ -84,6 +84,11 @@
       "allowAny": [
         "eslint"
       ]
+    },
+    "allowedDeprecatedVersions": {
+      "glob": "7.2.3",
+      "inflight": "1.0.6",
+      "sourcemap-codec": "1.4.8"
     }
   }
 }
