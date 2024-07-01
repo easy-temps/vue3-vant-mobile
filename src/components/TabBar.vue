@@ -3,11 +3,9 @@ const { t } = useI18n()
 const active = ref(0)
 const route = useRoute()
 
-const show = computed(() => {
-  if (route.meta.level && route.meta.level !== 2)
-    return true
-  return false
-})
+const routeWhiteList = ['home', 'profile']
+
+const show = computed(() => routeWhiteList.includes(route.name))
 </script>
 
 <template>
