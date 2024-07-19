@@ -1,5 +1,9 @@
 <script setup lang="ts">
 defineProps({
+  paddingT: {
+    type: Number,
+    default: 46,
+  },
   paddingX: {
     type: Number,
     default: 16,
@@ -9,8 +13,8 @@ defineProps({
 
 <template>
   <main
-    class="absolute left-0 h-full w-full overflow-y-auto pt-46"
-    :style="`padding-left: ${paddingX}px; padding-right: ${paddingX}px`"
+    class="absolute left-0 h-full w-full overflow-y-auto"
+    :style="`padding-top: ${paddingT}px; padding-left: ${paddingX}px; padding-right: ${paddingX}px`"
   >
     <slot />
   </main>
