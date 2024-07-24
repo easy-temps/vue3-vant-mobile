@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useRouter } from 'vue-router'
+import { type RouteMap, useRouter } from 'vue-router'
 import { useUserStore } from '@/stores'
 
 import defaultAvatar from '@/assets/images/default-avatar.svg'
@@ -28,7 +28,7 @@ async function asyncLogin(values: any) {
     await userStore.login({ ...postData, ...values })
     const { redirect, ...othersQuery } = router.currentRoute.value.query
     router.push({
-      name: (redirect as string) || 'home',
+      name: (redirect as keyof RouteMap) || 'home',
       query: {
         ...othersQuery,
       },
