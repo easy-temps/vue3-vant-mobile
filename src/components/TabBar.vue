@@ -9,7 +9,7 @@ const show = computed(() => routeWhiteList.includes(route.name))
 </script>
 
 <template>
-  <van-tabbar v-if="show" v-model="active" route placeholder>
+  <van-tabbar v-if="show" v-model="active" :placeholder="true" route>
     <van-tabbar-item replace to="/">
       {{ t('layouts.home') }}
       <template #icon>

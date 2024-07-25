@@ -24,9 +24,7 @@ const title = computed(() => {
     v-if="title"
     :title="title"
     :fixed="true"
-    clickable
-    left-arrow
-    placeholder
+    clickable left-arrow placeholder
     @click-left="onBack"
   />
 </template>
