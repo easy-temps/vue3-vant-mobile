@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import vw from '@/utils/inline-px-to-vw'
+
 defineProps({
   paddingT: {
     type: Number,
@@ -14,7 +16,7 @@ defineProps({
 <template>
   <main
     class="absolute left-0 h-full w-full overflow-y-auto"
-    :style="`padding-top: ${paddingT}px; padding-left: ${paddingX}px; padding-right: ${paddingX}px`"
+    :style="`padding-top: ${vw(paddingT)}; padding-left: ${vw(paddingX)}; padding-right: ${vw(paddingX)}`"
   >
     <slot />
   </main>
