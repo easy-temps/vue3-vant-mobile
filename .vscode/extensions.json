@@ -2,6 +2,7 @@
   "recommendations": [
     "Vue.volar",
     "antfu.unocss",
+    "antfu.goto-alias",
     "lokalise.i18n-ally",
     "antfu.iconify"
   ]
