@@ -1,8 +1,8 @@
 {
   "name": "vue3-vant-mobile",
   "type": "module",
-  "version": "2.3.6",
-  "packageManager": "pnpm@9.4.0",
+  "version": "2.3.9",
+  "packageManager": "pnpm@9.7.0",
   "description": "Vue + Vite H5 Starter Template",
   "license": "MIT",
   "scripts": {
@@ -49,9 +49,8 @@
     "bumpp": "^9.4.1",
     "consola": "^3.2.3",
     "cross-env": "^7.0.3",
-    "eslint": "npm:eslint-ts-patch@9.5.0-0",
+    "eslint": "^9.8.0",
     "eslint-plugin-format": "^0.1.2",
-    "eslint-ts-patch": "9.5.0-0",
     "husky": "^9.1.1",
     "less": "^4.2.0",
     "mockjs": "^1.1.0",

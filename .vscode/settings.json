@@ -1,6 +1,6 @@
 {
-  // For VS Code ESLint works
-  "eslint.runtime": "node",
+  // Enable the ESlint flat config support
+  "eslint.useFlatConfig": true,
 
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,
