@@ -1,6 +1,7 @@
 import antfu from '@antfu/eslint-config'
+import pluginVue from 'eslint-plugin-vue'
 
-export default antfu({
+const origin = await antfu({
   // enable UnoCSS support
   // https://unocss.dev/integrations/vscode
   unocss: true,
@@ -14,3 +15,19 @@ export default antfu({
     'scripts/**',
   ],
 })
+
+export default [
+  ...origin,
+  ...pluginVue.configs['flat/recommended'],
+  {
+    files: ['*.vue', '**/*.vue'],
+    languageOptions: {
+      parserOptions: {
+        parser: '@typescript-eslint/parser',
+      },
+    },
+    rules: {
+      'vue/multi-word-component-names': 'off',
+    },
+  },
+]
