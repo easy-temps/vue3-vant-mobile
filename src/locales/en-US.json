@@ -8,7 +8,9 @@
     "persistPiniaState": "🍍 Persistent Pinia state",
     "unocssExample": "🎨 Unocss example",
     "keepAlive": "🧡 KeepAlive Demo",
-    "login": "🔒 Login"
+    "login": "🔒 Login",
+    "basicSettings": "Basic Settings",
+    "exampleComponents": "Example components"
   },
   "mock": {
     "fromAsyncData": "Data from asynchronous requests",

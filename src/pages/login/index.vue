@@ -52,7 +52,7 @@ async function asyncLogin(values: any) {
       </van-cell-group>
       <div class="m-16">
         <van-button :loading="loading" round block type="primary" native-type="submit">
-          {{ t('login.logout') }}
+          {{ t('login.login') }}
         </van-button>
       </div>
     </van-form>

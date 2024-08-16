@@ -8,7 +8,9 @@
     "404Demo": "🙅 404页 演示",
     "unocssExample": "🎨 Unocss 示例",
     "keepAlive": "🧡 KeepAlive 演示",
-    "login": "🔒 用户登陆"
+    "login": "🔒 用户登陆",
+    "basicSettings": "基本设置",
+    "exampleComponents": "示例组件"
   },
   "mock": {
     "fromAsyncData": "来自异步请求的数据",
