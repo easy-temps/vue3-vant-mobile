@@ -10,7 +10,7 @@ definePage({
 </script>
 
 <template>
-  <Container>
+  <div class="px-16 pt-46">
     <h1 class="text-6xl color-pink font-semibold">
       Hello, Unocss!
     </h1>
@@ -22,5 +22,5 @@ definePage({
     <button class="btn">
       Button
     </button>
-  </Container>
+  </div>
 </template>

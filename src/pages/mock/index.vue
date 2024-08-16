@@ -21,7 +21,7 @@ function pull() {
 </script>
 
 <template>
-  <Container>
+  <div class="px-16 pt-46">
     <div class="data-label">
       {{ $t('mock.fromAsyncData') }}
     </div>
@@ -41,7 +41,7 @@ function pull() {
         {{ $t('mock.reset') }}
       </VanButton>
     </van-space>
-  </Container>
+  </div>
 </template>
 
 <style lang="less" scoped>
