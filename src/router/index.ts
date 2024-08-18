@@ -31,7 +31,7 @@ router.beforeEach((to: EnhancedRouteLocation, from, next) => {
     routeTransitionNameStore.setName('slide-fadein-right')
 
   else
-    routeTransitionNameStore.setName('')
+    routeTransitionNameStore.setName('absolute-layout')
 
   next()
 })

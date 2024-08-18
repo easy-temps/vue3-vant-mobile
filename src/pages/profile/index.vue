@@ -10,7 +10,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div class="px-16 pt-46">
+  <div class="p-16 pt-46">
     <div mx-auto pt-15 text-center text-16 text-dark dark:text-white>
       {{ t('profile.placeholder') }}
     </div>

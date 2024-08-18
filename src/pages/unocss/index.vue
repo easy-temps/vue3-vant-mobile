@@ -10,7 +10,7 @@ definePage({
 </script>
 
 <template>
-  <div class="px-16 pt-46">
+  <div class="p-16">
     <h1 class="text-6xl color-pink font-semibold">
       Hello, Unocss!
     </h1>

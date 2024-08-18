@@ -17,7 +17,7 @@ function onBack() {
 </script>
 
 <template>
-  <div class="px-16 pt-46">
+  <div class="p-16">
     <div text="center gray-300 dark:gray-200 18">
       <van-icon name="warn-o" size="3em" />
       <div> Not found </div>

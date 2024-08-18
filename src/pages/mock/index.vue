@@ -21,7 +21,7 @@ function pull() {
 </script>
 
 <template>
-  <div class="px-16 pt-46">
+  <div class="p-16">
     <div class="data-label">
       {{ $t('mock.fromAsyncData') }}
     </div>

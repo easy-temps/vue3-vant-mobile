@@ -17,7 +17,7 @@ const value = ref(1)
 </script>
 
 <template>
-  <div class="px-16 pt-46">
+  <div class="p-16">
     <p>{{ $t('keepAlive.label') }}</p>
     <van-stepper v-model="value" />
   </div>
