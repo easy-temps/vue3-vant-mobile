@@ -64,7 +64,6 @@ export function createVitePlugins() {
       dirs: [
         'src/composables',
       ],
-      viteOptimizeDeps: false,
     }),
 
     // https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n
