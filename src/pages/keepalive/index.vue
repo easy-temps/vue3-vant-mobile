@@ -8,7 +8,7 @@ definePage({
   meta: {
     level: 2,
     title: '🧡 KeepAlive',
-    i18n: 'home.keepAlive',
+    i18n: 'menus.keepAlive',
     keepAlive: true,
   },
 })

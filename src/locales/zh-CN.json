@@ -1,5 +1,7 @@
 {
-  "home": {
+  "menus": {
+    "home": "主页",
+    "profile": "个人中心",
     "darkMode": "🌗 暗黑模式",
     "mockGuide": "💿 Mock 指南",
     "language": "📚 语言",

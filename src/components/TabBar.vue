@@ -3,7 +3,7 @@ const { t } = useI18n()
 const active = ref(0)
 const route = useRoute()
 
-const display = computed(() => {
+const show = computed(() => {
   if (route.meta.level && route.meta.level !== 2)
     return true
   return false
@@ -11,7 +11,7 @@ const display = computed(() => {
 </script>
 
 <template>
-  <van-tabbar v-if="display" v-model="active" route placeholder>
+  <van-tabbar v-if="show" v-model="active" placeholder route>
     <van-tabbar-item replace to="/">
       {{ t('layouts.home') }}
       <template #icon>

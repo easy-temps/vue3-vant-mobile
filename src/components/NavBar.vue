@@ -17,14 +17,22 @@ const title = computed(() => {
 
   return route.meta.i18n ? t(route.meta.i18n) : (route.meta.title || '')
 })
+
+const showLeftArrow = computed(() => {
+  if (!route.meta)
+    return false
+
+  return route.meta.level === 2
+})
 </script>
 
 <template>
   <VanNavBar
-    v-if="title"
     :title="title"
     :fixed="true"
-    clickable left-arrow placeholder
+    clickable
+    placeholder
+    :left-arrow="showLeftArrow"
     @click-left="onBack"
   />
 </template>

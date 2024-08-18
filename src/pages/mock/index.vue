@@ -6,7 +6,7 @@ definePage({
   meta: {
     level: 2,
     title: '💿 Mock 指南',
-    i18n: 'home.mockGuide',
+    i18n: 'menus.mockGuide',
   },
 })
 

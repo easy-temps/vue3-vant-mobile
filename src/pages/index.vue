@@ -6,6 +6,8 @@ import { languageColumns, locale } from '@/utils/i18n'
 definePage({
   name: 'home',
   meta: {
+    title: '主页',
+    i18n: 'menus.home',
     level: 1,
   },
 })
@@ -38,19 +40,19 @@ function onLanguageConfirm(event: { selectedOptions: PickerColumn }) {
 }
 
 const menuItems = computed(() => ([
-  { title: t('home.mockGuide'), route: 'mock' },
-  { title: t('home.echartsDemo'), route: 'charts' },
-  { title: t('home.unocssExample'), route: 'unocss' },
-  { title: t('home.persistPiniaState'), route: 'counter' },
-  { title: t('home.404Demo'), route: 'unknown' },
-  { title: t('home.keepAlive'), route: 'keepalive' },
+  { title: t('menus.mockGuide'), route: 'mock' },
+  { title: t('menus.echartsDemo'), route: 'charts' },
+  { title: t('menus.unocssExample'), route: 'unocss' },
+  { title: t('menus.persistPiniaState'), route: 'counter' },
+  { title: t('menus.404Demo'), route: 'unknown' },
+  { title: t('menus.keepAlive'), route: 'keepalive' },
 ]))
 </script>
 
 <template>
-  <div class="pt-46">
+  <div class="pt-16">
     <VanCellGroup inset>
-      <VanCell center :title="t('home.darkMode')">
+      <VanCell center :title="t('menus.darkMode')">
         <template #right-icon>
           <VanSwitch v-model="checked" size="20px" aria-label="on/off Dark Mode" @click="toggle()" />
         </template>
@@ -58,7 +60,7 @@ const menuItems = computed(() => ([
 
       <VanCell
         is-link
-        :title="t('home.language')"
+        :title="t('menus.language')"
         :value="language"
         @click="showLanguagePicker = true"
       />

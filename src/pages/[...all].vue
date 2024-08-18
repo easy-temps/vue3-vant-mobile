@@ -2,6 +2,8 @@
 definePage({
   name: '404',
   meta: {
+    title: '404',
+    i18n: 'menus.404Demo',
     level: 2,
   },
 })

@@ -2,6 +2,8 @@
 definePage({
   name: 'profile',
   meta: {
+    title: '个人中心',
+    i18n: 'menus.profile',
     level: 1,
   },
 })

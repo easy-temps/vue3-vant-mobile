@@ -4,7 +4,7 @@ definePage({
   meta: {
     level: 2,
     title: '📊 Echarts 演示',
-    i18n: 'home.echartsDemo',
+    i18n: 'menus.echartsDemo',
   },
 })
 
