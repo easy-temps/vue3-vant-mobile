@@ -1,5 +1,4 @@
 import { defineMock } from 'vite-plugin-mock-dev-server'
-import proses from '../data'
 
 export default defineMock([
   {
