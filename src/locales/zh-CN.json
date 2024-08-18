@@ -8,7 +8,7 @@
     "404Demo": "🙅 404页 演示",
     "unocssExample": "🎨 Unocss 示例",
     "keepAlive": "🧡 KeepAlive 演示",
-    "login": "🔒 用户登陆",
+    "login": "🔒 用户登录",
     "basicSettings": "基本设置",
     "exampleComponents": "示例组件"
   },
@@ -37,7 +37,7 @@
     "label": "当前组件将会被缓存"
   },
   "login": {
-    "login": "登陆",
+    "login": "登录",
     "logout": "退出",
     "username": "请输入用户名",
     "password": "请输入密码",

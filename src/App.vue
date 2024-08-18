@@ -43,12 +43,20 @@ onMounted(() => {
   <VanConfigProvider :theme="mode">
     <NavBar />
     <router-view v-slot="{ Component, route }">
-      <Container>
+      <section class="app-wrapper">
         <keep-alive :include="keepAliveRouteNames">
           <component :is="Component" :key="route.name" />
         </keep-alive>
-      </Container>
+      </section>
     </router-view>
     <TabBar />
   </VanConfigProvider>
 </template>
+
+<style scoped>
+.app-wrapper {
+  width: 100%;
+  position: relative;
+  padding: 16px;
+}
+</style>
