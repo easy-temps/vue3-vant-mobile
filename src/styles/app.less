@@ -35,6 +35,9 @@ html.dark {
     opacity 0.3s,
     transform 0.4s,
     -webkit-transform 0.4s;
+  position: absolute;
+  left: 0;
+  width: 100%;
 }
 
 .slide-fadein-left-enter-from,
@@ -47,4 +50,11 @@ html.dark {
 .slide-fadein-right-enter-from {
   transform: translateX(-20px);
   opacity: 0;
+}
+
+.absolute-layout-enter-active,
+.absolute-layout-leave-active {
+  position: absolute;
+  left: 0;
+  width: 100%;
 }

@@ -48,7 +48,7 @@ const menuItems = computed(() => ([
 </script>
 
 <template>
-  <Container :padding-x="0">
+  <div class="pt-46">
     <VanCellGroup inset>
       <VanCell center :title="t('home.darkMode')">
         <template #right-icon>
@@ -76,5 +76,5 @@ const menuItems = computed(() => ([
         <VanCell :title="item.title" :to="item.route" is-link />
       </template>
     </VanCellGroup>
-  </Container>
+  </div>
 </template>
