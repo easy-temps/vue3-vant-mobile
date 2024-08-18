@@ -43,6 +43,10 @@ function logout() {
 
 <route lang="json">
 {
-  "name": "profile"
+  "name": "profile",
+  "meta": {
+    "title": "个人中心",
+    "i18n": "menus.profile"
+  }
 }
 </route>

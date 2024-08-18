@@ -70,7 +70,7 @@ const refScoreOption = ref(scoreOption)
   "name": "charts",
   "meta": {
     "title": "📊 Echarts 演示",
-    "i18n": "home.echartsDemo"
+    "i18n": "menus.echartsDemo"
   }
 }
 </route>

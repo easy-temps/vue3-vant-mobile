@@ -16,7 +16,7 @@ const value = ref(1)
   "name": "KeepAlive",
   "meta": {
     "title": "🧡 KeepAlive",
-    "i18n": "home.keepAlive",
+    "i18n": "menus.keepAlive",
     "keepAlive": true
   }
 }

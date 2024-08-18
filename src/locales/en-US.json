@@ -1,5 +1,7 @@
 {
-  "home": {
+  "menus": {
+    "home": "Home",
+    "profile": "My Center",
     "darkMode": "🌗 Dark Mode",
     "mockGuide": "💿 Mock Guide",
     "language": "📚 Language",

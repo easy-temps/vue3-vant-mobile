@@ -24,6 +24,10 @@ function onBack() {
 
 <route lang="json">
 {
-  "name": "404"
+  "name": "404",
+  "meta": {
+    "title": "404",
+    "i18n": "menus.404Demo"
+  }
 }
 </route>

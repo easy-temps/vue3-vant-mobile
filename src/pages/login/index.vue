@@ -63,7 +63,7 @@ async function asyncLogin(values: any) {
 {
   "name": "login",
   "meta": {
-    "i18n": "home.login"
+    "i18n": "menus.login"
   }
 }
 </route>

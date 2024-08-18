@@ -17,7 +17,7 @@
   "name": "unocss",
   "meta": {
     "title": "🎨 Unocss 示例",
-    "i18n": "home.unocssExample"
+    "i18n": "menus.unocssExample"
   }
 }
 </route>

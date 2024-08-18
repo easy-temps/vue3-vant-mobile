@@ -38,7 +38,7 @@ function pull() {
   "name": "mock",
   "meta": {
     "title": "💿 Mock 指南",
-    "i18n": "home.mockGuide"
+    "i18n": "menus.mockGuide"
   }
 }
 </route>

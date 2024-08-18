@@ -34,7 +34,7 @@ function add() {
   "name": "counter",
   "meta": {
     "title": "🍍 持久化 Pinia 状态",
-    "i18n": "home.persistPiniaState"
+    "i18n": "menus.persistPiniaState"
   }
 }
 </route>

@@ -17,14 +17,19 @@ const title = computed(() => {
 
   return route.meta.i18n ? t(route.meta.i18n) : (route.meta.title || '')
 })
+
+const routeWhiteList = ['home', 'profile']
+
+const showLeftArrow = computed(() => routeWhiteList.includes(route.name))
 </script>
 
 <template>
   <VanNavBar
-    v-if="title"
     :title="title"
     :fixed="true"
-    clickable left-arrow placeholder
+    clickable
+    placeholder
+    :left-arrow="!showLeftArrow"
     @click-left="onBack"
   />
 </template>
