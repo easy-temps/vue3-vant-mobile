@@ -40,18 +40,27 @@ const keepAliveRouteNames = computed(() => {
 onMounted(() => {
   initializeThemeSwitcher()
 })
+
+const containerRef = ref()
+const { height: containerHeight } = useElementSize(containerRef)
+const navBarHeight = 48
+const currentRoute = useRoute()
+const tabBarHeight = computed(() => currentRoute.meta.level && currentRoute.meta.level !== 2 ? 52 : 0)
+const routeViewHeight = computed(() => containerHeight.value - navBarHeight - tabBarHeight.value)
 </script>
 
 <template>
-  <VanConfigProvider :theme="mode">
+  <VanConfigProvider ref="containerRef" class="h-full" :theme="mode">
     <NavBar />
-    <router-view v-slot="{ Component, route }">
-      <transition :name="routeTransitionName">
-        <keep-alive :include="keepAliveRouteNames">
-          <component :is="Component" :key="route.name" />
-        </keep-alive>
-      </transition>
-    </router-view>
+    <div class="overflow-y-auto" :style="{ height: `${routeViewHeight}px` }">
+      <router-view v-slot="{ Component, route }">
+        <transition :name="routeTransitionName">
+          <keep-alive :include="keepAliveRouteNames">
+            <component :is="Component" :key="route.name" />
+          </keep-alive>
+        </transition>
+      </router-view>
+    </div>
     <TabBar />
   </VanConfigProvider>
 </template>
