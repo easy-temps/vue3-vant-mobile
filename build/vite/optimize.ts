@@ -13,6 +13,9 @@ const include = [
   'vant/es/empty/style/index',
   'vant/es/icon/style/index',
   'vant/es/stepper/style/index',
+  'vant/es/image/style/index',
+  'vant/es/form/style/index',
+  'vant/es/field/style/index',
 ]
 
 const exclude = [

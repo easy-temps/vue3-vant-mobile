@@ -33,7 +33,8 @@
     "profile": "PROFILE"
   },
   "profile": {
-    "placeholder": "WIP"
+    "login": "Login",
+    "settings": "Settings"
   },
   "keepAlive": {
     "label": "The current component will be cached"

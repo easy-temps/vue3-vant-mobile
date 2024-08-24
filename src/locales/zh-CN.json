@@ -33,7 +33,8 @@
     "profile": "我的"
   },
   "profile": {
-    "placeholder": "未完成"
+    "login": "登录",
+    "settings": "设置"
   },
   "keepAlive": {
     "label": "当前组件将会被缓存"
