@@ -31,7 +31,7 @@
     "vant": "^4.9.4",
     "vconsole": "^3.15.1",
     "vue": "^3.4.38",
-    "vue-i18n": "^9.14.0",
+    "vue-i18n": "^9.13.1",
     "vue-router": "^4.4.3"
   },
   "devDependencies": {
