@@ -2,17 +2,28 @@
 import { type RouteMap, useRouter } from 'vue-router'
 import { useUserStore } from '@/stores'
 
-import defaultAvatar from '@/assets/images/default-avatar.svg'
+import logo from '~/images/logo.svg'
+import logoDark from '~/images/logo-dark.svg'
 
 const { t } = useI18n()
 const router = useRouter()
 const userStore = useUserStore()
-
 const loading = ref(false)
+
+const dark = ref<boolean>(isDark.value)
+
+watch(
+  () => isDark.value,
+  (newMode) => {
+    dark.value = newMode
+  },
+)
+
 const postData = reactive({
   username: '',
   password: '',
 })
+
 const rules = reactive({
   username: [
     { required: true, message: t('login.pleaseEnterUsername') },
@@ -43,8 +54,9 @@ async function asyncLogin(values: any) {
 <template>
   <div class="m-x-a w-7xl text-center">
     <div class="mb-32 mt-64">
-      <van-image :src="defaultAvatar" round class="h-64 w-64" />
+      <van-image :src="dark ? logoDark : logo" class="h-120 w-120" />
     </div>
+
     <van-form :model="postData" :rules="rules" @submit="asyncLogin">
       <van-cell-group inset>
         <van-field v-model="postData.username" :rules="rules.username" name="username" :placeholder="t('login.username')" left-icon="contact" />

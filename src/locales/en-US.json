@@ -47,5 +47,10 @@
     "password": "Password",
     "pleaseEnterUsername": "Please enter username",
     "pleaseEnterPassword": "Please enter password"
+  },
+  "settings": {
+    "logout": "Sign Out",
+    "currentVersion": "Current version",
+    "comfirmTitle": "Confirm Exit?"
   }
 }

@@ -47,5 +47,10 @@
     "password": "请输入密码",
     "pleaseEnterUsername": "请输入用户名",
     "pleaseEnterPassword": "请输入密码"
+  },
+  "settings": {
+    "logout": "退出登录",
+    "currentVersion": "当前版本",
+    "comfirmTitle": "确认退出？"
   }
 }
