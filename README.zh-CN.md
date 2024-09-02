@@ -174,11 +174,9 @@ pnpm build
 
 前往 [Netlify](https://app.netlify.com/start) 并选择你的仓库, 一路 `OK` 下去，稍等一下后，你的应用将被创建。
 
-## 社区
+## 社区 👏
 
-我们推荐使用 [议题](https://github.com/easy-temps/vue3-vant-mobile/issues) 来反馈问题, 或者您也可以通过微信群联系我们。
-
-<img style="width: 25%" src="https://cdn.jsdelivr.net/gh/easy-temps/easy-static/community.png" alt="community" />
+我们推荐使用 [议题](https://github.com/easy-temps/vue3-vant-mobile/issues) 来反馈问题, 或者您也可以通过 [微信交流群](https://github.com/easy-temps/vue3-vant-mobile/issues/56) 联系我们。
 
 ## 捐赠 ☕
 
