@@ -7,11 +7,11 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    Chart: typeof import('./components/Chart/index.vue')['default']
-    NavBar: typeof import('./components/NavBar.vue')['default']
+    Chart: typeof import('./../components/Chart/index.vue')['default']
+    NavBar: typeof import('./../components/NavBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    TabBar: typeof import('./components/TabBar.vue')['default']
+    TabBar: typeof import('./../components/TabBar.vue')['default']
     VanButton: typeof import('vant/es')['Button']
     VanCell: typeof import('vant/es')['Cell']
     VanCellGroup: typeof import('vant/es')['CellGroup']
