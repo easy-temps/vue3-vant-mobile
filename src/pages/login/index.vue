@@ -33,7 +33,7 @@ const rules = reactive({
   ],
 })
 
-async function asyncLogin(values: any) {
+async function login(values: any) {
   try {
     loading.value = true
     await userStore.login({ ...postData, ...values })
@@ -53,21 +53,51 @@ async function asyncLogin(values: any) {
 
 <template>
   <div class="m-x-a w-7xl text-center">
-    <div class="mb-32 mt-64">
+    <div class="mb-32 mt-20">
       <van-image :src="dark ? logoDark : logo" class="h-120 w-120" />
     </div>
 
-    <van-form :model="postData" :rules="rules" @submit="asyncLogin">
-      <van-cell-group inset>
-        <van-field v-model="postData.username" :rules="rules.username" name="username" :placeholder="t('login.username')" left-icon="contact" />
-        <van-field v-model="postData.password" :rules="rules.password" name="password" :placeholder="t('login.password')" left-icon="lock" type="password" />
-      </van-cell-group>
-      <div class="m-16">
-        <van-button :loading="loading" round block type="primary" native-type="submit">
-          {{ t('login.login') }}
+    <van-form :model="postData" :rules="rules" @submit="login">
+      <div class="overflow-hidden rounded">
+        <van-field
+          v-model="postData.username"
+          :rules="rules.username"
+          name="username"
+          :placeholder="t('login.username')"
+          left-icon="contact"
+        />
+      </div>
+
+      <div class="mt-16 overflow-hidden rounded">
+        <van-field
+          v-model="postData.password"
+          type="password"
+          :rules="rules.password"
+          name="password"
+          :placeholder="t('login.password')"
+          left-icon="lock"
+        />
+      </div>
+
+      <div class="mt-16">
+        <van-button
+          :loading="loading"
+          type="primary"
+          native-type="submit"
+          round block
+        >
+          {{ $t('login.login') }}
         </van-button>
       </div>
     </van-form>
+
+    <div class="mt-16 text-12 text-[var(--van-primary-color)]">
+      {{ $t('login.sign-up') }}
+    </div>
+
+    <div class="mt-16 text-12 text-[var(--van-primary-color)]">
+      {{ $t('login.forgot-password') }}
+    </div>
   </div>
 </template>
 

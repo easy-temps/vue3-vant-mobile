@@ -46,7 +46,9 @@
     "username": "Username",
     "password": "Password",
     "pleaseEnterUsername": "Please enter username",
-    "pleaseEnterPassword": "Please enter password"
+    "pleaseEnterPassword": "Please enter password",
+    "sign-up": "Click to sign up",
+    "forgot-password": "Forgot Password?"
   },
   "settings": {
     "logout": "Sign Out",

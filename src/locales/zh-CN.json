@@ -46,7 +46,9 @@
     "username": "请输入用户名",
     "password": "请输入密码",
     "pleaseEnterUsername": "请输入用户名",
-    "pleaseEnterPassword": "请输入密码"
+    "pleaseEnterPassword": "请输入密码",
+    "sign-up": "还没有账号？点击注册",
+    "forgot-password": "忘记密码？"
   },
   "settings": {
     "logout": "退出登录",
