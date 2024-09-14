@@ -13,7 +13,8 @@
     "login": "🔒 Login",
     "settings": "Settings",
     "basicSettings": "Basic Settings",
-    "exampleComponents": "Example components"
+    "exampleComponents": "Example components",
+    "forgot-password": "Forgot Password"
   },
   "mock": {
     "fromAsyncData": "Data from asynchronous requests",
@@ -43,12 +44,26 @@
   "login": {
     "login": "Sign In",
     "logout": "Sign Out",
-    "username": "Username",
+    "email": "Email",
     "password": "Password",
-    "pleaseEnterUsername": "Please enter username",
+    "pleaseEnterEmail;": "Please enter email",
     "pleaseEnterPassword": "Please enter password",
     "sign-up": "Click to sign up",
     "forgot-password": "Forgot Password?"
+  },
+  "forgot-password": {
+    "email": "Email",
+    "code": "Code",
+    "password": "Password",
+    "comfirmPassword": "Password again",
+    "pleaseEnterEmail": "Please enter email",
+    "pleaseEnterCode": "Please enter Code",
+    "pleaseEnterPassword": "Please enter password",
+    "pleaseEnterConfirmPassword": "Please enter password again",
+    "confirm": "Confirm",
+    "backToLogin": "Back to login",
+    "getCode": "Get code"
+
   },
   "settings": {
     "logout": "Sign Out",

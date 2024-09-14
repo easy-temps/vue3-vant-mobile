@@ -20,13 +20,13 @@ watch(
 )
 
 const postData = reactive({
-  username: '',
+  email: '',
   password: '',
 })
 
 const rules = reactive({
-  username: [
-    { required: true, message: t('login.pleaseEnterUsername') },
+  email: [
+    { required: true, message: t('login.pleaseEnterEmail') },
   ],
   password: [
     { required: true, message: t('login.pleaseEnterPassword') },
@@ -49,6 +49,10 @@ async function login(values: any) {
     loading.value = false
   }
 }
+
+function handleReset() {
+  router.push({ name: 'forgot-password' })
+}
 </script>
 
 <template>
@@ -58,24 +62,22 @@ async function login(values: any) {
     </div>
 
     <van-form :model="postData" :rules="rules" @submit="login">
-      <div class="overflow-hidden rounded">
+      <div class="overflow-hidden rounded-3xl">
         <van-field
-          v-model="postData.username"
-          :rules="rules.username"
-          name="username"
-          :placeholder="t('login.username')"
-          left-icon="contact"
+          v-model="postData.email"
+          :rules="rules.email"
+          name="email"
+          :placeholder="t('login.email')"
         />
       </div>
 
-      <div class="mt-16 overflow-hidden rounded">
+      <div class="mt-16 overflow-hidden rounded-3xl">
         <van-field
           v-model="postData.password"
           type="password"
           :rules="rules.password"
           name="password"
           :placeholder="t('login.password')"
-          left-icon="lock"
         />
       </div>
 
@@ -95,7 +97,7 @@ async function login(values: any) {
       {{ $t('login.sign-up') }}
     </div>
 
-    <div class="mt-16 text-12 text-[var(--van-primary-color)]">
+    <div class="mt-16 text-12 text-[var(--van-primary-color)]" @click="handleReset">
       {{ $t('login.forgot-password') }}
     </div>
   </div>

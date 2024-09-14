@@ -1,7 +1,7 @@
 import request from '@/utils/request'
 
 export interface LoginData {
-  username: string
+  email: string
   password: string
 }
 
@@ -13,7 +13,6 @@ export interface UserState {
   uid?: number
   name?: string
   avatar?: string
-  prose?: string
 }
 
 export function login(data: LoginData): Promise<any> {

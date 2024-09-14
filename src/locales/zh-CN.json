@@ -13,7 +13,8 @@
     "login": "🔒 用户登录",
     "settings": "设置",
     "basicSettings": "基本设置",
-    "exampleComponents": "示例组件"
+    "exampleComponents": "示例组件",
+    "forgot-password": "忘记密码"
   },
   "mock": {
     "fromAsyncData": "来自异步请求的数据",
@@ -43,12 +44,25 @@
   "login": {
     "login": "登录",
     "logout": "退出",
-    "username": "请输入用户名",
-    "password": "请输入密码",
-    "pleaseEnterUsername": "请输入用户名",
+    "email": "邮箱",
+    "password": "密码",
+    "pleaseEnterEmail": "请输入邮箱",
     "pleaseEnterPassword": "请输入密码",
     "sign-up": "还没有账号？点击注册",
     "forgot-password": "忘记密码？"
+  },
+  "forgot-password": {
+    "email": "邮箱",
+    "code": "验证码",
+    "password": "密码",
+    "comfirmPassword": "再次输入密码",
+    "pleaseEnterEmail": "请输入邮箱",
+    "pleaseEnterCode": "请输入验证码",
+    "pleaseEnterPassword": "请输入密码",
+    "pleaseEnterConfirmPassword": "请再次输入密码",
+    "confirm": "确认",
+    "backToLogin": "返回登录",
+    "getCode": "获取验证码"
   },
   "settings": {
     "logout": "退出登录",
