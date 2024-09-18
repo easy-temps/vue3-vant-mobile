@@ -1,4 +1,5 @@
 import { defineMock } from 'vite-plugin-mock-dev-server'
+import { builder } from '../util'
 
 export default defineMock([
   {
@@ -37,6 +38,14 @@ export default defineMock([
         code: 0,
         msg: 'success',
       }
+    },
+  },
+  {
+    url: '/api/user/email-code',
+    delay: 1000,
+    body: () => {
+      const code = '123456'
+      return builder(code)
     },
   },
 ])

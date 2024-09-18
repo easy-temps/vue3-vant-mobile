@@ -62,7 +62,9 @@
     "pleaseEnterConfirmPassword": "请再次输入密码",
     "confirm": "确认",
     "backToLogin": "返回登录",
-    "getCode": "获取验证码"
+    "getCode": "获取验证码",
+    "gettingCode": "获取中",
+    "sendCodeSuccess": "已发送，验证码为"
   },
   "settings": {
     "logout": "退出登录",

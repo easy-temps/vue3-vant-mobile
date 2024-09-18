@@ -62,7 +62,9 @@
     "pleaseEnterConfirmPassword": "Please enter password again",
     "confirm": "Confirm",
     "backToLogin": "Back to login",
-    "getCode": "Get code"
+    "getCode": "Get code",
+    "gettingCode": "Getting Code",
+    "sendCodeSuccess": "Sent, the code is"
 
   },
   "settings": {

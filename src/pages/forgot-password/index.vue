@@ -15,7 +15,7 @@ const postData = reactive({
 })
 
 const rules = reactive({
-  eamil: [
+  email: [
     { required: true, message: t('forgot-password.pleaseEnterEmail') },
   ],
   code: [
@@ -46,6 +46,27 @@ async function reset(values: any) {
   }
 }
 
+const isGettingCode = ref(false)
+
+const buttonText = computed(() => {
+  return isGettingCode.value ? t('forgot-password.gettingCode') : t('forgot-password.getCode')
+})
+
+async function getCode() {
+  if (!postData.email) {
+    showNotify({ type: 'warning', message: t('forgot-password.pleaseEnterEmail') })
+    return
+  }
+
+  isGettingCode.value = true
+  const res = await userStore.getCode()
+  if (res.code === 0) {
+    showNotify({ type: 'success', message: `${t('forgot-password.sendCodeSuccess')}: ${res.result}` })
+  }
+
+  isGettingCode.value = false
+}
+
 function handleBackLogin() {
   router.replace({ name: 'login' })
 }
@@ -56,8 +77,8 @@ function handleBackLogin() {
     <van-form :model="postData" :rules="rules" @submit="reset">
       <div class="overflow-hidden rounded-3xl">
         <van-field
-          v-model="postData.email"
-          :rules="rules.eamil"
+          v-model.trim="postData.email"
+          :rules="rules.email"
           name="email"
           :placeholder="t('forgot-password.email')"
         />
@@ -65,14 +86,14 @@ function handleBackLogin() {
 
       <div class="mt-16 overflow-hidden rounded-3xl">
         <van-field
-          v-model="postData.code"
+          v-model.trim="postData.code"
           :rules="rules.code"
           name="code"
           :placeholder="t('forgot-password.code')"
         >
           <template #button>
-            <van-button size="small" type="primary" plain>
-              {{ $t('forgot-password.getCode') }}
+            <van-button size="small" type="primary" plain @click="getCode">
+              {{ buttonText }}
             </van-button>
           </template>
         </van-field>
@@ -80,7 +101,7 @@ function handleBackLogin() {
 
       <div class="mt-16 overflow-hidden rounded-3xl">
         <van-field
-          v-model="postData.password"
+          v-model.trim="postData.password"
           type="password"
           :rules="rules.password"
           name="password"
@@ -90,7 +111,7 @@ function handleBackLogin() {
 
       <div class="mt-16 overflow-hidden rounded-3xl">
         <van-field
-          v-model="postData.confirmPassword"
+          v-model.trim="postData.confirmPassword"
           type="password"
           :rules="rules.confirmPassword"
           name="confirmPassword"
