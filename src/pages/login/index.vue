@@ -61,7 +61,7 @@ function handleReset() {
       <van-image :src="dark ? logoDark : logo" class="h-120 w-120" />
     </div>
 
-    <van-form :model="postData" :rules="rules" @submit="login">
+    <van-form :model="postData" :rules="rules" validate-trigger="onSubmit" @submit="login">
       <div class="overflow-hidden rounded-3xl">
         <van-field
           v-model="postData.email"

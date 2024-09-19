@@ -46,10 +46,10 @@
     "logout": "Sign Out",
     "email": "Email",
     "password": "Password",
-    "pleaseEnterEmail;": "Please enter email",
+    "pleaseEnterEmail": "Please enter email",
     "pleaseEnterPassword": "Please enter password",
     "sign-up": "Click to sign up",
-    "forgot-password": "Forgot Password?"
+    "forgot-password": "Forgot password?"
   },
   "forgot-password": {
     "email": "Email",
@@ -57,19 +57,20 @@
     "password": "Password",
     "comfirmPassword": "Password again",
     "pleaseEnterEmail": "Please enter email",
-    "pleaseEnterCode": "Please enter Code",
+    "pleaseEnterCode": "Please enter code",
     "pleaseEnterPassword": "Please enter password",
     "pleaseEnterConfirmPassword": "Please enter password again",
+    "passwordsDoNotMatch": "Passwords do not match",
     "confirm": "Confirm",
     "backToLogin": "Back to login",
     "getCode": "Get code",
-    "gettingCode": "Getting Code",
-    "sendCodeSuccess": "Sent, the code is"
-
+    "gettingCode": "Getting code",
+    "sendCodeSuccess": "Sent, the code is",
+    "passwordResetSuccee": "Password reset succeeded"
   },
   "settings": {
     "logout": "Sign Out",
-    "currentVersion": "Current version",
+    "currentVersion": "Current Version",
     "comfirmTitle": "Confirm Exit?"
   }
 }

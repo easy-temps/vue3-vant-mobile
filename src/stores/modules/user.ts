@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import type { LoginData, UserState } from '@/api/user'
-import { getEmailCode, getUserInfo, login as userLogin, logout as userLogout } from '@/api/user'
+import { getEmailCode, getUserInfo, resetPassword, login as userLogin, logout as userLogout } from '@/api/user'
 import { clearToken, setToken } from '@/utils/auth'
 
 const InitUserInfo = {
@@ -57,12 +57,21 @@ export const useUserStore = defineStore('user', () => {
     catch {}
   }
 
+  const reset = async () => {
+    try {
+      const data = await resetPassword()
+      return data
+    }
+    catch {}
+  }
+
   return {
     userInfo,
     info,
     login,
     logout,
     getCode,
+    reset,
   }
 }, {
   persist: true,

@@ -60,11 +60,13 @@
     "pleaseEnterCode": "请输入验证码",
     "pleaseEnterPassword": "请输入密码",
     "pleaseEnterConfirmPassword": "请再次输入密码",
+    "passwordsDoNotMatch": "两次输入的密码不一致",
     "confirm": "确认",
     "backToLogin": "返回登录",
     "getCode": "获取验证码",
     "gettingCode": "获取中",
-    "sendCodeSuccess": "已发送，验证码为"
+    "sendCodeSuccess": "已发送，验证码为",
+    "passwordResetSuccee": "密码重置成功"
   },
   "settings": {
     "logout": "退出登录",

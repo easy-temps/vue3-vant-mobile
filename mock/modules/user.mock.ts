@@ -48,4 +48,12 @@ export default defineMock([
       return builder(code)
     },
   },
+  {
+    url: '/api/user/reset-password',
+    delay: 1000,
+    body: () => {
+      const res = true
+      return builder(res)
+    },
+  },
 ])

@@ -30,3 +30,7 @@ export function getUserInfo() {
 export function getEmailCode(): Promise<any> {
   return request.get('/user/email-code')
 }
+
+export function resetPassword(): Promise<any> {
+  return request.post('/user/reset-password')
+}

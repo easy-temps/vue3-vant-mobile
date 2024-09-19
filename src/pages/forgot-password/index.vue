@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { type RouteMap, useRouter } from 'vue-router'
+import { useRouter } from 'vue-router'
+import type { FieldRule } from 'vant'
 import { useUserStore } from '@/stores'
 
 const { t } = useI18n()
@@ -14,6 +15,8 @@ const postData = reactive({
   confirmPassword: '',
 })
 
+const validatorPassword = (val: string) => val === postData.password
+
 const rules = reactive({
   email: [
     { required: true, message: t('forgot-password.pleaseEnterEmail') },
@@ -26,20 +29,20 @@ const rules = reactive({
   ],
   confirmPassword: [
     { required: true, message: t('forgot-password.pleaseEnterConfirmPassword') },
-  ],
+    { required: true, validator: validatorPassword, message: t('forgot-password.passwordsDoNotMatch') },
+  ] as FieldRule[],
 })
 
-async function reset(values: any) {
+async function reset() {
   try {
     loading.value = true
-    await userStore.login({ ...postData, ...values })
-    const { redirect, ...othersQuery } = router.currentRoute.value.query
-    router.push({
-      name: (redirect as keyof RouteMap) || 'home',
-      query: {
-        ...othersQuery,
-      },
-    })
+
+    const res = await userStore.reset()
+
+    if (res.code === 0) {
+      showNotify({ type: 'success', message: t('forgot-password.passwordResetSuccee') })
+      router.push({ name: 'login' })
+    }
   }
   finally {
     loading.value = false
@@ -68,13 +71,13 @@ async function getCode() {
 }
 
 function handleBackLogin() {
-  router.replace({ name: 'login' })
+  router.push({ name: 'login' })
 }
 </script>
 
 <template>
   <div class="m-x-a w-7xl text-center">
-    <van-form :model="postData" :rules="rules" @submit="reset">
+    <van-form :model="postData" :rules="rules" validate-trigger="onSubmit" @submit="reset">
       <div class="overflow-hidden rounded-3xl">
         <van-field
           v-model.trim="postData.email"
