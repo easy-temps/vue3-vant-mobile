@@ -1,7 +1,15 @@
 import { defineStore } from 'pinia'
 import type { LoginData, UserState } from '@/api/user'
-import { getEmailCode, getUserInfo, resetPassword, login as userLogin, logout as userLogout } from '@/api/user'
 import { clearToken, setToken } from '@/utils/auth'
+
+import {
+  getEmailCode,
+  getUserInfo,
+  resetPassword,
+  login as userLogin,
+  logout as userLogout,
+  register as userRegister,
+} from '@/api/user'
 
 const InitUserInfo = {
   uid: 0,
@@ -65,6 +73,14 @@ export const useUserStore = defineStore('user', () => {
     catch {}
   }
 
+  const register = async () => {
+    try {
+      const data = await userRegister()
+      return data
+    }
+    catch {}
+  }
+
   return {
     userInfo,
     info,
@@ -72,6 +88,7 @@ export const useUserStore = defineStore('user', () => {
     logout,
     getCode,
     reset,
+    register,
   }
 }, {
   persist: true,

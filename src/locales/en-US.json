@@ -11,6 +11,7 @@
     "unocssExample": "🎨 Unocss example",
     "keepAlive": "🧡 KeepAlive Demo",
     "login": "🔒 Login",
+    "register": "Register",
     "settings": "Settings",
     "basicSettings": "Basic Settings",
     "exampleComponents": "Example components",
@@ -66,7 +67,26 @@
     "getCode": "Get code",
     "gettingCode": "Getting code",
     "sendCodeSuccess": "Sent, the code is",
-    "passwordResetSuccee": "Password reset succeeded"
+    "passwordResetSuccess": "Password reset succeeded"
+  },
+  "register": {
+    "email": "Email",
+    "code": "Code",
+    "nickname": "Nickname",
+    "password": "Password",
+    "comfirmPassword": "Password again",
+    "pleaseEnterEmail": "Please enter email",
+    "pleaseEnterCode": "Please enter code",
+    "pleaseEnterNickname": "Please enter nickname",
+    "pleaseEnterPassword": "Please enter password",
+    "pleaseEnterConfirmPassword": "Please enter password again",
+    "passwordsDoNotMatch": "Passwords do not match",
+    "confirm": "Confirm",
+    "backToLogin": "Back to login",
+    "getCode": "Get code",
+    "gettingCode": "Getting code",
+    "sendCodeSuccess": "Sent, the code is",
+    "registerSuccess": "Register succeeded"
   },
   "settings": {
     "logout": "Sign Out",

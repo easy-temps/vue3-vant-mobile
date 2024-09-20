@@ -11,6 +11,7 @@ const loading = ref(false)
 const postData = reactive({
   email: '',
   code: '',
+  nickname: '',
   password: '',
   confirmPassword: '',
 })
@@ -19,28 +20,31 @@ const validatorPassword = (val: string) => val === postData.password
 
 const rules = reactive({
   email: [
-    { required: true, message: t('forgot-password.pleaseEnterEmail') },
+    { required: true, message: t('register.pleaseEnterEmail') },
   ],
   code: [
-    { required: true, message: t('forgot-password.pleaseEnterCode') },
+    { required: true, message: t('register.pleaseEnterCode') },
+  ],
+  nickname: [
+    { required: true, message: t('register.pleaseEnterNickname') },
   ],
   password: [
-    { required: true, message: t('forgot-password.pleaseEnterPassword') },
+    { required: true, message: t('register.pleaseEnterPassword') },
   ],
   confirmPassword: [
-    { required: true, message: t('forgot-password.pleaseEnterConfirmPassword') },
-    { required: true, validator: validatorPassword, message: t('forgot-password.passwordsDoNotMatch') },
+    { required: true, message: t('register.pleaseEnterConfirmPassword') },
+    { required: true, validator: validatorPassword, message: t('register.passwordsDoNotMatch') },
   ] as FieldRule[],
 })
 
-async function reset() {
+async function register() {
   try {
     loading.value = true
 
-    const res = await userStore.reset()
+    const res = await userStore.register()
 
     if (res.code === 0) {
-      showNotify({ type: 'success', message: t('forgot-password.passwordResetSuccess') })
+      showNotify({ type: 'success', message: t('register.registerSuccess') })
       router.push({ name: 'login' })
     }
   }
@@ -52,19 +56,19 @@ async function reset() {
 const isGettingCode = ref(false)
 
 const buttonText = computed(() => {
-  return isGettingCode.value ? t('forgot-password.gettingCode') : t('forgot-password.getCode')
+  return isGettingCode.value ? t('register.gettingCode') : t('register.getCode')
 })
 
 async function getCode() {
   if (!postData.email) {
-    showNotify({ type: 'warning', message: t('forgot-password.pleaseEnterEmail') })
+    showNotify({ type: 'warning', message: t('register.pleaseEnterEmail') })
     return
   }
 
   isGettingCode.value = true
   const res = await userStore.getCode()
   if (res.code === 0) {
-    showNotify({ type: 'success', message: `${t('forgot-password.sendCodeSuccess')}: ${res.result}` })
+    showNotify({ type: 'success', message: `${t('register.sendCodeSuccess')}: ${res.result}` })
   }
 
   isGettingCode.value = false
@@ -77,13 +81,13 @@ function handleBackLogin() {
 
 <template>
   <div class="m-x-a w-7xl text-center">
-    <van-form :model="postData" :rules="rules" validate-trigger="onSubmit" @submit="reset">
+    <van-form :model="postData" :rules="rules" validate-trigger="onSubmit" @submit="register">
       <div class="overflow-hidden rounded-3xl">
         <van-field
           v-model.trim="postData.email"
           :rules="rules.email"
           name="email"
-          :placeholder="t('forgot-password.email')"
+          :placeholder="t('register.email')"
         />
       </div>
 
@@ -92,7 +96,7 @@ function handleBackLogin() {
           v-model.trim="postData.code"
           :rules="rules.code"
           name="code"
-          :placeholder="t('forgot-password.code')"
+          :placeholder="t('register.code')"
         >
           <template #button>
             <van-button size="small" type="primary" plain @click="getCode">
@@ -104,11 +108,20 @@ function handleBackLogin() {
 
       <div class="mt-16 overflow-hidden rounded-3xl">
         <van-field
+          v-model.trim="postData.nickname"
+          :rules="rules.nickname"
+          name="nickname"
+          :placeholder="t('register.nickname')"
+        />
+      </div>
+
+      <div class="mt-16 overflow-hidden rounded-3xl">
+        <van-field
           v-model.trim="postData.password"
           type="password"
           :rules="rules.password"
           name="password"
-          :placeholder="t('forgot-password.password')"
+          :placeholder="t('register.password')"
         />
       </div>
 
@@ -118,7 +131,7 @@ function handleBackLogin() {
           type="password"
           :rules="rules.confirmPassword"
           name="confirmPassword"
-          :placeholder="t('forgot-password.comfirmPassword')"
+          :placeholder="t('register.comfirmPassword')"
         />
       </div>
 
@@ -129,22 +142,22 @@ function handleBackLogin() {
           native-type="submit"
           round block
         >
-          {{ $t('forgot-password.confirm') }}
+          {{ $t('register.confirm') }}
         </van-button>
       </div>
     </van-form>
 
     <div class="mt-16 text-12 text-[var(--van-primary-color)]" @click="handleBackLogin">
-      {{ $t('forgot-password.backToLogin') }}
+      {{ $t('register.backToLogin') }}
     </div>
   </div>
 </template>
 
 <route lang="json">
 {
-  "name": "forgot-password",
+  "name": "register",
   "meta": {
-    "i18n": "menus.forgot-password"
+    "i18n": "menus.register"
   }
 }
 </route>

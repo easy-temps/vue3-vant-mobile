@@ -56,4 +56,12 @@ export default defineMock([
       return builder(res)
     },
   },
+  {
+    url: '/api/user/register',
+    delay: 1000,
+    body: () => {
+      const res = true
+      return builder(res)
+    },
+  },
 ])

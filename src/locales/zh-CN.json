@@ -11,6 +11,7 @@
     "unocssExample": "🎨 Unocss 示例",
     "keepAlive": "🧡 KeepAlive 演示",
     "login": "🔒 用户登录",
+    "register": "用户注册",
     "settings": "设置",
     "basicSettings": "基本设置",
     "exampleComponents": "示例组件",
@@ -66,7 +67,26 @@
     "getCode": "获取验证码",
     "gettingCode": "获取中",
     "sendCodeSuccess": "已发送，验证码为",
-    "passwordResetSuccee": "密码重置成功"
+    "passwordResetSuccess": "密码重置成功"
+  },
+  "register": {
+    "email": "邮箱",
+    "code": "验证码",
+    "nickname": "昵称",
+    "password": "密码",
+    "comfirmPassword": "再次输入密码",
+    "pleaseEnterEmail": "请输入邮箱",
+    "pleaseEnterCode": "请输入验证码",
+    "pleaseEnterNickname": "请输入昵称",
+    "pleaseEnterPassword": "请输入密码",
+    "pleaseEnterConfirmPassword": "请再次输入密码",
+    "passwordsDoNotMatch": "两次输入的密码不一致",
+    "confirm": "确认",
+    "backToLogin": "返回登录",
+    "getCode": "获取验证码",
+    "gettingCode": "获取中",
+    "sendCodeSuccess": "已发送，验证码为",
+    "registerSuccess": "注册成功"
   },
   "settings": {
     "logout": "退出登录",

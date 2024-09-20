@@ -53,6 +53,10 @@ async function login(values: any) {
 function handleReset() {
   router.push({ name: 'forgot-password' })
 }
+
+function handleRegister() {
+  router.push({ name: 'register' })
+}
 </script>
 
 <template>
@@ -93,7 +97,7 @@ function handleReset() {
       </div>
     </van-form>
 
-    <div class="mt-16 text-12 text-[var(--van-primary-color)]">
+    <div class="mt-16 text-12 text-[var(--van-primary-color)]" @click="handleRegister">
       {{ $t('login.sign-up') }}
     </div>
 

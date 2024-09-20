@@ -34,3 +34,7 @@ export function getEmailCode(): Promise<any> {
 export function resetPassword(): Promise<any> {
   return request.post('/user/reset-password')
 }
+
+export function register(): Promise<any> {
+  return request.post('/user/register')
+}
