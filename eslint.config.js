@@ -1,16 +1,30 @@
 import antfu from '@antfu/eslint-config'
 
-export default antfu({
-  // enable UnoCSS support
-  // https://unocss.dev/integrations/vscode
-  unocss: true,
+export default antfu(
+  {
+    vue: true,
+    typescript: true,
 
-  formatters: {
-    css: true,
+    // enable UnoCSS support
+    // https://unocss.dev/integrations/vscode
+    unocss: true,
+
+    formatters: {
+      css: true,
+    },
+
   },
-
-  ignores: [
-    '.github/**',
-    'scripts/**',
-  ],
-})
+  {
+    rules: {
+      'perfectionist/sort-imports': 'off',
+      'perfectionist/sort-exports': 'off',
+      'perfectionist/sort-named-exports': 'off',
+    },
+  },
+  {
+    ignores: [
+      '.github/**',
+      'scripts/**',
+    ],
+  },
+)
