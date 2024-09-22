@@ -16,6 +16,7 @@ const include = [
   'vant/es/image/style/index',
   'vant/es/form/style/index',
   'vant/es/field/style/index',
+  'vant/es/notify/style/index',
 ]
 
 const exclude = [
