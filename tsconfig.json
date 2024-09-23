@@ -8,7 +8,8 @@
     "module": "esnext",
     "moduleResolution": "Bundler",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "~root/*": ["./*"]
     },
     "types": [
       "node",

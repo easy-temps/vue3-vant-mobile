@@ -18,12 +18,9 @@ const title = computed(() => {
   return route.meta.i18n ? t(route.meta.i18n) : (route.meta.title || '')
 })
 
-const showLeftArrow = computed(() => {
-  if (!route.meta)
-    return false
+const routeWhiteList = ['home', 'profile']
 
-  return route.meta.level === 2
-})
+const showLeftArrow = computed(() => routeWhiteList.includes(route.name))
 </script>
 
 <template>
@@ -32,7 +29,7 @@ const showLeftArrow = computed(() => {
     :fixed="true"
     clickable
     placeholder
-    :left-arrow="showLeftArrow"
+    :left-arrow="!showLeftArrow"
     @click-left="onBack"
   />
 </template>

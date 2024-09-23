@@ -15,9 +15,7 @@ html.dark {
 }
 
 #app {
-  height: 100vh;
-  // Dynamic Viewport Units
-  height: 100dvh;
+  height: 100%;
   position: relative;
   overflow-x: hidden;
 }
@@ -25,36 +23,4 @@ html.dark {
 ::-webkit-scrollbar {
   width: 0;
   background: transparent;
-}
-
-.slide-fadein-left-enter-active,
-.slide-fadein-left-leave-active,
-.slide-fadein-right-enter-active,
-.slide-fadein-right-leave-active {
-  transition:
-    opacity 0.3s,
-    transform 0.4s,
-    -webkit-transform 0.4s;
-  position: absolute;
-  left: 0;
-  width: 100%;
-}
-
-.slide-fadein-left-enter-from,
-.slide-fadein-right-leave-to {
-  transform: translateX(20px);
-  opacity: 0;
-}
-
-.slide-fadein-left-leave-to,
-.slide-fadein-right-enter-from {
-  transform: translateX(-20px);
-  opacity: 0;
-}
-
-.absolute-layout-enter-active,
-.absolute-layout-leave-active {
-  position: absolute;
-  left: 0;
-  width: 100%;
 }

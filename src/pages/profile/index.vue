@@ -1,20 +1,47 @@
 <script setup lang="ts">
-definePage({
-  name: 'profile',
-  meta: {
-    title: '个人中心',
-    i18n: 'menus.profile',
-    level: 1,
-  },
-})
+import router from '@/router'
+import { useUserStore } from '@/stores'
+import defaultAvatar from '@/assets/images/default-avatar.svg'
 
-const { t } = useI18n()
+const userStore = useUserStore()
+const userInfo = computed(() => userStore.userInfo)
+const isLogin = computed(() => !!userInfo.value.uid)
+
+function login() {
+  if (isLogin.value)
+    return
+
+  router.push({ name: 'login', query: { redirect: 'profile' } })
+}
 </script>
 
 <template>
-  <div class="p-16 pt-46">
-    <div mx-auto pt-15 text-center text-16 text-dark dark:text-white>
-      {{ t('profile.placeholder') }}
-    </div>
+  <div>
+    <VanCellGroup :inset="true">
+      <van-cell center :is-link="!isLogin" @click="login">
+        <template #title>
+          <van-image :src="userInfo.avatar || defaultAvatar" round class="h-56 w-56" />
+        </template>
+
+        <template #value>
+          <span v-if="isLogin">{{ userInfo.name }}</span>
+          <span v-else>{{ $t('profile.login') }}</span>
+        </template>
+      </van-cell>
+    </VanCellGroup>
+
+    <VanCellGroup :inset="true" class="!mt-16">
+      <van-cell :title="$t('profile.settings')" icon="setting-o" is-link to="/settings" />
+    </VanCellGroup>
   </div>
 </template>
+
+<route lang="json">
+{
+  "name": "profile",
+  "meta": {
+    "title": "个人中心",
+    "i18n": "menus.profile"
+  }
+}
+</route>

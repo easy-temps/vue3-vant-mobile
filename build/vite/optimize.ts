@@ -1,10 +1,8 @@
 const include = [
   'axios',
-  'store',
   'echarts',
   'lodash-es',
   'resize-detector',
-  'store/plugins/expire',
   'vant/es/cell-group/style/index',
   'vant/es/popup/style/index',
   'vant/es/picker/style/index',
@@ -15,6 +13,10 @@ const include = [
   'vant/es/empty/style/index',
   'vant/es/icon/style/index',
   'vant/es/stepper/style/index',
+  'vant/es/image/style/index',
+  'vant/es/form/style/index',
+  'vant/es/field/style/index',
+  'vant/es/notify/style/index',
 ]
 
 const exclude = [

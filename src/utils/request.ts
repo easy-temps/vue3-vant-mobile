@@ -1,7 +1,6 @@
 import type { AxiosError, InternalAxiosRequestConfig } from 'axios'
 import axios from 'axios'
 import { showNotify } from 'vant'
-import { localStorage } from '@/utils/local-storage'
 import { STORAGE_TOKEN_KEY } from '@/stores/mutation-type'
 
 // 这里是用于设定请求后端时，所用的 Token KEY
@@ -49,7 +48,7 @@ function errorHandler(error: RequestError): Promise<any> {
 
 // 请求拦截器
 function requestHandler(config: InternalAxiosRequestConfig): InternalAxiosRequestConfig | Promise<InternalAxiosRequestConfig> {
-  const savedToken = localStorage.get(STORAGE_TOKEN_KEY)
+  const savedToken = localStorage.getItem(STORAGE_TOKEN_KEY)
   // 如果 token 存在
   // 让每个请求携带自定义 token, 请根据实际情况修改
   if (savedToken)
