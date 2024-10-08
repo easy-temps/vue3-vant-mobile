@@ -49,6 +49,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
               'van-tabbar',
               'van-popup',
             ],
+            border: true,
           }),
         ],
       },
