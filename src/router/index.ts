@@ -30,19 +30,10 @@ router.beforeEach(async (to: EnhancedRouteLocation, _from, next) => {
   // Route cache
   routeCacheStore.addRoute(to)
 
-  if (isLogin()) {
-    if (!userStore.userInfo?.uid) {
-      await userStore.info()
-      next()
-    }
+  if (isLogin() && !userStore.userInfo?.uid)
+    await userStore.info()
 
-    else {
-      next()
-    }
-  }
-  else {
-    next()
-  }
+  next()
 })
 
 router.afterEach(() => {
