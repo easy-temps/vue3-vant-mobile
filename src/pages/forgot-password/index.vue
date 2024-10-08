@@ -2,6 +2,7 @@
 import { useRouter } from 'vue-router'
 import type { FieldRule } from 'vant'
 import { useUserStore } from '@/stores'
+import vw from '@/utils/inline-px-to-vw'
 
 const { t } = useI18n()
 const router = useRouter()
@@ -69,10 +70,6 @@ async function getCode() {
 
   isGettingCode.value = false
 }
-
-function handleBackLogin() {
-  router.push({ name: 'login' })
-}
 </script>
 
 <template>
@@ -134,9 +131,9 @@ function handleBackLogin() {
       </div>
     </van-form>
 
-    <div class="mt-16 text-12 text-[var(--van-primary-color)]" @click="handleBackLogin">
+    <GhostButton to="login" block :style="{ 'margin-top': vw(8) }">
       {{ $t('forgot-password.backToLogin') }}
-    </div>
+    </GhostButton>
   </div>
 </template>
 

@@ -4,6 +4,7 @@ import { useUserStore } from '@/stores'
 
 import logo from '~/images/logo.svg'
 import logoDark from '~/images/logo-dark.svg'
+import vw from '@/utils/inline-px-to-vw'
 
 const { t } = useI18n()
 const router = useRouter()
@@ -49,20 +50,12 @@ async function login(values: any) {
     loading.value = false
   }
 }
-
-function handleReset() {
-  router.push({ name: 'forgot-password' })
-}
-
-function handleRegister() {
-  router.push({ name: 'register' })
-}
 </script>
 
 <template>
   <div class="m-x-a w-7xl text-center">
     <div class="mb-32 mt-20">
-      <van-image :src="dark ? logoDark : logo" class="h-120 w-120" />
+      <van-image :src="dark ? logoDark : logo" class="h-120 w-120" alt="brand logo" />
     </div>
 
     <van-form :model="postData" :rules="rules" validate-trigger="onSubmit" @submit="login">
@@ -97,13 +90,13 @@ function handleRegister() {
       </div>
     </van-form>
 
-    <div class="mt-16 text-12 text-[var(--van-primary-color)]" @click="handleRegister">
+    <GhostButton block to="register" :style="{ 'margin-top': vw(18) }">
       {{ $t('login.sign-up') }}
-    </div>
+    </GhostButton>
 
-    <div class="mt-16 text-12 text-[var(--van-primary-color)]" @click="handleReset">
+    <GhostButton block to="forgot-password">
       {{ $t('login.forgot-password') }}
-    </div>
+    </GhostButton>
   </div>
 </template>
 
