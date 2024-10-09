@@ -21,16 +21,11 @@ export const languageColumns: PickerColumn = [
 /** 获取当前语言对应的语言包名称 */
 function getI18nLocale() {
   const storedLocale = localStorage.getItem('language') || navigator.language
-  let locale = FALLBACK_LOCALE // 默认语言包
-  for (const l of languageColumns) {
-    const value = l.value as string
-    if (value === storedLocale // 存在当前语言的语言包
-      || value.indexOf(storedLocale) === 0 // 存在当前语言的任意地区的语言包
-    ) {
-      locale = value
-      break
-    }
-  }
+
+  const langs = languageColumns.map(v => v.value as string)
+  const foundLocale = langs.find(v => v === storedLocale || v.indexOf(storedLocale) === 0) // 存在当前语言的语言包 或 存在当前语言的任意地区的语言包
+  const locale = foundLocale || FALLBACK_LOCALE // 若未找到，则使用 默认语言包
+
   document.querySelector('html').setAttribute('lang', locale)
   return locale
 }
