@@ -13,7 +13,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
 
   return {
     base: env.VITE_APP_PUBLIC_PATH,
-    plugins: createVitePlugins(),
+    plugins: createVitePlugins(mode),
 
     server: {
       host: true,
@@ -58,6 +58,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
     build: {
       cssCodeSplit: false,
       chunkSizeWarningLimit: 2048,
+      outDir: env.VITE_APP_OUT_DIR || 'dist',
     },
 
     optimizeDeps: { include, exclude },

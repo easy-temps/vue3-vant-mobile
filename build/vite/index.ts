@@ -1,5 +1,6 @@
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import process from 'node:process'
 import { unheadVueComposablesImports } from '@unhead/vue'
 import legacy from '@vitejs/plugin-legacy'
 import vue from '@vitejs/plugin-vue'
@@ -15,8 +16,11 @@ import Sitemap from 'vite-plugin-sitemap'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import { createViteVConsole } from './vconsole'
+import { loadEnv } from 'vite'
 
-export function createVitePlugins() {
+export function createVitePlugins(mode: string) {
+  const env = loadEnv(mode, process.cwd())
+
   return [
     // https://github.com/posva/unplugin-vue-router
     VueRouter({
@@ -28,7 +32,9 @@ export function createVitePlugins() {
     vue(),
 
     // https://github.com/jbaubree/vite-plugin-sitemap
-    Sitemap(),
+    Sitemap({
+      outDir: env.VITE_APP_OUT_DIR || 'dist',
+    }),
 
     // https://github.com/pengzhanbo/vite-plugin-mock-dev-server
     mockDevServerPlugin(),
