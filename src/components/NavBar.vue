@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { routeWhiteList } from '@/config/routes'
+
 const route = useRoute()
 const router = useRouter()
 
@@ -18,9 +20,7 @@ const title = computed(() => {
   return route.meta.i18n ? t(route.meta.i18n) : (route.meta.title || '')
 })
 
-const routeWhiteList = ['home', 'profile']
-
-const showLeftArrow = computed(() => routeWhiteList.includes(route.name))
+const showLeftArrow = computed(() => route.name && routeWhiteList.includes(route.name))
 </script>
 
 <template>

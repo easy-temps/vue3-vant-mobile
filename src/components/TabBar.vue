@@ -1,11 +1,11 @@
 <script setup lang="ts">
+import { routeWhiteList } from '@/config/routes'
+
 const { t } = useI18n()
 const active = ref(0)
 const route = useRoute()
 
-const routeWhiteList = ['home', 'profile']
-
-const show = computed(() => routeWhiteList.includes(route.name))
+const show = computed(() => route.name && routeWhiteList.includes(route.name))
 </script>
 
 <template>
