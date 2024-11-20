@@ -4,6 +4,7 @@
     "antfu.unocss",
     "antfu.goto-alias",
     "lokalise.i18n-ally",
-    "antfu.iconify"
+    "antfu.iconify",
+    "antfu.file-nesting"
   ]
 }
