@@ -150,11 +150,11 @@ async function getCode() {
   </div>
 </template>
 
-<route lang="json">
+<route lang="json5">
 {
-  "name": "register",
-  "meta": {
-    "i18n": "menus.register"
-  }
+  name: 'register',
+  meta: {
+    i18n: 'menus.register'
+  },
 }
 </route>

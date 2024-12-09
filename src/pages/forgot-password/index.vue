@@ -137,11 +137,11 @@ async function getCode() {
   </div>
 </template>
 
-<route lang="json">
+<route lang="json5">
 {
-  "name": "forgot-password",
-  "meta": {
-    "i18n": "menus.forgot-password"
-  }
+  name: 'forgot-password',
+  meta: {
+    i18n: 'menus.forgot-password'
+  },
 }
 </route>

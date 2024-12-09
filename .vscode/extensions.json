@@ -3,8 +3,10 @@
     "Vue.volar",
     "antfu.unocss",
     "antfu.goto-alias",
-    "lokalise.i18n-ally",
     "antfu.iconify",
-    "antfu.file-nesting"
+    "antfu.file-nesting",
+    "lokalise.i18n-ally",
+    "blueglassblock.better-json5",
+    "dbaeumer.vscode-eslint"
   ]
 }

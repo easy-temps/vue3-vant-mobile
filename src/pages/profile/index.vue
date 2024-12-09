@@ -36,12 +36,12 @@ function login() {
   </div>
 </template>
 
-<route lang="json">
+<route lang="json5">
 {
-  "name": "profile",
-  "meta": {
-    "title": "个人中心",
-    "i18n": "menus.profile"
-  }
+  name: 'profile',
+  meta: {
+    title: '个人中心',
+    i18n: 'menus.profile'
+  },
 }
 </route>

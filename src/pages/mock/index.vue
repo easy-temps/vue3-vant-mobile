@@ -33,13 +33,13 @@ function pull() {
   </van-space>
 </template>
 
-<route lang="json">
+<route lang="json5">
 {
-  "name": "mock",
-  "meta": {
-    "title": "💿 Mock 指南",
-    "i18n": "menus.mockGuide"
-  }
+  name: 'mock',
+  meta: {
+    title: '💿 Mock 指南',
+    i18n: 'menus.mockGuide'
+  },
 }
 </route>
 

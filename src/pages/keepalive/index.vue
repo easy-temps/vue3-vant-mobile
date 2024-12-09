@@ -11,13 +11,13 @@ const value = ref(1)
   <van-stepper v-model="value" />
 </template>
 
-<route lang="json">
+<route lang="json5">
 {
-  "name": "KeepAlive",
-  "meta": {
-    "title": "🧡 KeepAlive",
-    "i18n": "menus.keepAlive",
-    "keepAlive": true
-  }
+  name: 'KeepAlive',
+  meta: {
+    title: '🧡 KeepAlive',
+    i18n: 'menus.keepAlive',
+    keepAlive: true
+  },
 }
 </route>

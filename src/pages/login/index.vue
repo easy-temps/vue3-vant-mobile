@@ -100,11 +100,11 @@ async function login(values: any) {
   </div>
 </template>
 
-<route lang="json">
+<route lang="json5">
 {
-  "name": "login",
-  "meta": {
-    "i18n": "menus.login"
-  }
+  name: 'login',
+  meta: {
+    i18n: 'menus.login'
+  },
 }
 </route>

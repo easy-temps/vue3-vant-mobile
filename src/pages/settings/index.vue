@@ -38,12 +38,12 @@ function Logout() {
 }
 </style>
 
-<route lang="json">
+<route lang="json5">
 {
-  "name": "settings",
-  "meta": {
-    "title": "我的设置",
-    "i18n": "menus.settings"
-  }
+  name: 'settings',
+  meta: {
+    title: '我的设置',
+    i18n: 'menus.settings'
+  },
 }
 </route>
