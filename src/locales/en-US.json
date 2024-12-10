@@ -15,7 +15,19 @@
     "settings": "Settings",
     "basicSettings": "Basic Settings",
     "exampleComponents": "Example components",
-    "forgot-password": "Forgot Password"
+    "forgot-password": "Forgot Password",
+    "prompt": "Prompt",
+    "adaptation-info": "Screen adaptation is implemented using {min} and {max}. If style issues occur due to compatibility problems, open the vite.config.ts file, remove the {option} option, and disable desktop adaptation.",
+    "compatibility-info": "If you need to meet both compatibility and desktop adaptation requirements, please refer to the {documentation} for detailed information.",
+    "doc": "documentation",
+    "browser-support": {
+      "min-max-clamp": "The current browser is {compat_min} with {min}, {max}, and {clamp}.",
+      "calc": "The current browser is {compat_calc} with {calc}.",
+      "vw": "The current browser is {compat_vw} with {vw}.",
+      "compat": "compatible",
+      "not-compat": "not compatible"
+    },
+    "consider-compatibility": "Please consider whether the actual deployment scenario of the application requires compatibility adjustments."
   },
   "mock": {
     "fromAsyncData": "Data from asynchronous requests",

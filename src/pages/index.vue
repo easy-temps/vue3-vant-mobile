@@ -62,6 +62,10 @@ const menuItems = computed(() => ([
     </template>
   </VanCellGroup>
 
+  <VanCellGroup :title="t('menus.prompt')" :inset="true">
+    <Notice />
+  </VanCellGroup>
+
   <van-popup v-model:show="showLanguagePicker" position="bottom">
     <van-picker
       v-model="languageValues"
