@@ -3,67 +3,66 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <van-notice-bar
+  <van-cell
     class="notice"
-    wrapable
-    background="white"
-    color="#323233"
   >
-    <i18n-t keypath="menus.adaptation-info" tag="p">
-      <template #min>
-        <code>min()</code>
-      </template>
-      <template #max>
-        <code>max()</code>
-      </template>
-      <template #option>
-        <code>maxDisplayWidth</code>
-      </template>
-    </i18n-t>
-
-    <i18n-t keypath="menus.compatibility-info" tag="p">
-      <template #documentation>
-        <a target="_blank" href="https://easy-temps.github.io/easy-docs/vue3-vant-mobile/browser-adaptation">{{ t("menus.doc") }}</a>
-      </template>
-    </i18n-t>
-
-    <ul>
-      <i18n-t keypath="menus.browser-support.min-max-clamp" tag="li">
-        <template #compat_min>
-          <span class="yes-min">{{ t("menus.browser-support.compat") }}</span><span class="no-min">{{ t("menus.browser-support.not-compat") }}</span>
-        </template>
+    <template #title>
+      <i18n-t keypath="menus.adaptation-info" tag="p">
         <template #min>
           <code>min()</code>
         </template>
         <template #max>
           <code>max()</code>
         </template>
-        <template #clamp>
-          <code>clamp()</code>
+        <template #option>
+          <code>maxDisplayWidth</code>
         </template>
       </i18n-t>
-      <i18n-t keypath="menus.browser-support.calc" tag="li">
-        <template #compat_calc>
-          <span class="yes-calc">{{ t("menus.browser-support.compat") }}</span><span class="no-calc">{{ t("menus.browser-support.not-compat") }}</span>
-        </template>
-        <template #calc>
-          <code>calc()</code>
-        </template>
-      </i18n-t>
-      <i18n-t keypath="menus.browser-support.vw" tag="li">
-        <template #compat_vw>
-          <span class="yes-vw">{{ t("menus.browser-support.compat") }}</span><span class="no-vw">{{ t("menus.browser-support.not-compat") }}</span>
-        </template>
-        <template #vw>
-          <code>vw</code>
-        </template>
-      </i18n-t>
-    </ul>
 
-    <p class="show">
-      {{ t('menus.consider-compatibility') }}
-    </p>
-  </van-notice-bar>
+      <i18n-t keypath="menus.compatibility-info" tag="p">
+        <template #documentation>
+          <a target="_blank" href="https://easy-temps.github.io/easy-docs/vue3-vant-mobile/browser-adaptation">{{ t("menus.doc") }}</a>
+        </template>
+      </i18n-t>
+
+      <ul>
+        <i18n-t keypath="menus.browser-support.min-max-clamp" tag="li">
+          <template #compat_min>
+            <span class="yes-min">{{ t("menus.browser-support.compat") }}</span><span class="no-min">{{ t("menus.browser-support.not-compat") }}</span>
+          </template>
+          <template #min>
+            <code>min()</code>
+          </template>
+          <template #max>
+            <code>max()</code>
+          </template>
+          <template #clamp>
+            <code>clamp()</code>
+          </template>
+        </i18n-t>
+        <i18n-t keypath="menus.browser-support.calc" tag="li">
+          <template #compat_calc>
+            <span class="yes-calc">{{ t("menus.browser-support.compat") }}</span><span class="no-calc">{{ t("menus.browser-support.not-compat") }}</span>
+          </template>
+          <template #calc>
+            <code>calc()</code>
+          </template>
+        </i18n-t>
+        <i18n-t keypath="menus.browser-support.vw" tag="li">
+          <template #compat_vw>
+            <span class="yes-vw">{{ t("menus.browser-support.compat") }}</span><span class="no-vw">{{ t("menus.browser-support.not-compat") }}</span>
+          </template>
+          <template #vw>
+            <code>vw</code>
+          </template>
+        </i18n-t>
+      </ul>
+
+      <p class="show">
+        {{ t('menus.consider-compatibility') }}
+      </p>
+    </template>
+  </van-cell>
 </template>
 
 <style scoped>
