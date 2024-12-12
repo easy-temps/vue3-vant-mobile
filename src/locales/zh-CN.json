@@ -15,19 +15,7 @@
     "settings": "设置",
     "basicSettings": "基本设置",
     "exampleComponents": "示例组件",
-    "forgot-password": "忘记密码",
-    "prompt": "提示",
-    "adaptation-info": "屏幕适配通过 {min} 和 {max} 实现，若兼容性导致了样式错乱，请打开 vite.config.ts 文件，删除 {option} 选项，关闭桌面端适配。",
-    "compatibility-info": "若需同时满足兼容性和桌面端适配，请查看{documentation}了解详细信息。",
-    "doc": "文档",
-    "browser-support": {
-      "min-max-clamp": "当前浏览器{compat_min} {min}、{max} 和 {clamp}。",
-      "calc": "当前浏览器{compat_calc} {calc}。",
-      "vw": "当前浏览器{compat_vw} {vw}。",
-      "compat": "已兼容",
-      "not-compat": "未兼容"
-    },
-    "consider-compatibility": "请考虑应用的真实投放场景是否需要考虑兼容性。"
+    "forgot-password": "忘记密码"
   },
   "mock": {
     "fromAsyncData": "来自异步请求的数据",
