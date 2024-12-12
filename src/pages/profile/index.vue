@@ -32,6 +32,7 @@ function login() {
 
     <VanCellGroup :inset="true" class="!mt-16">
       <van-cell :title="$t('profile.settings')" icon="setting-o" is-link to="/settings" />
+      <van-cell :title="$t('profile.doc')" icon="description-o" is-link url="https://easy-temps.github.io/easy-docs/vue3-vant-mobile/" />
     </VanCellGroup>
   </div>
 </template>

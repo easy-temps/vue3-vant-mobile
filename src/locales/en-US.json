@@ -37,7 +37,8 @@
   },
   "profile": {
     "login": "Login",
-    "settings": "Settings"
+    "settings": "Settings",
+    "doc": "documentation"
   },
   "keepAlive": {
     "label": "The current component will be cached"
