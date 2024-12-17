@@ -9,7 +9,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Vue + Vite H5 Starter Template',
+      content: 'An mobile web apps template based on the Vue 3 ecosystem',
     },
     {
       name: 'theme-color',
