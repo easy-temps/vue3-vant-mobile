@@ -15,8 +15,8 @@ import { VitePWA } from 'vite-plugin-pwa'
 import Sitemap from 'vite-plugin-sitemap'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
-import { createViteVConsole } from './vconsole'
 import { loadEnv } from 'vite'
+import { createViteVConsole } from './vconsole'
 
 export function createVitePlugins(mode: string) {
   const env = loadEnv(mode, process.cwd())

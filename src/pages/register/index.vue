@@ -68,9 +68,8 @@ async function getCode() {
 
   isGettingCode.value = true
   const res = await userStore.getCode()
-  if (res.code === 0) {
+  if (res.code === 0)
     showNotify({ type: 'success', message: `${t('register.sendCodeSuccess')}: ${res.result}` })
-  }
 
   isGettingCode.value = false
 }

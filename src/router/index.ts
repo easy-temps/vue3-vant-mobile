@@ -19,9 +19,8 @@ const router = createRouter({
 })
 
 // This will update routes at runtime without reloading the page
-if (import.meta.hot) {
+if (import.meta.hot)
   handleHotUpdate(router)
-}
 
 router.beforeEach(async (to: EnhancedRouteLocation, _from, next) => {
   NProgress.start()
