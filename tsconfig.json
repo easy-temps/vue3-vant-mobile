@@ -36,9 +36,9 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx",
-    "src/components.d.ts",
-    "src/auto-imports.d.ts",
-    "src/typed-router.d.ts",
+    "src/types/components.d.ts",
+    "src/types/auto-imports.d.ts",
+    "src/types/typed-router.d.ts",
     "tests/*.ts"
   ]
 }
