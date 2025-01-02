@@ -1,19 +1,21 @@
 import { STORAGE_TOKEN_KEY } from '@/stores/mutation-type'
 
+const token = useLocalStorage(STORAGE_TOKEN_KEY, '')
+
 function isLogin() {
-  return !!localStorage.getItem(STORAGE_TOKEN_KEY)
+  return !!token.value
 }
 
 function getToken() {
-  return localStorage.getItem(STORAGE_TOKEN_KEY)
+  return token.value
 }
 
-function setToken(token: string) {
-  localStorage.setItem(STORAGE_TOKEN_KEY, token)
+function setToken(newToken: string) {
+  token.value = newToken
 }
 
 function clearToken() {
-  localStorage.removeItem(STORAGE_TOKEN_KEY)
+  token.value = null
 }
 
 export { isLogin, getToken, setToken, clearToken }
