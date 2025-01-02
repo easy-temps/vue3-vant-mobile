@@ -16,7 +16,7 @@ function setToken(newToken: string) {
 }
 
 function clearToken() {
-  token.value = ''
+  token.value = null
 }
 
 export { isLogin, getToken, setToken, clearToken }
