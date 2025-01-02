@@ -1,4 +1,5 @@
 import { STORAGE_TOKEN_KEY } from '@/stores/mutation-type'
+import { useLocalStorage } from '@vueuse/core'
 
 const token = useLocalStorage(STORAGE_TOKEN_KEY, '')
 
@@ -15,7 +16,7 @@ function setToken(newToken: string) {
 }
 
 function clearToken() {
-  token.value = null
+  token.value = ''
 }
 
 export { isLogin, getToken, setToken, clearToken }
