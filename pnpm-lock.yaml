@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  vite: ^6.0.6
+  vite: ^6.0.7
 
 importers:
 
@@ -1565,7 +1565,7 @@ packages:
   '@unocss/astro@65.4.0':
     resolution: {integrity: sha512-bLi+H181PJ17E0Br06VwK7yeZffv9X46JCA7pnBlA/g8sDBxB+CwPOFaHlUeqVvis0CEt8HOr/e9418pxqQJTQ==}
     peerDependencies:
-      vite: ^6.0.6
+      vite: ^6.0.7
     peerDependenciesMeta:
       vite:
         optional: true
@@ -1647,7 +1647,7 @@ packages:
   '@unocss/vite@65.4.0':
     resolution: {integrity: sha512-9k4dUDvEK9PwttmVXhNWkEO7mH0Gp9hSUJY2CX3q+u40xqT3jx7hG765yfWWI9d/VSvzuv6/SurUul3ORJYA3w==}
     peerDependencies:
-      vite: ^6.0.6
+      vite: ^6.0.7
 
   '@vant/auto-import-resolver@1.2.1':
     resolution: {integrity: sha512-czGWW4UolNITkF3qQSQlpHDHAsI3/GHVKbRMmEEpry7NWdnU4p5a5jBi0VApbaLa5g80Hy10XVs3IB+UozoSUw==}
@@ -1668,13 +1668,13 @@ packages:
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     peerDependencies:
       terser: ^5.16.0
-      vite: ^6.0.6
+      vite: ^6.0.7
 
   '@vitejs/plugin-vue@5.2.1':
     resolution: {integrity: sha512-cxh314tzaWwOLqVes2gnnCtvBDcM1UMdn+iFR+UjAn411dPT3tOmqrJjbMd7koZpMAmBM/GqeV4n9ge7JSiJJQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
-      vite: ^6.0.6
+      vite: ^6.0.7
       vue: ^3.2.25
 
   '@vitest/eslint-plugin@1.1.25':
@@ -1697,7 +1697,7 @@ packages:
     resolution: {integrity: sha512-7guJ/47I6uqfttp33mgo6ga5Gr1VnL58rcqYKyShoRK9ebu8T5Rs6HN3s1NABiBeVTdWNrwUMcHH54uXZBN4zA==}
     peerDependencies:
       msw: ^2.4.9
-      vite: ^6.0.6
+      vite: ^6.0.7
     peerDependenciesMeta:
       msw:
         optional: true
@@ -4304,7 +4304,7 @@ packages:
     engines: {node: '>=14'}
     peerDependencies:
       '@unocss/webpack': 65.4.0
-      vite: ^6.0.6
+      vite: ^6.0.7
     peerDependenciesMeta:
       '@unocss/webpack':
         optional: true
@@ -4398,7 +4398,7 @@ packages:
   vite-hot-client@0.2.4:
     resolution: {integrity: sha512-a1nzURqO7DDmnXqabFOliz908FRmIppkBKsJthS8rbe8hBEXwEwe4C3Pp33Z1JoFCYfVL4kTOMLKk0ZZxREIeA==}
     peerDependencies:
-      vite: ^6.0.6
+      vite: ^6.0.7
 
   vite-node@2.1.8:
     resolution: {integrity: sha512-uPAwSr57kYjAUux+8E2j0q0Fxpn8M9VoyfGiRI8Kfktz9NcYMCenwY5RnZxnF1WTu3TGiYipirIzacLL3VVGFg==}
@@ -4410,7 +4410,7 @@ packages:
     engines: {node: '>=14'}
     peerDependencies:
       '@nuxt/kit': '*'
-      vite: ^6.0.6
+      vite: ^6.0.7
     peerDependenciesMeta:
       '@nuxt/kit':
         optional: true
@@ -4420,7 +4420,7 @@ packages:
     engines: {node: ^18 || ^20 || >=22}
     peerDependencies:
       esbuild: '>=0.21.0'
-      vite: ^6.0.6
+      vite: ^6.0.7
     peerDependenciesMeta:
       esbuild:
         optional: true
@@ -4430,7 +4430,7 @@ packages:
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@vite-pwa/assets-generator': ^0.2.6
-      vite: ^6.0.6
+      vite: ^6.0.7
       workbox-build: ^7.3.0
       workbox-window: ^7.3.0
     peerDependenciesMeta:
@@ -4447,12 +4447,12 @@ packages:
     resolution: {integrity: sha512-1dWiREwIl4JELwXGHXih80hIgjcViMcZGr3j0edo6NQ9kNzAOxMIUgFqc/TO1ary4ZroJUxoB0YDI6jnDf13iQ==}
     engines: {node: '>=v14.21.3'}
     peerDependencies:
-      vite: ^6.0.6
+      vite: ^6.0.7
 
   vite-plugin-vue-inspector@5.3.1:
     resolution: {integrity: sha512-cBk172kZKTdvGpJuzCCLg8lJ909wopwsu3Ve9FsL1XsnLBiRT9U3MePcqrgGHgCX2ZgkqZmAGR8taxw+TV6s7A==}
     peerDependencies:
-      vite: ^6.0.6
+      vite: ^6.0.7
 
   vite@6.0.7:
     resolution: {integrity: sha512-RDt8r/7qx9940f8FcOIAH9PTViRrghKaK2K1jY3RaAURrEUbm9Du1mJ72G+jlhtG3WwodnfzY8ORQZbBavZEAQ==}
