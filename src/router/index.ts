@@ -22,7 +22,7 @@ const router = createRouter({
 if (import.meta.hot)
   handleHotUpdate(router)
 
-router.beforeEach(async (to: EnhancedRouteLocation, _from, next) => {
+router.beforeEach(async (to: EnhancedRouteLocation) => {
   NProgress.start()
 
   const routeCacheStore = useRouteCacheStore()
@@ -36,8 +36,6 @@ router.beforeEach(async (to: EnhancedRouteLocation, _from, next) => {
 
   if (isLogin() && !userStore.userInfo?.uid)
     await userStore.info()
-
-  next()
 })
 
 router.afterEach(() => {
