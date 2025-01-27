@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { type RouteMap, useRouter } from 'vue-router'
+import { useRouter } from 'vue-router'
+import type { RouteMap } from 'vue-router'
 import { useUserStore } from '@/stores'
 
 import logo from '~/images/logo.svg'
