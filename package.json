@@ -2,7 +2,7 @@
   "name": "vue3-vant-mobile",
   "type": "module",
   "version": "3.5.1",
-  "packageManager": "pnpm@10.2.1",
+  "packageManager": "pnpm@9.15.4",
   "description": "An mobile web apps template based on the Vue 3 ecosystem",
   "license": "MIT",
   "scripts": {
@@ -84,12 +84,7 @@
         "@intlify/shared": "^11.x",
         "vue-i18n": "^11.x"
       }
-    },
-    "onlyBuiltDependencies": [
-      "core-js",
-      "esbuild",
-      "vue-demi"
-    ]
+    }
   },
   "resolutions": {
     "vite": "^6.1.0"
