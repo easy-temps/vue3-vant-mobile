@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import { storeToRefs } from 'pinia'
-import useAppStore from '@/stores/modules/app'
 import useRouteCache from '@/stores/modules/routeCache'
-import useAutoThemeSwitcher from '@/hooks/useAutoThemeSwitcher'
 
 useHead({
   title: 'Vue3 Vant Mobile',
@@ -25,23 +22,18 @@ useHead({
   ],
 })
 
-const appStore = useAppStore()
-const { mode } = storeToRefs(appStore)
-
-const { initializeThemeSwitcher } = useAutoThemeSwitcher(appStore)
-
 const keepAliveRouteNames = computed(() => {
   return useRouteCache().routeCaches as string[]
 })
 
-onMounted(() => {
-  initializeThemeSwitcher()
+const mode = computed(() => {
+  return isDark.value ? 'dark' : 'light'
 })
 </script>
 
 <template>
-  <VanConfigProvider :theme="mode">
-    <NavBar />
+  <van-config-provider :theme="mode">
+    <nav-bar />
     <router-view v-slot="{ Component, route }">
       <section class="app-wrapper">
         <keep-alive :include="keepAliveRouteNames">
@@ -49,8 +41,8 @@ onMounted(() => {
         </keep-alive>
       </section>
     </router-view>
-    <TabBar />
-  </VanConfigProvider>
+    <tab-bar />
+  </van-config-provider>
 </template>
 
 <style scoped>
