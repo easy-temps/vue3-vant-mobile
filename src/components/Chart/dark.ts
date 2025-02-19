@@ -1,6 +1,6 @@
 const contrastColor = 'rgba(255, 255, 255, 0.65)'
 const backgroundColor = 'transparent'
-const axisCommon = function () {
+function axisCommon() {
   return {
     axisLine: {
       lineStyle: {
