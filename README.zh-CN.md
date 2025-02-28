@@ -54,7 +54,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 
 - 💾 [本地数据模拟](https://github.com/pengzhanbo/vite-plugin-mock-dev-server)的支持
 
-- 🌈 Git [hooks](./.husky) - 提交代码 eslint 检测 和 提交规范检测
+- 🌈 Git hooks - 提交代码 eslint 检测 和 提交规范检测
 
 - 🪶 [Vant](https://github.com/youzan/vant) - 移动端 Vue 组件库
 

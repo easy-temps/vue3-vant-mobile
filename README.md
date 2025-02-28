@@ -54,7 +54,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 
 - 💾 [Mock](https://github.com/pengzhanbo/vite-plugin-mock-dev-server) server Support
 
-- 🌈 Git [hooks](./.husky) - lint and commit
+- 🌈 Git hooks - lint and commit
 
 - 🪶 [Vant](https://github.com/youzan/vant) - Vue UI library for mobile web apps
 
