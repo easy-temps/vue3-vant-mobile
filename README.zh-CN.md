@@ -198,6 +198,7 @@ pnpm build
 <a href="https://github.com/topcnm"><img src="https://avatars.githubusercontent.com/u/8057893?v=4" width="60px" alt="topcnm" /></a>
 <a href="https://github.com/qiyue2015"><img src="https://avatars.githubusercontent.com/u/11554433?v=4" width="60px" alt="qiyue2015" /></a>
 <a href="https://github.com/scc0"><img src="https://avatars.githubusercontent.com/u/45963033?v=4" width="60px" alt="scc0" /></a>
+<a href="https://github.com/xiaminxi"><img src="https://avatars.githubusercontent.com/u/37994820?v=4" width="60px" alt="xiaminxi" /></a>
 </p>
 
 <h2 align="center">
