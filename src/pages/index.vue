@@ -11,7 +11,7 @@ const menuItems = computed(() => ([
   { title: t('menus.persistPiniaState'), route: 'counter' },
   { title: t('menus.keepAlive'), route: 'keepalive' },
   { title: t('menus.404Demo'), route: 'unknown' },
-  { title: t('menus.ScrollCache'), route: 'scroll-cache' },
+  { title: t('menus.scrollCache'), route: 'scroll-cache' },
 ]))
 
 const showLanguagePicker = ref(false)
