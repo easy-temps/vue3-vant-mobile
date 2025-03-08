@@ -8,9 +8,11 @@ export default {
       appSelector: '#app',
       viewportWidth: 375,
       maxDisplayWidth: 600,
-      // appContainingBlock: 'auto',
-      rootContainingBlockSelectorList: ['van-tabbar', 'van-popup', 'van-dialog', 'van-toast'],
       border: true,
+      rootContainingBlockSelectorList: [
+        'van-tabbar',
+        'van-popup',
+      ],
     },
   },
 }
