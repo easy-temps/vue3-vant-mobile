@@ -47,9 +47,24 @@ onBeforeRouteLeave(() => {
  * 如果你要滚动的元素是指定的元素，按以下步骤处理：
  *
  * 1. 在 template 中，给滚动容器元素添加 ref，例如 ref="scrollContainer"。
+ *    - <div ref="scrollContainer" class="...">...</div>
+ *
  * 2. 在 setup 中，使用 const scrollContainer = ref(null) 获取该元素的引用。
- * 3. 在 onBeforeRouteLeave 钩子中，保存 scrollContainer.value.scrollTop 到 scrollTop.value。
- * 4. 在 onActivated 钩子中，将 scrollTop.value 设置为 scrollContainer.value.scrollTop。
+ *    - const scrollContainer = ref(null)
+ *
+ * 3. 在 onBeforeRouteLeave 钩子中，将 scrollTop.value 设置为 scrollContainer.value.scrollTop。
+ *    - onBeforeRouteLeave(() => {
+ *        if (scrollContainer.value) {
+ *          scrollTop.value = scrollContainer.value.scrollTop
+ *        }
+ *     })
+ *
+ * 4. 在 onActivated 钩子中，将 scrollContainer.value.scrollTop 设置为 scrollTop.value
+ *    - onActivated(() => {
+ *       if (scrollContainer.value) {
+ *         scrollContainer.value.scrollTop = scrollTop.value
+ *       }
+ *     })
  *
  * 万事OK👌🏻
  */
