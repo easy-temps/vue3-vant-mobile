@@ -21,53 +21,18 @@ function onLoad() {
   }, 1000)
 }
 
-/**
- * ⭐️ 如果你想在离开页面时保存滚动位置，并在返回时恢复它，你可以参考以下实现思路：
- *
- * - 1. kepAlive 设置为 true ，让组件被缓存。
- * - 2. 在页面离开时使用 `onBeforeRouteLeave` 钩子保存当前滚动位置。
- * - 3. 在页面激活时使用 `onActivated` 钩子恢复上次的滚动位置。
- */
-const scrollTop = ref(0) // 存储当前的滚动位置
+const scrollTop = ref(0)
 
-// 当keepAlive为true的组件被激活时，滚动到指定的位置
 onActivated(() => {
   window.scrollTo(0, scrollTop.value)
 })
 
-// 在路由离开前，保存当前的滚动位置
 onBeforeRouteLeave(() => {
   scrollTop.value
     = window.scrollY
       || document.documentElement.scrollTop
       || document.body.scrollTop
 })
-
-/**
- * 如果你要滚动的元素是指定的元素，按以下步骤处理：
- *
- * 1. 在 template 中，给滚动容器元素添加 ref，例如 ref="scrollContainer"。
- *    - <div ref="scrollContainer" class="...">...</div>
- *
- * 2. 在 setup 中，使用 const scrollContainer = ref(null) 获取该元素的引用。
- *    - const scrollContainer = ref(null)
- *
- * 3. 在 onBeforeRouteLeave 钩子中，将 scrollTop.value 设置为 scrollContainer.value.scrollTop。
- *    - onBeforeRouteLeave(() => {
- *        if (scrollContainer.value) {
- *          scrollTop.value = scrollContainer.value.scrollTop
- *        }
- *     })
- *
- * 4. 在 onActivated 钩子中，将 scrollContainer.value.scrollTop 设置为 scrollTop.value
- *    - onActivated(() => {
- *       if (scrollContainer.value) {
- *         scrollContainer.value.scrollTop = scrollTop.value
- *       }
- *     })
- *
- * 万事OK👌🏻
- */
 </script>
 
 <template>
