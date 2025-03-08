@@ -94,7 +94,7 @@ onBeforeRouteLeave(() => {
 {
   name: 'ScrollCache',
   meta: {
-    title: '🧡 ScrollCache',
+    title: '📜 ScrollCache',
     i18n: 'menus.ScrollCache',
     keepAlive: true
   },
