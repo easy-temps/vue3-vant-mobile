@@ -10,7 +10,7 @@
     "persistPiniaState": "🍍 Persistent Pinia state",
     "unocssExample": "🎨 Unocss example",
     "keepAlive": "🧡 KeepAlive Demo",
-    "ScrollCache": "📜 Scroll Cache Demo",
+    "scrollCache": "📜 Scroll Cache Demo",
     "login": "🔒 Login",
     "register": "Register",
     "settings": "Settings",
