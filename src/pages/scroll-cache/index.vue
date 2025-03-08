@@ -10,7 +10,7 @@ const finished = ref(false)
 function onLoad() {
   setTimeout(() => {
     for (let i = 0; i < 10; i++) {
-      list.value.push(`${list.value.length + 1} 随便滑滑,离开再回来时位置会保留不变哦⭐️~`)
+      list.value.push(`${list.value.length + 1}`)
     }
 
     loading.value = false
@@ -69,7 +69,7 @@ onBeforeRouteLeave(() => {
       class="mb-[8px] rounded-[12px] shadow-[0_2px_8px_rgba(0,0,0,0.05)]"
     >
       <div class="flex items-center py-4 text-[#378df6]">
-        {{ item }}
+        {{ $t('scrollCache.listItem') }} {{ item }}
       </div>
     </van-cell>
   </van-list>
