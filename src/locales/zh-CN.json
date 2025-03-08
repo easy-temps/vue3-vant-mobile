@@ -10,6 +10,7 @@
     "404Demo": "🙅 404页 演示",
     "unocssExample": "🎨 Unocss 示例",
     "keepAlive": "🧡 KeepAlive 演示",
+    "scrollCache": "📜 滚动缓存 演示",
     "login": "🔒 用户登录",
     "register": "用户注册",
     "settings": "设置",
@@ -42,6 +43,9 @@
   },
   "keepAlive": {
     "label": "当前组件将会被缓存"
+  },
+  "scrollCache": {
+    "listItem": "随便滑滑,离开再回来时位置会保留不变哦⭐️~"
   },
   "login": {
     "login": "登录",

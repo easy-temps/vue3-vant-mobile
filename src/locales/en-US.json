@@ -10,6 +10,7 @@
     "persistPiniaState": "🍍 Persistent Pinia state",
     "unocssExample": "🎨 Unocss example",
     "keepAlive": "🧡 KeepAlive Demo",
+    "scrollCache": "📜 Scroll Cache Demo",
     "login": "🔒 Login",
     "register": "Register",
     "settings": "Settings",
@@ -42,6 +43,9 @@
   },
   "keepAlive": {
     "label": "The current component will be cached"
+  },
+  "scrollCache": {
+    "listItem": "Slide freely. When you get back, the roll position will still be there.⭐️~"
   },
   "login": {
     "login": "Sign In",
