@@ -1,7 +1,7 @@
 {
   "name": "vue3-vant-mobile",
   "type": "module",
-  "version": "3.6.1",
+  "version": "3.7.0",
   "packageManager": "pnpm@10.5.2",
   "description": "An mobile web apps template based on the Vue 3 ecosystem",
   "license": "MIT",
