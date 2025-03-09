@@ -10,8 +10,8 @@ const menuItems = computed(() => ([
   { title: t('menus.unocssExample'), route: 'unocss' },
   { title: t('menus.persistPiniaState'), route: 'counter' },
   { title: t('menus.keepAlive'), route: 'keepalive' },
-  { title: t('menus.404Demo'), route: 'unknown' },
   { title: t('menus.scrollCache'), route: 'scroll-cache' },
+  { title: t('menus.404Demo'), route: 'unknown' },
 ]))
 
 const showLanguagePicker = ref(false)

@@ -6,6 +6,7 @@ defineOptions({
 const list = ref([])
 const loading = ref(false)
 const finished = ref(false)
+const { t } = useI18n()
 
 function onLoad() {
   setTimeout(() => {
@@ -46,11 +47,16 @@ onBeforeRouteLeave(() => {
     <van-cell
       v-for="(item, index) in list"
       :key="index"
-      class="mb-[8px] rounded-[12px] shadow-[0_2px_8px_rgba(0,0,0,0.05)]"
+      :border="false"
+      class="mb-8 rounded-12"
     >
-      <div class="flex items-center py-4 text-[#378df6]">
-        {{ $t('scrollCache.listItem') }} {{ item }}
-      </div>
+      <template #title>
+        {{ t('scrollCache.listItem') }}
+      </template>
+
+      <template #value>
+        {{ item }}
+      </template>
     </van-cell>
   </van-list>
 </template>
