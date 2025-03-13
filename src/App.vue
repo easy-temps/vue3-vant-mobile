@@ -34,10 +34,10 @@ const mode = computed(() => {
 <template>
   <van-config-provider :theme="mode">
     <nav-bar />
-    <router-view v-slot="{ Component, route }">
+    <router-view v-slot="{ Component }">
       <section class="app-wrapper">
         <keep-alive :include="keepAliveRouteNames">
-          <component :is="Component" :key="route.name" />
+          <component :is="Component" />
         </keep-alive>
       </section>
     </router-view>
