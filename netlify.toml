@@ -1,7 +1,7 @@
 [build]
 base = "/"
 publish = "dist"
-command = "pnpm run build"
+command = "pnpm run build:pro"
 
 [build.environment]
 NODE_VERSION = "18"
