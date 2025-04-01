@@ -22,6 +22,7 @@ const include = [
   'vant/es/nav-bar/style/index',
   'vant/es/tabbar/style/index',
   'vant/es/tabbar-item/style/index',
+  'vant/es/list/style/index',
   'unplugin-vue-router/runtime',
   'unplugin-vue-router/data-loaders',
   'unplugin-vue-router/data-loaders/basic',
