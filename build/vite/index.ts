@@ -88,7 +88,7 @@ export function createVitePlugins(mode: string) {
     UnoCSS(),
 
     // https://github.com/vadxq/vite-plugin-vconsole
-    createViteVConsole(),
+    createViteVConsole(mode),
 
     // https://github.com/vuejs/devtools-next
     VueDevTools(),
