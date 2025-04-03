@@ -232,6 +232,7 @@ pnpm build
 <a href="https://github.com/chensongni"><img src="https://avatars.githubusercontent.com/u/18071921?v=4" width="60px" alt="chensongni" /></a>
 <a href="https://github.com/csheng-github"><img src="https://avatars.githubusercontent.com/u/88492404?v=4" width="60px" alt="csheng-github" /></a>
 <a href="https://github.com/LostElkByte"><img src="https://avatars.githubusercontent.com/u/24487727?v=4" width="60px" alt="LostElkByte" /></a>
+<a href="https://github.com/xuxichen"><img src="https://avatars.githubusercontent.com/u/18108140?v=4" width="60px" alt="xuxichen" /></a>
 </p>
 
 ## License
