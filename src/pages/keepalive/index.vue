@@ -8,7 +8,7 @@ const value = ref(1)
 
 <template>
   <p>{{ $t('keepAlive.label') }}</p>
-  <van-stepper v-model="value" />
+  <van-stepper v-model="value" class="mt-10" />
 </template>
 
 <route lang="json5">

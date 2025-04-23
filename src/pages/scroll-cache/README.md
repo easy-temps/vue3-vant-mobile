@@ -43,7 +43,6 @@ In your template, add a `ref` attribute to the scroll container element. For exa
 
 ```html
 <div ref="scrollContainer" class="...">...</div>
-
 ```
 
 ## 2. In the setup Function

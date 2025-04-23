@@ -26,7 +26,7 @@ function Logout() {
       <van-cell v-if="userInfo.uid" :title="$t('settings.logout')" clickable class="van-text-color" @click="Logout" />
     </VanCellGroup>
 
-    <div class="mt-10 text-gray">
+    <div class="text-gray mt-10">
       {{ $t("settings.currentVersion") }}: v{{ version }}
     </div>
   </div>

@@ -54,13 +54,13 @@ async function login(values: any) {
 </script>
 
 <template>
-  <div class="m-x-a w-7xl text-center">
+  <div class="m-x-a text-center w-7xl">
     <div class="mb-32 mt-20">
       <van-image :src="dark ? logoDark : logo" class="h-120 w-120" alt="brand logo" />
     </div>
 
     <van-form :model="postData" :rules="rules" validate-trigger="onSubmit" @submit="login">
-      <div class="overflow-hidden rounded-3xl">
+      <div class="rounded-3xl overflow-hidden">
         <van-field
           v-model="postData.email"
           :rules="rules.email"
@@ -69,7 +69,7 @@ async function login(values: any) {
         />
       </div>
 
-      <div class="mt-16 overflow-hidden rounded-3xl">
+      <div class="mt-16 rounded-3xl overflow-hidden">
         <van-field
           v-model="postData.password"
           type="password"

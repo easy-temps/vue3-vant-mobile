@@ -77,8 +77,6 @@ An mobile web apps template based on the Vue 3 ecosystem.
 ### UI 框架
 
 - [UnoCSS](https://github.com/antfu/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
-  - [`@unocss/preset-rem-to-px`](https://github.com/unocss/unocss/tree/main/packages/preset-rem-to-px) - 将所有实用程序的 rem 转换为 px
-  - [`eslint-plugin-unocss`](https://github.com/devunt/eslint-plugin-unocss) - Unocss 的 ESLint 插件
 - [Vant](https://github.com/youzan/vant) - 移动端 Vue 组件库
   - [`vant-touch-emulator`](https://github.com/youzan/vant/tree/main/packages/vant-touch-emulator) - 在桌面端上模拟移动端 touch 事件
   - [`vant-use`](https://github.com/youzan/vant/tree/main/packages/vant-use) - Vant 内置的组合式 API
@@ -88,7 +86,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 - [Vue Router](https://github.com/vuejs/router)
   - [`unplugin-vue-router`](https://github.com/posva/unplugin-vue-router) - 以文件系统为基础的路由
 - [Pinia](https://pinia.vuejs.org) - 直接的, 类型安全的, 使用 Composition API 的轻便灵活的 Vue 状态管理库
-  - [`pinia-plugin-persistedstate`](https://github.com/prazdevs/pinia-plugin-persistedstate) -  适用于 Pinia 的持久化存储插件
+  - [`pinia-plugin-persistedstate`](https://github.com/prazdevs/pinia-plugin-persistedstate) - 适用于 Pinia 的持久化存储插件
 - [Vue I18n](https://github.com/intlify/vue-i18n-next) - 国际化
   - [`unplugin-vue-i18n`](https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n) - Vue I18n 的 Vite 插件
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - 自动加载组件
@@ -98,7 +96,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 - [postcss-mobile-forever](https://github.com/wswmsword/postcss-mobile-forever) - 一款 PostCSS 插件，将固定尺寸的移动端视图转为具有最大宽度的可伸缩的移动端视图
 - [vite-plugin-vue-devtools](https://github.com/vuejs/devtools-next) - 旨在增强Vue开发者体验的Vite插件
 - [vueuse](https://github.com/antfu/vueuse) - 实用的 Composition API 工具合集
-- [@unhead/vue](https://github.com/unjs/unhead) - 响应式地操作文档头信息
+- [@unhead/vue v2](https://github.com/unjs/unhead) - 响应式地操作文档头信息
 - [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) - PWA
 - [vite-plugin-sitemap](https://github.com/jbaubree/vite-plugin-sitemap) - sitemap 和 robots 生成器
 
