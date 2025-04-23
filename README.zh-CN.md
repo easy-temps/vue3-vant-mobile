@@ -50,8 +50,6 @@ An mobile web apps template based on the Vue 3 ecosystem.
 
 - 💪 TypeScript, 当然
 
-- ⚙️ 使用 [Vitest](https://github.com/vitest-dev/vitest) 进行单元测试
-
 - 💾 [本地数据模拟](https://github.com/pengzhanbo/vite-plugin-mock-dev-server)的支持
 
 - 🌈 Git hooks - 提交代码 eslint 检测 和 提交规范检测
@@ -108,7 +106,6 @@ An mobile web apps template based on the Vue 3 ecosystem.
 ### 开发工具
 
 - [TypeScript](https://www.typescriptlang.org/)
-- [Vitest](https://github.com/vitest-dev/vitest) - 基于 Vite 的单元测试框架
 - [pnpm](https://pnpm.js.org/) - 快, 节省磁盘空间的包管理器
 - [Netlify](https://www.netlify.com/) - 零配置的部署
 - [VS Code Extensions](./.vscode/extensions.json)

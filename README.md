@@ -50,8 +50,6 @@ An mobile web apps template based on the Vue 3 ecosystem.
 
 - 💪 TypeScript, of course
 
-- ⚙️ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest)
-
 - 💾 [Mock](https://github.com/pengzhanbo/vite-plugin-mock-dev-server) server Support
 
 - 🌈 Git hooks - lint and commit
@@ -108,7 +106,6 @@ An mobile web apps template based on the Vue 3 ecosystem.
 ### Dev tools
 
 - [TypeScript](https://www.typescriptlang.org/)
-- [Vitest](https://github.com/vitest-dev/vitest) - Unit testing powered by Vite
 - [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
 - [Netlify](https://www.netlify.com/) - zero-config deployment
 - [VS Code Extensions](./.vscode/extensions.json)

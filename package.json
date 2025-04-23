@@ -10,7 +10,6 @@
     "build:dev": "vue-tsc --noEmit && vite build --mode development",
     "build:pro": "vue-tsc --noEmit && vite build --mode production",
     "preview": "vite preview",
-    "test": "vitest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "release": "bumpp --commit --push --tag",
@@ -74,7 +73,6 @@
     "vite-plugin-sitemap": "^0.7.1",
     "vite-plugin-vconsole": "^2.1.1",
     "vite-plugin-vue-devtools": "^7.7.5",
-    "vitest": "^3.1.2",
     "vue-tsc": "^2.2.10"
   },
   "pnpm": {
