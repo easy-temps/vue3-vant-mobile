@@ -5,14 +5,10 @@ export default antfu(
     vue: true,
     typescript: true,
 
-    // enable UnoCSS support
+    // Enable UnoCSS support
     // https://unocss.dev/integrations/vscode
     unocss: true,
-
-    formatters: {
-      css: true,
-    },
-
+    formatters: true,
   },
   {
     rules: {

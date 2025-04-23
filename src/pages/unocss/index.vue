@@ -3,11 +3,11 @@
     Hello, Unocss!
   </h1>
 
-  <p class="mt-4 text-gray-700 dark:text-white">
+  <p class="text-gray-700 mt-10 dark:text-white">
     This is a simple example of Unocss in action.
   </p>
 
-  <button class="btn">
+  <button class="mt-10 btn">
     Button
   </button>
 </template>

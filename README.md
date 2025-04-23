@@ -77,8 +77,6 @@ An mobile web apps template based on the Vue 3 ecosystem.
 ### UI Frameworks
 
 - [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine
-  - [`@unocss/preset-rem-to-px`](https://github.com/unocss/unocss/tree/main/packages/preset-rem-to-px) - Converts rem to px for all utilities
-  - [`eslint-plugin-unocss`](https://github.com/devunt/eslint-plugin-unocss) - ESLint plugin for UnoCSS
 - [Vant](https://github.com/youzan/vant) - Vue UI library for mobile web apps
   - [`vant-touch-emulator`](https://github.com/youzan/vant/tree/main/packages/vant-touch-emulator) - Simulate mobile touch events on the desktop
   - [`vant-use`](https://github.com/youzan/vant/tree/main/packages/vant-use) - Built-in composition APIs of Vant
@@ -88,7 +86,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 - [Vue Router](https://github.com/vuejs/router)
   - [`unplugin-vue-router`](https://github.com/posva/unplugin-vue-router) - file system based routing
 - [Pinia](https://pinia.vuejs.org) - Intuitive, type safe, light and flexible Store for Vue using the composition api
-  - [`pinia-plugin-persistedstate`](https://github.com/prazdevs/pinia-plugin-persistedstate) -  Configurable persistence and rehydration of Pinia stores
+  - [`pinia-plugin-persistedstate`](https://github.com/prazdevs/pinia-plugin-persistedstate) - Configurable persistence and rehydration of Pinia stores
 - [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization
   - [`unplugin-vue-i18n`](https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n) - unplugin for Vue I18n
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - components auto import
@@ -98,7 +96,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 - [postcss-mobile-forever](https://github.com/wswmsword/postcss-mobile-forever) - To adapt different displays by one mobile viewport
 - [vite-plugin-vue-devtools](https://github.com/vuejs/devtools-next) - Designed to enhance the Vue developer experience
 - [vueuse](https://github.com/antfu/vueuse) - collection of useful composition APIs
-- [@unhead/vue](https://github.com/unjs/unhead) - manipulate document head reactively
+- [@unhead/vue v2](https://github.com/unjs/unhead) - manipulate document head reactively
 - [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) - PWA
 - [vite-plugin-sitemap](https://github.com/jbaubree/vite-plugin-sitemap) - sitemap and robots generator
 
