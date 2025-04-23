@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
 import type { FieldRule } from 'vant'
+import { showNotify } from 'vant'
 import { useUserStore } from '@/stores'
 import vw from '@/utils/inline-px-to-vw'
 
