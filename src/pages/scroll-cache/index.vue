@@ -6,7 +6,6 @@ defineOptions({
 const list = ref([])
 const loading = ref(false)
 const finished = ref(false)
-const { t } = useI18n()
 
 function onLoad() {
   setTimeout(() => {
@@ -51,7 +50,7 @@ onBeforeRouteLeave(() => {
       class="mb-8 rounded-12"
     >
       <template #title>
-        {{ t('scrollCache.listItem') }}
+        {{ $t('scrollCache.listItem') }}
       </template>
 
       <template #value>

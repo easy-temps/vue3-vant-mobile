@@ -80,7 +80,7 @@ async function getCode() {
           v-model.trim="postData.email"
           :rules="rules.email"
           name="email"
-          :placeholder="t('forgot-password.email')"
+          :placeholder="$t('forgot-password.email')"
         />
       </div>
 
@@ -89,7 +89,7 @@ async function getCode() {
           v-model.trim="postData.code"
           :rules="rules.code"
           name="code"
-          :placeholder="t('forgot-password.code')"
+          :placeholder="$t('forgot-password.code')"
         >
           <template #button>
             <van-button size="small" type="primary" plain @click="getCode">
@@ -105,7 +105,7 @@ async function getCode() {
           type="password"
           :rules="rules.password"
           name="password"
-          :placeholder="t('forgot-password.password')"
+          :placeholder="$t('forgot-password.password')"
         />
       </div>
 
@@ -115,7 +115,7 @@ async function getCode() {
           type="password"
           :rules="rules.confirmPassword"
           name="confirmPassword"
-          :placeholder="t('forgot-password.comfirmPassword')"
+          :placeholder="$t('forgot-password.comfirmPassword')"
         />
       </div>
 

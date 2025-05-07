@@ -65,7 +65,7 @@ async function login(values: any) {
           v-model="postData.email"
           :rules="rules.email"
           name="email"
-          :placeholder="t('login.email')"
+          :placeholder="$t('login.email')"
         />
       </div>
 
@@ -75,7 +75,7 @@ async function login(values: any) {
           type="password"
           :rules="rules.password"
           name="password"
-          :placeholder="t('login.password')"
+          :placeholder="$t('login.password')"
         />
       </div>
 
