@@ -20,7 +20,6 @@ export default antfu(
   {
     ignores: [
       '.github/**',
-      'scripts/**',
     ],
   },
 )
