@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import useRouteCache from '@/stores/modules/routeCache'
+import { useRouteCacheStore } from '@/stores'
 
 useHead({
   title: 'Vue3 Vant Mobile',
@@ -22,8 +22,10 @@ useHead({
   ],
 })
 
+const routeCacheStore = useRouteCacheStore()
+
 const keepAliveRouteNames = computed(() => {
-  return useRouteCache().routeCaches as string[]
+  return routeCacheStore.routeCaches
 })
 
 const mode = computed(() => {
