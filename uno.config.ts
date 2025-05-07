@@ -1,4 +1,4 @@
-import { createRemToPxResolver } from '@unocss/preset-wind4/utils'
+import { createRemToPxProcessor } from '@unocss/preset-wind4/utils'
 
 import {
   defineConfig,
@@ -17,14 +17,17 @@ export default defineConfig({
   ],
   presets: [
     presetWind4({
-      utilityResolver: createRemToPxResolver(BASE_FONT_SIZE),
+      preflights: {
+        theme: {
+          process: createRemToPxProcessor(BASE_FONT_SIZE),
+        },
+      },
     }),
     presetAttributify(),
     presetIcons({
       scale: 1.2,
     }),
   ],
-
   transformers: [
     transformerDirectives(),
     transformerVariantGroup(),
