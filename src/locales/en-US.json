@@ -45,7 +45,10 @@
     "label": "The current component will be cached"
   },
   "scrollCache": {
-    "listItem": "Slide freely. When you get back, the roll position will still be there"
+    "sectionTitle": "Section title",
+    "sectionText": "Section text text text text text text text text text text",
+    "finished": "Already at the bottom ~",
+    "loading": "Loading..."
   },
   "login": {
     "login": "Sign In",

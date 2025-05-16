@@ -3,9 +3,9 @@ defineOptions({
   name: 'ScrollCache',
 })
 
-const list = ref([])
 const loading = ref(false)
 const finished = ref(false)
+const list = ref([])
 
 function onLoad() {
   setTimeout(() => {
@@ -39,24 +39,33 @@ onBeforeRouteLeave(() => {
   <van-list
     v-model:loading="loading"
     :finished="finished"
-    finished-text="已经到底啦 ~"
-    loading-text="加载中..."
+    :finished-text="$t('scrollCache.finished')"
+    :loading-text="$t('scrollCache.loading')"
     @load="onLoad"
   >
-    <van-cell
-      v-for="(item, index) in list"
-      :key="index"
-      :border="false"
-      class="mb-8 rounded-12"
-    >
-      <template #title>
-        {{ $t('scrollCache.listItem') }}
-      </template>
+    <ul class="space-y-10">
+      <li v-for="item in list" :key="item" class="p-3 flex gap-12">
+        <div class="shrink-0">
+          <div class="rounded-full bg-gray-500/20 flex h-48 w-48 items-center justify-center overflow-hidden">
+            <span class="text-[16px] text-zinc-600 tabular-nums dark:text-zinc-400"> {{ item }} </span>
+          </div>
+        </div>
 
-      <template #value>
-        {{ item }}
-      </template>
-    </van-cell>
+        <div class="flex-1 min-w-0">
+          <div class="mb-2 flex flex-row gap-1 w-full justify-between">
+            <h3 class="text-[16px] text-zinc-600 font-semibold tracking-tight w-1/2 dark:text-white">
+              <van-text-ellipsis :content="`${$t('scrollCache.sectionTitle')}`" />
+            </h3>
+
+            <time class="text-[12px] text-zinc-400 tabular-nums">2025-05-16</time>
+          </div>
+
+          <p class="text-[14px] text-zinc-500">
+            <van-text-ellipsis :rows="2" :content="$t('scrollCache.sectionText')" />
+          </p>
+        </div>
+      </li>
+    </ul>
   </van-list>
 </template>
 
