@@ -193,6 +193,7 @@ Your sponsorship will help us continue to iterate on this exciting project! 🚀
 <a href="https://github.com/scc0"><img src="https://avatars.githubusercontent.com/u/45963033?v=4" width="60px" alt="scc0" /></a>
 <a href="https://github.com/xiaminxi"><img src="https://avatars.githubusercontent.com/u/37994820?v=4" width="60px" alt="xiaminxi" /></a>
 <a href="https://github.com/wangpeng00544"><img src="https://avatars.githubusercontent.com/u/54630102?v=4" width="60px" alt="wangpeng00544" /></a>
+<a href="https://github.com/ljgx"><img src="https://avatars.githubusercontent.com/u/59424192?v=4" width="60px" alt="ljgx" /></a>
 </p>
 
 <h2 align="center">
