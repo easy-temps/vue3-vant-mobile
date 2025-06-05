@@ -53,7 +53,7 @@ onBeforeRouteLeave(() => {
 
         <div class="flex-1 min-w-0">
           <div class="mb-2 flex flex-row gap-1 w-full justify-between">
-            <h3 class="text-[16px] text-zinc-600 font-semibold tracking-tight w-1/2 dark:text-white">
+            <h3 class="text-[16px] text-zinc-600 tracking-tight font-semibold w-1/2 dark:text-white">
               <van-text-ellipsis :content="`${$t('scrollCache.sectionTitle')}`" />
             </h3>
 
