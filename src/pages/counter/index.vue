@@ -24,7 +24,7 @@ function add() {
     number：<strong class="text-green-500"> {{ counter }} </strong>
   </p>
 
-  <button class="mt-10 btn" @click="add">
+  <button class="btn mt-10" @click="add">
     Add
   </button>
 </template>

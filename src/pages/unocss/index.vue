@@ -7,7 +7,7 @@
     This is a simple example of Unocss in action.
   </p>
 
-  <button class="mt-10 btn">
+  <button class="btn mt-10">
     Button
   </button>
 </template>
