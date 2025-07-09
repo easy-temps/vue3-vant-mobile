@@ -2,7 +2,7 @@
   "name": "vue3-vant-mobile",
   "type": "module",
   "version": "3.11.0",
-  "packageManager": "pnpm@10.12.3",
+  "packageManager": "pnpm@10.12.4",
   "description": "An mobile web apps template based on the Vue 3 ecosystem",
   "license": "MIT",
   "engines": {
@@ -21,34 +21,34 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
-    "@unhead/vue": "2.0.11",
+    "@unhead/vue": "2.0.12",
     "@vant/touch-emulator": "^1.4.0",
     "@vant/use": "^1.6.0",
-    "@vueuse/core": "^13.4.0",
+    "@vueuse/core": "^13.5.0",
     "axios": "^1.10.0",
     "echarts": "^5.6.0",
     "lodash-es": "^4.17.21",
     "nprogress": "^0.2.0",
     "pinia": "^3.0.3",
-    "pinia-plugin-persistedstate": "^4.3.0",
+    "pinia-plugin-persistedstate": "^4.4.1",
     "resize-detector": "^0.3.0",
     "vant": "^4.9.20",
     "vconsole": "^3.15.1",
     "vue": "^3.5.17",
-    "vue-i18n": "^11.1.7",
+    "vue-i18n": "^11.1.9",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "4.16.1",
+    "@antfu/eslint-config": "4.16.2",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@commitlint/types": "^19.8.1",
     "@iconify-json/carbon": "^1.2.10",
     "@intlify/unplugin-vue-i18n": "^6.0.8",
     "@types/lodash-es": "^4.17.12",
-    "@types/node": "^24.0.4",
+    "@types/node": "^24.0.12",
     "@types/nprogress": "^0.2.3",
-    "@unocss/eslint-config": "66.2.3",
+    "@unocss/eslint-config": "66.3.3",
     "@vant/auto-import-resolver": "^1.3.0",
     "@vitejs/plugin-legacy": "^7.0.0",
     "@vitejs/plugin-vue": "^6.0.0",
@@ -56,27 +56,27 @@
     "bumpp": "^10.2.0",
     "consola": "^3.4.2",
     "cross-env": "^7.0.3",
-    "eslint": "^9.29.0",
+    "eslint": "^9.30.1",
     "eslint-plugin-format": "^1.0.1",
     "less": "^4.3.0",
     "lint-staged": "^16.1.2",
     "mockjs": "^1.1.0",
     "postcss-mobile-forever": "^5.0.0",
-    "rollup": "^4.44.0",
+    "rollup": "^4.44.2",
     "simple-git-hooks": "^2.13.0",
     "terser": "^5.43.1",
     "typescript": "^5.8.3",
-    "unocss": "66.2.3",
+    "unocss": "66.3.3",
     "unplugin-auto-import": "^19.3.0",
-    "unplugin-vue-components": "^28.7.0",
-    "unplugin-vue-router": "^0.12.0",
-    "vite": "^7.0.0",
+    "unplugin-vue-components": "^28.8.0",
+    "unplugin-vue-router": "^0.14.0",
+    "vite": "^7.0.3",
     "vite-plugin-mock-dev-server": "^1.9.1",
-    "vite-plugin-pwa": "^1.0.0",
+    "vite-plugin-pwa": "^1.0.1",
     "vite-plugin-sitemap": "^0.8.2",
     "vite-plugin-vconsole": "^2.1.1",
     "vite-plugin-vue-devtools": "^7.7.7",
-    "vue-tsc": "^2.2.10"
+    "vue-tsc": "^3.0.1"
   },
   "pnpm": {
     "allowedDeprecatedVersions": {
@@ -85,9 +85,7 @@
       "sourcemap-codec": "1.4.8"
     },
     "peerDependencyRules": {
-      "allowedVersions": {
-        "typescript": "5.8.3"
-      }
+      "allowedVersions": {}
     },
     "onlyBuiltDependencies": [
       "core-js",
@@ -97,7 +95,7 @@
     ]
   },
   "resolutions": {
-    "vite": "^7.0.0"
+    "vite": "^7.0.3"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged",
